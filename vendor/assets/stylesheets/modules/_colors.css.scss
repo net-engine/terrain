@@ -2,12 +2,13 @@
 
 // Shades and tints
 
-$white:                       darken(white, 3%)    !default;
-$off-white:                   darken($white, 5%)   !default;
-$light-grey:                  lighten($black, 75%) !default;
-$mid-grey:                    lighten($black, 68%) !default;
-$dim-grey:                    lighten($black, 50%) !default;
-$black:                       lighten(black, 20%)  !default;
+$white:                       darken(white, 3%)     !default;
+$off-white:                   darken($white, 5%)    !default;
+$black:                       lighten(black, 20%)   !default;
+$light-grey:                  lighten($black, 75%)  !default;
+$mid-grey:                    lighten($black, 68%)  !default;
+$dim-grey:                    lighten($black, 50%)  !default;
+$dark-grey:                   lighten($black, 7.5%) !default;
 
 // 4 Color scheme
 
@@ -25,7 +26,7 @@ $palette: white               $white,
           light-grey          $light-grey, 
           mid-grey            $mid-grey, 
           dim-grey            $dim-grey, 
-          dark-grey           lighten($black, 7.5%),
+          dark-grey           $dark-grey,
           black               $black, 
           primary             $primary,
           light-primary       $light-primary,
