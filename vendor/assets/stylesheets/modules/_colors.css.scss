@@ -37,17 +37,18 @@ $palette: white               $white,
           light-quaternary    $light-quaternary,
           transparent         transparent;
 
-// Build Color Schemes - .<foreground>_<background>_<border> {}
+// Build Color Schemes
 
 @each $color1 in $palette {
   @if $color1 not transparent {
     %#{ nth( $color1, 1 ) } { color: nth( $color1, 2 ) }
 
-    %#{ nth( $color1, 1 ) }_foreground  { color: nth( $color1, 2 ) }
-    %#{ nth( $color1, 1 ) }_background  { background-color: nth( $color1, 2 ) }
-    %#{ nth( $color1, 1 ) }_border      { border-color: nth( $color1, 2 ) }
-    %#{ nth( $color1, 1 ) }_border-left { border-color: nth( $color1, 2 ) }
-    %#{ nth( $color1, 1 ) }_border-top  { border-color: nth( $color1, 2 ) }
+    %#{ nth( $color1, 1 ) }_background    { background-color: nth( $color1, 2 ) }
+    %#{ nth( $color1, 1 ) }_border        { border-color: nth( $color1, 2 ) }
+    %#{ nth( $color1, 1 ) }_border-top    { border-top-color: nth( $color1, 2 ) }
+    %#{ nth( $color1, 1 ) }_border-right  { border-right-color: nth( $color1, 2 ) }
+    %#{ nth( $color1, 1 ) }_border-bottom { border-bottom-color: nth( $color1, 2 ) }
+    %#{ nth( $color1, 1 ) }_border-left   { border-left-color: nth( $color1, 2 ) }
   }
   
   @each $color2 in $palette {
