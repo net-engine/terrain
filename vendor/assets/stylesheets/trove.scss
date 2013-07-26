@@ -1,6 +1,9 @@
 @import 'compass',
         'compass/reset';
 
-body {
-  color: red !important;
-}
+@import 'functions',
+        'settings';
+
+@import 'modules/*';
+@import 'modules/*/*';
+@import 'animations/*';
