@@ -1,0 +1,118 @@
+// Buttons
+
+$button-size: $line-height;
+$button-padding: $button-size / 2;
+
+.button, button, input[type="submit"], input[type="button"] {
+  font-family: $sans-stack;
+  position: relative;
+  display: inline-block;
+  padding: ($button-padding / 2) $button-padding;
+  width: auto;
+  -webkit-font-smoothing: antialiased;
+  text-decoration: none;
+  border-radius: $radius;
+  @include box-sizing(border-box);
+  border: none;
+  font-size: $font-size;
+  font-weight: 600;
+  @include transition(all 0.2s linear);
+
+  &:hover {
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+  &:active { opacity: .75; }
+
+  &[disabled="disabled"] {
+    &:hover {
+      cursor: default;
+    }
+  }
+
+  &[class^="icon-"], &[class*=" icon-"] {
+    padding-left: $button-size * 1.333;
+
+    &:before {
+      position: absolute;
+      top: 50%;
+      left: $button-padding;
+      margin-top: -#{$button-padding / 2};
+      width: $button-padding;
+      height: $button-padding;
+      line-height: $button-padding;
+    }
+  }
+
+  &.icon-right {
+    padding-left: $button-padding;
+    padding-right: $button-size;
+
+    &:before {
+      left: auto;
+      right: $button-padding / 2;
+    }
+  }
+
+  &.icon-only {
+    width: $button-size;
+    padding: 0;
+  }
+}
+
+input[type="submit"] {
+  &:hover { 
+    @include opacity(0.7);
+  }
+}
+
+.right_button {
+  @extend .button;
+  float: right;
+  margin-left: 0.5em;
+}
+
+.buttons {
+
+  &.tab-buttons {
+    margin: $button-size auto 0;
+    text-align: center;
+  }
+
+  .button {
+    margin: 0;
+    border-left-width: 0;
+    border-radius: 0;
+
+    &:first-child {
+      border-left-width: 1px;
+      @include border-left-radius($radius);
+    }
+
+    &:last-child, &.last-child {
+      @include border-right-radius($radius);
+    }
+  }
+}
+
+.outline_button {
+  @extend .button;
+}
+
+@media screen and (max-width: $breakpoint-medium) {
+  .global-nav, .global-actions {
+    &.buttons {
+      margin: 0;
+      .button {
+        &[class^="icon-"], &[class*=" icon-"] {
+          width: $button-size*2 !important;
+          &:before {
+            text-indent: $button-size*0.3 !important;
+            font-size: $font-size*1.25;
+          }
+        }
+      }
+    }
+  }
+}

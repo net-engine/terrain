@@ -1,0 +1,21 @@
+.position_card {
+  @extend .project_card;
+  width: 25% !important;
+  padding-left: $gutter / 2 !important;
+  padding-right: $gutter / 2 !important;
+  &:nth-child(4n+4) { 
+    padding-right: 0 !important;
+  }
+  &:nth-child(4n+1) {
+    padding-left: 0 !important;
+  }
+  & > .inner {
+    padding: $line-height;
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    @extend %black_white_light-grey;
+  }
+  .position_description {
+    margin-bottom: $line-height;
+  }
+}

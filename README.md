@@ -1,6 +1,6 @@
 # Trove
 
-TODO: Write a gem description
+A collection of structural sass & coffeescript. [https://github.com/net-engine/trove](https://github.com/net-engine/trove)
 
 ## Installation
 

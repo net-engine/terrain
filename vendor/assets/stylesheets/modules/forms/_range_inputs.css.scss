@@ -1,0 +1,67 @@
+// Range Inputs
+
+input[type="range"] {
+  border: none;
+  height: 1em;
+  border-radius: 0.5em;
+  -webkit-appearance: none;
+}
+
+input[type="range"]:hover {
+  -webkit-appearance: none;
+}
+
+input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  border-radius: 50%;
+  width: 0.8em;
+  height: 0.8em;
+}
+
+input[type="range"]::-webkit-slider-thumb:hover {
+  -webkit-appearance: none;
+}
+
+.ui-slider {
+  position: relative;
+  text-align: left;
+}
+.ui-slider-horizontal {
+  height: 1.4em;
+  border: 1px solid;
+  margin: 0;
+  margin-bottom: -0.4em;
+  @include border-radius(0.7em);
+}
+.ui-slider-handle {
+  border: 1px solid;
+}
+
+.ui-slider-horizontal .ui-slider-handle {
+  top: 0.05em;
+  margin-left: -.5em;
+  outline: none;
+}
+
+.ui-slider .ui-slider-handle {
+  position: absolute;
+  z-index: 2;
+  width: 1em;
+  height: 1em;
+  cursor: default;
+  @include border-radius(50%);
+}
+
+.slider-with-input {
+  .slider {
+    display: inline-block;
+    @include box-sizing(border-box);
+    width:60%;
+    margin-right: 10%;
+  }
+  input {
+    display: inline-block;
+    @include box-sizing(border-box);
+    width:30%;
+  }
+}

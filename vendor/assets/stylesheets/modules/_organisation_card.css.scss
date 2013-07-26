@@ -1,0 +1,29 @@
+.organisation_card, .organisation_project_card {
+  h3 {
+    min-height: $line-height * 2;
+  }
+  .hero {
+    height: 12em;
+    margin-bottom: $line-height;
+    @extend %white_black;
+    position: relative;
+  }
+  
+  .meta {
+    font-family: $sans-stack;
+    font-size: 0.9em;
+    font-weight: 500;
+  }
+}
+
+.organisation_project_card {
+  .project_description {
+    margin-bottom: $line-height;
+  }
+  & > .inner {
+    padding: $line-height;
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    @extend %black_white_light-grey;
+  }
+}

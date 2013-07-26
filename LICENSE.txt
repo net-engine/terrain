@@ -1,4 +1,4 @@
-Copyright (c) 2013 Rowan Hogan
+Copyright (c) 2013 Rowan Hogan, Brad Parker, et al.
 
 MIT License
 

@@ -1,0 +1,21 @@
+// --- Box --- //
+
+.box {
+  margin-bottom: $line-height;
+  padding: $line-height;
+  position: relative;
+
+  &.no_margin {
+    margin-bottom: 0;
+  }
+}
+
+.box-section {
+  padding: $line-height;
+  border-bottom-width: 1px; 
+  border-bottom-solid: solid;
+
+  &:last-child, &.last {
+    margin-bottom: $line-height;
+  }
+}

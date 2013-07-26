@@ -1,0 +1,22 @@
+body > section.container > section.create_form {
+  @extend .box;
+  max-width: 20em;
+  margin: 0 auto;
+  @extend %white_background;
+  @extend %mid_grey_border;
+  padding-bottom: 3em;
+}
+
+form input { margin-bottom: 0.75em }
+
+form footer {
+  border-top-width: 1px;
+  border-top-style: solid;
+  @extend %light_grey_border;
+  padding-top: $line-height / 2;
+  margin-top: $line-height / 3;
+  min-height: $line-height * 1.25;
+  ul {
+    margin-bottom: 0;
+  }
+}
