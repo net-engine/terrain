@@ -2,9 +2,9 @@
 
 // Shades and tints
 
-$white:                       darken(white, 3%)     !default;
+$white:                       white                 !default;
 $off-white:                   darken($white, 5%)    !default;
-$black:                       lighten(black, 20%)   !default;
+$black:                       black                 !default;
 $light-grey:                  lighten($black, 75%)  !default;
 $mid-grey:                    lighten($black, 68%)  !default;
 $dim-grey:                    lighten($black, 50%)  !default;
