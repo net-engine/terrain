@@ -4,25 +4,17 @@ $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
 
 require 'trove/version'
 
-Gem::Specification.new do |spec|
-  spec.name          = "trove"
-  spec.version       = Trove::VERSION
-  spec.authors       = ["NetEngine"]
-  spec.email         = ["rowan@netengine.com.au"]
-  spec.description   = "A collection of structural sass & coffeescript."
-  spec.summary       = "A collection of structural sass & coffeescript."
-  spec.homepage      = "http://github.com/net-engine/trove"
-  spec.license       = "MIT"
-
-  spec.files = Dir["{app,config,db,lib}/**/*"] + ["MIT-LICENSE", "Rakefile", "README.md"]
-  spec.files = Dir["{lib,vendor}/**/*"] + ["MIT-LICENSE", "README.md"]
-  spec.files         = `git ls-files`.split($/)
-  spec.executables   = spec.files.grep(%r{^bin/}) { |f| File.basename(f) }
-  spec.test_files    = spec.files.grep(%r{^(test|spec|features)/})
-  spec.require_paths = ["lib"]
-
-  spec.add_dependency 'compass-rails'
-  spec.add_dependency 'sass-rails'
-  spec.add_dependency 'coffee-rails'
+Gem::Specification.new do |s|
+  s.name          = "trove"
+  s.version       = Trove::VERSION
+  s.authors       = ["NetEngine"]
+  s.email         = ["rowan@netengine.com.au"]
+  s.description   = "A collection of structural sass & coffeescript."
+  s.summary       = "A collection of structural sass & coffeescript."
+  s.homepage      = "http://github.com/net-engine/trove"
+  s.license       = "MIT"
+  s.files         = Dir["{lib,vendor}/**/*"] + ["MIT-LICENSE", "README.md"]
+  s.test_files    = s.files.grep(%r{^(test|spec|features)/})
+  s.require_paths = ["lib"]
 end
 
