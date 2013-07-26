@@ -7,10 +7,6 @@ body {
   font-weight: 300;
 }
 
-body.public {
-  font-family: $serif-stack;
-}
-
 h1, h2, h3, h4, h5, h6 {
   font-weight: 700;
   line-height: 1.2em;
@@ -19,21 +15,15 @@ h1, h2, h3, h4, h5, h6 {
   &:last-child { margin-bottom: 0; }
 }
 
-.public {
-  h1, h2, h3, h4, h5, h6 {
-    font-family: $public-sans-stack;
-  }
-}
-
-h1 { 
-  font-weight: 400; 
+h1 {
+  font-weight: 400;
   font-size: $line-height * 1.8;
 }
 
 h1 + h2 { margin-top: 0 }
 h2 + h3 { margin-top: 0 }
 
-h2 { 
+h2 {
   font-weight: 600;
   font-size: $line-height;
 }
@@ -47,12 +37,15 @@ h3 {
 h4 {
   font-size: 0.8em;
   font-weight: 700;
-  text-transform: uppercase; 
+  text-transform: uppercase;
   margin-bottom: $line-height / 2;
 }
 
-p { margin-bottom: $line-height; }
-p:last-child { margin-bottom: 0; }
+p {
+  margin-bottom: $line-height;
+
+  &:last-child { margin-bottom: 0; }
+}
 
 strong, b { font-weight: bold; }
 
@@ -67,9 +60,8 @@ hr {
   height: $line-height / 3;
   line-height: $line-height / 2;
   margin-bottom: $line-height / 2;
-  &:before {
-    content: "–";
-  }
+
+  &:before { content: "–"; }
 }
 
 label {
@@ -78,15 +70,15 @@ label {
   font-weight: 400;
   vertical-align: middle;
   font-family: $sans-stack;
-} 
+}
 
 .public label { font-family: $public-sans-stack; }
 
-blockquote { 
+blockquote {
   padding-left: 2em;
   position: relative;
   font-style: italic;
-  
+
   &:before {
     content: "\201C";
     position: absolute;
