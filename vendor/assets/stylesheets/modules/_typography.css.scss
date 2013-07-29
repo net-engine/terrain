@@ -1,14 +1,17 @@
 // -- Typography -- //
 
-body {
+html {
   line-height: $line-height;
   font-size: $font-size;
-  font-family: $sans-stack;
-  font-weight: 300;
+  font-family: $serif-stack;
+  font-weight: 400;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
 }
 
 h1, h2, h3, h4, h5, h6 {
   font-weight: 700;
+  font-family: $sans-stack;
   line-height: 1.2em;
   margin: $line-height 0 $line-height / 2;
   &:first-child { margin-top: 0; }
@@ -71,8 +74,6 @@ label {
   vertical-align: middle;
   font-family: $sans-stack;
 }
-
-.public label { font-family: $public-sans-stack; }
 
 blockquote {
   padding-left: 2em;

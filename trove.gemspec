@@ -16,5 +16,6 @@ Gem::Specification.new do |s|
   s.files         = Dir["{lib,vendor}/**/*"] + ["MIT-LICENSE", "README.md"]
   s.test_files    = s.files.grep(%r{^(test|spec|features)/})
   s.require_paths = ["lib"]
-end
 
+  gem.add_dependency 'compass'
+end

@@ -5,7 +5,7 @@ ol, ul, dir, menu {
   padding: 0;
   margin-bottom: $line-height;
   list-style: none;
-  li { 
+  li {
     display: block;
     padding-left: $line-height;
     position: relative;
@@ -22,9 +22,9 @@ ol, ul, dir, menu {
 }
 
 .with_icon {
-  padding-left: $line-height * 1.5; 
+  padding-left: $line-height * 1.5;
   position: relative;
-  
+
   &:before {
     display: block;
     position: absolute;
@@ -43,8 +43,8 @@ ol, ul, dir, menu {
   li:first-child:before { top: 0; }
 }
 
-ol.icon_list li:before { 
-  font-family: $sans-stack; 
+ol.icon_list li:before {
+  font-family: $sans-stack;
 };
 
 ul {
@@ -54,18 +54,18 @@ ul {
     padding-left: 0;
     &:before { content: ""; }
   }
-} 
+}
 
 ol {
   list-style: decimal;
   counter-reset: item;
   li:before {
-    content: counter(item); 
+    content: counter(item);
     counter-increment: item;
   }
 }
 
-dir { 
+dir {
   list-style: none;
   li:before {
     content: "»";
@@ -94,8 +94,6 @@ dl {
   li {
     border-top-width: 1px;
     border-top-style: solid;
-    @extend %black_transparent_light-grey; 
+    @extend %black_transparent_light-grey;
   }
 }
-
-.public .meta ul { font-family: $public-sans-stack; }
