@@ -34,8 +34,16 @@ module.exports = function(grunt) {
     },
     styleguide: {
       dist: {
+        options: {
+          framework: {
+            name: 'styledocco',
+          },
+          template: {
+            include: ['dist/stylesheets/style.css']
+          }
+        },
         files: {
-          'docs': 'source/sass/*.scss'
+          'docs': 'source/sass'
         }
       }
     }
@@ -50,4 +58,5 @@ module.exports = function(grunt) {
   grunt.option('force', true);
 
   grunt.registerTask('default', ['compass', 'watch']);
+  grunt.registerTask('build', ['compass', 'styleguide', 'gh-pages']);
 }

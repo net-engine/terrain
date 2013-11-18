@@ -1,3 +1,10 @@
+<<<<<<< HEAD
+=======
+// A button
+//
+// <button>Submit</button>
+
+>>>>>>> Custom docs.jade override in node module
 %button {
   position: relative;
   display: inline-block;
@@ -42,8 +49,29 @@
   }
 }
 
+<<<<<<< HEAD
 // %buttons {
 //   @extend .clearfix;
+=======
+
+.button, button, input[type="submit"], input[type="button"] {
+  @extend %button;
+}
+
+input[type="submit"], button[type='submit'], .submit-button, .primary-button {
+  background: $color-submit;
+
+  &:hover {
+    background-color: darken($color-submit, 15%);
+  }
+}
+
+
+
+
+%buttons {
+  @extend .clearfix;
+>>>>>>> Custom docs.jade override in node module
 
 //   %button {
 //     float: left;
@@ -64,6 +92,7 @@
 //   }
 // }
 
+<<<<<<< HEAD
 // .buttons { @extend %buttons; }
 
 .button, button, input[type="submit"], input[type="button"] {
@@ -77,3 +106,6 @@ input[type="submit"], button[type='submit'], .submit-button, .primary-button {
     background-color: darken($color-submit, 15%);
   }
 }
+=======
+.buttons { @extend %buttons; }
+>>>>>>> Custom docs.jade override in node module
