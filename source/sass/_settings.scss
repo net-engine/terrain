@@ -1,13 +1,18 @@
-<<<<<<< HEAD
-
 $font-family: 'Source Sans Pro', 'Helvetica Neue', sans-serif !default;
-$font-family-body: $font-family;
+$font-family-body: $font-family !default;
 $font-family-headings: $font-family !default;
 $font-family-input: $font-family !default;
 $font-family-icons: 'Icons' !default;
 $font-family-mono: 'Menlo' !default;
 
+$font-size: 16px;
+
+$font-weight-bold: 400;
+$font-weight-medium: 500;
+$font-weight-normal: 700;
+
 $line-height: 1.7em !default;
+$gutter: $line-height !default;
 
 
 // Colours

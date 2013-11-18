@@ -18,7 +18,7 @@ textarea {
   outline: 0;
   box-sizing: border-box;
   box-shadow: none;
-  font-family: $font-family-interactive;
+  font-family: $font-family-input;
   font-size: $font-size;
   font-weight: 300;
   border-width: 1px;
@@ -34,20 +34,20 @@ textarea {
 }
 ::-webkit-input-placeholder {
   font-weight: $font-weight-normal;
-  font-family: $font-family-interactive;
+  font-family: $font-family-input;
 }
 
 :-moz-placeholder {
   font-weight: $font-weight-normal;
-  font-family: $font-family-interactive;
+  font-family: $font-family-input;
 }
 
 ::-moz-placeholder {
   font-weight: $font-weight-normal;
-  font-family: $font-family-interactive;
+  font-family: $font-family-input;
 }
 
 :-ms-input-placeholder {  
   font-weight: $font-weight-normal;
-  font-family: $font-family-interactive;
+  font-family: $font-family-input;
 }

@@ -3,14 +3,16 @@
 
 @import 'settings';
 
+@import 'helpers/layout_helpers';
+
 @import 'color/base_palette',
         'color/extended_palette',
         'color/tints_and_shades';
 
-@import 'typography/typefaces',
-        'typography/icons',
+@import 'typography/body',
         'typography/headings',
         'typography/hierarchy',
+        'typography/icons',
         'typography/vertical_rhythm',
         'typography/lists';
 
