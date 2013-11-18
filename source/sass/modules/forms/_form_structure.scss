@@ -1,0 +1,33 @@
+body > section.container > section.create_form {
+  @extend .box;
+  max-width: 20em;
+  margin: 0 auto;
+  @extend %white_background;
+  @extend %mid_grey_border;
+  padding-bottom: 3em;
+}
+
+form input { margin-bottom: 0.75em }
+
+form footer {
+  border-top-width: 1px;
+  border-top-style: solid;
+  @extend %black_transparent_light-grey;
+  padding-top: $gutter / 2;
+  min-height: $line-height * 2;
+  position: relative;
+  ul {
+    margin-bottom: 0;
+  }
+
+  .top_right {
+    right: 0;
+  }
+
+  fieldset {
+    @extend .button;
+    @include transition(none);
+    input[type="checkbox"] { @extend %white; }
+    padding-bottom: $button-padding * 0.6;
+  }
+}

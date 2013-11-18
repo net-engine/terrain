@@ -1,0 +1,86 @@
+// -- Colors -- //
+
+// Shades and tints
+
+$white:                       darken(white, 3%);
+$black:                       lighten(black, 10%);
+
+// Color Variables
+
+$blue:                        #51ADED;
+$yellow:                      #FEFEA5;
+$green:                       rgb(58,165,58);
+$red:                         #F5505A;
+
+$primary:                     $red;
+$light-primary:               lighten($blue, 20%);
+$secondary:                   $blue;
+$light-secondary:             lighten($secondary, 20%);
+$tertiary:                    $green;
+$light-tertiary:              lighten($tertiary, 20%);
+$quaternary:                  $yellow;
+$light-quaternary:            lighten($quaternary, 20%);
+
+$palette: "white"             $white, 
+          "off-white"         darken($white, 5%), 
+          "light-grey"        lighten($black, 70%), 
+          "mid-grey"          lighten($black, 65%), 
+          "dim-grey"          lighten($black, 50%), 
+          "dark-grey"         lighten($black, 7.5%),
+          "black"             $black, 
+          "primary"           $primary,
+          "light-primary"     $light-primary,
+          "secondary"         $secondary,
+          "light-secondary"   $light-secondary,
+          "tertiary"          $tertiary,
+          "light-tertiary"    $light-tertiary,
+          "quaternary"        $quaternary,
+          "light-quaternary"  $light-quaternary,
+          "transparent"       transparent;
+
+// Build Color Schemes - .<foreground>_<background>_<border> {}
+
+@each $color1 in $palette {
+  @if $color1 not transparent {
+    %#{ nth( $color1, 1 ) } { color: nth( $color1, 2 ) }
+  }
+  
+  @each $color2 in $palette {
+    @if $color1 not $color2 {
+      %#{ nth( $color1, 1 ) }_#{ nth( $color2, 1 ) } {
+        color: nth( $color1, 2 );
+        background-color: nth( $color2, 2 );
+      }
+    }
+  
+    @each $color3 in $palette {
+      @if $color2 not $color3 {
+        %#{ nth( $color1, 1 ) }_#{ nth( $color2, 1 ) }_#{ nth( $color3, 1 ) } {
+          color: nth( $color1, 2 );
+          background-color: nth( $color2, 2 );
+          border-color: nth( $color3, 2 ); 
+        }
+      }
+    }
+  }
+}
+
+// Custom Sass Functions
+// by Rowan Hogan
+// :)
+
+@function dull($color, $amount: 10%) {
+  @return desaturate(darken($color, $amount), $amount)
+}
+
+@function deepen($color, $amount: 10%) {
+  @return saturate(darken($color, $amount), $amount)
+}
+
+@function brighten($color, $amount: 10%) {
+  @return saturate(lighten($color, $amount), $amount)
+}
+
+@function fade($color, $amount: 10%) {
+  @return desaturate(lighten($color, $amount), $amount)
+}

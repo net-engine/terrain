@@ -1,6 +1,4 @@
 .rvmrc
 .sass-cache
 .rbenv-version
-bower_components/**/*
-!bower_components/**/*.js
-!bower_components/**/*.json
+node_modules

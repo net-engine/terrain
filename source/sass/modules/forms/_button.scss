@@ -1,0 +1,165 @@
+// Buttons
+
+$button-size: $line-height;
+$button-padding: $button-size / 2;
+
+.button, button, input[type="submit"], input[type="button"] {
+  font-family: $sans-stack;
+  position: relative;
+  display: inline-block;
+  vertical-align: top;
+  padding: ($button-padding / 2) $button-padding;
+  margin-top: 0;
+  margin-right: 0.25em;
+  width: auto;
+  -webkit-font-smoothing: antialiased;
+  text-decoration: none;
+  border-radius: $radius;
+  @include box-sizing(border-box);
+  border: none;
+  font-size: $font-size;
+  font-weight: 600;
+  @include transition(all 0.2s linear);
+  @extend %white_dim-grey;
+
+  &:hover {
+    text-decoration: none;
+    cursor: pointer;
+    @extend %white_secondary;
+  }
+
+  &:active { opacity: .75; }
+
+  &[disabled="disabled"] {
+    &:hover {
+      cursor: default;
+    }
+  }
+
+  &[class^="icon-"], &[class*=" icon-"] {
+    padding-left: $button-size * 1.333;
+
+    &:before {
+      position: absolute;
+      top: 50%;
+      left: $button-padding;
+      margin-top: -#{$button-padding / 2};
+      width: $button-padding;
+      height: $button-padding;
+      line-height: $button-padding;
+    }
+  }
+
+  &.icon-right {
+    padding-left: $button-padding;
+    padding-right: $button-size;
+
+    &:before {
+      left: auto;
+      right: $button-padding / 2;
+    }
+  }
+
+  &.icon-only {
+    width: $button-size + $button-padding;
+    height: $button-size + $button-padding;
+    padding: 0;
+    &:before {
+      width: $button-size;
+      left: $button-padding / 2;
+      right: $button-padding / 2;
+      text-align: center;
+    }
+  }
+}
+
+input[type="submit"] {
+  @extend %white_secondary;
+  padding-bottom: $button-padding * 0.6;
+  font-size: 1.2em;
+  font-weight: 400;
+  &:hover { 
+    @extend %white_primary;
+  }
+}
+
+.file_upload_button::-webkit-file-upload-button {
+  -webkit-appearance: none;
+  @extend .button;
+}
+
+.right_button {
+  @extend .button;
+  float: right;
+  margin-left: 0.5em;
+}
+
+.buttons {
+
+  &.tab-buttons {
+    margin: $button-size auto 0;
+    text-align: center;
+  }
+
+  .button {
+    margin: 0;
+    border-left-width: 0;
+    border-radius: 0;
+
+    &:first-child {
+      border-left-width: 1px;
+      @include border-left-radius($radius);
+    }
+
+    &:last-child, &.last-child {
+      @include border-right-radius($radius);
+    }
+  }
+}
+
+.ui-button-text [class*="icon-"]:before {
+  margin-right: 0;
+}
+
+.ui-button {
+  &.ui-state-active {
+    @extend %white_primary;
+  }
+}
+
+.indicator {
+  @extend .button;
+  pointer-events: none;
+  &.active {
+    @extend %white_primary;
+    @extend .icon-checkmark;
+    padding-left: $button-size * 1.333;
+    &:before {
+      font-family: "Icomoon";
+      position: absolute;
+      top: 50%;
+      left: $button-padding;
+      margin-top: -#{$button-padding / 2};
+      width: $button-padding;
+      height: $button-padding;
+      line-height: $button-padding;
+    }
+  }
+}
+
+@media screen and (max-width: $breakpoint-medium) {
+  .global-nav, .global-actions {
+    &.buttons {
+      margin: 0;
+      .button {
+        &[class^="icon-"], &[class*=" icon-"] {
+          width: $button-size*2 !important;
+          &:before {
+            text-indent: $button-size*0.3 !important;
+            font-size: $font-size*1.25;
+          }
+        }
+      }
+    }
+  }
+}

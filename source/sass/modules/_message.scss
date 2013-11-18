@@ -1,0 +1,22 @@
+// As banner
+
+.notice, .alert, .flash_error {
+  position: fixed;
+  z-index: $z-index-flash;
+  top: 0;left:0;right:0;
+  padding: $line-height * 1.5;
+  text-align: center;
+  @include box-sizing(border-box);
+  @extend .fadeInDown;
+  @include transition(all .5s linear);
+  @extend %white_primary;
+
+  &:hover {
+    cursor: pointer;
+  }
+
+  &.hidden {
+    @extend .fadeOutUp;
+    @include transition(all .5s linear);
+  }
+}

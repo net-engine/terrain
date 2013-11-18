@@ -1,0 +1,154 @@
+// -- Grid -- //
+
+// Widths
+
+@mixin col_span( $span, $total ) {
+
+  @include box-sizing( border-box );
+  display: inline-block;
+  vertical-align: top;
+  width: 100% / $total * $span;
+  margin-right: -0.25em;
+  padding: 0 $gutter / 2;
+
+  &.first { padding-left: 0; }
+  &.last { padding-right: 0; }
+
+}
+
+@for $i from 1 through 24 {
+  .span_#{$i} {
+    @include col_span( $i, 24 );
+  }
+}
+
+// Easy peasy
+
+.one_half {
+  @extend .span_12;
+  &:nth-child(odd) { 
+    padding-left: 0; 
+    padding-right: $gutter / 2;
+  }
+  &:nth-child(even) { 
+    padding-right: 0; 
+    padding-left: $gutter / 2;
+  }
+
+  &.number_0, &.number_2 { padding-left: 0 }
+  &.number_1, &.number_3 { padding-right: 0 }
+  
+  &.first {
+    padding-left: 0;
+    padding-right: $gutter / 2;
+  }
+
+  &.last {
+    padding-right: 0;
+    padding-left: $gutter / 2;
+  }
+  &.snug { 
+    padding: 0 $gutter / 4; 
+    &:first-child, &.first, &:nth-child(odd) { padding-left: 0; }
+    &:last-child, &.last, &:nth-child(even) { padding-right: 0; }
+    &:nth-child(odd) { 
+      padding-left: 0; 
+      padding-right: $gutter / 4;
+    }
+    &.first {
+      padding-left: 0;
+      padding-right: $gutter / 4;
+    }
+
+    &.last {
+      padding-right: 0;
+      padding-left: $gutter / 4;
+    }
+  }
+}
+
+// Hmm a little more complex
+
+.one_third {
+  @extend .span_8;
+  padding: 0 $gutter / 3;
+  &:last-child { padding: 0 $gutter / 3; }
+  &:nth-child(3n+3) { 
+    padding-right: 0;
+    padding-left: $gutter * 0.667;
+  }
+  &:nth-child(3n+1) { 
+    padding-left: 0;
+    padding-right: $gutter * 0.667;
+  }
+  &.last { padding-right: 0 }
+}
+
+.two_thirds {
+  @extend .span_16;
+}
+
+// Will need to figure this out likewise
+
+.one_quarter {
+  @extend .span_6;
+}
+
+.three_quarters {
+  @extend .span_18;
+}
+
+.one_fifth {
+  @include col_span( 1, 5 );
+}
+.two_fifths {
+  @include col_span( 2, 5 ); 
+}
+.three_fifths {
+  @include col_span( 3, 5 ); 
+}
+.four_fifths {
+  @include col_span( 4, 5 ); 
+}
+
+// Responsive
+
+@media screen and (max-width: $breakpoint-medium) {
+  .one_third, .two_thirds, .one_quarter, .three_quarters {
+    width: 50%;
+    padding-left: $gutter / 2;
+    padding-right: $gutter / 2;
+    &:nth-child(odd) { padding-left: 0 }
+    &:nth-child(even) { padding-right: 0 }
+    &.with_icon { 
+      padding-left: 2.5em;
+      padding-right: $gutter;
+    }
+  }
+  
+  .one_half .one_quarter, .one_half .three_quarters {
+    padding-left: $gutter / 2;
+    padding-right: $gutter / 2;
+ 
+    &.first { padding-left: 0; }
+    &.last { padding-right: 0; }
+ 
+  }
+  
+  .one_half .one_quarter { width: 25%; }
+  .one_half .three_quarters { width: 75%; }
+}
+
+@media screen and (max-width: $breakpoint-small) {
+  .one_half, .one_third, .two_thirds, .one_quarter, .three_quarters {
+    width: 100%;
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .one_half .one_quarter {
+    width: 25%;
+  }
+  .one_half .three_quarters {
+    width: 75%;
+  }
+}

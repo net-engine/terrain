@@ -1,0 +1,128 @@
+// Structure
+
+html, body {
+  height: 100%;
+}
+
+// Main
+
+#wrap {
+  min-height: 100%;
+  height: auto !important;
+  height: 100%;
+  margin-bottom: -#{$footer-height};
+}
+
+#push { height: $footer-height; }
+
+.public > footer {
+  @include box-sizing(border-box);
+  min-height: $footer-height;
+  position: relative;
+}
+
+img {
+  width: 100%;
+  max-width: auto;
+}
+
+body {
+  @extend %black_white;
+}
+
+.public #wrap > article {
+  position: relative;
+}
+
+// Sections
+
+section {
+  padding: $line-height * 2 $gutter $line-height * 3;
+  position: relative;
+}
+
+// Public
+
+.public {
+  & > header {
+    position: fixed;
+    left: 0; right: 0;
+    top: 0;
+    min-height: $header-height;
+    z-index: $z-index-global-header;
+
+    nav {
+      margin-left: 25%;
+      padding-left: $gutter;
+
+      ul {
+        @extend .no_dot;
+        margin-bottom: 0;
+        padding: ( $line-height * 1.25 ) 0;
+        margin-left: - $gutter * 0.333;
+      }
+    }
+
+  }
+
+  & #wrap > article {
+    margin-top: $header-height;
+  }
+
+  section.hero { margin-top: -$header-height }
+
+  section {
+    padding-left: $gutter * 3.333;
+    padding-right: $gutter * 3.333;
+  }
+
+  section.filter {
+    @extend .one_quarter;
+    position: absolute;
+    padding: $gutter * 2 $gutter;
+    padding-left: $gutter !important;
+  }
+
+  section.filtered_content {
+    @extend .three_quarters;
+    margin-left: 25%;
+    padding: $gutter * 2 $gutter;
+    padding-right: $gutter !important;
+  }
+
+  section.sub_section {
+    @extend %black_off-white;
+  }
+
+  section.main_content {
+    @extend .one_half;
+    margin-left: 25%;
+    padding: $line-height * 2 $gutter $line-height * 2;
+    padding-left: $gutter !important;
+  }
+}
+
+.meta_item {
+  margin-bottom: $line-height;
+}
+
+// Admin
+
+.admin > header {
+  @extend .span_5;
+  padding-left: 0;
+}
+
+.admin > article {
+  @extend .span_16;
+  padding-right: 0;
+  
+}
+
+section > header {
+  border-bottom-width: 1px;
+  border-bottom-style: solid;
+  @extend %black_transparent_mid-grey;
+  margin-bottom: $line-height; 
+  padding-bottom: $line-height;
+}

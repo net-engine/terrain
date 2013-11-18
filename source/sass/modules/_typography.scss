@@ -1,0 +1,138 @@
+// -- Typography -- //
+
+body {
+  line-height: $line-height;
+  font-size: $font-size;
+  font-family: $sans-stack;
+  font-weight: 300;
+}
+
+body.public {
+  font-family: $serif-stack;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 700;
+  line-height: 1.2em;
+  margin: $line-height 0 $line-height / 2;
+  &:first-child { margin-top: 0; }
+  &:last-child { margin-bottom: 0; }
+}
+
+.public {
+  h1 { font-family: $serif-stack }
+  h2, h3, h4, h5, h6 {
+    font-family: $public-sans-stack;
+  }
+}
+
+h1 { 
+  font-weight: 400; 
+  font-size: $line-height * 1.5;
+}
+
+h1 + h2 { margin-top: 0 }
+h2 + h3 { margin-top: 0 }
+
+h2 { 
+  font-weight: 600;
+  font-size: $line-height;
+  margin-bottom: $line-height;
+}
+
+h3 {
+  font-weight: 600;
+  line-height: $line-height;
+  margin-bottom: $line-height / 2;
+}
+
+h4 {
+  font-size: 0.8em;
+  font-weight: 700;
+  text-transform: uppercase; 
+  margin-bottom: $line-height / 2;
+}
+
+header > h1, header > h2 {
+  margin: 0;
+}
+
+.public {
+  h1, h2 { font-weight: 300; }
+  h1 {
+    font-size: $line-height * 2;
+  }
+}
+
+p { margin-bottom: $line-height; }
+p:last-child { margin-bottom: 0; }
+
+strong, b { font-weight: bold; }
+
+em, i { font-style: italic; }
+
+code, pre, var { font-family: monospace; }
+
+hr {
+  display: block;
+  border: none;
+  background: none;
+  height: $line-height / 3;
+  line-height: $line-height / 2;
+  margin-bottom: $line-height / 2;
+  &:before {
+    content: "–";
+  }
+}
+
+.divider {
+  border-bottom-width: 1px;
+  border-bottom-style: solid;
+  @extend %transparent_transparent_light-grey;
+  height: 0;
+  margin-bottom: $line-height;
+}
+
+label {
+  font-size: 0.8em;
+  text-transform: uppercase;
+  font-weight: 400;
+  vertical-align: middle;
+  font-family: $sans-stack;
+} 
+
+.public label { font-family: $public-sans-stack; }
+
+blockquote { 
+  padding-left: 2em;
+  position: relative;
+  font-style: italic;
+  
+  &:before {
+    content: "\201C";
+    position: absolute;
+    left: 0;
+    top: 0.15em;
+    font-size: 3em;
+    font-style: normal;
+  }
+}
+
+// Links
+
+a {
+  text-decoration: none;
+  @include transition(all .2s linear);
+  @extend %primary_transparent_primary;
+  &:hover {
+    @extend %secondary_transparent_secondary;
+  }
+}
+
+small { font-size: 0.8em; }
+
+// Special Classes
+
+.text_right {
+  text-align: right;
+}

@@ -1,0 +1,17 @@
+.applications{
+  .unread{
+  }
+
+  .read{
+    @extend %dark-grey;
+  }
+
+  .accepted{
+    @extend %primary;
+  }
+
+  .refused{
+    @extend %mid-grey;
+    text-decoration: line-through;
+  }
+}

@@ -1,0 +1,31 @@
+// Positioning
+
+.top_right {
+  position: absolute;
+  top: $line-height;
+  right: $gutter;
+
+  &.no_pad_right {
+    right: 0;
+  }
+
+  &.no_pad_top {
+    top: 0;
+  }
+
+  &.no_pad {
+    right: 0; top: 0;
+  }
+
+  &.in_header {
+    top: $gutter;
+  }
+}
+
+.relative {
+  position: relative;
+}
+
+.space_top {
+  margin-top: $line-height;
+}

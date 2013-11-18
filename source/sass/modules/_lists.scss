@@ -1,0 +1,104 @@
+// -- Lists -- //
+
+ol, ul, dir, menu {
+  font-size: inherit;
+  padding: 0;
+  margin-bottom: $line-height;
+  list-style: none;
+  li { 
+    display: block;
+    padding-left: $line-height;
+    position: relative;
+    &:before {
+      display: block;
+      position: absolute;
+      left: 0; top: 0;
+      width: 1.5em;
+      line-height: $line-height;
+      font-weight: bold;
+    }
+  }
+  ul li:before { content: "-" }
+  &.meta {
+    font-family: $public-sans-stack;
+  }
+}
+
+.with_icon {
+  padding-left: $line-height * 1.5; 
+  position: relative;
+  
+  &:before {
+    display: block;
+    position: absolute;
+    left: 0; top: 0;
+    text-align: center;
+    font-weight: 400;
+    line-height: $line-height;
+    width: $line-height;
+    top: 0.1em;
+  }
+}
+
+.icon_list {
+  li { @extend .with_icon; }
+  li:before { top: $line-height / 2.5; }
+  li:first-child:before { top: 0; }
+}
+
+ol.icon_list li:before { 
+  font-family: $sans-stack; 
+};
+
+ul {
+  list-style: none;
+  li:before { content: "•"; }
+  &.no_dot li {
+    padding-left: 0;
+    &:before { content: ""; }
+  }
+} 
+
+ol {
+  list-style: decimal;
+  counter-reset: item;
+  li:before {
+    content: counter(item); 
+    counter-increment: item;
+  }
+}
+
+dir { 
+  list-style: none;
+  li:before {
+    content: "»";
+  }
+}
+
+dl {
+  list-style: none;
+  dt {
+    font-weight: 700;
+    font-size: 0.8em;
+    text-transform: uppercase;
+  }
+  dd {
+    margin-bottom: $line-height / 2;
+  }
+}
+
+.meta ul {
+  @extend .no_dot;
+
+  &.with_icon:before {
+    font-size: 1.333em;
+  }
+
+  li {
+    border-top-width: 1px;
+    border-top-style: solid;
+    @extend %black_transparent_light-grey; 
+  }
+}
+
+.public .meta ul { font-family: $public-sans-stack; }

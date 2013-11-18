@@ -1,0 +1,16 @@
+// -- Gradients -- //
+
+@mixin vertical-gradient($color1, $color2: darken($color1, 10%)) {
+  background-color: $color1;
+  @include background-image(linear-gradient(top, $color1 0%, $color2 100%));
+}
+
+@mixin reverse-vertical-gradient($color1, $color2: darken($color1, 10%)) {
+  background-color: $color2;
+  @include background-image(linear-gradient(bottom, $color1 0%, $color2 100%));
+}
+
+@mixin horizontal-gradient($color1, $color2: darken($color1, 15%)) {
+  background-color: $color1;
+  @include background-image(linear-gradient(left, $color1 0%, $color2 100%));
+}
