@@ -1,0 +1,25 @@
+.container {
+  max-width: $max-width;
+  padding: $gutter;
+
+  @if $center-layout {
+    margin-left: auto;
+    margin-right: auto; 
+  }
+}
+
+nav {}
+
+article {}
+
+aside {}
+
+header {}
+
+footer {}
+
+main {}
+
+iframe {
+  width: 100%;
+}

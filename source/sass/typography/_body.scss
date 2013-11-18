@@ -1,0 +1,67 @@
+html {
+  font-family: $font-family-body;
+  line-height: $line-height;
+}
+
+@if $baseline-grid {
+  body {
+    background-image: -webkit-linear-gradient(lightblue .05em, transparent .05em);
+    background-size: 100% $line-height;
+  }
+}
+
+a {}
+
+em, 
+cite, 
+i { font-style: italic; }
+
+b,
+strong { font-weight: $font-weight-bold; }
+
+small { font-size: 0.8em; }
+
+s { font-style: strike-through; }
+
+u { text-decoration: underline; }
+
+q {
+  &:before { content: '\0022'; }
+  &:after { content: '\0022'; }
+}
+
+dfn {}
+
+abbr {
+  cursor: help;
+  border-bottom: 1px dotted;
+}
+
+time {}
+
+pre,
+code,
+var,
+samp, 
+kbd { font-family: $font-family-mono; }
+
+sub {
+  font-size: 0.8em;
+  position: relative;
+  bottom: - $line-height / 6;
+}
+sup {
+  font-size: 0.8em;
+  position: relative;
+  top: - $line-height / 4;
+}
+
+mark {
+  // neutral highlight color
+}
+ins {
+  // cool highlight color
+}
+del {
+  // hot highlight color
+}

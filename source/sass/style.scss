@@ -9,11 +9,12 @@
 
 @import 'typography/typefaces',
         'typography/icons',
-        'typography/body',
         'typography/headings',
         'typography/hierarchy',
         'typography/vertical_rhythm',
         'typography/lists';
+
+@import 'media/images';
 
 @import 'layout/blocks',
         'layout/grid',

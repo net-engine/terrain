@@ -1,0 +1,37 @@
+ul, ol {
+  padding: 0;
+  margin-top: 0;
+}
+
+ol, ul:not(.no-dot) {
+  margin-bottom: $line-height;
+  li {
+    list-style: none;
+    display: block;
+    position: relative;
+    padding-left: 1.5em;
+
+    &:before {
+      position: absolute;
+      left:0;
+      line-height: $line-height;
+      top: 0;
+      width: 1em;
+      font-weight: bold;
+    }
+
+    ul li:before { content: '-' }
+  }
+}
+
+ul:not(.no-dot) li:before { content: "•"; }
+
+ol {
+  list-style: decimal;
+  counter-reset: item;
+
+  li:before {
+    content: counter(item) ". ";
+    counter-increment: item;
+  }
+}

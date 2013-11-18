@@ -1,0 +1,53 @@
+.absolute-top-left, 
+.absolute-top-right, 
+.fixed-top-left, 
+.fixed-top-right {
+  top: 0;
+
+  &.inset-one {
+    top: $line-height;
+  }
+}
+
+.absolute-top-right, 
+.fixed-top-right, 
+.absolute-bottom-right, 
+.fixed-bottom-right {
+  right: 0;
+
+  &.inset-one {
+    right: $line-height;
+  }
+}
+
+.absolute-bottom-left, 
+.fixed-bottom-left, 
+.absolute-bottom-right, 
+.fixed-bottom-right {
+  bottom: 0;
+
+  &.inset-one {
+    bottom: $line-height;
+  }
+}
+
+.absolute-bottom-left, 
+.fixed-bottom-left, 
+.absolute-top-left, 
+.fixed-top-left {
+  left: 0;
+}
+
+.absolute-top-left,
+.absolute-top-right,
+.absolute-bottom-left,
+.absolute-bottom-right { 
+  position: absolute; 
+}
+
+.fixed-top-left,
+.fixed-top-right,
+.fixed-bottom-left,
+.fixed-bottom-right { 
+  position: fixed; 
+}

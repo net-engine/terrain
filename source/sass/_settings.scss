@@ -1,28 +1,34 @@
+<<<<<<< HEAD
 
 $font-family: 'Source Sans Pro', 'Helvetica Neue', sans-serif !default;
-
+$font-family-body: $font-family;
 $font-family-headings: $font-family !default;
-
-$font-family_input: $font-family !default;
+$font-family-input: $font-family !default;
 $font-family-icons: 'Icons' !default;
+$font-family-mono: 'Menlo' !default;
 
-$line-height: 1.5em !default;
+$line-height: 1.7em !default;
 
 
 // Colours
 
 $color-primary: hsl(160, 75%, 50%);
-
 $color-primary-light: lighten($color-primary, 15%);
-
 $color-submit: $color-primary !default;
-
-
 $button-background-color: dimgrey !default;
 
 
-
 $radius: .15em;
+
+$breakpoint-small: 500px;
+$breakpoint-medium: 800px;
+$breakpoint-large: 1200px;
+
+$max-width: $breakpoint-medium;
+$center-layout: true;
+
+// Debugging
+$baseline-grid: true;
 
 
 //
