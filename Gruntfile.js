@@ -25,12 +25,28 @@ module.exports = function(grunt) {
           cssDir: 'dist/stylesheets'
         }
       }
+    },
+    'gh-pages': {
+      options: {
+        base: 'docs'
+      },
+      src: ['**']
+    },
+    styleguide: {
+      dist: {
+        files: {
+          'docs': 'source/sass/*.scss'
+        }
+      }
     }
   });
+
   grunt.loadNpmTasks('grunt-contrib-compass');
   grunt.loadNpmTasks('grunt-contrib-watch');
+  grunt.loadNpmTasks('grunt-gh-pages');
+  grunt.loadNpmTasks('grunt-styleguide');
 
-  //Making grunt default to force in order not to break the project.
+  // Making grunt default to force in order not to break the project.
   grunt.option('force', true);
 
   grunt.registerTask('default', ['compass', 'watch']);
