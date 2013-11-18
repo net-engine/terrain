@@ -3,10 +3,23 @@
 
 @import 'settings';
 
-@import 'modules/forms/button',
-        'modules/forms/checkboxes_and_radio_buttons',
-        'modules/forms/form_structure',
-        'modules/forms/range_inputs',
-        'modules/forms/text_inputs';
+@import 'color/base_palette',
+        'color/extended_palette',
+        'color/tints_and_shades';
 
-@import 'sections/globals';
+@import 'typography/typefaces',
+        'typography/body',
+        'typography/headings',
+        'typography/hierarchy',
+        'typography/vertical_rhythm',
+        'typography/lists';
+
+@import 'layout/blocks',
+        'layout/grid',
+        'layout/positioning';
+
+@import 'interactive/anchors',
+        'interactive/buttons',
+        'interactive/radio_buttons_and_checkboxes',
+        'interactive/selects',
+        'interactive/text_inputs';

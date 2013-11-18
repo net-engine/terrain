@@ -15,14 +15,14 @@ module.exports = function(grunt) {
       dist: {
         options: {
           sassDir: 'source/sass',
-          cssDir: 'dist/css',
+          cssDir: 'dist/stylesheets',
           environment: 'production'
         }
       },
       dev: {
         options: {
           sassDir: 'source/sass',
-          cssDir: 'dist/css'
+          cssDir: 'dist/stylesheets'
         }
       }
     }
