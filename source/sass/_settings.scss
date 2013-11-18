@@ -1,5 +1,28 @@
 
-$font-family-icons: 'Icons';
+$font-family: 'Source Sans Pro', 'Helvetica Neue', sans-serif !default;
+
+$font-family-headings: $font-family !default;
+
+$font-family_input: $font-family !default;
+$font-family-icons: 'Icons' !default;
+
+$line-height: 1.5em !default;
+
+
+// Colours
+
+$color-primary: hsl(160, 75%, 50%);
+
+$color-primary-light: lighten($color-primary, 15%);
+
+$color-submit: $color-primary !default;
+
+
+$button-background-color: dimgrey !default;
+
+
+
+$radius: .15em;
 
 
 //

@@ -1,0 +1,80 @@
+
+%button {
+  position: relative;
+  display: inline-block;
+  margin: 0;
+  padding: .25em .75em;
+  width: auto;
+  height: auto;
+  line-height: $line-height;
+  font-size: 100%;
+  font-weight: 600;
+  font-family: $font-family_input;
+  text-decoration: none;
+  -webkit-font-smoothing: antialiased;
+  color: white;
+  background-color: $button-background-color;
+  border: 0;
+  border-radius: $radius;
+  @include box-sizing(border-box);
+
+  &:hover {
+    text-decoration: none;
+    color: white;
+    cursor: pointer;
+    background-color: darken($button-background-color, 15%);
+  }
+
+  &:active { opacity: .75; }
+
+  &.active {
+    background-color: deepen($button-background-color, 25%);
+  }
+
+  &[disabled="disabled"], &[disabled="disabled"]:hover, &[disabled="disabled"]:active {
+    opacity: .5;
+    cursor: default;
+  }
+
+  &.icon-only {
+    width: $line-height;
+    height: $line-height;
+    padding: 0;
+  }
+}
+
+%buttons {
+  @extend .clearfix;
+
+  %button {
+    float: left;
+    margin: 0;
+    border-radius: 0;
+    border-left: thin solid rgba(black, .25);
+
+    &:focus { outline: 0; }
+
+    &:first-child {
+      border-left-width: 0;
+      @include border-left-radius($radius);
+    }
+
+    &:last-child, &.last-child {
+      @include border-right-radius($radius);
+    }
+  }
+}
+
+.buttons { @extend %buttons; }
+
+.button, button, input[type="submit"], input[type="button"] {
+  @extend %button;
+}
+
+input[type="submit"], button[type='submit'], .submit-button, .primary-button {
+  background: $color-submit;
+
+  &:hover {
+    background-color: darken($color-submit, 15%);
+  }
+}
