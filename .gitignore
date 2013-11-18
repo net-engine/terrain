@@ -2,3 +2,4 @@
 .sass-cache
 .rbenv-version
 node_modules
+node_modules/*
