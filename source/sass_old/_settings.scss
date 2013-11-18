@@ -1,0 +1,44 @@
+// Typography
+
+@import url('http://fonts.googleapis.com/css?family=Source+Sans+Pro');
+@import url(http://fonts.googleapis.com/css?family=Raleway:400,100,200,300,500,600,700);
+
+$font-size: 17px;
+$line-height: 1.6em;
+$sans-stack: 'Source Sans Pro', 'Helvetica', 'Verdana', 'Arial', sans-serif;
+$public-sans-stack: 'Raleway', 'Helvetica', 'Verdana', 'Arial', sans-serif;
+$serif-stack: 'aleo', 'Georgia', 'Times New Roman', serif;
+$mono-stack: 'Menlo', monospace;
+$gutter: $line-height * 1.5;
+
+// Z-index
+
+$z-index-flash: 5;
+$z-index-admin-header: 6;
+$z-index-global-header: 4;
+$z-index-icon: 1;
+
+// Structure
+
+$max-width: 36em;
+$app-max-width: $max-width * 1.5;
+
+$size: 2em;
+$radius: 2px;
+$radius-subtle: $radius / 2;
+
+$hero_height: 16em;
+$header-height: $line-height * 4;
+
+$footer-height: $line-height * 8;
+
+// Repsonsive
+
+$breakpoint-mobile: 690px;
+$breakpoint-small: 768px;
+$breakpoint-medium: 900px;
+$breakpoint-large: 1400px;
+
+// Border-radius
+
+$radius: 3px;
