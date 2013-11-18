@@ -1,0 +1,72 @@
+
+%icon {
+  font-family: inherit;
+
+  &:before {
+    font-family: $font-family-icons;
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    margin-right: 0.5em;
+  }
+}
+
+[data-icon], [class*="icon-"] {
+  @extend %icon;
+}
+
+
+%icon-in-circle {
+  position: relative;
+  padding-left: $line-height * 1.5;
+
+  &:before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    text-align: center;
+    width: $line-height * 1.5; height: $line-height * 1.5;
+    line-height: $line-height * 1.5 - 0.1em;
+    padding-top: 0.1em;
+    @include border-radius(50%);
+  }
+
+  &.icon-only {
+    width: $line-height * 1.5; height: $line-height * 1.5;
+    line-height: $line-height * 1.5;
+    padding-left: 0;
+  }
+}
+
+.icon-in-circle { @extend %icon-in-circle; }
+
+
+%icon-only {
+  display: inline-block;
+  vertical-align: middle;
+  position: relative;
+  text-indent: 9999em;
+  width: $line-height; height: $line-height;
+  line-height: $line-height;
+  white-space: nowrap;
+  overflow: hidden;
+
+  &:before {
+    position: absolute;
+    top: 50%; left: 50%;
+    text-indent: 0;
+    text-align: center;
+    margin: -#{$line-height / 2};
+    width: $line-height;
+    height: $line-height;
+    line-height: $line-height;
+  }
+}
+
+.icon-only {
+  @extend icon-only;
+}
