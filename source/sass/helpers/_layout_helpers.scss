@@ -11,3 +11,11 @@
 
   &:after { clear: both; }
 }
+
+@mixin circle($size:$line-height) {
+  @include border-radius(50%);
+  width: $size;
+  line-height: $size;
+  height: $size;
+  text-align: center;
+}

@@ -9,44 +9,57 @@
 // ##### Heading Level Five
 // ###### Heading Level Six
 
-$line-height-level-one:   $line-height / $font-size-level-one;
-$line-height-level-two:   $line-height / $font-size-level-two;
-$line-height-level-three: $line-height / $font-size-level-three;
-$line-height-level-four:  $line-height / $font-size-level-four;
-$line-height-level-five:  $line-height / $font-size-level-five;
-$line-height-level-six:   $line-height / $font-size-level-six;
+$margin-level-one:   $line-height / $font-size-level-one;
+$margin-level-two:   $line-height / $font-size-level-two;
+$margin-level-three: $line-height / $font-size-level-three;
+$margin-level-four:  $line-height / $font-size-level-four;
+$margin-level-five:  $line-height / $font-size-level-five;
+$margin-level-six:   $line-height / $font-size-level-six;
+
+$line-height-level-one:   #{$margin-level-one * 2}em;
+$line-height-level-two:   #{$margin-level-two * 2}em;
+$line-height-level-three: #{$margin-level-three * 2}em;
+$line-height-level-four:  #{$margin-level-four * 2}em;
+$line-height-level-five:  #{$margin-level-five * 2}em;
+$line-height-level-six:   #{$margin-level-six * 2}em;
 
 h1, h2, h3, h4, h5, h6 { font-family: $font-family-headings; }
 
 h1 { 
   font-size: $font-size-level-one; 
-  margin-top: #{ $line-height-level-one * 2 }em;
-  margin-bottom: #{ $line-height-level-one }em;
+  margin-top: #{ $margin-level-one * 3 }em;
+  margin-bottom: #{ $margin-level-one * 2 }em;
+  line-height: $line-height-level-one;
 }
 h2 { 
   font-size: $font-size-level-two; 
-  margin-top: #{ $line-height-level-two * 2 }em;
-  margin-bottom: #{ $line-height-level-two }em;
+  margin-top: #{ $margin-level-two * 2 }em;
+  margin-bottom: #{ $margin-level-two }em;
+  line-height: $line-height-level-two;
 }
 h3 { 
   font-size: $font-size-level-three; 
-  margin-top: #{ $line-height-level-three * 2 }em;
-  margin-bottom: #{ $line-height-level-three }em;
+  margin-top: #{ $margin-level-three * 2 }em;
+  margin-bottom: #{ $margin-level-three }em;
+  line-height: $line-height-level-three;
 }
 h4 { 
   font-size: $font-size-level-four; 
-  margin-top: #{ $line-height-level-four * 2 }em;
-  margin-bottom: #{ $line-height-level-four }em;
+  margin-top: #{ $margin-level-four * 2 }em;
+  margin-bottom: #{ $margin-level-four }em;
+  line-height: $line-height-level-four;
 }
 h5 { 
   font-size: $font-size-level-five; 
-  margin-top: #{ $line-height-level-five * 2 }em;
-  margin-bottom: #{ $line-height-level-five }em;
+  margin-top: #{ $margin-level-five * 2 }em;
+  margin-bottom: #{ $margin-level-five }em;
+  line-height: $line-height-level-five;
 }
 h6 { 
   font-size: $font-size-level-six; 
-  margin-top: #{ $line-height-level-six * 2 }em;
-  margin-bottom: #{ $line-height-level-six }em;
+  margin-top: #{ $margin-level-six * 2 }em;
+  margin-bottom: #{ $margin-level-six }em;
+  line-height: $line-height-level-six;
 }
 
 h1:first-child,

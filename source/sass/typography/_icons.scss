@@ -19,31 +19,6 @@
 }
 
 
-%icon-in-circle {
-  position: relative;
-  padding-left: $line-height * 1.5;
-
-  &:before {
-    position: absolute;
-    top: 0;
-    left: 0;
-    text-align: center;
-    width: $line-height * 1.5; height: $line-height * 1.5;
-    line-height: $line-height * 1.5 - 0.1em;
-    padding-top: 0.1em;
-    @include border-radius(50%);
-  }
-
-  &.icon-only {
-    width: $line-height * 1.5; height: $line-height * 1.5;
-    line-height: $line-height * 1.5;
-    padding-left: 0;
-  }
-}
-
-.icon-in-circle { @extend %icon-in-circle; }
-
-
 %icon-only {
   display: inline-block;
   vertical-align: middle;
@@ -68,4 +43,31 @@
 
 .icon-only {
   @extend %icon-only;
+}
+
+
+.icon-position-left {
+  padding-left: $line-height * 1.5;
+  position: relative;
+
+  &:before {
+    display: block;
+    position: absolute;
+    left: 0;
+    line-height: $line-height;
+    width: $line-height;
+  }
+}
+
+.icon-position-right {
+  padding-right: $line-height * 1.5;
+  position: relative;
+
+  &:before {
+    display: block;
+    position: absolute;
+    right: 0;
+    line-height: $line-height;
+    width: $line-height;
+  }
 }

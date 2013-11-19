@@ -1,0 +1,15 @@
+main a {
+  color: $main-link-color;
+
+  &:hover { color: $main-link-color-hover; }
+  &:active { color: $main-link-color-active; }
+  &:visited { color: $main-link-color-visited; }
+}
+
+footer a {
+  color: $footer-link-color;
+
+  &:hover { color: $footer-link-color-hover; }
+  &:active { color: $footer-link-color-active; }
+  &:visited { color: $footer-link-color-visited; }
+}

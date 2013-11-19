@@ -1,6 +1,7 @@
 hr {
   height: 0;
-  margin-top: $line-height;
-  margin-bottom: $line-height;
-  border: none;
+  padding-top: $line-height;
+  padding-bottom: $line-height;
+  margin-top: -thin;
+  border: thin solid;
 }

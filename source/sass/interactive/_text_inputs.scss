@@ -1,3 +1,13 @@
+//
+// <input type="text" placeholder="Standard text input" />
+// <textarea placeholder="A textarea"></textarea>
+//
+//
+//
+//
+//
+
+
 input[type='text'], 
 input[type='search'], 
 input[type='tel'], 
@@ -11,6 +21,9 @@ input[type='number'],
 input[list], 
 textarea {
   @include rounded-box;
+  padding: $line-height / 6 $line-height / 4;
+  text-align: left;
+
   @include transition( border-color 0.5s);
   
   width: 100%;

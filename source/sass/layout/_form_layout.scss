@@ -1,3 +1,132 @@
+// <form>
+//   <header>
+//     <hgroup>Example all form elements</hgroup>
+//   </header>
+//   <fieldset>
+//     <legend>Radios and checkboxes</legend>  
+//     <div class="one-half first"> 
+//       <input type="radio" value="1" id="radioButton1" name="radioButton" />
+//       <label for="radioButton1">Radio Button 1</label>  
+//       <input type="radio" value="2" id="radioButton2" name="radioButton" />
+//       <label for="radioButton2">Radio Button 1</label>  
+//     </div>
+//     <div class="one-half last">
+//       <legend>Checkboxes</legend>
+//       <input type="checkbox" value="1" id="checkbox1" name="checkbox1" />
+//       <label for="checkbox1">Checkbox 1</label>  
+//       <input type="checkbox" value="2" id="checkbox2" name="checkbox2" />
+//       <label for="checkbox2">Checkbox 2</label>
+//     </div>
+//   </fieldset>
+//   <fieldset>
+//     <legend>Selects</legend>
+//     <div class="one-half first">
+//     <label for="selectWithOptGroup">Select with optgroup</label>
+//     <select name="selectWithOptGroup">
+//       <optgroup label="In Condimentum">
+//         <option value="1">Duis Aliquet Egestas</option>
+//         <option value="2">Lorem Ipsum</option>
+//       </optgroup>
+//       <optgroup label="Lorem Ipsum Dolor">
+//         <option value="3">Lorem Ipsum Dolor Sit</option>
+//         <option value="4">Vivamus Hendrerit Arcu Sed</option>
+//         <option value="5">Sed Molestie</option>
+//       </optgroup>
+//     </select>
+//     </div>
+//     <div class="one-half last">
+//     <label for="selectSingle">Select Single</label>
+//     <select name="selectSingle">
+//       <option>Quisque Eget</option>
+//       <option>Sed Auctor Neque</option>
+//     </select>
+//     </div>
+//     <div class="one-half first">
+//     <label for="selectMultiple">Select Multiple</label>
+//     <select name="selectMultiple" multiple>
+//       <option>Curabitur Vulputate, Ligula</option>
+//       <option>Lorem Ipsum Dolor</option>
+//     </select>
+//     </div>
+//     <div class="one-half last">
+//     <label for="dataList">Data List</label>
+//     <input list="dataList" />
+//     <datalist id="dataList">
+//       <option>Sed Auctor</option>
+//       <option>Sed Molestie Augue Sit</option>
+//     </datalist>
+//     </div>
+//     <div class="one-half first">
+//     <label for="dataListWithOptGroup">Data list with optgroup</label>
+//     <input list="dataListWithOptGroup" />
+//     <datalist id="dataListWithOptGroup">
+//       <optgroup label="Suspendisse Dictum Feugiat">
+//         <option>In Condimentum Facilisis</option>
+//         <option>Nunc Eu Ullamcorper</option>
+//       </optgroup>
+//     </datalist>
+//     </div>
+//   </fieldset>
+//   <fieldset>
+//     <legend>Text Inputs</legend>
+//     <div class="one-half first">
+//       <label>Type text</label>
+//       <input type="text" />
+//     </div>
+//     <div class="one-half last">
+//       <label>Search</label>
+//       <input type="search" />
+//     </div>
+//     <div class="one-half first">
+//       <label>Telephone</label>
+//       <input type="tel" /> 
+//     </div>
+//     <div class="one-half last">
+//       <label>Email</label>
+//       <input type="email" /> 
+//     </div>
+//     <div class="one-half first">
+//       <label>Password</label>
+//       <input type="password" />
+//     </div>
+//     <div class="one-half last">
+//       <label>URL</label>
+//       <input type="url" />
+//     </div>
+//     <div class="one-half first">
+//       <label>Date</label>
+//       <input type="date" />
+//     </div>
+//     <div class="one-half last">
+//        <label>Datetime</label>
+//       <input type="datetime" />
+//     </div>
+//     <div class="one-half first">
+//       <label>Time</label>
+//       <input type="time" />
+//     </div>
+//     <div class="one-half last">
+//       <label>Number</label>
+//       <input type="number" />
+//     </div>
+//     <div class="one-half first">
+//       <label>File</label>
+//       <input type="file" />
+//     </div>
+//     <label>Textarea</label>
+//     <textarea></textarea>
+//     </div>
+//   </fieldset>
+//   <footer>
+//     <button type="submit">Submit</button>
+//     <button type="submit" disabled="disabled">Submit</button>
+//     <button type="reset">Reset</button>
+//     <button type="reset" disabled="disabled">Reset</button>
+//     <button type="button">Button</button>
+//     <button type="button" disabled="disabled">Button</button>
+//   </footer>
+// </form>
+
 form footer {
   position: relative;
 
@@ -15,11 +144,14 @@ form header {
 
 fieldset {
   margin-bottom: $line-height * 2;
+
+  @extend .border-bottom-heavy-solid;
+  @extend .gray-lighter-border;
 }
 
 legend {
   font-size: $font-size-level-three; 
-  margin-bottom: #{ $line-height-level-three }em;
+  margin-bottom: $line-height-level-three;
 }
 
 label {

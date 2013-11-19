@@ -38,4 +38,24 @@ main {
   }
 }
 
+.circle-list li {
+  @extend .icon-position-right;
 
+  &:before {
+    @include circle;
+  }
+}
+
+.ruled-list, .meta-list {
+  li {
+    @extend .border-top-light-solid;
+    margin-bottom: $line-height / 4;
+    padding-top: $line-height / 4;
+  }
+}
+
+.meta-list {
+  @extend .circle-list;
+
+  li:before { font-size: 1.333em; }
+}

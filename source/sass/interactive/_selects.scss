@@ -1,5 +1,6 @@
 select { 
   @include rounded-box;
+  text-align: left;
 
   width: 100%;
   margin-bottom: $line-height;

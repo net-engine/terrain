@@ -1,3 +1,26 @@
+// <form>
+// <fieldset>
+//   <legend>Radios</legend>
+//
+//   <input type="radio" value="1" id="radioButton1" name="radioButton" />
+//   <label for="radioButton1">Radio Button 1</label>  
+//
+//   <input type="radio" value="2" id="radioButton2" name="radioButton" />
+//   <label for="radioButton2">Radio Button 1</label>  
+// </fieldset>
+//
+// <fieldset>
+//   <legend>Checkboxes</legend>
+// 
+//   <input type="checkbox" value="1" id="checkbox1" name="checkbox1" />
+//   <label for="checkbox1">Checkbox 1</label>  
+//
+//   <input type="checkbox" value="2" id="checkbox2" name="checkbox2" />
+//   <label for="checkbox2">Checkbox 2</label>
+// </fieldset>
+// </form>
+//
+
 input[type='checkbox'], input[type='radio'] {
   cursor: pointer;
   margin: 0;

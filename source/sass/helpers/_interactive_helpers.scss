@@ -9,7 +9,7 @@
   font-size: $font-size; 
   text-align: center;
   outline: 0;
-  padding: $line-height / 6 $line-height / 4;
+  padding: $line-height / 4 $line-height / 2;
 
   @if $border {
     margin-top: -2px;
