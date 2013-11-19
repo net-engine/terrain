@@ -1,10 +1,18 @@
 module.exports = function(grunt) {
   grunt.initConfig({
     pkg: grunt.file.readJSON('package.json'),
+    connect: {
+      server: {
+        options: {
+          port: 9001,
+          base: ''
+        }
+      }
+    },
     watch: {
       css: {
         files: ['source/sass/**'],
-        tasks: ['compass'],
+        tasks: ['compass', 'styleguide'],
         options: {
           livereload: true,
           force: true
@@ -43,12 +51,14 @@ module.exports = function(grunt) {
           }
         },
         files: {
-          'docs': 'source/sass'
+          'docs': 'source/sass/'
         }
       }
     }
   });
 
+
+  grunt.loadNpmTasks('grunt-contrib-connect');
   grunt.loadNpmTasks('grunt-contrib-compass');
   grunt.loadNpmTasks('grunt-contrib-watch');
   grunt.loadNpmTasks('grunt-gh-pages');
@@ -57,6 +67,6 @@ module.exports = function(grunt) {
   // Making grunt default to force in order not to break the project.
   grunt.option('force', true);
 
-  grunt.registerTask('default', ['compass', 'watch']);
+  grunt.registerTask('default', ['connect', 'compass', 'styleguide', 'watch']);
   grunt.registerTask('build', ['compass', 'styleguide', 'gh-pages']);
 }

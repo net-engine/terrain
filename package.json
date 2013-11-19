@@ -12,6 +12,7 @@
   },
   "devDependencies": {
     "grunt-gh-pages": "~0.8.1",
-    "grunt-styleguide": "~0.2.12"
+    "grunt-styleguide": "~0.2.12",
+    "grunt-contrib-connect": "~0.5.0"
   }
 }

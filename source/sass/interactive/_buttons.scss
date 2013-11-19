@@ -59,30 +59,28 @@ input[type="submit"], button[type='submit'], .submit-button, .primary-button {
 }
 
 
+%buttons {
+  @extend .clearfix;
 
+  %button {
+    float: left;
+    margin: 0;
+    border-radius: 0;
+    border-left: thin solid rgba(black, .25);
 
-// %buttons {
-//   @extend .clearfix;
+    &:focus { outline: 0; }
 
-//   %button {
-//     float: left;
-//     margin: 0;
-//     border-radius: 0;
-//     border-left: thin solid rgba(black, .25);
+    &:first-child {
+      border-left-width: 0;
+      @include border-left-radius($radius);
+    }
 
-//     &:focus { outline: 0; }
+    &:last-child, &.last-child {
+      @include border-right-radius($radius);
+    }
+  }
+}
 
-//     &:first-child {
-//       border-left-width: 0;
-//       @include border-left-radius($radius);
-//     }
-
-//     &:last-child, &.last-child {
-//       @include border-right-radius($radius);
-//     }
-//   }
-// }
-
-// .buttons { @extend %buttons; }
+.buttons { @extend %buttons; }
 
 
