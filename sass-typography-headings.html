@@ -1,43 +1,103 @@
 <!DOCTYPE html><html><head><title>headings | Trove
-</title><meta charset="utf-8"><style>@import "../dist/stylesheets/style.css"
-</style><style>@import "../dist/stylesheets/custom.css"
+</title><meta charset="utf-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="initial-scale=1"><style>@import "../dist/stylesheets/style.css";
 
-</style></head><body><header class="hero"><div class="container"><a href="index.html" class="logo">Trove</a></div></header><nav><ul class="menu"><li><a href="#" data-toggle="dropdown-1" unselectable="on" class="dropdown-toggle">sass</a><ul><li><a href="sass-settings.html">settings</a></li><li><a href="sass-style.html">style</a></li></ul></li><li><a href="#" data-toggle="dropdown-2" unselectable="on" class="dropdown-toggle">color</a><ul><li><a href="sass-color-base_palette.html">base_palette</a></li><li><a href="sass-color-extended_palette.html">extended_palette</a></li><li><a href="sass-color-tints_and_shades.html">tints_and_shades</a></li></ul></li><li><a href="#" data-toggle="dropdown-3" unselectable="on" class="dropdown-toggle">helpers</a><ul><li><a href="sass-helpers-layout_helpers.html">layout_helpers</a></li></ul></li><li><a href="#" data-toggle="dropdown-4" unselectable="on" class="dropdown-toggle">interactive</a><ul><li><a href="sass-interactive-anchors.html">anchors</a></li><li><a href="sass-interactive-buttons.html">buttons</a></li><li><a href="sass-interactive-radio_buttons_and_checkboxes.html">radio_buttons_and_checkboxes</a></li><li><a href="sass-interactive-selects.html">selects</a></li><li><a href="sass-interactive-text_inputs.html">text_inputs</a></li></ul></li><li><a href="#" data-toggle="dropdown-5" unselectable="on" class="dropdown-toggle">layout</a><ul><li><a href="sass-layout-blocks.html">blocks</a></li><li><a href="sass-layout-grid.html">grid</a></li><li><a href="sass-layout-positioning.html">positioning</a></li></ul></li><li><a href="#" data-toggle="dropdown-6" unselectable="on" class="dropdown-toggle">media</a><ul><li><a href="sass-media-images.html">images</a></li></ul></li><li><a href="#" data-toggle="dropdown-7" unselectable="on" class="dropdown-toggle">typography</a><ul><li><a href="sass-typography-body.html">body</a></li><li><a href="sass-typography-headings.html">headings</a></li><li><a href="sass-typography-hierarchy.html">hierarchy</a></li><li><a href="sass-typography-icons.html">icons</a></li><li><a href="sass-typography-lists.html">lists</a></li><li><a href="sass-typography-vertical_rhythm.html">vertical_rhythm</a></li></ul></li><li><a href="#" data-toggle="dropdown-8" unselectable="on" class="dropdown-toggle">sass_old</a><ul><li><a href="sass_old-settings.html">settings</a></li></ul></li><li><a href="#" data-toggle="dropdown-9" unselectable="on" class="dropdown-toggle">modules</a><ul><li><a href="sass_old-modules-applications.html">applications</a></li><li><a href="sass_old-modules-box.html">box</a></li><li><a href="sass_old-modules-colors.html">colors</a></li><li><a href="sass_old-modules-gradients.html">gradients</a></li><li><a href="sass_old-modules-grid.html">grid</a></li><li><a href="sass_old-modules-icons.html">icons</a></li><li><a href="sass_old-modules-lists.html">lists</a></li><li><a href="sass_old-modules-message.html">message</a></li><li><a href="sass_old-modules-positioning.html">positioning</a></li><li><a href="sass_old-modules-table.html">table</a></li><li><a href="sass_old-modules-typography.html">typography</a></li></ul></li><li><a href="#" data-toggle="dropdown-10" unselectable="on" class="dropdown-toggle">forms</a><ul><li><a href="sass_old-modules-forms-button.html">button</a></li><li><a href="sass_old-modules-forms-checkboxes_and_radio_buttons.html">checkboxes_and_radio_buttons</a></li><li><a href="sass_old-modules-forms-form_structure.html">form_structure</a></li><li><a href="sass_old-modules-forms-range_inputs.html">range_inputs</a></li><li><a href="sass_old-modules-forms-text_inputs.html">text_inputs</a></li></ul></li><li><a href="#" data-toggle="dropdown-11" unselectable="on" class="dropdown-toggle">sections</a><ul><li><a href="sass_old-sections-globals.html">globals</a></li></ul></li></ul></nav><main><div class="container"><article id="" class="section"><div class="docs"><a href="#" class="permalink"></a>
-</div><div class="code"><pre><code>h1, h2, h3, h4, h5, h6 {
-  font-weight: $font-weight-bold;
-  line-height: $line-height * 0.75;
-  margin: $line-height * 1.5 0 $line-height;
+</style></head><body><header class="hero"><div class="container"><a href="index.html" class="logo">Trove</a></div></header><nav><ul class="menu"><li><a href="#" data-toggle="dropdown-1" unselectable="on" class="dropdown-toggle">sass</a><ul><li><a href="sass-settings.html">settings</a></li><li><a href="sass-style.html">style</a></li></ul></li><li><a href="#" data-toggle="dropdown-2" unselectable="on" class="dropdown-toggle">color</a><ul><li><a href="sass-color-base_palette.html">base_palette</a></li><li><a href="sass-color-extended_palette.html">extended_palette</a></li><li><a href="sass-color-tints_and_shades.html">tints_and_shades</a></li></ul></li><li><a href="#" data-toggle="dropdown-3" unselectable="on" class="dropdown-toggle">helpers</a><ul><li><a href="sass-helpers-interactive_helpers.html">interactive_helpers</a></li><li><a href="sass-helpers-layout_helpers.html">layout_helpers</a></li></ul></li><li><a href="#" data-toggle="dropdown-4" unselectable="on" class="dropdown-toggle">icons</a><ul><li><a href="sass-icons-trove-icons.html">trove-icons</a></li></ul></li><li><a href="#" data-toggle="dropdown-5" unselectable="on" class="dropdown-toggle">interactive</a><ul><li><a href="sass-interactive-anchors.html">anchors</a></li><li><a href="sass-interactive-buttons.html">buttons</a></li><li><a href="sass-interactive-radio_buttons_and_checkboxes.html">radio_buttons_and_checkboxes</a></li><li><a href="sass-interactive-selects.html">selects</a></li><li><a href="sass-interactive-text_inputs.html">text_inputs</a></li></ul></li><li><a href="#" data-toggle="dropdown-6" unselectable="on" class="dropdown-toggle">layout</a><ul><li><a href="sass-layout-blocks.html">blocks</a></li><li><a href="sass-layout-form_layout.html">form_layout</a></li><li><a href="sass-layout-grid.html">grid</a></li><li><a href="sass-layout-positioning.html">positioning</a></li><li><a href="sass-layout-theme_options.html">theme_options</a></li></ul></li><li><a href="#" data-toggle="dropdown-7" unselectable="on" class="dropdown-toggle">media</a><ul><li><a href="sass-media-images.html">images</a></li></ul></li><li><a href="#" data-toggle="dropdown-8" unselectable="on" class="dropdown-toggle">typography</a><ul><li><a href="sass-typography-body.html">body</a></li><li><a href="sass-typography-headings.html">headings</a></li><li><a href="sass-typography-hierarchy.html">hierarchy</a></li><li><a href="sass-typography-icons.html">icons</a></li><li><a href="sass-typography-lists.html">lists</a></li><li><a href="sass-typography-vertical_rhythm.html">vertical_rhythm</a></li></ul></li></ul></nav><main><div class="container"><article id="headings" class="section"><div class="docs"><a href="#headings" class="permalink"></a><h1 id="headings">Headings</h1>
+<h2 id="levels">Levels</h2>
+<p> Base font size</p>
+</div></article><article id="heading-level-one" class="section"><div class="docs"><a href="#heading-level-one" class="permalink"></a><h1 id="heading-level-one">Heading Level One</h1>
+<h2 id="heading-level-two">Heading Level Two</h2>
+<h3 id="heading-level-three">Heading Level Three</h3>
+<h4 id="heading-level-four">Heading Level Four</h4>
+<h5 id="heading-level-five">Heading Level Five</h5>
+<h6 id="heading-level-six">Heading Level Six</h6>
+</div><div class="code"><pre><code>$line-height-level-one:   $line-height / $font-size-level-one;
+$line-height-level-two:   $line-height / $font-size-level-two;
+$line-height-level-three: $line-height / $font-size-level-three;
+$line-height-level-four:  $line-height / $font-size-level-four;
+$line-height-level-five:  $line-height / $font-size-level-five;
+$line-height-level-six:   $line-height / $font-size-level-six;
+
+h1, h2, h3, h4, h5, h6 { font-family: $font-family-headings; }
+
+h1 { 
+  font-size: $font-size-level-one; 
+  margin-top: #{ $line-height-level-one * 2 }em;
+  margin-bottom: #{ $line-height-level-one }em;
+}
+h2 { 
+  font-size: $font-size-level-two; 
+  margin-top: #{ $line-height-level-two * 2 }em;
+  margin-bottom: #{ $line-height-level-two }em;
+}
+h3 { 
+  font-size: $font-size-level-three; 
+  margin-top: #{ $line-height-level-three * 2 }em;
+  margin-bottom: #{ $line-height-level-three }em;
+}
+h4 { 
+  font-size: $font-size-level-four; 
+  margin-top: #{ $line-height-level-four * 2 }em;
+  margin-bottom: #{ $line-height-level-four }em;
+}
+h5 { 
+  font-size: $font-size-level-five; 
+  margin-top: #{ $line-height-level-five * 2 }em;
+  margin-bottom: #{ $line-height-level-five }em;
+}
+h6 { 
+  font-size: $font-size-level-six; 
+  margin-top: #{ $line-height-level-six * 2 }em;
+  margin-bottom: #{ $line-height-level-six }em;
 }
 
 h1:first-child,
 h2:first-child,
 h3:first-child,
 h4:first-child,
+h5:first-child,
+h6:first-child,
 h1 + h1,
-h1 + h2,
+h1 + h2, 
 h1 + h3,
 h1 + h4,
+h1 + h5,
+h1 + h6,
 h2 + h1,
 h2 + h2,
 h2 + h3,
 h2 + h4,
+h2 + h5,
+h2 + h6,
 h3 + h1,
 h3 + h2,
 h3 + h3,
 h3 + h4,
+h3 + h5,
+h3 + h6,
 h4 + h1,
 h4 + h2,
 h4 + h3,
-h4 + h4 { margin-top: 0; }
+h4 + h4,
+h4 + h5, 
+h4 + h6, 
+h5 + h1,
+h5 + h2,
+h5 + h3,
+h5 + h4,
+h5 + h5,
+h5 + h6,
+h6 + h1,
+h6 + h2,
+h6 + h3,
+h6 + h4,
+h6 + h5,
+h6 + h6 { margin-top: 0; }
 
-h1 {
-  font-size: 2.5em;
-}
-
-h2 {
-  font-size: 1.5em;
-}
-
-h3 {
-  font-size: 1.25em;
+header {
+  h1:last-child, 
+  h2:last-child, 
+  h3:last-child, 
+  h4:last-child, 
+  h5:last-child, 
+  h6:last-child { margin-bottom: 0; }
 }</code></pre></div></article></div></main></body></html>
