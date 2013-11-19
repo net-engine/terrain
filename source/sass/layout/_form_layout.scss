@@ -1,9 +1,16 @@
 form footer {
+  position: relative;
 
+  button, input[type="submit"] {
+    float: right;
+    margin-left: $line-height / 3;
+  }
 }
 
 form header {
-  
+  position: relative;
+  padding-top: $line-height;
+  padding-bottom: $line-height;
 }
 
 fieldset {
@@ -25,5 +32,5 @@ input[type="radio"] + label {
   display: inline-block;
   vertical-align: middle;
   margin-bottom: 0;
-  margin-right: 1em;
+  margin-right: $line-height;
 }

@@ -1,3 +1,14 @@
+// # Headings
+// ## Levels
+
+// Base font size
+// # Heading Level One
+// ## Heading Level Two
+// ### Heading Level Three
+// #### Heading Level Four
+// ##### Heading Level Five
+// ###### Heading Level Six
+
 $line-height-level-one:   $line-height / $font-size-level-one;
 $line-height-level-two:   $line-height / $font-size-level-two;
 $line-height-level-three: $line-height / $font-size-level-three;
@@ -80,3 +91,12 @@ h6 + h3,
 h6 + h4,
 h6 + h5,
 h6 + h6 { margin-top: 0; }
+
+header {
+  h1:last-child, 
+  h2:last-child, 
+  h3:last-child, 
+  h4:last-child, 
+  h5:last-child, 
+  h6:last-child { margin-bottom: 0; }
+}

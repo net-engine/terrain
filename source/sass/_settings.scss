@@ -1,10 +1,12 @@
-// Typography
+// # Settings
+
+// ## Typography
 
 $font-family:             'Open Sans', 'Helvetica Neue', sans-serif !default;
 $font-family-body:        $font-family !default;
 $font-family-headings:    $font-family !default;
 $font-family-input:       $font-family !default;
-$font-family-icons:       'Icons' !default;
+$font-family-icons:       'trove-icons' !default;
 $font-family-mono:        'Menlo', 'Monaco', 'Courier New', monospace !default;
 
 $font-size:               16px !default;
@@ -18,35 +20,34 @@ $font-size-level-six:     0.8em !default;
 $line-height:             1.7em !default;
 
 $font-weight-normal:      400;
-$font-weight-medium:      500;
+$font-weight-medium:      600;
 $font-weight-bold:        700;
 
 
-// Colours
+// ## Colours
 
-// Palette
+// ### Palette
 
-$color-primary:           hsl(160, 75%, 50%);
+$color-primary:           hsl(204,44%,54%);
 $color-primary-light:     lighten($color-primary, 15%);
-$black:                   hsl(229,47%,9%);
-$white:                   lighten($black, 97%);
 
+// Tints and shades
 
-// Grays
-
+$black:                   hsl(0,0%,9%);
+$white:                   lighten($black, 93.5%);
 $gray-darker:             lighten($black, 13.5%);
 $gray-dark:               lighten($black, 20%);
 $gray:                    lighten($black, 33.5%);
 $gray-light:              lighten($black, 60%);
-$gray-lighter:            lighten($black, 93.5%);
+$gray-lighter:            lighten($black, 87.5%);
 
 
 // Indictators
 
-$color-success:           #5cb85c;
-$color-warning:           #f0ad4e;
-$color-danger:            #d9534f;
-$color-info:              #5bc0de;
+$color-success:           hsl(85, 60%, 52%);
+$color-warning:           hsl(45, 83%, 73%);
+$color-danger:            hsl(357, 88%, 63%);
+$color-info:              $color-primary;
 
 
 // Links
@@ -58,6 +59,14 @@ $link-hover-color:        darken($link-color, 15%);
 // Buttons
 
 $button-background-color: $gray-dark;
+$button-submit-color:     $color-primary;
+
+
+// Inputs
+
+$input-border-color: $gray;
+$input-hover-border-color: $color-primary;
+$input-focus-border-color: $color-success;
 
 
 // Breakpoints
@@ -69,15 +78,22 @@ $breakpoint-large:        1200px;
 
 // Layout
 
-$gutter:        $line-height * 1.5 !default;
-$page-margin:   $line-height * 2 !default;
-$max-width:     $breakpoint-medium !default;
-$center-layout: true;
+$gutter:                  $line-height * 1.5 !default;
+$page-margin:             $line-height * 2 !default;
+$max-width:               $breakpoint-medium !default;
+$center-layout:           true;
 
 
 // Layout theme options
 
-$fixed-left-nav: false;
+$fixed-left-nav:          true;
+$fixed-left-nav-width:    18em;
+
+$fixed-top-nav:           false;
+$fixed-top-nav-height:    8em;
+
+$nav-background-color:    $black;
+$nav-item-color:          $color-primary;
 
 
 // Debugging

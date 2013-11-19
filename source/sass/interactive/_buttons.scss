@@ -11,6 +11,7 @@
   height: auto;
 
   font-family: $font-family-input;
+  font-weight: $font-weight-medium;
   -webkit-font-smoothing: antialiased;
   text-decoration: none;
   
@@ -54,16 +55,16 @@ input[type="button"] {
 
 input[type="submit"], 
 button[type='submit'] {
-  background: $color-submit;
+  background: $button-submit-color;
 
   &:hover {
-    background-color: darken($color-submit, 15%);
+    background-color: darken($button-submit-color, 15%);
   }
 }
 
 
 %buttons {
-  @extend .clearfix;
+  @extend %clearfix;
 
   %button {
     float: left;
