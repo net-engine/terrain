@@ -34,7 +34,9 @@
     background-color: deepen($button-background-color, 25%);
   }
 
-  &[disabled="disabled"], &[disabled="disabled"]:hover, &[disabled="disabled"]:active {
+  &[disabled="disabled"], 
+  &[disabled="disabled"]:hover, 
+  &[disabled="disabled"]:active {
     opacity: .5;
     cursor: default;
   }
@@ -46,11 +48,16 @@
   }
 }
 
-.button, button, input[type="submit"], input[type="button"] {
+
+.button, 
+button, 
+input[type="submit"], 
+input[type="button"] {
   @extend %button;
 }
 
-input[type="submit"], button[type='submit'], .submit-button, .primary-button {
+input[type="submit"], 
+button[type='submit'] {
   background: $color-submit;
 
   &:hover {

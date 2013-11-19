@@ -1,18 +1,25 @@
-$font-family: 'Source Sans Pro', 'Helvetica Neue', sans-serif !default;
-$font-family-body: $font-family !default;
-$font-family-headings: $font-family !default;
-$font-family-input: $font-family !default;
-$font-family-icons: 'Icons' !default;
-$font-family-mono: 'Menlo' !default;
+// Typography
 
-$font-size: 16px;
+$font-family:             'Open Sans', 'Helvetica Neue', sans-serif !default;
+$font-family-body:        $font-family !default;
+$font-family-headings:    $font-family !default;
+$font-family-input:       $font-family !default;
+$font-family-icons:       'Icons' !default;
+$font-family-mono:        'Menlo', 'Monaco', 'Courier New', monospace !default;
 
-$font-weight-bold: 400;
-$font-weight-medium: 500;
-$font-weight-normal: 700;
+$font-size:               16px !default;
+$font-size-level-one:     2em !default;
+$font-size-level-two:     1.5em !default;
+$font-size-level-three:   1.25em !default;
+$font-size-level-four:    1em !default;
+$font-size-level-five:    1em !default;
+$font-size-level-six:     0.8em !default;
 
-$line-height: 1.7em !default;
-$gutter: $line-height !default;
+$line-height:             1.7em !default;
+
+$font-weight-normal:      400;
+$font-weight-medium:      500;
+$font-weight-bold:        700;
 
 
 // Colours
@@ -23,17 +30,29 @@ $color-submit: $color-primary !default;
 $button-background-color: dimgrey !default;
 
 
-$radius: .15em;
+// Breakpoints
 
 $breakpoint-small: 500px;
 $breakpoint-medium: 800px;
 $breakpoint-large: 1200px;
 
-$max-width: $breakpoint-medium;
+
+// Layout
+
+$gutter:        $line-height * 1.5 !default;
+$page-margin:   $line-height * 2 !default;
+$max-width:     $breakpoint-medium !default;
 $center-layout: true;
 
+
 // Debugging
+
 $baseline-grid: true;
+
+
+// Misc
+
+$radius: .15em;
 
 
 //
@@ -49,3 +68,4 @@ $baseline-grid: true;
 //   font-weight: normal;
 //   font-style: normal;
 // }
+//

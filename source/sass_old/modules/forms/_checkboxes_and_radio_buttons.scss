@@ -1,5 +1,3 @@
-// -- Checkboxes and Radio Buttons -- //
-
 input[type='checkbox'], input[type='radio'] {
   @include appearance(none);
   cursor: pointer;
@@ -12,7 +10,6 @@ input[type='checkbox'], input[type='radio'] {
   vertical-align: middle;
 
   &:before { 
-    font-family: "icomoon"; 
     font-size: $font-size;
   }
 
@@ -23,12 +20,12 @@ input[type='checkbox'], input[type='radio'] {
   
 }
 
-input[type='checkbox'] {
-  @extend .icon-checkbox-unchecked;
-  &:checked { @extend .icon-checkbox-checked; }
-}
+// input[type='checkbox'] {
+//   @extend .icon-checkbox-unchecked;
+//   &:checked { @extend .icon-checkbox-checked; }
+// }
 
-input[type='radio'] {
-  @extend .icon-radio-unchecked;
-  &:checked { @extend .icon-radio-checked; }
-}
+// input[type='radio'] {
+//   @extend .icon-radio-unchecked;
+//   &:checked { @extend .icon-radio-checked; }
+// }

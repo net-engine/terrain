@@ -1,38 +1,82 @@
-h1, h2, h3, h4, h5, h6 {
-  font-weight: $font-weight-bold;
-  line-height: $line-height * 0.75;
-  margin: $line-height * 1.5 0 $line-height;
+$line-height-level-one:   $line-height / $font-size-level-one;
+$line-height-level-two:   $line-height / $font-size-level-two;
+$line-height-level-three: $line-height / $font-size-level-three;
+$line-height-level-four:  $line-height / $font-size-level-four;
+$line-height-level-five:  $line-height / $font-size-level-five;
+$line-height-level-six:   $line-height / $font-size-level-six;
+
+h1, h2, h3, h4, h5, h6 { font-family: $font-family-headings; }
+
+h1 { 
+  font-size: $font-size-level-one; 
+  margin-top: #{ $line-height-level-one * 2 }em;
+  margin-bottom: #{ $line-height-level-one }em;
+}
+h2 { 
+  font-size: $font-size-level-two; 
+  margin-top: #{ $line-height-level-two * 2 }em;
+  margin-bottom: #{ $line-height-level-two }em;
+}
+h3 { 
+  font-size: $font-size-level-three; 
+  margin-top: #{ $line-height-level-three * 2 }em;
+  margin-bottom: #{ $line-height-level-three }em;
+}
+h4 { 
+  font-size: $font-size-level-four; 
+  margin-top: #{ $line-height-level-four * 2 }em;
+  margin-bottom: #{ $line-height-level-four }em;
+}
+h5 { 
+  font-size: $font-size-level-five; 
+  margin-top: #{ $line-height-level-five * 2 }em;
+  margin-bottom: #{ $line-height-level-five }em;
+}
+h6 { 
+  font-size: $font-size-level-six; 
+  margin-top: #{ $line-height-level-six * 2 }em;
+  margin-bottom: #{ $line-height-level-six }em;
 }
 
 h1:first-child,
 h2:first-child,
 h3:first-child,
 h4:first-child,
+h5:first-child,
+h6:first-child,
 h1 + h1,
-h1 + h2,
+h1 + h2, 
 h1 + h3,
 h1 + h4,
+h1 + h5,
+h1 + h6,
 h2 + h1,
 h2 + h2,
 h2 + h3,
 h2 + h4,
+h2 + h5,
+h2 + h6,
 h3 + h1,
 h3 + h2,
 h3 + h3,
 h3 + h4,
+h3 + h5,
+h3 + h6,
 h4 + h1,
 h4 + h2,
 h4 + h3,
-h4 + h4 { margin-top: 0; }
-
-h1 {
-  font-size: 2.5em;
-}
-
-h2 {
-  font-size: 1.5em;
-}
-
-h3 {
-  font-size: 1.25em;
-}
+h4 + h4,
+h4 + h5, 
+h4 + h6, 
+h5 + h1,
+h5 + h2,
+h5 + h3,
+h5 + h4,
+h5 + h5,
+h5 + h6,
+h6 + h1,
+h6 + h2,
+h6 + h3,
+h6 + h4,
+h6 + h5,
+h6 + h6 { margin-top: 0; }

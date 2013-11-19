@@ -10,43 +10,42 @@ input[type='time'],
 input[type='number'],
 input[list], 
 textarea {
-  -webkit-appearance: none;
+  @include appearance(none);
+  
   width: 100%;
-  padding: $line-height / 10 $line-height / 4;
+  @include box-sizing(border-box);
+  padding: $line-height / 8 $line-height / 4;
   line-height: $line-height;
-  background: transparent;
-  outline: 0;
-  box-sizing: border-box;
-  box-shadow: none;
+  margin-bottom: $line-height;
+  margin-top: 0;
+  
   font-family: $font-family-input;
   font-size: $font-size;
-  font-weight: 300;
+  font-weight: $font-weight-normal;
+  
+  outline: 0;
   border-width: 1px;
   border-style: solid;
-  margin-top: 0;
-  margin-bottom: $line-height * 0.667;
+  @include border-radius($radius);
+
   @include transition( border-color 0.5s);
-  @include border-radius( $radius );
-  @include box-sizing( border-box );
-  
+
   &:focus { }
   &:hover { }
 }
+
 ::-webkit-input-placeholder {
   font-weight: $font-weight-normal;
   font-family: $font-family-input;
 }
-
 :-moz-placeholder {
   font-weight: $font-weight-normal;
   font-family: $font-family-input;
 }
-
 ::-moz-placeholder {
   font-weight: $font-weight-normal;
   font-family: $font-family-input;
 }
-
 :-ms-input-placeholder {  
   font-weight: $font-weight-normal;
   font-family: $font-family-input;

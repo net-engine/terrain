@@ -1,6 +1,6 @@
 .container {
   max-width: $max-width;
-  padding: $gutter;
+  padding: $page-margin;
 
   @if $center-layout {
     margin-left: auto;
