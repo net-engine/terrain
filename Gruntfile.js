@@ -32,6 +32,12 @@ module.exports = function(grunt) {
           sassDir: 'source/sass',
           cssDir: 'dist/stylesheets'
         }
+      },
+      docs: {
+        options: {
+          sassDir: 'source/sass',
+          cssDir: 'docs'
+        }
       }
     },
     'gh-pages': {
