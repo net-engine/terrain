@@ -11,8 +11,8 @@ module.exports = function(grunt) {
     },
     watch: {
       css: {
-        files: ['source/sass/**'],
-        tasks: ['compass', 'styleguide'],
+        files: ['source/sass/**/*'],
+        tasks: ['compass'],
         options: {
           livereload: true,
           force: true
@@ -54,19 +54,32 @@ module.exports = function(grunt) {
           'docs': 'source/sass/'
         }
       }
+    },
+    webfont: {
+      icons: {
+        src: 'source/icons/svg/*',
+        dest: 'dist/icons',
+        destCss: 'source/sass/icons',
+        options: {
+          font: 'trove-icons',
+          stylesheet: 'scss',
+          syntax: 'bootstrap',
+          relativeFontPath: '/dist/icons'
+        }
+      }
     }
   });
-
 
   grunt.loadNpmTasks('grunt-contrib-connect');
   grunt.loadNpmTasks('grunt-contrib-compass');
   grunt.loadNpmTasks('grunt-contrib-watch');
   grunt.loadNpmTasks('grunt-gh-pages');
+  grunt.loadNpmTasks('grunt-webfont');
   grunt.loadNpmTasks('grunt-styleguide');
 
   // Making grunt default to force in order not to break the project.
   grunt.option('force', true);
 
-  grunt.registerTask('default', ['connect', 'compass', 'styleguide', 'watch']);
-  grunt.registerTask('build', ['compass', 'styleguide', 'gh-pages']);
+  grunt.registerTask('default', ['connect', 'compass', 'watch']);
+  grunt.registerTask('build', ['compass', 'styleguide', 'gh-pages', 'webfont']);
 }

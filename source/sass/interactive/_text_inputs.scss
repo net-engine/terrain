@@ -10,25 +10,16 @@ input[type='time'],
 input[type='number'],
 input[list], 
 textarea {
-  @include appearance(none);
+  @include rounded-box;
+  @include transition( border-color 0.5s);
   
   width: 100%;
-  @include box-sizing(border-box);
-  padding: $line-height / 8 $line-height / 4;
-  line-height: $line-height;
   margin-bottom: $line-height;
   margin-top: 0;
   
   font-family: $font-family-input;
   font-size: $font-size;
   font-weight: $font-weight-normal;
-  
-  outline: 0;
-  border-width: 1px;
-  border-style: solid;
-  @include border-radius($radius);
-
-  @include transition( border-color 0.5s);
 
   &:focus { }
   &:hover { }

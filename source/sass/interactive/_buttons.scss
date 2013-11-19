@@ -3,23 +3,19 @@
 // <button>Submit</button>
 
 %button {
-  position: relative;
-  display: inline-block;
+  @include rounded-box(inline-block, false);
+  padding: $line-height / 4 $line-height / 2;
+
   margin: 0;
-  padding: .25em .75em;
   width: auto;
   height: auto;
-  line-height: $line-height;
-  font-size: 100%;
-  font-weight: 600;
+
   font-family: $font-family-input;
-  text-decoration: none;
   -webkit-font-smoothing: antialiased;
+  text-decoration: none;
+  
   color: white;
   background-color: $button-background-color;
-  border: 0;
-  border-radius: $radius;
-  @include box-sizing(border-box);
 
   &:hover {
     text-decoration: none;

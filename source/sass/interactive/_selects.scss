@@ -1,34 +1,18 @@
 select { 
-  width: 100%; 
-  display: block;
-  line-height: $line-height;
-  margin-bottom: $line-height;
-  margin-top: 0;
-  font-size: $font-size;
-  font-family: $font-family-input;
-}
+  @include rounded-box;
 
-select[multiple] {
-  @include appearance(none);
-  
   width: 100%;
-  @include box-sizing(border-box);
-  line-height: $line-height;
   margin-bottom: $line-height;
   margin-top: 0;
-  
-  font-family: $font-family-input;
+
   font-size: $font-size;
+  font-family: $font-family-input;
   font-weight: $font-weight-normal;
-  
-  outline: 0;
-  border-width: 1px;
-  border-style: solid;
-  @include border-radius($radius);
 
-  @include transition( border-color 0.5s);
+  background-image: url("data:image/svg+xml;utf8, <svg version=\"1.1\" xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" width=\"32\" height=\"32\" viewBox=\"0 0 32 32\"><path fill=\"#{ black }\" d=\"M8 12l8 8 8-8z\" /></svg>");
+  background-repeat: no-repeat;
+  background-position: right $line-height / 4 center;
+  @include background-size($line-height / 2);
 
-  option {
-    padding: $line-height / 8 $line-height / 4;
-  }
+  &[multiple] { background-image: none; }
 }

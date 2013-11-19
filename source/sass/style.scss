@@ -3,7 +3,10 @@
 
 @import 'settings';
 
-@import 'helpers/layout_helpers';
+@import 'icons/trove-icons';
+
+@import 'helpers/layout_helpers',
+        'helpers/interactive_helpers';
 
 @import 'color/base_palette',
         'color/extended_palette',
@@ -20,7 +23,8 @@
 
 @import 'layout/blocks',
         'layout/grid',
-        'layout/positioning';
+        'layout/positioning',
+        'layout/form_layout';
 
 @import 'interactive/anchors',
         'interactive/buttons',

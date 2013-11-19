@@ -1,0 +1,20 @@
+@mixin rounded-box($display: block, $border: true) {
+  @include appearance(none);
+  @include box-sizing(border-box);
+  @include border-radius($radius);
+  
+  position: relative;
+  display: $display;
+  line-height: $line-height; 
+  font-size: $font-size; 
+  outline: 0;
+  padding: $line-height / 6 $line-height / 4;
+
+  @if $border {
+    margin-top: -2px;
+    border-width: 1px;
+    border-style: solid;
+  } @else {
+    border: none;
+  }
+}

@@ -1,0 +1,29 @@
+form footer {
+
+}
+
+form header {
+  
+}
+
+fieldset {
+  margin-bottom: $line-height * 2;
+}
+
+legend {
+  font-size: $font-size-level-three; 
+  margin-bottom: #{ $line-height-level-three }em;
+}
+
+label {
+  margin-bottom: $line-height / 2;
+  display: block;
+}
+
+input[type="checkbox"] + label, 
+input[type="radio"] + label {
+  display: inline-block;
+  vertical-align: middle;
+  margin-bottom: 0;
+  margin-right: 1em;
+}

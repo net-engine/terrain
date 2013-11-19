@@ -24,17 +24,47 @@ $font-weight-bold:        700;
 
 // Colours
 
-$color-primary: hsl(160, 75%, 50%);
-$color-primary-light: lighten($color-primary, 15%);
-$color-submit: $color-primary !default;
-$button-background-color: dimgrey !default;
+// Palette
+
+$color-primary:           hsl(160, 75%, 50%);
+$color-primary-light:     lighten($color-primary, 15%);
+$black:                   hsl(229,47%,9%);
+$white:                   lighten($black, 97%);
+
+
+// Grays
+
+$gray-darker:             lighten($black, 13.5%);
+$gray-dark:               lighten($black, 20%);
+$gray:                    lighten($black, 33.5%);
+$gray-light:              lighten($black, 60%);
+$gray-lighter:            lighten($black, 93.5%);
+
+
+// Indictators
+
+$color-success:           #5cb85c;
+$color-warning:           #f0ad4e;
+$color-danger:            #d9534f;
+$color-info:              #5bc0de;
+
+
+// Links
+
+$link-color:              $color-primary;
+$link-hover-color:        darken($link-color, 15%);
+
+
+// Buttons
+
+$button-background-color: $gray-dark;
 
 
 // Breakpoints
 
-$breakpoint-small: 500px;
-$breakpoint-medium: 800px;
-$breakpoint-large: 1200px;
+$breakpoint-small:        500px;
+$breakpoint-medium:       800px;
+$breakpoint-large:        1200px;
 
 
 // Layout
@@ -45,9 +75,14 @@ $max-width:     $breakpoint-medium !default;
 $center-layout: true;
 
 
+// Layout theme options
+
+$fixed-left-nav: false;
+
+
 // Debugging
 
-$baseline-grid: true;
+$baseline-grid: false;
 
 
 // Misc
