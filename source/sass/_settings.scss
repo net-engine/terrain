@@ -26,12 +26,9 @@ $font-weight-bold:        700;
 
 // ## Colours
 
-// ### Palette
-
 $color-primary:           hsl(204,44%,54%);
-$color-primary-light:     lighten($color-primary, 15%);
-
-// Tints and shades
+$color-primary-light:     lighten($color-primary, 30%);
+$color-primary-dark:      darken($color-primary, 30%);
 
 $black:                   hsl(0,0%,9%);
 $white:                   lighten($black, 93.5%);
@@ -45,37 +42,87 @@ $gray-lighter:            lighten($black, 87.5%);
 // Indicators
 
 $color-success:           hsl(85, 60%, 52%);
+$color-success-light:     lighten($color-success, 35%);
 $color-warning:           hsl(45, 83%, 73%);
+$color-warning-light:     lighten($color-warning, 35%);
 $color-danger:            hsl(357, 88%, 63%);
+$color-danger-light:      lighten($color-danger, 35%);
 $color-info:              $color-primary;
+$color-info-light:        lighten($color-info, 35%);
 
 
 // Links
 
-$link-color:                   $color-primary; 
+$link-color:                    $color-primary; 
+$link-color-hover:              $color-primary; 
+$link-color-active:             $color-primary; 
+$link-color-visited:            $color-primary; 
 
-$main-link-color:              $link-color;
-$main-link-color-hover:        darken($link-color, 15%);
-$main-link-color-active:       darken($link-color, 25%);
-$main-link-color-visited:      lighten($link-color, 15%);
+$main-link-color:               $link-color;
+$main-link-color-hover:         darken($link-color, 15%);
+$main-link-color-active:        darken($link-color, 25%);
+$main-link-color-visited:       lighten($link-color, 15%);
 
-$footer-link-color:              $link-color;
-$footer-link-color-hover:        darken($link-color, 15%);
-$footer-link-color-active:       darken($link-color, 25%);
-$footer-link-color-visited:      lighten($link-color, 15%);
+$footer-link-color:             $link-color;
+$footer-link-color-hover:       darken($link-color, 15%);
+$footer-link-color-active:      darken($link-color, 25%);
+$footer-link-color-visited:     lighten($link-color, 15%);
 
 
 // Buttons
 
-$button-background-color: $gray-dark;
-$button-submit-color:     $color-primary;
+$button-default-foreground-color:       $white;
+$button-default-background-color:       $gray-dark;
+$button-default-border-color:           $gray-darker;
+
+$button-default-hover-foreground-color:  $white;
+$button-default-hover-background-color:  $gray-dark;
+$button-default-hover-border-color:      $gray-darker;
+
+$button-default-active-foreground-color:  $white;
+$button-default-active-background-color:  $gray-dark;
+$button-default-active-border-color:      $gray-darker;
+
+$button-submit-foreground-color:        $white;
+$button-submit-background-color:        $color-primary;
+$button-submit-border-color:            $color-primary-dark;
+
+$button-danger-foreground-color:        $white;
+$button-danger-background-color:        $gray-dark;
+$button-danger-border-color:            $gray-darker;
+
+
+$button-submit-color:           $color-primary;
 
 
 // Inputs
 
-$input-border-color: $gray-light;
-$input-hover-border-color: $color-primary;
-$input-focus-border-color: $color-success;
+$input-foreground-color:        $black;
+$input-background-color:        $white;
+$input-border-color:            $gray-light;
+
+$input-hover-foreground-color:  $color-info;
+$input-hover-background-color:  $color-info-light;
+$input-hover-border-color:      $color-info;
+
+$input-focus-foreground-color:  $black;
+$input-focus-background-color:  $white;
+$input-focus-border-color:      $color-success;
+
+
+// Selects
+
+$select-foreground-color:       $black;
+$select-background-color:       $gray-lighter;
+$select-border-color:           $gray-light;
+
+$select-hover-foreground-color: $color-info;
+$select-hover-background-color: $color-info-light;
+$select-hover-border-color:     $color-info;
+
+$select-focus-foreground-color: $color-success;
+$select-focus-background-color: $color-success-light;
+$select-focus-border-color:     $color-success;
 
 
 // Breakpoints
@@ -114,7 +161,7 @@ $nav-item-color:          $color-primary;
 
 // Debugging
 
-$baseline-grid: true;
+$baseline-grid: false;
 
 
 // Misc

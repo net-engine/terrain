@@ -39,9 +39,13 @@ $palette: "white"         $white,
           "gray-light"    $gray-light,
           "gray-lighter"  $gray-lighter,
           "success"       $color-success,
+          "success-light" $color-success-light,
           "warning"       $color-warning,
+          "warning-light" $color-warning-light,
           "danger"        $color-danger,
-          "info"          $color-info;
+          "danger-light"  $color-danger-light,
+          "info"          $color-info,
+          "info-light"    $color-info-light;
 
 @each $color1 in $palette {
   .#{ nth( $color1, 1 ) }-foreground { 

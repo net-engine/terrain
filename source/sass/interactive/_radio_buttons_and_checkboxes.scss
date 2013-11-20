@@ -29,17 +29,16 @@ input[type='checkbox'], input[type='radio'] {
 
   display: inline-block;
   vertical-align: middle;
-  margin-top: - 0.15em;
   margin-right: $line-height / 4;
 
-  width: $line-height;
-  height: $line-height;
-  line-height: $line-height;
+  width: 1em;
+  height: $line-height; line-height: $line-height;
 
   text-align: center;
+  font-size: inherit;
 
   background: transparent;
-  @include background-size($line-height * 0.9);
+  @include background-size(contain);
   background-repeat: no-repeat;
   background-position: center center;  
 }
@@ -65,3 +64,28 @@ input[type='radio'] {
     & + label { color: $color-success; }
   }
 }
+
+input[type="checkbox"] + label, 
+input[type="radio"] + label {
+  display: inline-block;
+  vertical-align: middle;
+  margin-bottom: 0;
+  margin-right: $line-height * 2;
+}
+
+.checkbox-list li, .radio-list li {
+  position: relative;
+  padding-left: $line-height * 1.5;
+
+  input[type="checkbox"], input[type="radio"] {
+    position: absolute;
+    left: 0;
+  }
+}
+
+main ul.radio-list li,
+main ul.checkbox-list li {
+  padding-left: $line-height;
+
+  &:before { content: '' }
+} 

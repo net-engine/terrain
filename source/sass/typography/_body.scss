@@ -10,8 +10,6 @@ html {
   }
 }
 
-a {}
-
 em, 
 cite, 
 i { font-style: italic; }
@@ -57,11 +55,19 @@ sup {
 }
 
 mark {
-  // neutral highlight color
+  background-color: $color-info-light;
 }
 ins {
-  // cool highlight color
+  background-color: $color-success-light;
 }
 del {
-  // hot highlight color
+  background-color: $color-danger-light;
+}
+
+hr {
+  height: 0;
+  padding-top: $line-height;
+  padding-bottom: $line-height;
+  margin-top: -thin;
+  border: thin solid;
 }

@@ -22,12 +22,22 @@ body > nav {
 
     a {
       display: block;
-      padding: $line-height;
+      
     }
-
     .container { 
       margin: 0; 
       padding: 0;
+    }
+  }
+  ul {
+    margin-bottom: $line-height;
+    li {
+      list-style: none;
+      a {
+        display: block;
+        position: relative;
+        padding: $line-height / 4 $line-height;
+      }
     }
   }
 }

@@ -15,20 +15,24 @@
   -webkit-font-smoothing: antialiased;
   text-decoration: none;
   
-  color: white;
-  background-color: $button-background-color;
+  color: $button-default-foreground-color;
+  background-color: $button-default-background-color;
+  border-color: $button-default-border-color;
 
   &:hover {
     text-decoration: none;
-    color: white;
     cursor: pointer;
-    background-color: darken($button-background-color, 15%);
+
+    color: $button-default-hover-foreground-color;
+    background-color: $button-default-hover-background-color;
+    border-color: $button-default-hover-border-color;
+    
   }
 
-  &:active { opacity: .75; }
-
-  &.active {
-    background-color: deepen($button-background-color, 25%);
+  &.active, &:active {
+    color: $button-default-active-foreground-color;
+    background-color: $button-default-active-background-color;
+    border-color: $button-default-active-border-color;
   }
 
   &[disabled="disabled"], 

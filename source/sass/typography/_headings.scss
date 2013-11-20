@@ -1,5 +1,4 @@
 // # Headings
-// ## Levels
 
 // Base font size
 // # Heading Level One
@@ -8,6 +7,20 @@
 // #### Heading Level Four
 // ##### Heading Level Five
 // ###### Heading Level Six
+
+// <h1>Heading elements</h1>
+// <h2>Summary</h2>
+// <p>Some text here...</p>
+
+// <h2>Examples</h2>
+// <h3>Example 1</h3>
+// <p>Some text here...</p>
+
+// <h3>Example 2</h3>
+// <p>Some text here...</p>
+
+// <h2>See also</h2>
+// <p>Some text here...</p>
 
 $margin-level-one:   $line-height / $font-size-level-one;
 $margin-level-two:   $line-height / $font-size-level-two;

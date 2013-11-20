@@ -34,13 +34,25 @@ textarea {
   font-size: $font-size;
   font-weight: $font-weight-normal;
 
+  color: $input-foreground-color;
+  background-color: $input-background-color;
   border-color: $input-border-color;
 
   &:focus {
+    color: $input-focus-foreground-color;
+    background-color: $input-focus-background-color;
     border-color: $input-focus-border-color;
+
+    &:hover {
+      color: $input-focus-foreground-color;
+      background-color: $input-focus-background-color;
+      border-color: $input-focus-border-color;
+    }
   }
   &:hover {
-    border-color: $input-hover-border-color; 
+    color: $input-hover-foreground-color;
+    background-color: $input-hover-background-color;
+    border-color: $input-hover-border-color;
   }
 }
 

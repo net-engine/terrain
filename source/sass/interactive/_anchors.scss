@@ -1,3 +1,11 @@
+a {
+  color: $link-color;
+
+  &:hover { color: $link-color-hover; }
+  &:active { color: $link-color-active; }
+  &:visited { color: $link-color-visited; }
+}
+
 main a {
   color: $main-link-color;
 
