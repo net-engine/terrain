@@ -6589,7 +6589,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 }
 
 /* line 50, ../source/sass/color/_base_palette.scss */
-.gray-lighter-background {
+.gray-lighter-background, select {
   background-color: #f6f6f6;
 }
 
@@ -7378,41 +7378,41 @@ iframe {
   position: fixed;
 }
 
-/* line 130, ../source/sass/layout/_form_layout.scss */
+/* line 129, ../source/sass/layout/_form_layout.scss */
 form footer {
   position: relative;
 }
-/* line 133, ../source/sass/layout/_form_layout.scss */
+/* line 132, ../source/sass/layout/_form_layout.scss */
 form footer button, form footer input[type="submit"] {
   float: right;
   margin-left: 0.56667em;
 }
 
-/* line 139, ../source/sass/layout/_form_layout.scss */
+/* line 138, ../source/sass/layout/_form_layout.scss */
 form header {
   position: relative;
   padding-top: 1.7em;
   padding-bottom: 1.7em;
 }
 
-/* line 145, ../source/sass/layout/_form_layout.scss */
+/* line 144, ../source/sass/layout/_form_layout.scss */
 fieldset {
   margin-bottom: 3.4em;
 }
 
-/* line 152, ../source/sass/layout/_form_layout.scss */
+/* line 151, ../source/sass/layout/_form_layout.scss */
 legend {
   font-size: 1.5em;
   margin-bottom: 2.26667em;
 }
 
-/* line 157, ../source/sass/layout/_form_layout.scss */
+/* line 156, ../source/sass/layout/_form_layout.scss */
 label {
   margin-bottom: 0.85em;
   display: block;
 }
 
-/* line 163, ../source/sass/layout/_form_layout.scss */
+/* line 162, ../source/sass/layout/_form_layout.scss */
 input[type="checkbox"] + label,
 input[type="radio"] + label {
   display: inline-block;
