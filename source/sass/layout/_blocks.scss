@@ -9,17 +9,48 @@
 }
 
 nav {}
-
 article {}
-
 aside {}
-
 header {}
-
 footer {}
-
 main {}
 
 iframe {
   width: 100%;
+}
+
+main img {
+  display: block;
+  width: auto;
+  max-width: 100%;
+}
+
+blockquote {
+  margin-bottom: $line-height;
+  padding-left: $gutter / 2;
+  border-left: $heavy-stroke solid $default-border-color;
+}
+
+pre {
+  margin-bottom: $line-height;
+  background-color: $gray-dark; 
+  color: $gray-lighter;
+  @include border-radius($radius);
+  padding: $line-height / 2;
+}
+
+details {
+  margin-bottom: $line-height;
+  
+  summary { cursor: pointer; }
+  
+  summary:focus {
+    outline: 0;
+    color: $color-primary;
+  }
+}
+
+math {
+  display: block;
+  margin-bottom: $line-height;
 }

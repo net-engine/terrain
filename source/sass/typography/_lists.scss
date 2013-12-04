@@ -1,3 +1,83 @@
+ul, ol {
+  padding: 0;
+  margin-top: 0;
+}
+
+main {
+  ol, ul:not(.no-dot) {
+    margin-bottom: $line-height;
+    
+    li {
+      list-style: none;
+      display: block;
+      position: relative;
+      padding-left: 1.5em;
+
+      &:before {
+        position: absolute;
+        left:0;
+        line-height: $line-height;
+        top: 0;
+        width: 1em;
+        font-weight: bold;
+      }
+
+      ul li:before { content: '-' }
+    }
+  }
+
+  ul:not(.no-dot) li:before { content: "•"; }
+
+  ol {
+    list-style: decimal;
+    counter-reset: item;
+
+    li:before {
+      content: counter(item) ". ";
+      counter-increment: item;
+    }
+  }
+
+  dl {
+    margin-bottom: $line-height;
+
+    dt {
+      font-weight: $font-weight-medium;
+    }
+    dd {
+      padding-left: 1.5em;
+    }
+  }
+}
+
+.circle-list li {
+  @extend .icon-position-left;
+
+  &:before {
+    @include circle;
+  }
+}
+
+.ruled-list, .meta-list {
+  li {
+    @extend .border-top-light-solid;
+    margin-bottom: $line-height / 4;
+    padding-top: $line-height / 4;
+
+    ul {
+      margin-top: $line-height / 4;
+      margin-left: $page-margin / 2;
+    }
+  }
+}
+
+.meta-list {
+  @extend .circle-list;
+
+  li:before { font-size: 1.333em; }
+}
+
+
 // <ul>
 //   <li>first item</li>
 //   <li>second item</li>
@@ -69,67 +149,3 @@
 //   </li> 
 //   <li>third item</li>
 // </ol>
-
-
-
-ul, ol {
-  padding: 0;
-  margin-top: 0;
-}
-
-main {
-  ol, ul:not(.no-dot) {
-    margin-bottom: $line-height;
-    li {
-      list-style: none;
-      display: block;
-      position: relative;
-      padding-left: 1.5em;
-
-      &:before {
-        position: absolute;
-        left:0;
-        line-height: $line-height;
-        top: 0;
-        width: 1em;
-        font-weight: bold;
-      }
-
-      ul li:before { content: '-' }
-    }
-  }
-
-  ul:not(.no-dot) li:before { content: "•"; }
-
-  ol {
-    list-style: decimal;
-    counter-reset: item;
-
-    li:before {
-      content: counter(item) ". ";
-      counter-increment: item;
-    }
-  }
-}
-
-.circle-list li {
-  @extend .icon-position-right;
-
-  &:before {
-    @include circle;
-  }
-}
-
-.ruled-list, .meta-list {
-  li {
-    @extend .border-top-light-solid;
-    margin-bottom: $line-height / 4;
-    padding-top: $line-height / 4;
-  }
-}
-
-.meta-list {
-  @extend .circle-list;
-
-  li:before { font-size: 1.333em; }
-}

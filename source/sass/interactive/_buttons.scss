@@ -2,7 +2,7 @@
 //
 // <button>Submit</button>
 
-%button {
+@mixin button() {
   @include rounded-box(inline-block, false);
   padding: $line-height / 4 $line-height / 2;
 
@@ -49,20 +49,23 @@
   }
 }
 
-
-.button, 
+.button {
+  @include button;
+}
+ 
 button, 
 input[type="submit"], 
 input[type="button"] {
-  @extend %button;
+  @include appearance(none);
+  @extend .button;
 }
 
 input[type="submit"], 
 button[type='submit'] {
-  background: $button-submit-color;
+  background: $button-submit-background-color;
 
   &:hover {
-    background-color: darken($button-submit-color, 15%);
+    background-color: $button-submit-hover-background-color;
   }
 }
 

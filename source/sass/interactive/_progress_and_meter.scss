@@ -1,0 +1,63 @@
+@-webkit-keyframes progress {
+  0%   { background-position-x: 0; }
+  100% { background-position-x: $line-height; }
+}
+
+@-moz-keyframes progress {
+  0%   { background-position-x: 0; }
+  100% { background-position-x: $line-height; }
+}
+
+progress, meter {
+  display: block;
+  margin-bottom: $line-height;
+  width: 100%;
+  border: none;
+  
+  @include appearance(none);
+
+  @include border-radius($radius);
+}
+
+progress {
+  background: $gray-light;
+  background-image: linear-gradient(-45deg, rgba(255, 255, 255, .2) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, .2) 50%, rgba(255, 255, 255, .2) 75%, transparent 75%, transparent);
+  background-size: $line-height $line-height;
+  -webkit-animation: progress 1.5s infinite;
+  -webkit-animation-timing-function: linear;
+
+  &::-webkit-progress-bar {
+    background: transparent;
+  }
+
+  &::-webkit-progress-value {
+    background-color: $color-info;
+  }
+}
+
+::-moz-progress-bar {
+  background-color: $color-info;
+}
+
+meter {
+  &::-webkit-meter-bar {
+    background: $gray-light;
+  } 
+  &::-webkit-meter-optimum-value {
+    background: $color-success;
+  }
+}
+
+:-moz-meter-optimum, :-moz-meter-sub-optimum, :-moz-meter-sub-sub-optimum {
+  background: $gray-light;
+} 
+
+:-moz-meter-optimum::-moz-meter-bar {
+  background: $color-success;
+}
+:-moz-meter-sub-optimum::-moz-meter-bar {
+  background: $color-warning;
+}
+:-moz-meter-sub-sub-optimum::-moz-meter-bar {
+  background: $color-danger;
+}

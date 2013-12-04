@@ -22,6 +22,4 @@
 
 .pill {
   @include rounded-box(inline-block, false);
-  margin-right: 0.5em;
-  margin-bottom: 0.5em;
 }

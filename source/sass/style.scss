@@ -8,9 +8,8 @@
 @import 'helpers/layout_helpers',
         'helpers/interactive_helpers';
 
-@import 'color/base_palette',
-        'color/extended_palette',
-        'color/tints_and_shades';
+@import 'color/palette',
+        'color/gradients';
 
 @import 'decorative/borders';
 
@@ -19,16 +18,19 @@
         'typography/icons',
         'typography/lists';
 
-@import 'media/images';
-
-@import 'layout/blocks',
+@import 'layout/vertical_rhythm',
+        'layout/blocks',
         'layout/grid',
         'layout/positioning',
-        'layout/form_layout',
-        'layout/themes';
+        'layout/form_structure',
+        'layout/structure';
 
 @import 'interactive/anchors',
         'interactive/buttons',
         'interactive/radio_buttons_and_checkboxes',
         'interactive/selects',
-        'interactive/text_inputs';
+        'interactive/text_inputs',
+        'interactive/progress_and_meter',
+        'interactive/file_inputs';
+
+@import 'components/table';

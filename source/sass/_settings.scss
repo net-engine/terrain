@@ -35,7 +35,7 @@ $white:                   lighten($black, 93.5%);
 $gray-darker:             lighten($black, 13.5%);
 $gray-dark:               lighten($black, 20%);
 $gray:                    lighten($black, 33.5%);
-$gray-light:              lighten($black, 60%);
+$gray-light:              lighten($black, 75%);
 $gray-lighter:            lighten($black, 87.5%);
 
 
@@ -71,28 +71,34 @@ $footer-link-color-visited:     lighten($link-color, 15%);
 
 // Buttons
 
-$button-default-foreground-color:       $white;
-$button-default-background-color:       $gray-dark;
-$button-default-border-color:           $gray-darker;
+$button-default-foreground-color:         $white;
+$button-default-background-color:         $gray-dark;
+$button-default-border-color:             $gray-darker;
 
-$button-default-hover-foreground-color:  $white;
-$button-default-hover-background-color:  $gray-dark;
-$button-default-hover-border-color:      $gray-darker;
+$button-default-hover-foreground-color:   $white;
+$button-default-hover-background-color:   $gray-dark;
+$button-default-hover-border-color:       $gray-darker;
 
 $button-default-active-foreground-color:  $white;
 $button-default-active-background-color:  $gray-dark;
 $button-default-active-border-color:      $gray-darker;
 
-$button-submit-foreground-color:        $white;
-$button-submit-background-color:        $color-primary;
-$button-submit-border-color:            $color-primary-dark;
+$button-submit-foreground-color:          $white;
+$button-submit-background-color:          $color-primary;
+$button-submit-border-color:              $color-primary-dark;
 
-$button-danger-foreground-color:        $white;
-$button-danger-background-color:        $gray-dark;
-$button-danger-border-color:            $gray-darker;
+$button-danger-foreground-color:          $white;
+$button-danger-background-color:          $gray-dark;
+$button-danger-border-color:              $gray-darker;
 
 
-$button-submit-color:           $color-primary;
+$button-submit-background-color:          $color-primary;
+$button-submit-foreground-color:          $white;
+$button-submit-border-color:              darken($color-primary, 5%);
+
+$button-submit-hover-background-color:    darken($color-primary, 5%);
+$button-submit-hover-foreground-color:    $white;
+$button-submit-hover-border-color:        darken($color-primary, 10%);
 
 
 // Inputs
@@ -140,14 +146,17 @@ $max-width:               $breakpoint-medium !default;
 $center-layout:           true;
 
 
-// Borders
+// Stroke widths
 
-$border-heavy-width:      $line-height / 4;
-$border-medium-width:     $line-height / 8;
-$border-light-width:      thin;
+$heavy-stroke:            $line-height / 4;
+$medium-stroke:           $line-height / 8;
+$light-stroke:            0.1em;
+
+$default-border-color:    $gray-light;
+$light-border-color:      $gray-lighter;
 
 
-// Layout theme options
+// Structure options
 
 $fixed-left-nav:          true;
 $fixed-left-nav-width:    18em;
@@ -155,8 +164,20 @@ $fixed-left-nav-width:    18em;
 $fixed-top-nav:           false;
 $fixed-top-nav-height:    8em;
 
+$fixed-top-header:        true;
+$fixed-top-header-height: $line-height * 2;
+$fixed-top-header-color:  $white;
+$fixed-top-header-background: transparent;
+
+
 $nav-background-color:    $black;
 $nav-item-color:          $color-primary;
+
+
+// Layers (z-indexes)
+
+$top-layer: 200;
+$second-top-layer: 100;
 
 
 // Debugging

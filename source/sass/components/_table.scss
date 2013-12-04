@@ -1,3 +1,71 @@
+table {
+  border-collapse: collapse;
+  text-align: left;
+  width: 100%;
+  margin: 0 0 $line-height;
+  border: $light-stroke solid $default-border-color;
+
+  caption, th, td {
+    vertical-align: top;
+    padding: $line-height / 2;
+  }
+
+  caption {
+    font-weight: $font-weight-medium;
+    font-size: 0.8em;
+    text-transform: uppercase;
+  }
+
+  th {
+    font-weight: $font-weight-medium;
+  }
+
+  thead tr { 
+    background-color: $gray-lighter;
+
+    &.no-wrap {
+      th { 
+        vertical-align: center; 
+        @include ellipsis;
+        line-height: $line-height + $line-height / 2;
+      }
+    }
+  }
+
+  tbody tr {
+    border-top: $light-stroke solid $default-border-color;
+
+    th {
+      background-color: $gray-lighter;
+      font-weight: $font-weight-medium;
+    }
+
+    &.no-wrap {
+      td, th { 
+        vertical-align: center; 
+        @include ellipsis;
+        line-height: $line-height + $line-height / 2;
+      }
+    }
+  }
+
+  tfoot {
+    color: $gray;
+    tr {
+      border-top: $light-stroke solid $default-border-color;
+    }
+  }
+  
+  &.fixed {
+    table-layout: fixed;
+    @include box-sizing( border-box );
+    * {
+      @include box-sizing( border-box );
+    }
+  }
+}
+
+
 // <h3>Simple table</h3>
 // <table>
 //   <tr>
@@ -96,63 +164,3 @@
 //     <td>Awesome data</td>
 //   </tr>
 // </table>
-
-
-table {
-  border-collapse: collapse;
-  text-align: left;
-  width: 100%;
-  margin: 0 0 $line-height;
-  &:last-child {
-    margin-bottom: 0;
-  }
-
-  thead tr { 
-    border-bottom-width: 1px;
-    border-bottom-style: solid;
-    @extend %black_transparent_primary;
-    &.no_wrap {
-      th { 
-        vertical-align: center; 
-        @include ellipsis;
-        line-height: $line-height + $line-height / 2;
-      }
-    }
-  }
-
-  tbody tr {
-    border-top-width: 1px;
-    border-top-style: solid;
-    @extend %black_transparent_light-grey;
-    &:first-child { border-top: none; }
-
-    &.no_wrap {
-      td { 
-        vertical-align: center; 
-        @include ellipsis;
-        line-height: $line-height + $line-height / 2;
-      }
-    }
-  }
-
-  th, td, th[class*="span_"], td[class*="span_"] {
-    display: table-cell;
-    vertical-align: top;
-    padding-top: $line-height / 2;
-    padding-bottom: $line-height / 2;
-    &:first-child { padding-left: 0; }
-    &:last-child { padding-right: 0; }
-  }
-
-  th {
-    font-weight: 600;
-    white-space: nowrap;
-  }
-  &.fixed {
-    table-layout: fixed;
-    @include box-sizing( border-box );
-    * {
-      @include box-sizing( border-box );
-    }
-  }
-}

@@ -4,9 +4,7 @@
 .fixed-top-right {
   top: 0;
 
-  &.inset-one {
-    top: $line-height;
-  }
+  &.inset-one { top: $page-margin / 4; }
 }
 
 .absolute-top-right, 
@@ -15,9 +13,7 @@
 .fixed-bottom-right {
   right: 0;
 
-  &.inset-one {
-    right: $line-height;
-  }
+  &.inset-one { right: $page-margin / 4; }
 }
 
 .absolute-bottom-left, 
@@ -26,9 +22,7 @@
 .fixed-bottom-right {
   bottom: 0;
 
-  &.inset-one {
-    bottom: $line-height;
-  }
+  &.inset-one { bottom: $page-margin / 4; }
 }
 
 .absolute-bottom-left, 

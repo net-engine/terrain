@@ -1,5 +1,6 @@
 a {
   color: $link-color;
+  text-decoration: none;
 
   &:hover { color: $link-color-hover; }
   &:active { color: $link-color-active; }

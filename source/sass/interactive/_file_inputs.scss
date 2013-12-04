@@ -1,0 +1,14 @@
+input[type="file"] {
+  margin-bottom: $line-height;
+  font-size: 1em;
+}
+
+input[type="file"]::-webkit-file-upload-button {
+  @include appearance(none);
+  @include button;
+}
+
+input[type="file"] > input[type="button"] {
+  @include appearance(none);
+  @include button;
+}
