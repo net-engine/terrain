@@ -1,34 +1,3 @@
-// # Colors
-// <section>
-// <div class="one-quarter"><span class="pill white-foreground black-background">white</span></div>
-// <div class="one-quarter"><span class="pill black-foreground">black</span></div>
-// <div class="one-quarter"><span class="pill primary-foreground">primary</span></div>
-// <div class="one-quarter"><span class="pill primary-light-foreground">primary-light</span></div>
-// <div class="one-quarter"><span class="pill gray-darker-foreground">gray-darker</span></div>
-// <div class="one-quarter"><span class="pill gray-dark-foreground">gray-dark</span></div>
-// <div class="one-quarter"><span class="pill gray-foreground">gray</span></div>
-// <div class="one-quarter"><span class="pill gray-light-foreground">gray-light</span></div>
-// <div class="one-quarter"><span class="pill gray-lighter-foreground">gray-lighter</span></div>
-// <div class="one-quarter"><span class="pill success-foreground">success</span></div>
-// <div class="one-quarter"><span class="pill warning-foreground">warning</span></div>
-// <div class="one-quarter"><span class="pill danger-foreground">danger</span></div>
-// <div class="one-quarter"><span class="pill info-foreground">info</span></div>
-// <div class="one-quarter"><span class="pill white-background">white</span></div>
-// <div class="one-quarter"><span class="pill black-background white-foreground">black</span></div>
-// <div class="one-quarter"><span class="pill primary-background white-foreground">primary</span></div>
-// <div class="one-quarter"><span class="pill primary-light-background white-foreground">primary-light</span></div>
-// <div class="one-quarter"><span class="pill gray-darker-background white-foreground">gray-darker</span></div>
-// <div class="one-quarter"><span class="pill gray-dark-background white-foreground">gray-dark</span></div>
-// <div class="one-quarter"><span class="pill gray-background white-foreground">gray</span></div>
-// <div class="one-quarter"><span class="pill gray-light-background white-foreground">gray-light</span></div>
-// <div class="one-quarter"><span class="pill gray-lighter-background">gray-lighter</span></div>
-// <div class="one-quarter"><span class="pill success-background white-foreground">success</span></div>
-// <div class="one-quarter"><span class="pill warning-background white-foreground">warning</span></div>
-// <div class="one-quarter"><span class="pill danger-background white-foreground">danger</span></div>
-// <div class="one-quarter"><span class="pill info-background white-foreground">info</span></div>
-// </section>
-//
-
 $palette: "white"         $white,
           "black"         $black,
           "primary"       $color-primary,
@@ -63,3 +32,34 @@ html {
   background-color: $white;
   color: $black;
 }
+
+// # Colors
+// <section>
+// <div class="one-quarter"><span class="pill white-foreground black-background">white</span></div>
+// <div class="one-quarter"><span class="pill black-foreground">black</span></div>
+// <div class="one-quarter"><span class="pill primary-foreground">primary</span></div>
+// <div class="one-quarter"><span class="pill primary-light-foreground">primary-light</span></div>
+// <div class="one-quarter"><span class="pill gray-darker-foreground">gray-darker</span></div>
+// <div class="one-quarter"><span class="pill gray-dark-foreground">gray-dark</span></div>
+// <div class="one-quarter"><span class="pill gray-foreground">gray</span></div>
+// <div class="one-quarter"><span class="pill gray-light-foreground">gray-light</span></div>
+// <div class="one-quarter"><span class="pill gray-lighter-foreground">gray-lighter</span></div>
+// <div class="one-quarter"><span class="pill success-foreground">success</span></div>
+// <div class="one-quarter"><span class="pill warning-foreground">warning</span></div>
+// <div class="one-quarter"><span class="pill danger-foreground">danger</span></div>
+// <div class="one-quarter"><span class="pill info-foreground">info</span></div>
+// <div class="one-quarter"><span class="pill white-background">white</span></div>
+// <div class="one-quarter"><span class="pill black-background white-foreground">black</span></div>
+// <div class="one-quarter"><span class="pill primary-background white-foreground">primary</span></div>
+// <div class="one-quarter"><span class="pill primary-light-background white-foreground">primary-light</span></div>
+// <div class="one-quarter"><span class="pill gray-darker-background white-foreground">gray-darker</span></div>
+// <div class="one-quarter"><span class="pill gray-dark-background white-foreground">gray-dark</span></div>
+// <div class="one-quarter"><span class="pill gray-background white-foreground">gray</span></div>
+// <div class="one-quarter"><span class="pill gray-light-background white-foreground">gray-light</span></div>
+// <div class="one-quarter"><span class="pill gray-lighter-background">gray-lighter</span></div>
+// <div class="one-quarter"><span class="pill success-background white-foreground">success</span></div>
+// <div class="one-quarter"><span class="pill warning-background white-foreground">warning</span></div>
+// <div class="one-quarter"><span class="pill danger-background white-foreground">danger</span></div>
+// <div class="one-quarter"><span class="pill info-background white-foreground">info</span></div>
+// </section>
+//

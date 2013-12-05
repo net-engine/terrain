@@ -22,4 +22,9 @@
 
 .pill {
   @include rounded-box(inline-block, false);
+  &.icon-only {
+    width: $line-height + $line-height / 2; 
+    height: $line-height + $line-height / 2;
+    line-height: $line-height + $line-height / 2;
+  }
 }

@@ -55,13 +55,16 @@
       <section>
         <div class="container">
           <h2>Scale</h2>
-
-          <h1>First level</h1>
-          <h2>Second level</h2>
-          <h3>Third level</h3>
-          <h4>Fourth level</h4>
-          <h5>Fifth level</h5>
-          <h6>Sxith level</h6>
+          <div class="one-half first">
+            <h1>First level</h1>
+            <h2>Second level</h2>
+            <h3>Third level</h3>
+          </div>
+          <div class="one-half last">
+            <h4>Fourth level</h4>
+            <h5>Fifth level</h5>
+            <h6>Sxith level</h6>
+          </div>
         </div>
       
       </section>
@@ -93,16 +96,7 @@
           <ins>Defines an addition to the document.</ins>
           <del>Defines a removal from the document.</del>
         </div>
-             
       </section>
-    </article>
-    <article>
-      <header>
-        <hgroup class="container">
-          <h1>Lists</h1>
-        </hgroup>
-      </header>
-      
       <section>
         <div class="container">
           <h2>Standard Lists</h2>
@@ -137,10 +131,32 @@
         </div>
       </section>
     </article>
+    <article id="color">
+      <header>
+        <hgroup class="container">
+          <h1>Color</h1>
+        </hgroup>
+      </header>
+      <section class="gray-darker-background white-foreground">
+        <div class="container">
+          <p>Darker Grey</p>
+        </div>
+      </section>
+      <section class="gray-dark-background white-foreground">
+        <div class="container">
+          <p>Dark Grey</p>
+        </div>
+      </section>
+      <section class="gray-background white-foreground">
+        <div class="container">
+          <p>Grey</p>
+        </div>
+      </section>
+    </article>
     <article>
       <header>
         <hgroup class="container">
-          <h1>Specically Formatted Blocks</h1>
+          <h1>Specially Formatted Blocks</h1>
         </hgroup>
       </header>
       
@@ -176,7 +192,7 @@
         </div>
       </section>
     </article>
-    <article>
+    <article id="tables">
       <header>
         <hgroup class="container">
           <h1>Tables</h1>
@@ -286,10 +302,10 @@
       </section>
     </article>
 
-    <article>
+    <article id="interactive">
       <header>
         <hgroup class="container">
-          <h1>Form / interactive elements</h1>
+          <h1>Interactive elements</h1>
         </hgroup>
       </header>
       <section>
@@ -448,20 +464,11 @@
               </div>
             </fieldset>
             <fieldset>
-              <div class="one-half">
-                <input type="file"  class="file-upload-button"/>
-                <div class="one-third first">
-                  <input type="range" name="b" value="50" />
-                </div>
-                <div class="one-third second">
-                  <input type="number" name="a" value="10" />
-                </div>
-                <div class="one-third last">
-                  = <output name="result"></output>
-                </div>
-              </div>
-              <div class="one-half">
+              <legend>Progress and Meter</legend>
+              <div class="one-half first">
                 <progress value="0.4"></progress>
+              </div>
+              <div class="one-half last">
                 <meter value="0.6"></meter>
               </div>
             </fieldset>

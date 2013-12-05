@@ -6456,263 +6456,269 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   padding: 0.425em 0.85em;
   border: none;
 }
+/* line 25, ../../source/sass/helpers/_interactive_helpers.scss */
+.pill.icon-only {
+  width: 2.55em;
+  height: 2.55em;
+  line-height: 2.55em;
+}
 
-/* line 51, ../../source/sass/color/_palette.scss */
+/* line 20, ../../source/sass/color/_palette.scss */
 .white-foreground {
   color: white;
 }
 
-/* line 54, ../../source/sass/color/_palette.scss */
+/* line 23, ../../source/sass/color/_palette.scss */
 .white-background {
   background-color: white;
 }
 
-/* line 57, ../../source/sass/color/_palette.scss */
+/* line 26, ../../source/sass/color/_palette.scss */
 .white-border {
   border-color: white;
 }
 
-/* line 51, ../../source/sass/color/_palette.scss */
+/* line 20, ../../source/sass/color/_palette.scss */
 .black-foreground {
   color: #171717;
 }
 
-/* line 54, ../../source/sass/color/_palette.scss */
+/* line 23, ../../source/sass/color/_palette.scss */
 .black-background {
   background-color: #171717;
 }
 
-/* line 57, ../../source/sass/color/_palette.scss */
+/* line 26, ../../source/sass/color/_palette.scss */
 .black-border {
   border-color: #171717;
 }
 
-/* line 51, ../../source/sass/color/_palette.scss */
+/* line 20, ../../source/sass/color/_palette.scss */
 .primary-foreground {
   color: #5694bd;
 }
 
-/* line 54, ../../source/sass/color/_palette.scss */
+/* line 23, ../../source/sass/color/_palette.scss */
 .primary-background {
   background-color: #5694bd;
 }
 
-/* line 57, ../../source/sass/color/_palette.scss */
+/* line 26, ../../source/sass/color/_palette.scss */
 .primary-border {
   border-color: #5694bd;
 }
 
-/* line 51, ../../source/sass/color/_palette.scss */
+/* line 20, ../../source/sass/color/_palette.scss */
 .primary-light-foreground {
   color: #c4dae8;
 }
 
-/* line 54, ../../source/sass/color/_palette.scss */
+/* line 23, ../../source/sass/color/_palette.scss */
 .primary-light-background {
   background-color: #c4dae8;
 }
 
-/* line 57, ../../source/sass/color/_palette.scss */
+/* line 26, ../../source/sass/color/_palette.scss */
 .primary-light-border {
   border-color: #c4dae8;
 }
 
-/* line 51, ../../source/sass/color/_palette.scss */
+/* line 20, ../../source/sass/color/_palette.scss */
 .gray-darker-foreground {
   color: #393939;
 }
 
-/* line 54, ../../source/sass/color/_palette.scss */
+/* line 23, ../../source/sass/color/_palette.scss */
 .gray-darker-background {
   background-color: #393939;
 }
 
-/* line 57, ../../source/sass/color/_palette.scss */
+/* line 26, ../../source/sass/color/_palette.scss */
 .gray-darker-border {
   border-color: #393939;
 }
 
-/* line 51, ../../source/sass/color/_palette.scss */
+/* line 20, ../../source/sass/color/_palette.scss */
 .gray-dark-foreground {
   color: #4a4a4a;
 }
 
-/* line 54, ../../source/sass/color/_palette.scss */
+/* line 23, ../../source/sass/color/_palette.scss */
 .gray-dark-background {
   background-color: #4a4a4a;
 }
 
-/* line 57, ../../source/sass/color/_palette.scss */
+/* line 26, ../../source/sass/color/_palette.scss */
 .gray-dark-border {
   border-color: #4a4a4a;
 }
 
-/* line 51, ../../source/sass/color/_palette.scss */
+/* line 20, ../../source/sass/color/_palette.scss */
 .gray-foreground {
   color: #6c6c6c;
 }
 
-/* line 54, ../../source/sass/color/_palette.scss */
+/* line 23, ../../source/sass/color/_palette.scss */
 .gray-background {
   background-color: #6c6c6c;
 }
 
-/* line 57, ../../source/sass/color/_palette.scss */
+/* line 26, ../../source/sass/color/_palette.scss */
 .gray-border {
   border-color: #6c6c6c;
 }
 
-/* line 51, ../../source/sass/color/_palette.scss */
+/* line 20, ../../source/sass/color/_palette.scss */
 .gray-light-foreground {
   color: #d6d6d6;
 }
 
-/* line 54, ../../source/sass/color/_palette.scss */
+/* line 23, ../../source/sass/color/_palette.scss */
 .gray-light-background {
   background-color: #d6d6d6;
 }
 
-/* line 57, ../../source/sass/color/_palette.scss */
+/* line 26, ../../source/sass/color/_palette.scss */
 .gray-light-border {
   border-color: #d6d6d6;
 }
 
-/* line 51, ../../source/sass/color/_palette.scss */
+/* line 20, ../../source/sass/color/_palette.scss */
 .gray-lighter-foreground {
   color: #f6f6f6;
 }
 
-/* line 54, ../../source/sass/color/_palette.scss */
+/* line 23, ../../source/sass/color/_palette.scss */
 .gray-lighter-background {
   background-color: #f6f6f6;
 }
 
-/* line 57, ../../source/sass/color/_palette.scss */
+/* line 26, ../../source/sass/color/_palette.scss */
 .gray-lighter-border {
   border-color: #f6f6f6;
 }
 
-/* line 51, ../../source/sass/color/_palette.scss */
+/* line 20, ../../source/sass/color/_palette.scss */
 .success-foreground {
   color: #91ce3b;
 }
 
-/* line 54, ../../source/sass/color/_palette.scss */
+/* line 23, ../../source/sass/color/_palette.scss */
 .success-background {
   background-color: #91ce3b;
 }
 
-/* line 57, ../../source/sass/color/_palette.scss */
+/* line 26, ../../source/sass/color/_palette.scss */
 .success-border {
   border-color: #91ce3b;
 }
 
-/* line 51, ../../source/sass/color/_palette.scss */
+/* line 20, ../../source/sass/color/_palette.scss */
 .success-light-foreground {
   color: #e1f2ca;
 }
 
-/* line 54, ../../source/sass/color/_palette.scss */
+/* line 23, ../../source/sass/color/_palette.scss */
 .success-light-background {
   background-color: #e1f2ca;
 }
 
-/* line 57, ../../source/sass/color/_palette.scss */
+/* line 26, ../../source/sass/color/_palette.scss */
 .success-light-border {
   border-color: #e1f2ca;
 }
 
-/* line 51, ../../source/sass/color/_palette.scss */
+/* line 20, ../../source/sass/color/_palette.scss */
 .warning-foreground {
   color: #f3d781;
 }
 
-/* line 54, ../../source/sass/color/_palette.scss */
+/* line 23, ../../source/sass/color/_palette.scss */
 .warning-background {
   background-color: #f3d781;
 }
 
-/* line 57, ../../source/sass/color/_palette.scss */
+/* line 26, ../../source/sass/color/_palette.scss */
 .warning-border {
   border-color: #f3d781;
 }
 
-/* line 51, ../../source/sass/color/_palette.scss */
+/* line 20, ../../source/sass/color/_palette.scss */
 .warning-light-foreground {
   color: white;
 }
 
-/* line 54, ../../source/sass/color/_palette.scss */
+/* line 23, ../../source/sass/color/_palette.scss */
 .warning-light-background {
   background-color: white;
 }
 
-/* line 57, ../../source/sass/color/_palette.scss */
+/* line 26, ../../source/sass/color/_palette.scss */
 .warning-light-border {
   border-color: white;
 }
 
-/* line 51, ../../source/sass/color/_palette.scss */
+/* line 20, ../../source/sass/color/_palette.scss */
 .danger-foreground {
   color: #f44e56;
 }
 
-/* line 54, ../../source/sass/color/_palette.scss */
+/* line 23, ../../source/sass/color/_palette.scss */
 .danger-background {
   background-color: #f44e56;
 }
 
-/* line 57, ../../source/sass/color/_palette.scss */
+/* line 26, ../../source/sass/color/_palette.scss */
 .danger-border {
   border-color: #f44e56;
 }
 
-/* line 51, ../../source/sass/color/_palette.scss */
+/* line 20, ../../source/sass/color/_palette.scss */
 .danger-light-foreground {
   color: #fef5f6;
 }
 
-/* line 54, ../../source/sass/color/_palette.scss */
+/* line 23, ../../source/sass/color/_palette.scss */
 .danger-light-background {
   background-color: #fef5f6;
 }
 
-/* line 57, ../../source/sass/color/_palette.scss */
+/* line 26, ../../source/sass/color/_palette.scss */
 .danger-light-border {
   border-color: #fef5f6;
 }
 
-/* line 51, ../../source/sass/color/_palette.scss */
+/* line 20, ../../source/sass/color/_palette.scss */
 .info-foreground {
   color: #5694bd;
 }
 
-/* line 54, ../../source/sass/color/_palette.scss */
+/* line 23, ../../source/sass/color/_palette.scss */
 .info-background {
   background-color: #5694bd;
 }
 
-/* line 57, ../../source/sass/color/_palette.scss */
+/* line 26, ../../source/sass/color/_palette.scss */
 .info-border {
   border-color: #5694bd;
 }
 
-/* line 51, ../../source/sass/color/_palette.scss */
+/* line 20, ../../source/sass/color/_palette.scss */
 .info-light-foreground {
   color: #d7e5ef;
 }
 
-/* line 54, ../../source/sass/color/_palette.scss */
+/* line 23, ../../source/sass/color/_palette.scss */
 .info-light-background {
   background-color: #d7e5ef;
 }
 
-/* line 57, ../../source/sass/color/_palette.scss */
+/* line 26, ../../source/sass/color/_palette.scss */
 .info-light-border {
   border-color: #d7e5ef;
 }
 
-/* line 62, ../../source/sass/color/_palette.scss */
+/* line 31, ../../source/sass/color/_palette.scss */
 html {
   background-color: white;
   color: #171717;
