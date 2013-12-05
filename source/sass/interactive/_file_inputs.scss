@@ -8,7 +8,3 @@ input[type="file"]::-webkit-file-upload-button {
   @include button;
 }
 
-input[type="file"] > input[type="button"] {
-  @include appearance(none);
-  @include button;
-}
