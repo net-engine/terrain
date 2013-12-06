@@ -45,7 +45,12 @@ body > nav {
 
 @if $fixed-right-nav {
   @include fixed-nav();
-  body .container { margin-right: $fixed-right-nav-width; }
+
+  @if $fixed-right-nav-hiddable {
+    // Do nothing
+  } @else {
+    body .container { margin-right: $fixed-right-nav-width; }
+  }
 
   body > nav {
     right: 0;
