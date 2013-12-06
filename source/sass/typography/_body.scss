@@ -1,6 +1,10 @@
 html {
+  font-size: $font-size;
   font-family: $font-family-body;
   line-height: $line-height;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
 }
 
 @if $baseline-grid {
@@ -12,8 +16,8 @@ html {
 
 p { margin-bottom: $line-height; }
 
-em, 
-cite, 
+em,
+cite,
 i { font-style: italic; }
 
 b,
@@ -42,7 +46,7 @@ time {}
 pre,
 code,
 var,
-samp, 
+samp,
 kbd { font-family: $font-family-mono; }
 
 sub {
@@ -67,8 +71,8 @@ del {
   background-color: $color-danger-light;
 }
 
-mark, ins, del { 
-  padding-left: 0.25em; 
+mark, ins, del {
+  padding-left: 0.25em;
   padding-right: 0.25em;
 }
 
