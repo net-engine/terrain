@@ -53,10 +53,10 @@ $color-info-light:        lighten($color-info, 35%) !default;
 
 // Links
 
-$link-color:                    $color-primary !default; 
-$link-color-hover:              $color-primary !default; 
-$link-color-active:             $color-primary !default; 
-$link-color-visited:            $color-primary !default; 
+$link-color:                    $color-primary !default;
+$link-color-hover:              $color-primary !default;
+$link-color-active:             $color-primary !default;
+$link-color-visited:            $color-primary !default;
 
 $main-link-color:               $link-color !default;
 $main-link-color-hover:         darken($link-color, 15%) !default;
@@ -158,8 +158,13 @@ $light-border-color:      $gray-lighter !default;
 
 // Structure options
 
+$fixed-nav-width:         18em !default;
+
 $fixed-left-nav:          true !default;
-$fixed-left-nav-width:    18em !default;
+$fixed-left-nav-width:    $fixed-nav-width !default;
+
+$fixed-right-nav:         false !default;
+$fixed-right-nav-width:   $fixed-nav-width !default;
 
 $fixed-top-nav:           false !default;
 $fixed-top-nav-height:    8em !default;

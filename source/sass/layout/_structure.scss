@@ -1,6 +1,6 @@
 body > nav {
   background-color: $nav-background-color;
-  
+
   &, a { color: $color-primary; }
 
   a {
@@ -8,36 +8,53 @@ body > nav {
   }
 }
 
-@if $fixed-left-nav {
-  body .container { margin-left: $fixed-left-nav-width; }
-
+@mixin fixed-nav {
   body > nav {
     position: fixed;
-    left: 0;
     top: 0;
     bottom: 0;
-    width: $fixed-left-nav-width;
     padding: $page-margin / 2;
     overflow: auto;
     @include box-sizing(border-box);
 
-    a {
-      display: block;
-      
-    }
-    .container { 
-      margin: 0; 
+    a { display: block; }
+
+    .container {
+      margin: 0;
       padding: 0;
     }
+
     ul {
       @extend .ruled-list;
 
-      li {
-        border-color: rgba($color-primary, 0.2);
-      }
+      li { border-color: rgba($color-primary, 0.2); }
     }
   }
 }
+
+
+@if $fixed-left-nav {
+  @include fixed-nav();
+  body .container { margin-left: $fixed-left-nav-width; }
+
+  body > nav {
+    left: 0;
+    width: $fixed-left-nav-width;
+  }
+}
+
+@if $fixed-right-nav {
+  @include fixed-nav();
+  body .container { margin-right: $fixed-right-nav-width; }
+
+  body > nav {
+    right: 0;
+    width: $fixed-right-nav-width;
+  }
+}
+
+
+
 
 @if $fixed-top-header {
   body > header {
