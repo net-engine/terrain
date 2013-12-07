@@ -38,9 +38,6 @@ $gray:                    lighten($black, 33.5%) !default;
 $gray-light:              lighten($black, 75%) !default;
 $gray-lighter:            lighten($black, 87.5%) !default;
 
-
-// Indicators
-
 $color-success:           hsl(85, 60%, 52%) !default;
 $color-success-light:     lighten($color-success, 35%) !default;
 $color-warning:           hsl(45, 83%, 73%) !default;
@@ -49,6 +46,24 @@ $color-danger:            hsl(357, 88%, 63%) !default;
 $color-danger-light:      lighten($color-danger, 35%) !default;
 $color-info:              $color-primary !default;
 $color-info-light:        lighten($color-info, 35%) !default;
+
+$palette: "white"         $white,
+          "black"         $black,
+          "primary"       $color-primary,
+          "primary-light" $color-primary-light,
+          "gray-darker"   $gray-darker,
+          "gray-dark"     $gray-dark,
+          "gray"          $gray,
+          "gray-light"    $gray-light,
+          "gray-lighter"  $gray-lighter,
+          "success"       $color-success,
+          "success-light" $color-success-light,
+          "warning"       $color-warning,
+          "warning-light" $color-warning-light,
+          "danger"        $color-danger,
+          "danger-light"  $color-danger-light,
+          "info"          $color-info,
+          "info-light"    $color-info-light !default;
 
 
 // Links

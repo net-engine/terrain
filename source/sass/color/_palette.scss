@@ -1,21 +1,3 @@
-$palette: "white"         $white,
-          "black"         $black,
-          "primary"       $color-primary,
-          "primary-light" $color-primary-light,
-          "gray-darker"   $gray-darker,
-          "gray-dark"     $gray-dark,
-          "gray"          $gray,
-          "gray-light"    $gray-light,
-          "gray-lighter"  $gray-lighter,
-          "success"       $color-success,
-          "success-light" $color-success-light,
-          "warning"       $color-warning,
-          "warning-light" $color-warning-light,
-          "danger"        $color-danger,
-          "danger-light"  $color-danger-light,
-          "info"          $color-info,
-          "info-light"    $color-info-light;
-
 @each $color1 in $palette {
   .#{ nth( $color1, 1 ) }-foreground { 
     color: nth( $color1, 2 );
