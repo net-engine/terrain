@@ -1,6 +1,7 @@
 a {
   color: $link-color;
   text-decoration: none;
+  @include transition(all 0.5s ease);
 
   &:hover { color: $link-color-hover; }
   &:active { color: $link-color-active; }

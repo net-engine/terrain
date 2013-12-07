@@ -24,7 +24,7 @@ textarea {
   padding: $line-height / 6 $line-height / 4;
   text-align: left;
 
-  @include transition( border-color 0.5s);
+  @include transition(all 0.5s ease);
   
   width: 100%;
   margin-bottom: $line-height;

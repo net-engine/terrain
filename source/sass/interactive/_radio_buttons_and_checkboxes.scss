@@ -45,6 +45,8 @@ input[type='radio'] {
 
 input[type="checkbox"] + label, 
 input[type="radio"] + label {
+  @include transition(all 0.5s ease);
+  
   display: inline-block;
   vertical-align: top;
   margin-bottom: $line-height;
