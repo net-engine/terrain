@@ -2,6 +2,7 @@ select {
   @include rounded-box;
   text-align: left;
   padding: $line-height / 6 $line-height / 4;
+  padding-right: $line-height;
 
   width: 100%;
   margin-bottom: $line-height;
