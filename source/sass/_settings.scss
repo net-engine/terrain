@@ -209,7 +209,7 @@ $baseline-grid: false !default;
 // Misc
 
 $radius: .15em !default;
-
+$border-width: .125em !default;
 
 //
 // To Implement your own icons, update the below:
@@ -225,3 +225,16 @@ $radius: .15em !default;
 //   font-style: normal !default;
 // }
 //
+
+
+
+
+
+// Components
+
+
+// Tabs
+
+$tab-border-width: $border-width !default;
+$tab-nav-background-color: $gray !default;
+$tab-border-color: darken($tab-nav-background-color, 10%) !default;
