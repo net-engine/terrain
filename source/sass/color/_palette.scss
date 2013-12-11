@@ -1,11 +1,13 @@
 @each $color1 in $palette {
-  .#{ nth( $color1, 1 ) }-foreground { 
+  .#{ nth( $color1, 1 ) }-foreground {
     color: nth( $color1, 2 );
+
+    &:link:visited { color: nth( $color1, 2 ); }
   }
-  .#{ nth( $color1, 1 ) }-background { 
+  .#{ nth( $color1, 1 ) }-background {
     background-color: nth( $color1, 2 );
   }
-  .#{ nth( $color1, 1 ) }-border { 
+  .#{ nth( $color1, 1 ) }-border {
     border-color: nth( $color1, 2 );
   }
 }

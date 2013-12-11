@@ -2,14 +2,43 @@
   @include appearance(none);
   @include box-sizing(border-box);
   @include border-radius($radius);
-  
+
   position: relative;
   display: $display;
-  line-height: $line-height; 
-  font-size: $font-size; 
+  line-height: $line-height;
+  font-size: $font-size;
   text-align: center;
   outline: 0;
   padding: $line-height / 4 $line-height / 2;
+
+  &:hover {
+    text-decoration: none;
+    cursor: pointer;
+
+    color: $button-default-hover-foreground-color;
+    background-color: $button-default-hover-background-color;
+    border-color: $button-default-hover-border-color;
+
+  }
+
+  &.active, &:active {
+    color: $button-default-active-foreground-color;
+    background-color: $button-default-active-background-color;
+    border-color: $button-default-active-border-color;
+  }
+
+  &[disabled="disabled"],
+  &[disabled="disabled"]:hover,
+  &[disabled="disabled"]:active {
+    opacity: .5;
+    cursor: default;
+  }
+
+  &.icon-only {
+    width: $line-height;
+    height: $line-height;
+    padding: 0;
+  }
 
   @if $border {
     margin-top: -2px;
@@ -22,8 +51,9 @@
 
 .pill {
   @include rounded-box(inline-block, false);
+
   &.icon-only {
-    width: $line-height + $line-height / 2; 
+    width: $line-height + $line-height / 2;
     height: $line-height + $line-height / 2;
     line-height: $line-height + $line-height / 2;
   }
