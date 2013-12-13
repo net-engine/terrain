@@ -185,7 +185,7 @@ $fixed-right-nav-hideable: false !default;
 $fixed-top-nav:           false !default;
 $fixed-top-nav-height:    8em !default;
 
-$fixed-top-header:        true !default;
+$fixed-top-header:        false !default;
 $fixed-top-header-height: $line-height * 2 !default;
 $fixed-top-header-color:  $white !default;
 $fixed-top-header-background: transparent !default;
@@ -231,6 +231,23 @@ $border-width: .125em !default;
 
 
 // Components
+
+
+// Hero
+
+$hero-padding: $line-height !default;
+$hero-color: $white !default;
+$hero-background-color: $color-primary-dark !default;
+
+$hero-background-image: nil !default;
+$hero-background-gradient: true !default;
+$hero-background-gradient-color: darken($hero-background-color, 15%) !default;
+$hero-background-gradient-image: radial-gradient(rgba($hero-background-gradient-color, .25), rgba($hero-background-gradient-color, .5)) !default;
+
+
+// It's easy to add a custom hero background image, for example:
+//
+// $hero-background-image: url('path/to/image');
 
 
 // Tabs

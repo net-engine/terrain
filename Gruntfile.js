@@ -4,7 +4,7 @@ module.exports = function(grunt) {
     connect: {
       server: {
         options: {
-          port: 9001,
+          port: 3030,
           base: ''
         }
       }
@@ -12,9 +12,9 @@ module.exports = function(grunt) {
     watch: {
       css: {
         files: ['source/sass/**/*'],
-        tasks: ['compass:dev'],
+        tasks: ['compass:docs'],
         options: {
-          livereload: true,
+          // livereload: true,
           force: true
         }
       }
@@ -25,12 +25,6 @@ module.exports = function(grunt) {
           sassDir: 'source/sass',
           cssDir: 'dist/stylesheets',
           environment: 'production'
-        }
-      },
-      dev: {
-        options: {
-          sassDir: 'source/sass',
-          cssDir: 'dist/stylesheets'
         }
       },
       docs: {
@@ -86,6 +80,6 @@ module.exports = function(grunt) {
   // Making grunt default to force in order not to break the project.
   grunt.option('force', true);
 
-  grunt.registerTask('default', ['connect', 'compass', 'watch']);
+  grunt.registerTask('default', ['connect', 'compass:docs', 'watch']);
   grunt.registerTask('build', ['compass', 'gh-pages']);
 }

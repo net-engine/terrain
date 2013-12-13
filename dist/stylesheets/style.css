@@ -6989,11 +6989,11 @@ hr {
 }
 
 /* line 39, ../../source/sass/typography/_headings.scss */
-h1, h2, h3, h4, h5, h6 {
+h1, h2, h3, h4, h5, h6, span {
   font-family: "Open Sans", "Helvetica Neue", sans-serif;
 }
 
-/* line 41, ../../source/sass/typography/_headings.scss */
+/* line 47, ../../source/sass/typography/_headings.scss */
 h1 {
   font-size: 3em;
   margin-top: 1.7em;
@@ -7001,7 +7001,7 @@ h1 {
   line-height: 1.13333em;
 }
 
-/* line 47, ../../source/sass/typography/_headings.scss */
+/* line 54, ../../source/sass/typography/_headings.scss */
 h2 {
   font-size: 1.75em;
   margin-top: 1.94286em;
@@ -7009,7 +7009,7 @@ h2 {
   line-height: 1.94286em;
 }
 
-/* line 53, ../../source/sass/typography/_headings.scss */
+/* line 61, ../../source/sass/typography/_headings.scss */
 h3 {
   font-size: 1.5em;
   margin-top: 2.26667em;
@@ -7017,7 +7017,7 @@ h3 {
   line-height: 2.26667em;
 }
 
-/* line 59, ../../source/sass/typography/_headings.scss */
+/* line 68, ../../source/sass/typography/_headings.scss */
 h4 {
   font-size: 1.25em;
   margin-top: 2.72em;
@@ -7025,7 +7025,7 @@ h4 {
   line-height: 2.72em;
 }
 
-/* line 65, ../../source/sass/typography/_headings.scss */
+/* line 75, ../../source/sass/typography/_headings.scss */
 h5 {
   font-size: 1em;
   margin-top: 3.4em;
@@ -7033,7 +7033,7 @@ h5 {
   line-height: 3.4em;
 }
 
-/* line 71, ../../source/sass/typography/_headings.scss */
+/* line 82, ../../source/sass/typography/_headings.scss */
 h6 {
   font-size: 0.8em;
   margin-top: 4.25em;
@@ -7041,59 +7041,62 @@ h6 {
   line-height: 4.25em;
 }
 
-/* line 119, ../../source/sass/typography/_headings.scss */
-h1:first-child,
-h2:first-child,
-h3:first-child,
-h4:first-child,
-h5:first-child,
-h6:first-child,
+/* line 90, ../../source/sass/typography/_headings.scss */
+h1:first-child, h2:first-child, h3:first-child, h4:first-child, h5:first-child, h6:first-child, span:first-child,
 h1 + h1,
-h1 + h2,
-h1 + h3,
-h1 + h4,
-h1 + h5,
-h1 + h6,
 h2 + h1,
-h2 + h2,
-h2 + h3,
-h2 + h4,
-h2 + h5,
-h2 + h6,
 h3 + h1,
-h3 + h2,
-h3 + h3,
-h3 + h4,
-h3 + h5,
-h3 + h6,
 h4 + h1,
-h4 + h2,
-h4 + h3,
-h4 + h4,
-h4 + h5,
-h4 + h6,
 h5 + h1,
-h5 + h2,
-h5 + h3,
-h5 + h4,
-h5 + h5,
-h5 + h6,
 h6 + h1,
+span + h1,
+h1 + h2,
+h2 + h2,
+h3 + h2,
+h4 + h2,
+h5 + h2,
 h6 + h2,
+span + h2,
+h1 + h3,
+h2 + h3,
+h3 + h3,
+h4 + h3,
+h5 + h3,
 h6 + h3,
+span + h3,
+h1 + h4,
+h2 + h4,
+h3 + h4,
+h4 + h4,
+h5 + h4,
 h6 + h4,
+span + h4,
+h1 + h5,
+h2 + h5,
+h3 + h5,
+h4 + h5,
+h5 + h5,
 h6 + h5,
-h6 + h6 {
+span + h5,
+h1 + h6,
+h2 + h6,
+h3 + h6,
+h4 + h6,
+h5 + h6,
+h6 + h6,
+span + h6,
+h1 + span,
+h2 + span,
+h3 + span,
+h4 + span,
+h5 + span,
+h6 + span,
+span + span {
   margin-top: 0;
 }
 
-/* line 127, ../../source/sass/typography/_headings.scss */
-header h1:last-child,
-header h2:last-child,
-header h3:last-child,
-header h4:last-child,
-header h5:last-child,
-header h6:last-child {
+/* line 93, ../../source/sass/typography/_headings.scss */
+header h1:last-child, header h2:last-child, header h3:last-child, header h4:last-child, header h5:last-child, header h6:last-child, header span:last-child {
   margin-bottom: 0;
 }
 

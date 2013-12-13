@@ -1,0 +1,15 @@
+
+.hero {
+  padding: $hero-padding 0;
+  color: $hero-color;
+  background-color: $hero-background-color;
+  @include background-size(cover);
+
+  @if $hero-background-gradient and ($hero-background-image != nil) {
+    @include background-image($hero-background-gradient-image, $hero-background-image);
+  } @else if $hero-background-gradient and ($hero-background-image == nil) {
+    @include background-image($hero-background-gradient-image);
+  } @else if ($hero-background-image != nil) {
+    background-image: $hero-background-image;
+  }
+}

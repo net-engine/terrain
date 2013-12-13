@@ -36,93 +36,57 @@ $line-height-level-four:  #{$margin-level-four * 2}em;
 $line-height-level-five:  #{$margin-level-five * 2}em;
 $line-height-level-six:   #{$margin-level-six * 2}em;
 
-h1, h2, h3, h4, h5, h6 { font-family: $font-family-headings; }
+%heading {
+  font-family: $font-family-headings;
+}
 
-h1 { 
-  font-size: $font-size-level-one; 
+h1, h2, h3, h4, h5, h6 { @extend %heading; }
+
+h1 {
+  font-size: $font-size-level-one;
   margin-top: #{ $margin-level-one * 3 }em;
   margin-bottom: #{ $margin-level-one * 2 }em;
   line-height: $line-height-level-one;
 }
-h2 { 
-  font-size: $font-size-level-two; 
+
+h2 {
+  font-size: $font-size-level-two;
   margin-top: #{ $margin-level-two * 2 }em;
   margin-bottom: #{ $margin-level-two }em;
   line-height: $line-height-level-two;
 }
-h3 { 
-  font-size: $font-size-level-three; 
+
+h3 {
+  font-size: $font-size-level-three;
   margin-top: #{ $margin-level-three * 2 }em;
   margin-bottom: #{ $margin-level-three }em;
   line-height: $line-height-level-three;
 }
-h4 { 
-  font-size: $font-size-level-four; 
+
+h4 {
+  font-size: $font-size-level-four;
   margin-top: #{ $margin-level-four * 2 }em;
   margin-bottom: #{ $margin-level-four }em;
   line-height: $line-height-level-four;
 }
-h5 { 
-  font-size: $font-size-level-five; 
+
+h5 {
+  font-size: $font-size-level-five;
   margin-top: #{ $margin-level-five * 2 }em;
   margin-bottom: #{ $margin-level-five }em;
   line-height: $line-height-level-five;
 }
-h6 { 
-  font-size: $font-size-level-six; 
+
+h6 {
+  font-size: $font-size-level-six;
   margin-top: #{ $margin-level-six * 2 }em;
   margin-bottom: #{ $margin-level-six }em;
   line-height: $line-height-level-six;
 }
 
-h1:first-child,
-h2:first-child,
-h3:first-child,
-h4:first-child,
-h5:first-child,
-h6:first-child,
-h1 + h1,
-h1 + h2, 
-h1 + h3,
-h1 + h4,
-h1 + h5,
-h1 + h6,
-h2 + h1,
-h2 + h2,
-h2 + h3,
-h2 + h4,
-h2 + h5,
-h2 + h6,
-h3 + h1,
-h3 + h2,
-h3 + h3,
-h3 + h4,
-h3 + h5,
-h3 + h6,
-h4 + h1,
-h4 + h2,
-h4 + h3,
-h4 + h4,
-h4 + h5, 
-h4 + h6, 
-h5 + h1,
-h5 + h2,
-h5 + h3,
-h5 + h4,
-h5 + h5,
-h5 + h6,
-h6 + h1,
-h6 + h2,
-h6 + h3,
-h6 + h4,
-h6 + h5,
-h6 + h6 { margin-top: 0; }
+%heading:first-child,
+%heading + %heading { margin-top: 0; }
 
 header {
-  h1:last-child, 
-  h2:last-child, 
-  h3:last-child, 
-  h4:last-child, 
-  h5:last-child, 
-  h6:last-child { margin-bottom: 0; }
+  %heading:last-child { margin-bottom: 0; }
 }

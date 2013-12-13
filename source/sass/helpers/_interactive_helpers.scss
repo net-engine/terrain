@@ -11,6 +11,10 @@
   outline: 0;
   padding: $line-height / 4 $line-height / 2;
 
+  &:visited {
+    color: inherit;
+  }
+
   &:hover {
     text-decoration: none;
     cursor: pointer;
