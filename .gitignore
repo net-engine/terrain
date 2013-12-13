@@ -2,8 +2,9 @@
 .rvmrc
 .rbenv-version
 .sass-cache
-docs
-docs/*
+# docs
+# docs/*
+!docs/favicon.ico
 
 # Include only docs.jade from styledocco
 
