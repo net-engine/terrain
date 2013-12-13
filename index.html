@@ -9,20 +9,23 @@
 </head>
 
 <body>
-  <header>
-    <hgroup>
+  <header class="hero">
+    <div class="container">
+
       <h1>
         <span class="logo">Trove</span>
         by <a href="https://triggerapp.com">Trigger</a>
       </h1>
-    </hgroup>
-    <hgroup class="absolute-top-right inset-one">
 
-      <a target="_blank" href="https://github.com/net-engine/trove" class="pill white-foreground primary-background">Source</a>
+      <p>A collection of structural sass &amp; coffeescript.</p>
 
-      <a rel="external" href="https://github.com/net-engine/trove/archive/master.zip" class="pill white-foreground primary-background">Download</a>
-    </hgroup>
+      <a target="_blank" href="https://github.com/net-engine/trove" class="pill white-foreground primary-background icon-github">Source</a>
+
+      <a rel="external" href="https://github.com/net-engine/trove/archive/master.zip" class="pill white-foreground primary-background icon-download2">Download</a>
+
+    </div>
   </header>
+
   <nav>
     <div class="container">
       <ul>
@@ -32,6 +35,15 @@
         <li><a href="#media">Media</a></li>
         <li><a href="#tables">Tables</a></li>
         <li><a href="#interactive">Interactive Elements</a></li>
+
+
+        <li>
+          <a href="#components">Components</a>
+          <ul>
+            <li><a href="#heroes">Heroes</a></li>
+            <!-- <li><a href="#tabs">Tabs</a></li> -->
+          </ul>
+        </li>
 
         <li><em>More to follow&hellip;</em></li>
 
@@ -46,14 +58,6 @@
     </div>
   </nav>
   <main>
-  <article>
-    <section>
-      <div class="container">
-        <p>A collection of structural sass &amp; coffeescript.</p>
-      </div>
-    </section>
-  </article>
-
 
     <article>
       <header>
@@ -522,10 +526,48 @@
       </section>
     </article>
 
-    <aside>
 
-    </aside>
+    <section id="components">
+
+      <header>
+        <div class="container">
+          <h1>Components</h1>
+        </div>
+      </header>
+
+      <section>
+        <div class="container">
+
+          <p>
+            Extend Trove with components.
+          </p>
+
+        </div>
+      </section>
+
+      <article id="heroes">
+
+        <header>
+          <hgroup class="container">
+            <h1>Heroes</h1>
+          </hgroup>
+        </header>
+
+        <div class="hero">
+          <div class="container">
+            <h2>I'm a life-changing message.</h2>
+          </div>
+        </div>
+
+      </article>
+
+    </section>
+
+
   </main>
+
+
+
 
   <footer>
     <div class="container">

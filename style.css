@@ -6438,7 +6438,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   clear: both;
 }
 
-/* line 51, ../source/sass/helpers/_interactive_helpers.scss */
+/* line 55, ../source/sass/helpers/_interactive_helpers.scss */
 .pill {
   -webkit-appearance: none;
   -moz-appearance: none;
@@ -6461,6 +6461,10 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   border: none;
 }
 /* line 14, ../source/sass/helpers/_interactive_helpers.scss */
+.pill:visited {
+  color: inherit;
+}
+/* line 18, ../source/sass/helpers/_interactive_helpers.scss */
 .pill:hover {
   text-decoration: none;
   cursor: pointer;
@@ -6468,24 +6472,24 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   background-color: #4a4a4a;
   border-color: #393939;
 }
-/* line 23, ../source/sass/helpers/_interactive_helpers.scss */
+/* line 27, ../source/sass/helpers/_interactive_helpers.scss */
 .pill.active, .pill:active {
   color: white;
   background-color: #4a4a4a;
   border-color: #393939;
 }
-/* line 31, ../source/sass/helpers/_interactive_helpers.scss */
+/* line 35, ../source/sass/helpers/_interactive_helpers.scss */
 .pill[disabled="disabled"], .pill[disabled="disabled"]:hover, .pill[disabled="disabled"]:active {
   opacity: .5;
   cursor: default;
 }
-/* line 36, ../source/sass/helpers/_interactive_helpers.scss */
+/* line 40, ../source/sass/helpers/_interactive_helpers.scss */
 .pill.icon-only {
   width: 1.7em;
   height: 1.7em;
   padding: 0;
 }
-/* line 54, ../source/sass/helpers/_interactive_helpers.scss */
+/* line 58, ../source/sass/helpers/_interactive_helpers.scss */
 .pill.icon-only {
   width: 2.55em;
   height: 2.55em;
@@ -6993,7 +6997,7 @@ h1, h2, h3, h4, h5, h6 {
   font-family: "Open Sans", "Helvetica Neue", sans-serif;
 }
 
-/* line 41, ../source/sass/typography/_headings.scss */
+/* line 45, ../source/sass/typography/_headings.scss */
 h1 {
   font-size: 3em;
   margin-top: 1.7em;
@@ -7001,7 +7005,7 @@ h1 {
   line-height: 1.13333em;
 }
 
-/* line 47, ../source/sass/typography/_headings.scss */
+/* line 52, ../source/sass/typography/_headings.scss */
 h2 {
   font-size: 1.75em;
   margin-top: 1.94286em;
@@ -7009,7 +7013,7 @@ h2 {
   line-height: 1.94286em;
 }
 
-/* line 53, ../source/sass/typography/_headings.scss */
+/* line 59, ../source/sass/typography/_headings.scss */
 h3 {
   font-size: 1.5em;
   margin-top: 2.26667em;
@@ -7017,7 +7021,7 @@ h3 {
   line-height: 2.26667em;
 }
 
-/* line 59, ../source/sass/typography/_headings.scss */
+/* line 66, ../source/sass/typography/_headings.scss */
 h4 {
   font-size: 1.25em;
   margin-top: 2.72em;
@@ -7025,7 +7029,7 @@ h4 {
   line-height: 2.72em;
 }
 
-/* line 65, ../source/sass/typography/_headings.scss */
+/* line 73, ../source/sass/typography/_headings.scss */
 h5 {
   font-size: 1em;
   margin-top: 3.4em;
@@ -7033,7 +7037,7 @@ h5 {
   line-height: 3.4em;
 }
 
-/* line 71, ../source/sass/typography/_headings.scss */
+/* line 80, ../source/sass/typography/_headings.scss */
 h6 {
   font-size: 0.8em;
   margin-top: 4.25em;
@@ -7041,59 +7045,49 @@ h6 {
   line-height: 4.25em;
 }
 
-/* line 119, ../source/sass/typography/_headings.scss */
-h1:first-child,
-h2:first-child,
-h3:first-child,
-h4:first-child,
-h5:first-child,
-h6:first-child,
+/* line 88, ../source/sass/typography/_headings.scss */
+h1:first-child, h2:first-child, h3:first-child, h4:first-child, h5:first-child, h6:first-child,
 h1 + h1,
-h1 + h2,
-h1 + h3,
-h1 + h4,
-h1 + h5,
-h1 + h6,
 h2 + h1,
-h2 + h2,
-h2 + h3,
-h2 + h4,
-h2 + h5,
-h2 + h6,
 h3 + h1,
-h3 + h2,
-h3 + h3,
-h3 + h4,
-h3 + h5,
-h3 + h6,
 h4 + h1,
-h4 + h2,
-h4 + h3,
-h4 + h4,
-h4 + h5,
-h4 + h6,
 h5 + h1,
-h5 + h2,
-h5 + h3,
-h5 + h4,
-h5 + h5,
-h5 + h6,
 h6 + h1,
+h1 + h2,
+h2 + h2,
+h3 + h2,
+h4 + h2,
+h5 + h2,
 h6 + h2,
+h1 + h3,
+h2 + h3,
+h3 + h3,
+h4 + h3,
+h5 + h3,
 h6 + h3,
+h1 + h4,
+h2 + h4,
+h3 + h4,
+h4 + h4,
+h5 + h4,
 h6 + h4,
+h1 + h5,
+h2 + h5,
+h3 + h5,
+h4 + h5,
+h5 + h5,
 h6 + h5,
+h1 + h6,
+h2 + h6,
+h3 + h6,
+h4 + h6,
+h5 + h6,
 h6 + h6 {
   margin-top: 0;
 }
 
-/* line 127, ../source/sass/typography/_headings.scss */
-header h1:last-child,
-header h2:last-child,
-header h3:last-child,
-header h4:last-child,
-header h5:last-child,
-header h6:last-child {
+/* line 91, ../source/sass/typography/_headings.scss */
+header h1:last-child, header h2:last-child, header h3:last-child, header h4:last-child, header h5:last-child, header h6:last-child {
   margin-bottom: 0;
 }
 
@@ -7713,35 +7707,6 @@ body > nav {
   width: 18em;
 }
 
-/* line 65, ../source/sass/layout/_structure.scss */
-body > header {
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  z-index: 200;
-  color: white;
-  background-color: transparent;
-  height: 3.4em;
-  line-height: 3.4em;
-  padding: 0 1.7em;
-}
-/* line 77, ../source/sass/layout/_structure.scss */
-body > header h1 {
-  font-size: 1em;
-  line-height: 3.4em;
-}
-
-/* line 83, ../source/sass/layout/_structure.scss */
-body > main {
-  margin-top: 3.4em;
-}
-
-/* line 87, ../source/sass/layout/_structure.scss */
-body > nav {
-  padding-top: 5.1em;
-}
-
 /* line 1, ../source/sass/interactive/_anchors.scss */
 a {
   color: #5694bd;
@@ -7834,6 +7799,12 @@ input[type="button"] {
   border-color: #393939;
 }
 /* line 14, ../source/sass/helpers/_interactive_helpers.scss */
+.button:visited, button:visited,
+input[type="submit"]:visited,
+input[type="button"]:visited {
+  color: inherit;
+}
+/* line 18, ../source/sass/helpers/_interactive_helpers.scss */
 .button:hover, button:hover,
 input[type="submit"]:hover,
 input[type="button"]:hover {
@@ -7843,7 +7814,7 @@ input[type="button"]:hover {
   background-color: #4a4a4a;
   border-color: #393939;
 }
-/* line 23, ../source/sass/helpers/_interactive_helpers.scss */
+/* line 27, ../source/sass/helpers/_interactive_helpers.scss */
 .button.active, button.active,
 input.active[type="submit"],
 input.active[type="button"], .button:active, button:active,
@@ -7853,7 +7824,7 @@ input[type="button"]:active {
   background-color: #4a4a4a;
   border-color: #393939;
 }
-/* line 31, ../source/sass/helpers/_interactive_helpers.scss */
+/* line 35, ../source/sass/helpers/_interactive_helpers.scss */
 .button[disabled="disabled"], button[disabled="disabled"],
 input[disabled="disabled"][type="submit"],
 input[disabled="disabled"][type="button"], .button[disabled="disabled"]:hover, button[disabled="disabled"]:hover,
@@ -7864,7 +7835,7 @@ input[disabled="disabled"][type="button"]:active {
   opacity: .5;
   cursor: default;
 }
-/* line 36, ../source/sass/helpers/_interactive_helpers.scss */
+/* line 40, ../source/sass/helpers/_interactive_helpers.scss */
 .button.icon-only, button.icon-only,
 input.icon-only[type="submit"],
 input.icon-only[type="button"] {
@@ -8028,6 +7999,10 @@ select {
   transition: all 0.5s ease;
 }
 /* line 14, ../source/sass/helpers/_interactive_helpers.scss */
+select:visited {
+  color: inherit;
+}
+/* line 18, ../source/sass/helpers/_interactive_helpers.scss */
 select:hover {
   text-decoration: none;
   cursor: pointer;
@@ -8035,18 +8010,18 @@ select:hover {
   background-color: #4a4a4a;
   border-color: #393939;
 }
-/* line 23, ../source/sass/helpers/_interactive_helpers.scss */
+/* line 27, ../source/sass/helpers/_interactive_helpers.scss */
 select.active, select:active {
   color: white;
   background-color: #4a4a4a;
   border-color: #393939;
 }
-/* line 31, ../source/sass/helpers/_interactive_helpers.scss */
+/* line 35, ../source/sass/helpers/_interactive_helpers.scss */
 select[disabled="disabled"], select[disabled="disabled"]:hover, select[disabled="disabled"]:active {
   opacity: .5;
   cursor: default;
 }
-/* line 36, ../source/sass/helpers/_interactive_helpers.scss */
+/* line 40, ../source/sass/helpers/_interactive_helpers.scss */
 select.icon-only {
   width: 1.7em;
   height: 1.7em;
@@ -8122,6 +8097,21 @@ textarea {
   border-color: #d6d6d6;
 }
 /* line 14, ../source/sass/helpers/_interactive_helpers.scss */
+input[type='text']:visited,
+input[type='search']:visited,
+input[type='tel']:visited,
+input[type='email']:visited,
+input[type='password']:visited,
+input[type='url']:visited,
+input[type='date']:visited,
+input[type='datetime']:visited,
+input[type='time']:visited,
+input[type='number']:visited,
+input[list]:visited,
+textarea:visited {
+  color: inherit;
+}
+/* line 18, ../source/sass/helpers/_interactive_helpers.scss */
 input[type='text']:hover,
 input[type='search']:hover,
 input[type='tel']:hover,
@@ -8140,7 +8130,7 @@ textarea:hover {
   background-color: #4a4a4a;
   border-color: #393939;
 }
-/* line 23, ../source/sass/helpers/_interactive_helpers.scss */
+/* line 27, ../source/sass/helpers/_interactive_helpers.scss */
 input[type='text'].active, input[type='text']:active,
 input[type='search'].active,
 input[type='search']:active,
@@ -8168,7 +8158,7 @@ textarea:active {
   background-color: #4a4a4a;
   border-color: #393939;
 }
-/* line 31, ../source/sass/helpers/_interactive_helpers.scss */
+/* line 35, ../source/sass/helpers/_interactive_helpers.scss */
 input[type='text'][disabled="disabled"], input[type='text'][disabled="disabled"]:hover, input[type='text'][disabled="disabled"]:active,
 input[type='search'][disabled="disabled"],
 input[type='search'][disabled="disabled"]:hover,
@@ -8206,7 +8196,7 @@ textarea[disabled="disabled"]:active {
   opacity: .5;
   cursor: default;
 }
-/* line 36, ../source/sass/helpers/_interactive_helpers.scss */
+/* line 40, ../source/sass/helpers/_interactive_helpers.scss */
 input[type='text'].icon-only,
 input[type='search'].icon-only,
 input[type='tel'].icon-only,
@@ -8438,6 +8428,10 @@ input[type="file"]::-webkit-file-upload-button {
   border-color: #393939;
 }
 /* line 14, ../source/sass/helpers/_interactive_helpers.scss */
+input[type="file"]::-webkit-file-upload-button:visited {
+  color: inherit;
+}
+/* line 18, ../source/sass/helpers/_interactive_helpers.scss */
 input[type="file"]::-webkit-file-upload-button:hover {
   text-decoration: none;
   cursor: pointer;
@@ -8445,22 +8439,38 @@ input[type="file"]::-webkit-file-upload-button:hover {
   background-color: #4a4a4a;
   border-color: #393939;
 }
-/* line 23, ../source/sass/helpers/_interactive_helpers.scss */
+/* line 27, ../source/sass/helpers/_interactive_helpers.scss */
 input[type="file"]::-webkit-file-upload-button.active, input[type="file"]::-webkit-file-upload-button:active {
   color: white;
   background-color: #4a4a4a;
   border-color: #393939;
 }
-/* line 31, ../source/sass/helpers/_interactive_helpers.scss */
+/* line 35, ../source/sass/helpers/_interactive_helpers.scss */
 input[type="file"]::-webkit-file-upload-button[disabled="disabled"], input[type="file"]::-webkit-file-upload-button[disabled="disabled"]:hover, input[type="file"]::-webkit-file-upload-button[disabled="disabled"]:active {
   opacity: .5;
   cursor: default;
 }
-/* line 36, ../source/sass/helpers/_interactive_helpers.scss */
+/* line 40, ../source/sass/helpers/_interactive_helpers.scss */
 input[type="file"]::-webkit-file-upload-button.icon-only {
   width: 1.7em;
   height: 1.7em;
   padding: 0;
+}
+
+/* line 2, ../source/sass/components/_hero.scss */
+.hero {
+  padding: 1.7em 0;
+  color: white;
+  background-color: #224358;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-image: -webkit-gradient(radial, 50% 50%, 0, 50% 50%, 100, color-stop(0%, rgba(13, 25, 33, 0.25)), color-stop(100%, rgba(13, 25, 33, 0.5)));
+  background-image: -webkit-radial-gradient(rgba(13, 25, 33, 0.25), rgba(13, 25, 33, 0.5));
+  background-image: -moz-radial-gradient(rgba(13, 25, 33, 0.25), rgba(13, 25, 33, 0.5));
+  background-image: -o-radial-gradient(rgba(13, 25, 33, 0.25), rgba(13, 25, 33, 0.5));
+  background-image: radial-gradient(rgba(13, 25, 33, 0.25), rgba(13, 25, 33, 0.5));
 }
 
 /* line 1, ../source/sass/components/_table.scss */
