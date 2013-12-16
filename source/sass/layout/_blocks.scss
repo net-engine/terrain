@@ -4,7 +4,7 @@
 
   @if $center-layout {
     margin-left: auto;
-    margin-right: auto; 
+    margin-right: auto;
   }
 }
 
@@ -17,6 +17,8 @@ main {}
 
 iframe {
   width: 100%;
+  display: block;
+  border: 0;
 }
 
 main img {
@@ -33,7 +35,7 @@ blockquote {
 
 pre {
   margin-bottom: $line-height;
-  background-color: $gray-dark; 
+  background-color: $gray-dark;
   color: $gray-lighter;
   @include border-radius($radius);
   padding: $line-height / 2;
@@ -41,9 +43,9 @@ pre {
 
 details {
   margin-bottom: $line-height;
-  
+
   summary { cursor: pointer; }
-  
+
   summary:focus {
     outline: 0;
     color: $color-primary;

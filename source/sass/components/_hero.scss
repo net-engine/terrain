@@ -1,6 +1,5 @@
 
 .hero {
-  padding: $hero-padding 0;
   color: $hero-color;
   background-color: $hero-background-color;
   @include background-size(cover);
