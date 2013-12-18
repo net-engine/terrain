@@ -1,5 +1,5 @@
 @charset "UTF-8";
-/* line 17, ../../../../../usr/local/rvm/gems/ruby-1.9.3-p392/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 17, ../../../.rbenv/versions/2.0.0-p247/lib/ruby/gems/2.0.0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -21,45 +21,45 @@ time, mark, audio, video {
   vertical-align: baseline;
 }
 
-/* line 22, ../../../../../usr/local/rvm/gems/ruby-1.9.3-p392/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 22, ../../../.rbenv/versions/2.0.0-p247/lib/ruby/gems/2.0.0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 html {
   line-height: 1;
 }
 
-/* line 24, ../../../../../usr/local/rvm/gems/ruby-1.9.3-p392/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 24, ../../../.rbenv/versions/2.0.0-p247/lib/ruby/gems/2.0.0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 ol, ul {
   list-style: none;
 }
 
-/* line 26, ../../../../../usr/local/rvm/gems/ruby-1.9.3-p392/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 26, ../../../.rbenv/versions/2.0.0-p247/lib/ruby/gems/2.0.0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 table {
   border-collapse: collapse;
   border-spacing: 0;
 }
 
-/* line 28, ../../../../../usr/local/rvm/gems/ruby-1.9.3-p392/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 28, ../../../.rbenv/versions/2.0.0-p247/lib/ruby/gems/2.0.0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 caption, th, td {
   text-align: left;
   font-weight: normal;
   vertical-align: middle;
 }
 
-/* line 30, ../../../../../usr/local/rvm/gems/ruby-1.9.3-p392/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 30, ../../../.rbenv/versions/2.0.0-p247/lib/ruby/gems/2.0.0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 q, blockquote {
   quotes: none;
 }
-/* line 103, ../../../../../usr/local/rvm/gems/ruby-1.9.3-p392/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 103, ../../../.rbenv/versions/2.0.0-p247/lib/ruby/gems/2.0.0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 q:before, q:after, blockquote:before, blockquote:after {
   content: "";
   content: none;
 }
 
-/* line 32, ../../../../../usr/local/rvm/gems/ruby-1.9.3-p392/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 32, ../../../.rbenv/versions/2.0.0-p247/lib/ruby/gems/2.0.0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 a img {
   border: none;
 }
 
-/* line 116, ../../../../../usr/local/rvm/gems/ruby-1.9.3-p392/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 116, ../../../.rbenv/versions/2.0.0-p247/lib/ruby/gems/2.0.0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary {
   display: block;
 }
@@ -6423,18 +6423,18 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 }
 
 /* line 1, ../source/sass/helpers/_layout_helpers.scss */
-.buttons, .ui-tabs .ui-tabs-nav {
+form footer, .buttons, .ui-tabs .ui-tabs-nav {
   zoom: 1;
   display: block;
   clear: both;
 }
 /* line 7, ../source/sass/helpers/_layout_helpers.scss */
-.buttons:before, .ui-tabs .ui-tabs-nav:before, .buttons:after, .ui-tabs .ui-tabs-nav:after {
+form footer:before, .buttons:before, .ui-tabs .ui-tabs-nav:before, form footer:after, .buttons:after, .ui-tabs .ui-tabs-nav:after {
   content: "";
   display: table;
 }
 /* line 12, ../source/sass/helpers/_layout_helpers.scss */
-.buttons:after, .ui-tabs .ui-tabs-nav:after {
+form footer:after, .buttons:after, .ui-tabs .ui-tabs-nav:after {
   clear: both;
 }
 
@@ -7268,23 +7268,25 @@ main video {
 /* line 18, ../source/sass/layout/_blocks.scss */
 iframe {
   width: 100%;
+  display: block;
+  border: 0;
 }
 
-/* line 22, ../source/sass/layout/_blocks.scss */
+/* line 24, ../source/sass/layout/_blocks.scss */
 main img {
   display: block;
   width: auto;
   max-width: 100%;
 }
 
-/* line 28, ../source/sass/layout/_blocks.scss */
+/* line 30, ../source/sass/layout/_blocks.scss */
 blockquote {
   margin-bottom: 1.7em;
   padding-left: 1.275em;
   border-left: 0.425em solid #d6d6d6;
 }
 
-/* line 34, ../source/sass/layout/_blocks.scss */
+/* line 36, ../source/sass/layout/_blocks.scss */
 pre {
   margin-bottom: 1.7em;
   background-color: #4a4a4a;
@@ -7297,21 +7299,21 @@ pre {
   padding: 0.85em;
 }
 
-/* line 42, ../source/sass/layout/_blocks.scss */
+/* line 44, ../source/sass/layout/_blocks.scss */
 details {
   margin-bottom: 1.7em;
 }
-/* line 45, ../source/sass/layout/_blocks.scss */
+/* line 47, ../source/sass/layout/_blocks.scss */
 details summary {
   cursor: pointer;
 }
-/* line 47, ../source/sass/layout/_blocks.scss */
+/* line 49, ../source/sass/layout/_blocks.scss */
 details summary:focus {
   outline: 0;
   color: #5694bd;
 }
 
-/* line 53, ../source/sass/layout/_blocks.scss */
+/* line 55, ../source/sass/layout/_blocks.scss */
 math {
   display: block;
   margin-bottom: 1.7em;
@@ -7640,19 +7642,19 @@ form header {
   padding-bottom: 1.7em;
 }
 
-/* line 16, ../source/sass/layout/_form_structure.scss */
+/* line 20, ../source/sass/layout/_form_structure.scss */
 fieldset {
   margin-bottom: 3.4em;
   border-color: #f6f6f6;
 }
 
-/* line 23, ../source/sass/layout/_form_structure.scss */
+/* line 27, ../source/sass/layout/_form_structure.scss */
 legend {
   font-size: 1.5em;
   margin-bottom: 2.26667em;
 }
 
-/* line 28, ../source/sass/layout/_form_structure.scss */
+/* line 32, ../source/sass/layout/_form_structure.scss */
 label {
   margin-bottom: 0.85em;
   display: block;
@@ -8459,7 +8461,6 @@ input[type="file"]::-webkit-file-upload-button.icon-only {
 
 /* line 2, ../source/sass/components/_hero.scss */
 .hero {
-  padding: 1.7em 0;
   color: white;
   background-color: #224358;
   -webkit-background-size: cover;
