@@ -1,0 +1,181 @@
+<!DOCTYPE html><html><head><title>settings | Trove
+</title><meta charset="utf-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="initial-scale=1"><style>@import "style.css";
+
+</style></head><body><header class="hero"><hgroup class="container"><h1><a href="index.html" class="logo">Trove</a></h1></hgroup></header><nav><ul class="container"><li><a href="#" data-toggle="dropdown-1" unselectable="on" class="dropdown-toggle">sass</a><ul><li><a href="sass-settings.html">settings</a></li><li><a href="sass-style.html">style</a></li></ul></li><li><a href="#" data-toggle="dropdown-2" unselectable="on" class="dropdown-toggle">color</a><ul><li><a href="sass-color-base_palette.html">base_palette</a></li><li><a href="sass-color-extended_palette.html">extended_palette</a></li><li><a href="sass-color-gradients.html">gradients</a></li><li><a href="sass-color-tints_and_shades.html">tints_and_shades</a></li></ul></li><li><a href="#" data-toggle="dropdown-3" unselectable="on" class="dropdown-toggle">components</a><ul><li><a href="sass-components-table.html">table</a></li></ul></li><li><a href="#" data-toggle="dropdown-4" unselectable="on" class="dropdown-toggle">decorative</a><ul><li><a href="sass-decorative-borders.html">borders</a></li></ul></li><li><a href="#" data-toggle="dropdown-5" unselectable="on" class="dropdown-toggle">helpers</a><ul><li><a href="sass-helpers-interactive_helpers.html">interactive_helpers</a></li><li><a href="sass-helpers-layout_helpers.html">layout_helpers</a></li></ul></li><li><a href="#" data-toggle="dropdown-6" unselectable="on" class="dropdown-toggle">icons</a><ul><li><a href="sass-icons-trove-icons.html">trove-icons</a></li></ul></li><li><a href="#" data-toggle="dropdown-7" unselectable="on" class="dropdown-toggle">interactive</a><ul><li><a href="sass-interactive-anchors.html">anchors</a></li><li><a href="sass-interactive-buttons.html">buttons</a></li><li><a href="sass-interactive-radio_buttons_and_checkboxes.html">radio_buttons_and_checkboxes</a></li><li><a href="sass-interactive-selects.html">selects</a></li><li><a href="sass-interactive-text_inputs.html">text_inputs</a></li></ul></li><li><a href="#" data-toggle="dropdown-8" unselectable="on" class="dropdown-toggle">layout</a><ul><li><a href="sass-layout-blocks.html">blocks</a></li><li><a href="sass-layout-form_layout.html">form_layout</a></li><li><a href="sass-layout-grid.html">grid</a></li><li><a href="sass-layout-positioning.html">positioning</a></li><li><a href="sass-layout-themes.html">themes</a></li></ul></li><li><a href="#" data-toggle="dropdown-9" unselectable="on" class="dropdown-toggle">media</a><ul><li><a href="sass-media-images.html">images</a></li></ul></li><li><a href="#" data-toggle="dropdown-10" unselectable="on" class="dropdown-toggle">typography</a><ul><li><a href="sass-typography-body.html">body</a></li><li><a href="sass-typography-headings.html">headings</a></li><li><a href="sass-typography-icons.html">icons</a></li><li><a href="sass-typography-lists.html">lists</a></li></ul></li></ul></nav><main><article id="settings"><a href="#settings" class="permalink"></a><div class="container"><h1 id="settings">Settings</h1>
+<h2 id="typography">Typography</h2>
+<h2 id="colours">Colours</h2>
+<p> Indicators</p>
+<p> Links</p>
+<p> Buttons</p>
+<p> Inputs</p>
+<p> Selects</p>
+<p> Breakpoints</p>
+<p> Layout</p>
+<p> Borders</p>
+<p> Layout theme options</p>
+<p> Debugging</p>
+<p> Misc</p>
+<p> To Implement your own icons, update the below:</p>
+<p> @font-face {
+   font-family: $font-family-icons;
+   src: url(&#39;path/to/icons.eot&#39;);
+   src: url(&#39;path/to/icons.eot?#iefix&#39;) format(&#39;embedded-opentype&#39;),
+        url(&#39;path/to/icons.ttf&#39;) format(&#39;truetype&#39;),
+        url(&#39;path/to/icons.woff&#39;) format(&#39;woff&#39;),
+        url(&#39;path/to/icons.svg&#39;) format(&#39;svg&#39;);
+   font-weight: normal;
+   font-style: normal;
+ }</p>
+</div><div class="container"><div class="code"><pre><code>$font-family:             'Open Sans', 'Helvetica Neue', sans-serif !default;
+$font-family-body:        $font-family !default;
+$font-family-headings:    $font-family !default;
+$font-family-input:       $font-family !default;
+$font-family-icons:       'trove-icons' !default;
+$font-family-mono:        'Menlo', 'Monaco', 'Courier New', monospace !default;
+
+$font-size:               100% !default;
+$font-size-level-one:     3em !default;
+$font-size-level-two:     1.75em !default;
+$font-size-level-three:   1.5em !default;
+$font-size-level-four:    1.25em !default;
+$font-size-level-five:    1em !default;
+$font-size-level-six:     0.8em !default;
+
+$line-height:             1.7em !default;
+
+$font-weight-normal:      400;
+$font-weight-medium:      600;
+$font-weight-bold:        700;
+
+
+
+$color-primary:           hsl(204,44%,54%);
+$color-primary-light:     lighten($color-primary, 30%);
+$color-primary-dark:      darken($color-primary, 30%);
+
+$black:                   hsl(0,0%,9%);
+$white:                   lighten($black, 93.5%);
+$gray-darker:             lighten($black, 13.5%);
+$gray-dark:               lighten($black, 20%);
+$gray:                    lighten($black, 33.5%);
+$gray-light:              lighten($black, 60%);
+$gray-lighter:            lighten($black, 87.5%);
+
+
+
+$color-success:           hsl(85, 60%, 52%);
+$color-success-light:     lighten($color-success, 35%);
+$color-warning:           hsl(45, 83%, 73%);
+$color-warning-light:     lighten($color-warning, 35%);
+$color-danger:            hsl(357, 88%, 63%);
+$color-danger-light:      lighten($color-danger, 35%);
+$color-info:              $color-primary;
+$color-info-light:        lighten($color-info, 35%);
+
+
+
+$link-color:                    $color-primary; 
+$link-color-hover:              $color-primary; 
+$link-color-active:             $color-primary; 
+$link-color-visited:            $color-primary; 
+
+$main-link-color:               $link-color;
+$main-link-color-hover:         darken($link-color, 15%);
+$main-link-color-active:        darken($link-color, 25%);
+$main-link-color-visited:       lighten($link-color, 15%);
+
+$footer-link-color:             $link-color;
+$footer-link-color-hover:       darken($link-color, 15%);
+$footer-link-color-active:      darken($link-color, 25%);
+$footer-link-color-visited:     lighten($link-color, 15%);
+
+
+
+$button-default-foreground-color:       $white;
+$button-default-background-color:       $gray-dark;
+$button-default-border-color:           $gray-darker;
+
+$button-default-hover-foreground-color:  $white;
+$button-default-hover-background-color:  $gray-dark;
+$button-default-hover-border-color:      $gray-darker;
+
+$button-default-active-foreground-color:  $white;
+$button-default-active-background-color:  $gray-dark;
+$button-default-active-border-color:      $gray-darker;
+
+$button-submit-foreground-color:        $white;
+$button-submit-background-color:        $color-primary;
+$button-submit-border-color:            $color-primary-dark;
+
+$button-danger-foreground-color:        $white;
+$button-danger-background-color:        $gray-dark;
+$button-danger-border-color:            $gray-darker;
+
+
+$button-submit-color:           $color-primary;
+
+
+
+$input-foreground-color:        $black;
+$input-background-color:        $white;
+$input-border-color:            $gray-light;
+
+$input-hover-foreground-color:  $color-info;
+$input-hover-background-color:  $color-info-light;
+$input-hover-border-color:      $color-info;
+
+$input-focus-foreground-color:  $black;
+$input-focus-background-color:  $white;
+$input-focus-border-color:      $color-success;
+
+
+
+$select-foreground-color:       $black;
+$select-background-color:       $gray-lighter;
+$select-border-color:           $gray-light;
+
+$select-hover-foreground-color: $color-info;
+$select-hover-background-color: $color-info-light;
+$select-hover-border-color:     $color-info;
+
+$select-focus-foreground-color: $color-success;
+$select-focus-background-color: $color-success-light;
+$select-focus-border-color:     $color-success;
+
+
+
+$breakpoint-small:        32em;
+$breakpoint-medium:       50em;
+$breakpoint-large:        75em;
+
+
+
+$gutter:                  $line-height * 1.5 !default;
+$page-margin:             $line-height * 2 !default;
+$max-width:               $breakpoint-medium !default;
+$center-layout:           true;
+
+
+
+$border-heavy-width:      $line-height / 4;
+$border-medium-width:     $line-height / 8;
+$border-light-width:      thin;
+
+
+
+$fixed-left-nav:          true;
+$fixed-left-nav-width:    18em;
+
+$fixed-top-nav:           false;
+$fixed-top-nav-height:    8em;
+
+$nav-background-color:    $black;
+$nav-item-color:          $color-primary;
+
+
+
+$baseline-grid: false;
+
+
+
+$radius: .15em;</code></pre></div></div></article></main><footer></footer></body></html>

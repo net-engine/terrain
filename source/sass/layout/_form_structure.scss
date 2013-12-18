@@ -13,6 +13,10 @@ form header {
   padding-bottom: $line-height;
 }
 
+form footer {
+  @extend %clearfix;
+}
+
 fieldset {
   margin-bottom: $line-height * 2;
 
