@@ -35,7 +35,8 @@ input[type="button"] {
 }
 
 input[type="submit"],
-button[type='submit'] {
+button[type='submit'],
+.button.submit {
   background: $button-submit-background-color;
 
   &:hover {
