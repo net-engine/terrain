@@ -18,12 +18,14 @@
 }
 
 .button {
+  @extend %button;
   @include button;
 }
 
 button,
 input[type="submit"],
 input[type="button"] {
+  @extend %button;
   @include appearance(none);
   @extend .button;
 }
