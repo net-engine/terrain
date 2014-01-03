@@ -1,3 +1,5 @@
+'use strict';
+
 module.exports = function(grunt) {
   grunt.initConfig({
     pkg: grunt.file.readJSON('package.json'),
@@ -5,32 +7,30 @@ module.exports = function(grunt) {
       server: {
         options: {
           port: 3030,
-          base: ''
+          base: '',
+          livereload: 35729
         }
       }
     },
     watch: {
       css: {
         files: ['source/sass/**/*'],
-        tasks: ['compass:docs'],
+        tasks: ['sass:docs'],
         options: {
-          // livereload: true,
-          force: true
+          livereload: true
         }
       }
     },
-    compass: {
+    sass: {
       dist: {
-        options: {
-          sassDir: 'source/sass',
-          cssDir: 'dist/stylesheets',
-          environment: 'production'
-        }
+        files: {
+          'dist/stylesheets/style.css': 'source/sass/style.scss'
+        },
+        outputStyle: 'compressed'
       },
       docs: {
-        options: {
-          sassDir: 'source/sass',
-          cssDir: 'docs'
+        files: {
+          'docs/style.css': 'source/sass/style.scss'
         }
       }
     },
@@ -71,15 +71,12 @@ module.exports = function(grunt) {
   });
 
   grunt.loadNpmTasks('grunt-contrib-connect');
-  grunt.loadNpmTasks('grunt-contrib-compass');
   grunt.loadNpmTasks('grunt-contrib-watch');
   grunt.loadNpmTasks('grunt-gh-pages');
   grunt.loadNpmTasks('grunt-webfont');
+  grunt.loadNpmTasks('grunt-sass');
   grunt.loadNpmTasks('grunt-styleguide');
 
-  // Making grunt default to force in order not to break the project.
-  grunt.option('force', true);
-
-  grunt.registerTask('default', ['connect', 'compass:docs', 'watch']);
-  grunt.registerTask('build', ['compass', 'gh-pages']);
+  grunt.registerTask('default', ['connect', 'sass:docs', 'watch']);
+  grunt.registerTask('build', ['sass', 'gh-pages']);
 }

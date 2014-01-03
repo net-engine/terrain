@@ -13,10 +13,10 @@ progress, meter {
   margin-bottom: $line-height;
   width: 100%;
   border: none;
-  
+
   @include appearance(none);
 
-  @include border-radius($radius);
+  border-radius: $radius;
 }
 
 progress {
@@ -42,7 +42,7 @@ progress {
 meter {
   &::-webkit-meter-bar {
     background: $gray-light;
-  } 
+  }
   &::-webkit-meter-optimum-value {
     background: $color-success;
   }
@@ -50,7 +50,7 @@ meter {
 
 :-moz-meter-optimum, :-moz-meter-sub-optimum, :-moz-meter-sub-sub-optimum {
   background: $gray-light;
-} 
+}
 
 :-moz-meter-optimum::-moz-meter-bar {
   background: $color-success;

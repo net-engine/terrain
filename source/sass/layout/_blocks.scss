@@ -37,7 +37,7 @@ pre {
   margin-bottom: $line-height;
   background-color: $gray-dark;
   color: $gray-lighter;
-  @include border-radius($radius);
+  border-radius: $radius;
   padding: $line-height / 2;
 }
 
