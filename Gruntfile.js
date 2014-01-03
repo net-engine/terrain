@@ -12,10 +12,13 @@ module.exports = function(grunt) {
         }
       }
     },
+    cssbeautifier : {
+      files : ['docs/style.css']
+    },
     watch: {
       css: {
         files: ['source/sass/**/*'],
-        tasks: ['sass:docs'],
+        tasks: ['sass:docs', 'cssbeautifier'],
         options: {
           livereload: true
         }
@@ -72,11 +75,12 @@ module.exports = function(grunt) {
 
   grunt.loadNpmTasks('grunt-contrib-connect');
   grunt.loadNpmTasks('grunt-contrib-watch');
+  grunt.loadNpmTasks('grunt-cssbeautifier');
   grunt.loadNpmTasks('grunt-gh-pages');
-  grunt.loadNpmTasks('grunt-webfont');
   grunt.loadNpmTasks('grunt-sass');
   grunt.loadNpmTasks('grunt-styleguide');
+  grunt.loadNpmTasks('grunt-webfont');
 
-  grunt.registerTask('default', ['connect', 'sass:docs', 'watch']);
+  grunt.registerTask('default', ['connect', 'sass:docs', 'cssbeautifier', 'watch']);
   grunt.registerTask('build', ['sass', 'gh-pages']);
 }
