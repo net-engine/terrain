@@ -54,19 +54,6 @@ module.exports = function(grunt) {
           'docs': 'source/sass/'
         }
       }
-    },
-    webfont: {
-      icons: {
-        src: 'source/icons/svg/*',
-        dest: 'dist/icons',
-        destCss: 'source/sass/icons',
-        options: {
-          font: 'trove-icons',
-          stylesheet: 'scss',
-          syntax: 'bootstrap',
-          relativeFontPath: '/dist/icons'
-        }
-      }
     }
   });
 
@@ -74,7 +61,6 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-contrib-compass');
   grunt.loadNpmTasks('grunt-contrib-watch');
   grunt.loadNpmTasks('grunt-gh-pages');
-  grunt.loadNpmTasks('grunt-webfont');
   grunt.loadNpmTasks('grunt-styleguide');
 
   // Making grunt default to force in order not to break the project.
