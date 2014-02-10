@@ -137,7 +137,7 @@
 
 // Responsive
 
-@media screen and (max-width: $breakpoint-small) {
+@media screen and (max-width: $breakpoint-medium) {
   .one-half, .two-thirds, .three-quarters {
     &:not(.no-break):not(.break-mobile) {
       width: 100%;
@@ -176,16 +176,6 @@
       width: 100% !important;
       padding-left: 0 !important;
       padding-right: 0 !important;
-    }
-  }
-  .one-half .one-quarter {
-    &:not(.no-break) {
-      width: 25%;
-    }
-  }
-  .one-half .three-quarters {
-    &:not(.no-break) {
-      width: 75%;
     }
   }
 }
