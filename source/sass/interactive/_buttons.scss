@@ -61,6 +61,10 @@ button[type='submit'],
       @include border-left-radius($radius);
     }
 
+    &.active {
+      background: darken($button-default-background-color, 15%);
+    }
+
     &:last-child, &.last-child {
       @include border-right-radius($radius);
     }
