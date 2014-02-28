@@ -20,13 +20,16 @@ table {
     font-weight: $font-weight-medium;
   }
 
-  thead tr { 
+  thead tr {
     background-color: $gray-lighter;
 
     &.no-wrap {
-      th { 
-        vertical-align: center; 
-        @include ellipsis;
+      th {
+        vertical-align: center;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        -o-text-overflow: ellipsis;
         line-height: $line-height + $line-height / 2;
       }
     }
@@ -41,9 +44,12 @@ table {
     }
 
     &.no-wrap {
-      td, th { 
-        vertical-align: center; 
-        @include ellipsis;
+      td, th {
+        vertical-align: center;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        -o-text-overflow: ellipsis;
         line-height: $line-height + $line-height / 2;
       }
     }
@@ -55,7 +61,7 @@ table {
       border-top: $light-stroke solid $default-border-color;
     }
   }
-  
+
   &.fixed {
     table-layout: fixed;
     @include box-sizing( border-box );

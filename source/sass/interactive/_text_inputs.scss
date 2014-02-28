@@ -8,32 +8,27 @@
 //
 
 
-input[type='text'], 
-input[type='search'], 
-input[type='tel'], 
-input[type='email'], 
-input[type='password'], 
-input[type='url'], 
-input[type='date'], 
-input[type='datetime'], 
-input[type='time'], 
+input[type='text'],
+input[type='search'],
+input[type='tel'],
+input[type='email'],
+input[type='password'],
+input[type='url'],
+input[type='date'],
+input[type='datetime'],
+input[type='time'],
 input[type='number'],
-input[list], 
+input[list],
 textarea {
   @include rounded-box;
   padding: $line-height / 6 $line-height / 4;
   text-align: left;
-
-  @include transition(all 0.5s ease);
-  
   width: 100%;
   margin-bottom: $line-height;
   margin-top: 0;
-  
   font-family: $font-family-input;
   font-size: 1em;
   font-weight: $font-weight-normal;
-
   color: $input-foreground-color;
   background-color: $input-background-color;
   border-color: $input-border-color;
@@ -58,6 +53,7 @@ textarea {
 
 textarea {
   min-height: 9em;
+  resize: vertical;
 }
 
 ::-webkit-input-placeholder {
@@ -72,7 +68,7 @@ textarea {
   font-weight: $font-weight-normal;
   font-family: $font-family-input;
 }
-:-ms-input-placeholder {  
+:-ms-input-placeholder {
   font-weight: $font-weight-normal;
   font-family: $font-family-input;
 }

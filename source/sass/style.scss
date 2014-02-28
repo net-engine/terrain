@@ -1,13 +1,12 @@
-@import 'compass',
-        'compass/reset';
+@import 'reset/reset';
+@import 'bourbon/bourbon';
 
 @import 'settings';
 
 @import 'helpers/layout_helpers',
         'helpers/interactive_helpers';
 
-@import 'color/palette',
-        'color/gradients';
+@import 'color/palette';
 
 @import 'decorative/borders';
 

@@ -14,7 +14,7 @@ form header {
 }
 
 form footer {
-  @extend %clearfix;
+  @extend .clearfix;
 }
 
 fieldset {
@@ -25,7 +25,7 @@ fieldset {
 }
 
 legend {
-  font-size: $font-size-level-three; 
+  font-size: $font-size-level-three;
   margin-bottom: $line-height-level-three;
 }
 
@@ -40,21 +40,21 @@ label {
 //     <hgroup>Example all form elements</hgroup>
 //   </header>
 //   <fieldset>
-//     <legend>Radios and checkboxes</legend>  
+//     <legend>Radios and checkboxes</legend>
 //     <ul class="radio-list one-half first">
-//       <li> 
+//       <li>
 //         <input type="radio" value="1" id="radioButton1" name="radioButton">
-//         <label for="radioButton1">Radio Button 1</label>  
+//         <label for="radioButton1">Radio Button 1</label>
 //       </li>
 //       <li>
 //         <input type="radio" value="2" id="radioButton2" name="radioButton">
-//         <label for="radioButton2">Radio Button 1</label>  
+//         <label for="radioButton2">Radio Button 1</label>
 //       </li>
 //     </ul>
 //     <ul class="checkbox-list one-half last">
 //       <li>
 //         <input type="checkbox" value="1" id="checkbox1" name="checkbox1">
-//         <label for="checkbox1">Checkbox 1</label>  
+//         <label for="checkbox1">Checkbox 1</label>
 //       </li>
 //       <li>
 //         <input type="checkbox" value="2" id="checkbox2" name="checkbox2">
@@ -123,11 +123,11 @@ label {
 //     </div>
 //     <div class="one-half first">
 //       <label>Telephone</label>
-//       <input type="tel"> 
+//       <input type="tel">
 //     </div>
 //     <div class="one-half last">
 //       <label>Email</label>
-//       <input type="email"> 
+//       <input type="email">
 //     </div>
 //     <div class="one-half first">
 //       <label>Password</label>

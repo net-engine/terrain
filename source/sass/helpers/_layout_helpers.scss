@@ -1,4 +1,4 @@
-%clearfix {
+.clearfix {
   zoom: 1;
   display: block;
   clear: both;
@@ -13,7 +13,7 @@
 }
 
 @mixin circle($size:$line-height) {
-  @include border-radius(50%);
+  border-radius: 50%;
   width: $size;
   line-height: $size;
   height: $size;
