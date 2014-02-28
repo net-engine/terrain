@@ -1,12 +1,12 @@
 
-%tabs {
+.tabs {
   position: relative;
   zoom: 1;
   border: none;
   background: none;
 }
 
-%tabs-nav {
+.tabs-nav {
   margin: 0;
   @extend %clearfix;
 
@@ -43,7 +43,7 @@
 }
 
 
-.tabs { @extend %tabs; }
+.tabs { @extend .tabs; }
 
 
 .ui-tabs {
@@ -51,6 +51,6 @@
   .ui-tabs-hide { display: none !important; }
 
   .ui-tabs-nav {
-    @extend %tabs-nav;
+    @extend .tabs-nav;
   }
 }

@@ -18,7 +18,7 @@
 }
 
 .button {
-  @extend %button;
+  @extend .button;
   @include button;
 }
 
@@ -29,7 +29,7 @@ a.button {
 button,
 input[type="submit"],
 input[type="button"] {
-  @extend %button;
+  @extend .button;
   @include appearance(none);
   @extend .button;
 }
@@ -45,10 +45,10 @@ button[type='submit'],
 }
 
 
-%buttons {
-  @extend %clearfix;
+.buttons {
+  @extend .clearfix;
 
-  %button {
+  .button {
     float: left;
     margin: 0;
     border-radius: 0;
@@ -67,6 +67,6 @@ button[type='submit'],
   }
 }
 
-.buttons { @extend %buttons; }
+.buttons { @extend .buttons; }
 
 

@@ -5132,16 +5132,18 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
     content: "\f5f2";
 }
 
-form footer, %buttons, %tabs-nav {
+.clearfix, form footer, .buttons {
     zoom: 1;
     display: block;
     clear: both;
 }
-  %clearfix:before, %clearfix:after {
+
+.clearfix:before, .clearfix:after {
     content: "";
     display: table;
 }
-  %clearfix:after {
+
+.clearfix:after {
     clear: both;
 }
 
@@ -6249,7 +6251,7 @@ footer a:visited {
     color: #8db8d2;
 }
 
-.button, button, input[type="submit"], input[type="button"] {
+.button, .button, button, input[type="submit"], input[type="button"], button, input[type="submit"], input[type="button"] {
     -webkit-appearance: none;
     -moz-appearance: none;
     -ms-appearance: none;
@@ -6329,21 +6331,24 @@ input[type="submit"]:hover, button[type='submit']:hover, .button.submit:hover {
     background-color: #468ab3;
 }
 
-.button, button, input[type="submit"], input[type="button"] {
+.buttons .button, .buttons .button, .buttons button, .buttons input[type="submit"], .buttons input[type="button"], .buttons button, .buttons input[type="submit"], .buttons input[type="button"] {
     float: left;
     margin: 0;
     border-radius: 0;
     border-left: thin solid rgba(0, 0, 0, 0.25);
 }
-  %buttons %button:focus {
+
+.buttons .button:focus {
     outline: 0;
 }
-  %buttons %button:first-child {
+
+.buttons .button:first-child {
     border-left-width: 0;
     border-top-left-radius: 0.15em;
     border-bottom-left-radius: 0.15em;
 }
-  %buttons %button:last-child, %buttons %button.last-child {
+
+.buttons .button:last-child, .buttons .button.last-child {
     border-top-right-radius: 0.15em;
     border-bottom-right-radius: 0.15em;
 }
@@ -6847,17 +6852,18 @@ table.fixed * {
     box-sizing: border-box;
 }
 
-.tabs {
+.tabs, .tabs {
     position: relative;
     zoom: 1;
     border: none;
     background: none;
 }
 
-.ui-tabs .ui-tabs-nav {
+.tabs-nav, .ui-tabs .ui-tabs-nav {
     margin: 0;
 }
-  %tabs-nav li {
+
+.tabs-nav li {
     float: left;
     position: relative;
     width: 50%;
@@ -6865,10 +6871,12 @@ table.fixed * {
     padding: 0;
     white-space: nowrap;
 }
-    %tabs-nav li:before {
+
+.tabs-nav li:before {
     display: none;
 }
-    %tabs-nav li a {
+
+.tabs-nav li a {
     display: block;
     padding: 0 1.7em;
     height: 3.4em;
@@ -6878,10 +6886,12 @@ table.fixed * {
     background: #6c6c6c;
     border-left: 0.125em solid #525252;
 }
-    %tabs-nav li:first-child a {
+
+.tabs-nav li:first-child a {
     border-left-width: 0;
 }
-    %tabs-nav li.ui-tabs-active a {
+
+.tabs-nav li.ui-tabs-active a {
     background: #2c2c2c;
     color: white;
 }
