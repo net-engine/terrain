@@ -15,23 +15,17 @@
   color: $button-default-foreground-color;
   background-color: $button-default-background-color;
   border-color: $button-default-border-color;
-}
-
-.button {
-  @extend .button;
-  @include button;
+  @include appearance(none);
 }
 
 a.button {
   &:hover, &:active, &:visited { color: $button-default-foreground-color; }
 }
 
-button,
+.button, button,
 input[type="submit"],
 input[type="button"] {
-  @extend .button;
-  @include appearance(none);
-  @extend .button;
+  @include button;
 }
 
 input[type="submit"],
@@ -47,8 +41,10 @@ button[type='submit'],
 
 .buttons {
   @extend .clearfix;
+  border: 0;
 
-  .button {
+  .button, button,
+  input[type="submit"], input[type="button"] {
     float: left;
     margin: 0;
     border-radius: 0;
@@ -70,7 +66,5 @@ button[type='submit'],
     }
   }
 }
-
-.buttons { @extend .buttons; }
 
 

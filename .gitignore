@@ -3,6 +3,7 @@
 .rbenv-version
 .sass-cache
 node_modules
+bower_components
 
 # Include only docs.jade from styledocco
 

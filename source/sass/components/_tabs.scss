@@ -42,10 +42,6 @@
   }
 }
 
-
-.tabs { @extend .tabs; }
-
-
 .ui-tabs {
   .ui-tabs-panel { display: block; }
   .ui-tabs-hide { display: none !important; }

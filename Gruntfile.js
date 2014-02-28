@@ -68,6 +68,6 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-styleguide');
   grunt.loadNpmTasks('grunt-webfont');
 
-  grunt.registerTask('default', ['connect', 'sass:docs', 'cssbeautifier', 'watch']);
+  grunt.registerTask('default', ['connect', 'sass:docs', 'watch']);
   grunt.registerTask('build', ['sass', 'gh-pages']);
 }
