@@ -57,19 +57,6 @@ module.exports = function(grunt) {
           'docs': 'source/sass/'
         }
       }
-    },
-    webfont: {
-      icons: {
-        src: 'source/icons/svg/*',
-        dest: 'dist/icons',
-        destCss: 'source/sass/icons',
-        options: {
-          font: 'trove-icons',
-          stylesheet: 'scss',
-          syntax: 'bootstrap',
-          relativeFontPath: '/dist/icons'
-        }
-      }
     }
   });
 
