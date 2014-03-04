@@ -9,7 +9,7 @@
 }
 
 @function _add-prefix($images, $vendor: false) {
-  $images-prefixed: ();
+  $images-prefixed: true;
   $gradient-positions: false;
   @for $i from 1 through length($images) {
     $type: type-of(nth($images, $i)); // Get type of variable - List or String

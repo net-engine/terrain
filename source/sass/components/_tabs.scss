@@ -8,7 +8,7 @@
 
 .tabs-nav {
   margin: 0;
-  @extend %clearfix;
+  @extend .clearfix;
 
   li {
     float: left;

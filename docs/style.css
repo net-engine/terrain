@@ -1672,8 +1672,11 @@ input[type="file"]::-webkit-file-upload-button.icon-only {
     color: white;
     background-color: #224358;
     background-size: cover;
-    background-image: -webkit-radial-gradient(  rgba(13, 25, 33, 0.25), rgba(13, 25, 33, 0.5));
-    background-image: radial-gradient(   rgba(13, 25, 33, 0.25), rgba(13, 25, 33, 0.5));
+    background-image: -owg(radial, , rgba(13, 25, 33, 0.25), rgba(13, 25, 33, 0.5));
+    background-image: -webkit(radial, , rgba(13, 25, 33, 0.25), rgba(13, 25, 33, 0.5));
+    background-image: -moz(radial, , rgba(13, 25, 33, 0.25), rgba(13, 25, 33, 0.5));
+    background-image: -o(radial, , rgba(13, 25, 33, 0.25), rgba(13, 25, 33, 0.5));
+    background-image: radial, , rgba(13, 25, 33, 0.25), rgba(13, 25, 33, 0.5);
 }
 
 table {

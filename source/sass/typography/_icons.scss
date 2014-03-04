@@ -1,4 +1,4 @@
-%icon {
+.icon, [data-icon], [class*="icon-"] {
   font-family: inherit;
 
   &:before {
@@ -13,12 +13,7 @@
   }
 }
 
-[data-icon], [class*="icon-"] {
-  @extend %icon;
-}
-
-
-%icon-only {
+.icon-only {
   display: inline-block;
   vertical-align: middle;
   position: relative;
@@ -38,10 +33,6 @@
     height: $line-height;
     line-height: $line-height;
   }
-}
-
-.icon-only {
-  @extend %icon-only;
 }
 
 

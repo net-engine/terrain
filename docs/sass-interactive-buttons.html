@@ -15,7 +15,7 @@
   font-weight: $font-weight-medium;
   -webkit-font-smoothing: antialiased;
   text-decoration: none;
-  
+
   color: $button-default-foreground-color;
   background-color: $button-default-background-color;
   border-color: $button-default-border-color;
@@ -27,7 +27,7 @@
     color: $button-default-hover-foreground-color;
     background-color: $button-default-hover-background-color;
     border-color: $button-default-hover-border-color;
-    
+
   }
 
   &.active, &:active {
@@ -36,8 +36,8 @@
     border-color: $button-default-active-border-color;
   }
 
-  &[disabled="disabled"], 
-  &[disabled="disabled"]:hover, 
+  &[disabled="disabled"],
+  &[disabled="disabled"]:hover,
   &[disabled="disabled"]:active {
     opacity: .5;
     cursor: default;
@@ -51,14 +51,14 @@
 }
 
 
-.button, 
-button, 
-input[type="submit"], 
+.button,
+button,
+input[type="submit"],
 input[type="button"] {
   @extend %button;
 }
 
-input[type="submit"], 
+input[type="submit"],
 button[type='submit'] {
   background: $button-submit-color;
 
@@ -69,7 +69,7 @@ button[type='submit'] {
 
 
 %buttons {
-  @extend %clearfix;
+  @extend .clearfix;
 
   %button {
     float: left;
