@@ -5,6 +5,7 @@
 
 @mixin background-image($images...) {
   background-image: _add-prefix($images, webkit);
+  background-image: _add-prefix($images, moz);
   background-image: _add-prefix($images);
 }
 
