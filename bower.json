@@ -1,14 +1,14 @@
 {
-  "name": "Trove",
+  "name": "Terrain",
   "version": "0.0.5",
-  "homepage": "https://github.com/net-engine/trove",
+  "homepage": "https://github.com/net-engine/terrain",
   "authors": [
     "Rowan Hogan",
     "Brad Parker"
   ],
-  "description": "\"A collection of structural sass\"",
+  "description": "\"A collection of structural sass for your project.\"",
   "license": "MIT",
-  "main": "trove.scss",
+  "main": "terrain.scss",
   "ignore": [
     "docs",
     ".gitignore",

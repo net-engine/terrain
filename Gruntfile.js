@@ -13,11 +13,11 @@ module.exports = function(grunt) {
       }
     },
     cssbeautifier : {
-      files : ['docs/trove.css']
+      files : ['docs/docs.css']
     },
     watch: {
       css: {
-        files: ['trove/**/*.scss', '*.scss'],
+        files: ['terrain/**/*.scss', 'docs/*.scss'],
         tasks: ['sass', 'autoprefixer', 'cssbeautifier'],
         options: {
           livereload: true
@@ -26,14 +26,14 @@ module.exports = function(grunt) {
     },
     autoprefixer: {
       dist: {
-        src: 'docs/trove.css',
-        dest: 'docs/trove.css'
+        src: 'docs/docs.css',
+        dest: 'docs/docs.css'
       },
     },
     sass: {
       dist: {
         files: {
-          'docs/trove.css': 'trove.scss'
+          'docs/docs.css': 'docs/docs.scss'
         },
         outputStyle: 'compressed'
       }

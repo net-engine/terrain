@@ -1,0 +1,40 @@
+
+// Settings
+
+$fixed-left-nav: false;
+
+
+@import 'terrain';
+
+@import url(http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700|Montserrat);
+
+
+.hero {
+  background: url(images/mountain.jpg) no-repeat center;
+  background-size: cover;
+  color: white;
+  text-align: center;
+
+  a {
+    color: white;
+  }
+}
+
+.logo {
+  font-family: 'Montserrat';
+  text-transform: lowercase;
+  font-size: 1.5em;
+  line-height: 2em;
+  text-transform: uppercase;
+  letter-spacing: .75em;
+  display: block;
+  margin: auto;
+}
+
+@media screen and (-webkit-min-device-pixel-ratio: 1) {
+  .logo {
+    background-image: url(images/mountain.jpg);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+  }
+}
