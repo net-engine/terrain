@@ -20,26 +20,38 @@ $font-family: 'Source Sans Pro', 'Helvetica Neue', sans-serif !default;
   color: white;
   text-align: center;
 
+  h1 {
+
+  }
+
   a {
     color: white;
   }
 }
 
-.logo {
-  font-family: 'Montserrat';
-  text-transform: lowercase;
-  font-size: 1.5em;
-  line-height: 2em;
-  text-transform: uppercase;
-  letter-spacing: .75em;
-  display: block;
-  margin: auto;
+.title {
+  overflow: hidden;
+  height: 0;
+  animation: excavate 1.5s 1 forwards;
+  animation-delay: .5s;
 }
 
-@media screen and (-webkit-min-device-pixel-ratio: 1) {
-  .logo {
-    background-image: url(images/mountain.jpg);
-    -webkit-text-fill-color: transparent;
-    -webkit-background-clip: text;
-  }
+.logo {
+  display: block;
+  margin: 1em auto;
+}
+
+@-webkit-keyframes excavate {
+  0%    { height: 0; }
+  100%  { height: 5em; }
+}
+
+@-moz-keyframes excavate {
+  0%    { height: 0; }
+  100%  { height: 5em; }
+}
+
+@-keyframes excavate {
+  0%    { height: 0; }
+  100%  { height: 5em; }
 }
