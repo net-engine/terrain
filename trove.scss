@@ -1,35 +1,35 @@
-@import 'reset/reset';
-@import 'mixins/mixins';
+@import 'trove/reset/reset';
+@import 'trove/mixins/mixins';
 
 @import 'trove_default_settings';
 
-@import 'helpers/layout_helpers',
-        'helpers/interactive_helpers';
+@import 'trove/helpers/layout_helpers',
+        'trove/helpers/interactive_helpers';
 
-@import 'color/palette';
+@import 'trove/color/palette';
 
-@import 'decorative/borders';
+@import 'trove/decorative/borders';
 
-@import 'typography/body',
-        'typography/headings',
-        'typography/icons',
-        'typography/lists';
+@import 'trove/typography/body',
+        'trove/typography/headings',
+        'trove/typography/icons',
+        'trove/typography/lists';
 
-@import 'layout/vertical_rhythm',
-        'layout/blocks',
-        'layout/grid',
-        'layout/positioning',
-        'layout/form_structure',
-        'layout/structure';
+@import 'trove/layout/vertical_rhythm',
+        'trove/layout/blocks',
+        'trove/layout/grid',
+        'trove/layout/positioning',
+        'trove/layout/form_structure',
+        'trove/layout/structure';
 
-@import 'interactive/anchors',
-        'interactive/buttons',
-        'interactive/radio_buttons_and_checkboxes',
-        'interactive/selects',
-        'interactive/text_inputs',
-        'interactive/progress_and_meter',
-        'interactive/file_inputs';
+@import 'trove/interactive/anchors',
+        'trove/interactive/buttons',
+        'trove/interactive/radio_buttons_and_checkboxes',
+        'trove/interactive/selects',
+        'trove/interactive/text_inputs',
+        'trove/interactive/progress_and_meter',
+        'trove/interactive/file_inputs';
 
-@import 'components/hero',
-        'components/table',
-        'components/tabs';
+@import 'trove/components/hero',
+        'trove/components/table',
+        'trove/components/tabs';

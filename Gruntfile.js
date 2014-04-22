@@ -17,7 +17,7 @@ module.exports = function(grunt) {
     },
     watch: {
       css: {
-        files: ['./**/*.scss'],
+        files: ['trove/**/*.scss', '*.scss'],
         tasks: ['sass', 'cssbeautifier'],
         options: {
           livereload: true
@@ -27,14 +27,15 @@ module.exports = function(grunt) {
     sass: {
       dist: {
         files: {
-          'trove.css': 'trove.scss'
+          'trove.css': 'trove.scss',
+          'docs/trove.css': 'trove.scss'
         },
         outputStyle: 'compressed'
       }
     },
     'gh-pages': {
       options: {
-        base: './'
+        base: 'docs',
       },
       src: ['**']
     }
