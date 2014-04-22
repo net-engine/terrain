@@ -14,23 +14,23 @@ $line-height:             1.7em !default;
 $font-size:               100% !default;
 
 $font-size-level-one:     3em !default;
-$font-weight-level-one:   700 !default;
+$font-weight-level-one:   300 !default;
 $line-height-level-one:   $line-height * 0.667;
 $margin-level-one:        $line-height * 0.667 !default;
 
 $font-size-level-two:     1.75em !default;
-$font-weight-level-two:   700 !default;
+$font-weight-level-two:   500 !default;
 $line-height-level-two:   $line-height * 0.75 !default;
-$margin-level-two:        $line-height !default;
+$margin-level-two:        $line-height * 0.75 !default;
 
 $font-size-level-three:   1.5em !default;
-$font-weight-level-three: 700 !default;
+$font-weight-level-three: 600 !default;
 $line-height-level-three: $line-height * 0.8 !default;
 $margin-level-three:      $line-height * 0.8 !default;
 
-$font-size-level-four:    1.333em !default;
+$font-size-level-four:    1.25em !default;
 $font-weight-level-four:  700 !default;
-$line-height-level-four:  $line-height * 0.85 !default;
+$line-height-level-four:  $line-height * 0.8 !default;
 $margin-level-four:       $line-height * 0.8 !default;
 
 $font-size-level-five:    1em !default;

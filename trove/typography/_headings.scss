@@ -7,7 +7,7 @@ h1, h2, h3, h4, h5, h6 { @extend %heading; }
 h1 {
   font-size: $font-size-level-one;
   font-weight: $font-weight-level-one;
-  margin-top: $margin-level-one;
+  margin-top: $margin-level-one * 2;
   margin-bottom: $margin-level-one;
   line-height: $line-height-level-one;
 }
@@ -15,7 +15,7 @@ h1 {
 h2 {
   font-size: $font-size-level-two;
   font-weight: $font-weight-level-two;
-  margin-top: $margin-level-two;
+  margin-top: $margin-level-two * 2;
   margin-bottom: $margin-level-two;
   line-height: $line-height-level-two;
 }
@@ -23,7 +23,7 @@ h2 {
 h3 {
   font-size: $font-size-level-three;
   font-weight: $font-weight-level-three;
-  margin-top: $margin-level-three;
+  margin-top: $margin-level-three * 2;
   margin-bottom: $margin-level-three;
   line-height: $line-height-level-three;
 }
@@ -31,7 +31,7 @@ h3 {
 h4 {
   font-size: $font-size-level-four;
   font-weight: $font-weight-level-four;
-  margin-top: $margin-level-four;
+  margin-top: $margin-level-four * 2;
   margin-bottom: $margin-level-four;
   line-height: $line-height-level-four;
 }
@@ -39,7 +39,7 @@ h4 {
 h5 {
   font-size: $font-size-level-five;
   font-weight: $font-weight-level-five;
-  margin-top: $margin-level-five;
+  margin-top: $margin-level-five * 2;
   margin-bottom: $margin-level-five;
   line-height: $line-height-level-five;
 }
@@ -47,7 +47,7 @@ h5 {
 h6 {
   font-size: $font-size-level-six;
   font-weight: $font-weight-level-six;
-  margin-top: $margin-level-six;
+  margin-top: $margin-level-six * 2;
   margin-bottom: $margin-level-six;
   line-height: $line-height-level-six;
 }
