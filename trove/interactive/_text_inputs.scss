@@ -18,7 +18,7 @@ textarea {
   margin-top: 0;
   font-family: $font-family-input;
   font-size: 1em;
-  font-weight: $font-weight-normal;
+  font-weight: normal;
   color: $input-foreground-color;
   background-color: $input-background-color;
   border-color: $input-border-color;
@@ -47,18 +47,18 @@ textarea {
 }
 
 ::-webkit-input-placeholder {
-  font-weight: $font-weight-normal;
+  font-weight: normal;
   font-family: $font-family-input;
 }
 :-moz-placeholder {
-  font-weight: $font-weight-normal;
+  font-weight: normal;
   font-family: $font-family-input;
 }
 ::-moz-placeholder {
-  font-weight: $font-weight-normal;
+  font-weight: normal;
   font-family: $font-family-input;
 }
 :-ms-input-placeholder {
-  font-weight: $font-weight-normal;
+  font-weight: normal;
   font-family: $font-family-input;
 }

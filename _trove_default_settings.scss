@@ -2,26 +2,47 @@
 
 // ## Typography
 
-$font-family:             'Open Sans', 'Helvetica Neue', sans-serif !default;
+$font-family:             'Source Sans Pro', 'Helvetica Neue', sans-serif !default;
 $font-family-body:        $font-family !default;
 $font-family-headings:    $font-family !default;
 $font-family-input:       $font-family !default;
 $font-family-icons:       'trove-icons' !default;
 $font-family-mono:        'Menlo', 'Monaco', 'Courier New', monospace !default;
 
-$font-size:               100% !default;
-$font-size-level-one:     3em !default;
-$font-size-level-two:     1.75em !default;
-$font-size-level-three:   1.5em !default;
-$font-size-level-four:    1.25em !default;
-$font-size-level-five:    1em !default;
-$font-size-level-six:     0.8em !default;
-
 $line-height:             1.7em !default;
 
-$font-weight-normal:      400 !default;
-$font-weight-medium:      600 !default;
-$font-weight-bold:        700 !default;
+$font-size:               100% !default;
+
+$font-size-level-one:     3em !default;
+$font-weight-level-one:   700 !default;
+$line-height-level-one:   $line-height * 0.667;
+$margin-level-one:        $line-height * 0.667 !default;
+
+$font-size-level-two:     1.75em !default;
+$font-weight-level-two:   700 !default;
+$line-height-level-two:   $line-height * 0.75 !default;
+$margin-level-two:        $line-height !default;
+
+$font-size-level-three:   1.5em !default;
+$font-weight-level-three: 700 !default;
+$line-height-level-three: $line-height * 0.8 !default;
+$margin-level-three:      $line-height * 0.8 !default;
+
+$font-size-level-four:    1.333em !default;
+$font-weight-level-four:  700 !default;
+$line-height-level-four:  $line-height * 0.85 !default;
+$margin-level-four:       $line-height * 0.8 !default;
+
+$font-size-level-five:    1em !default;
+$font-weight-level-five:  700 !default;
+$line-height-level-five:  $line-height !default;
+$margin-level-five:       $line-height !default;
+
+$font-size-level-six:     0.8em !default;
+$font-weight-level-six:   700 !default;
+$line-height-level-six:   $line-height * 1.25;
+$margin-level-six:        $line-height * 1.25 !default;
+
 
 
 // ## Colours
@@ -48,22 +69,22 @@ $color-info:              $color-primary !default;
 $color-info-light:        lighten($color-info, 35%) !default;
 
 $palette: "white"         $white,
-          "black"         $black,
-          "primary"       $color-primary,
-          "primary-light" $color-primary-light,
-          "gray-darker"   $gray-darker,
-          "gray-dark"     $gray-dark,
-          "gray"          $gray,
-          "gray-light"    $gray-light,
-          "gray-lighter"  $gray-lighter,
-          "success"       $color-success,
-          "success-light" $color-success-light,
-          "warning"       $color-warning,
-          "warning-light" $color-warning-light,
-          "danger"        $color-danger,
-          "danger-light"  $color-danger-light,
-          "info"          $color-info,
-          "info-light"    $color-info-light !default;
+    "black"         $black,
+    "primary"       $color-primary,
+    "primary-light" $color-primary-light,
+    "gray-darker"   $gray-darker,
+    "gray-dark"     $gray-dark,
+    "gray"          $gray,
+    "gray-light"    $gray-light,
+    "gray-lighter"  $gray-lighter,
+    "success"       $color-success,
+    "success-light" $color-success-light,
+    "warning"       $color-warning,
+    "warning-light" $color-warning-light,
+    "danger"        $color-danger,
+    "danger-light"  $color-danger-light,
+    "info"          $color-info,
+    "info-light"    $color-info-light !default;
 
 
 // Links
@@ -210,24 +231,6 @@ $baseline-grid: false !default;
 
 $radius: .15em !default;
 $border-width: .125em !default;
-
-//
-// To Implement your own icons, update the below:
-//
-// @font-face {
-//   font-family: $font-family-icons !default;
-//   src: url('path/to/icons.eot') !default;
-//   src: url('path/to/icons.eot?#iefix') format('embedded-opentype'),
-//        url('path/to/icons.ttf') format('truetype'),
-//        url('path/to/icons.woff') format('woff'),
-//        url('path/to/icons.svg') format('svg') !default;
-//   font-weight: normal !default;
-//   font-style: normal !default;
-// }
-//
-
-
-
 
 
 // Components

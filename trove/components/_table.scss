@@ -11,13 +11,13 @@ table {
   }
 
   caption {
-    font-weight: $font-weight-medium;
+    font-weight: 600;
     font-size: 0.8em;
     text-transform: uppercase;
   }
 
   th {
-    font-weight: $font-weight-medium;
+    font-weight: 600;
   }
 
   thead tr {
@@ -40,7 +40,7 @@ table {
 
     th {
       background-color: $gray-lighter;
-      font-weight: $font-weight-medium;
+      font-weight: 600;
     }
 
     &.no-wrap {
