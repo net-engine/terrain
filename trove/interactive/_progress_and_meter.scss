@@ -13,9 +13,8 @@ progress, meter {
   margin-bottom: $line-height;
   width: 100%;
   border: none;
-
-  @include appearance(none);
-
+  -webkit-appearance: none;
+  -moz-appearance: none;
   border-radius: $radius;
 }
 

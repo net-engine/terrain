@@ -1,5 +1,4 @@
 @import 'trove/reset/reset';
-@import 'trove/mixins/mixins';
 
 @import 'trove_default_settings';
 
@@ -30,6 +29,5 @@
         'trove/interactive/progress_and_meter',
         'trove/interactive/file_inputs';
 
-@import 'trove/components/hero',
-        'trove/components/table',
+@import 'trove/components/table',
         'trove/components/tabs';

@@ -11,7 +11,8 @@
   color: $button-default-foreground-color;
   background-color: $button-default-background-color;
   border-color: $button-default-border-color;
-  @include appearance(none);
+  -webkit-appearance: none;
+  -moz-appearance: none;
 }
 
 a.button {
@@ -50,7 +51,7 @@ button[type='submit'],
 
     &:first-child {
       border-left-width: 0;
-      @include border-left-radius($radius);
+      border-radius: $radius 0 0 $radius;
     }
 
     &.active {
@@ -58,7 +59,7 @@ button[type='submit'],
     }
 
     &:last-child, &.last-child {
-      @include border-right-radius($radius);
+      border-radius: 0 $radius $radius 0;
     }
   }
 }

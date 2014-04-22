@@ -15,7 +15,7 @@ body > nav {
     bottom: 0;
     padding: $page-margin / 2;
     overflow: auto;
-    @include box-sizing(border-box);
+    box-sizing: border-box;
 
     a { display: block; }
 

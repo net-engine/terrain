@@ -13,21 +13,26 @@ module.exports = function(grunt) {
       }
     },
     cssbeautifier : {
-      files : ['style.css']
+      files : ['docs/trove.css']
     },
     watch: {
       css: {
         files: ['trove/**/*.scss', '*.scss'],
-        tasks: ['sass', 'cssbeautifier'],
+        tasks: ['sass', 'autoprefixer', 'cssbeautifier'],
         options: {
           livereload: true
         }
       }
     },
+    autoprefixer: {
+      dist: {
+        src: 'docs/trove.css',
+        dest: 'docs/trove.css'
+      },
+    },
     sass: {
       dist: {
         files: {
-          'trove.css': 'trove.scss',
           'docs/trove.css': 'trove.scss'
         },
         outputStyle: 'compressed'
@@ -41,12 +46,13 @@ module.exports = function(grunt) {
     }
   });
 
+  grunt.loadNpmTasks('grunt-autoprefixer');
   grunt.loadNpmTasks('grunt-contrib-connect');
   grunt.loadNpmTasks('grunt-contrib-watch');
   grunt.loadNpmTasks('grunt-cssbeautifier');
   grunt.loadNpmTasks('grunt-gh-pages');
   grunt.loadNpmTasks('grunt-sass');
 
-  grunt.registerTask('default', ['connect', 'sass', 'watch']);
-  grunt.registerTask('build', ['sass', 'gh-pages']);
+  grunt.registerTask('default', ['connect', 'sass', 'autoprefixer', 'watch']);
+  grunt.registerTask('build',   ['sass', 'autoprefixer', 'cssbeautifier', 'gh-pages']);
 }
