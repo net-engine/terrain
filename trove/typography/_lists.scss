@@ -6,7 +6,7 @@ ul, ol {
 main {
   ol, ul:not(.no-dot) {
     margin-bottom: $line-height;
-    
+
     li {
       list-style: none;
       display: block;
@@ -86,7 +86,7 @@ main {
 
 // <ul>
 //   <li>first item</li>
-//   <li>second item 
+//   <li>second item
 //     <ul>
 //       <li>second item first subitem</li>
 //       <li>second item second subitem
@@ -95,10 +95,10 @@ main {
 //           <li>second item second subitem second sub-subitem</li>
 //           <li>second item second subitem third sub-subitem</li>
 //         </ul>
-//       </li>  
+//       </li>
 //       <li>second item third subitem</li>
 //     </ul>
-//   </li> 
+//   </li>
 //   <li>third item</li>
 // </ul>
 
@@ -146,6 +146,6 @@ main {
 //       <li>second item second subitem</li>
 //       <li>second item third subitem</li>
 //     </ul>
-//   </li> 
+//   </li>
 //   <li>third item</li>
 // </ol>
