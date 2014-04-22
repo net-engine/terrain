@@ -11,6 +11,7 @@
   "main": "trove.scss",
   "ignore": [
     "docs",
+    ".gitignore",
     "package.json",
     "Gruntfile.js",
     "README.md",
