@@ -449,7 +449,7 @@ h1:last-child, h2:last-child, h3:last-child, h4:last-child, h5:last-child, h6:la
 .icon, [data-icon], [class*="icon-"] {
   font-family: inherit; }
   .icon:before, [data-icon]:before, [class*="icon-"]:before {
-    font-family: 'icons';
+    font-family: "icomoon";
     speak: none;
     font-style: normal;
     font-weight: normal;
@@ -1326,6 +1326,25 @@ table {
 .ui-tabs .ui-tabs-hide {
   display: none !important; }
 
+@font-face {
+  font-family: 'icomoon';
+  src: url('../icons/icomoon.eot?ry75vt');
+  src: url('../icons/icomoon.eot?#iefixry75vt') format('embedded-opentype'), url('../icons/icomoon.woff?ry75vt') format('woff'), url('../icons/icomoon.ttf?ry75vt') format('truetype'), url('../icons/icomoon.svg?ry75vt#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal; }
+
+.icon-settings:before {
+  content: "\e600"; }
+
+.icon-diamond:before {
+  content: "\e601"; }
+
+.icon-phone:before {
+  content: "\e602"; }
+
+.icon-clock:before {
+  content: "\e603"; }
+
 @import url(http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700|Montserrat);
 .hero-background, .hero-background img, .hero-background svg {
   position: absolute;
@@ -1344,20 +1363,17 @@ table {
   color: white;
   text-align: center;
   overflow: hidden;
-  position: relative; }
+  position: relative;
+  background-color: #264c73; }
   .hero a {
     color: white; }
 
 .title-container {
-  position: relative; }
+  position: relative;
+  z-index: 2; }
 
 .title {
-  overflow: hidden;
-  height: 0;
-  -webkit-animation: excavate 1.5s 1 forwards;
-  animation: excavate 1.5s 1 forwards;
-  -webkit-animation-delay: 0.5s;
-  animation-delay: 0.5s; }
+  overflow: hidden; }
 
 .logo {
   display: block;
@@ -1376,6 +1392,15 @@ table {
 
   100% {
     height: 5em; } }
+
+.feature-list {
+  font-size: 1.5em; }
+  .feature-list li {
+    vertical-align: top;
+    margin-bottom: 1.7em; }
+    .feature-list li:before {
+      font-size: 1.5em;
+      display: inline-block; }
 
 .menu, .nav-toggle {
   -webkit-transition: all 0.3s ease;
