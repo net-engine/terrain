@@ -1,6 +1,7 @@
 input[type="file"] {
   margin-bottom: $line-height;
   font-size: 1em;
+  width: 100%;
 }
 
 input[type="file"]::-webkit-file-upload-button {

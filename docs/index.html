@@ -933,7 +933,7 @@
   <div class="features">
     <div class="container">
 
-      <ul class="feature-list no-dot">
+      <ul class="feature-list no-dot grid-container">
         <li class='one-half icon-settings'>Easy to install.</li>
         <li class="one-half icon-diamond">Shiny.</li>
         <li class="one-half icon-phone">Responsive.</li>
@@ -1040,15 +1040,17 @@
       <section>
         <div class="container">
           <h2>Extended Lists</h2>
-          <ul class="ruled-list one-half first no-dot">
-            <li class="success-border">Vestibulum ante ipsum primis in faucibus.</li>
-            <li class="info-border">In condimentum facilisis porta. Sed nec diam eu diam mattis viverra. Nulla fringilla, orci ac euismod semper, magna diam porttitor mauris, quis sollicitudin sapien justo in.</li>
-          </ul>
+          <div class="grid-container">
+            <ul class="ruled-list one-half first no-dot">
+              <li class="success-border">Vestibulum ante ipsum primis in faucibus.</li>
+              <li class="info-border">In condimentum facilisis porta. Sed nec diam eu diam mattis viverra. Nulla fringilla, orci ac euismod semper, magna diam porttitor mauris, quis sollicitudin sapien justo in.</li>
+            </ul>
 
-          <ul class="circle-list one-half last">
-            <li>Donec congue lacinia dui, a porttitor lectus condimentum laoreet. Nunc eu ullamcorper orci. Quisque eget odio ac lectus vestibulum faucibus eget in metus. In pellentesque faucibus vestibulum. Nulla at nulla justo, eget.</li>
-            <li>Nulla facilisi. Duis aliquet egestas purus in blandit. Curabitur vulputate, ligula lacinia scelerisque tempor, lacus.</li>
-          </ul>
+            <ul class="circle-list one-half last">
+              <li>Donec congue lacinia dui, a porttitor lectus condimentum laoreet. Nunc eu ullamcorper orci. Quisque eget odio ac lectus vestibulum faucibus eget in metus. In pellentesque faucibus vestibulum. Nulla at nulla justo, eget.</li>
+              <li>Nulla facilisi. Duis aliquet egestas purus in blandit. Curabitur vulputate, ligula lacinia scelerisque tempor, lacus.</li>
+            </ul>
+          </div>
         </div>
       </section>
     </article>
@@ -1244,145 +1246,150 @@
 
             <fieldset>
               <legend>Or alternatively</legend>
-              <ul class="radio-list one-half first">
-               <li>
-                 <input type="radio" value="1" id="radioButton3" name="radioButton">
-                 <label for="radioButton3">Radio Button 1</label>
-               </li>
-               <li>
-                 <input type="radio" value="2" id="radioButton4" name="radioButton">
-                 <label for="radioButton4">Radio Button 1</label>
-               </li>
-             </ul>
-             <ul class="checkbox-list one-half last">
-               <li>
-                 <input type="checkbox" value="1" id="checkbox3" name="checkbox1">
-                 <label for="checkbox3">Checkbox 1</label>
-               </li>
-               <li>
-                 <input type="checkbox" value="2" id="checkbox4" name="checkbox2">
-                 <label for="checkbox4">Checkbox 2</label>
-               </li>
-             </ul>
+              <div class="grid-container">
+                <ul class="radio-list one-half first">
+                 <li>
+                   <input type="radio" value="1" id="radioButton3" name="radioButton">
+                   <label for="radioButton3">Radio Button 1</label>
+                 </li>
+                 <li>
+                   <input type="radio" value="2" id="radioButton4" name="radioButton">
+                   <label for="radioButton4">Radio Button 1</label>
+                 </li>
+               </ul>
+               <ul class="checkbox-list one-half last">
+                 <li>
+                   <input type="checkbox" value="1" id="checkbox3" name="checkbox1">
+                   <label for="checkbox3">Checkbox 1</label>
+                 </li>
+                 <li>
+                   <input type="checkbox" value="2" id="checkbox4" name="checkbox2">
+                   <label for="checkbox4">Checkbox 2</label>
+                 </li>
+               </ul>
+             </div>
             </fieldset>
 
             <fieldset>
               <legend>Selects</legend>
-              <div class="one-half first">
-                <label for="selectWithOptGroup">Select with optgroup</label>
-                <select name="selectWithOptGroup">
-                  <optgroup label="In Condimentum">
-                    <option value="1">Duis Aliquet Egestas</option>
-                    <option value="2">Lorem Ipsum</option>
-                  </optgroup>
-                  <optgroup label="Lorem Ipsum Dolor">
-                    <option value="3">Lorem Ipsum Dolor Sit</option>
-                    <option value="4">Vivamus Hendrerit Arcu Sed</option>
-                    <option value="5">Sed Molestie</option>
-                  </optgroup>
-                </select>
+              <div class="grid-container">
+                <div class="one-half first">
+                  <label for="selectWithOptGroup">Select with optgroup</label>
+                  <select name="selectWithOptGroup">
+                    <optgroup label="In Condimentum">
+                      <option value="1">Duis Aliquet Egestas</option>
+                      <option value="2">Lorem Ipsum</option>
+                    </optgroup>
+                    <optgroup label="Lorem Ipsum Dolor">
+                      <option value="3">Lorem Ipsum Dolor Sit</option>
+                      <option value="4">Vivamus Hendrerit Arcu Sed</option>
+                      <option value="5">Sed Molestie</option>
+                    </optgroup>
+                  </select>
+                </div>
+
+                <div class="one-half last">
+                  <label for="selectSingle">Select Single</label>
+                  <select name="selectSingle">
+                    <option>Quisque Eget</option>
+                    <option>Sed Auctor Neque</option>
+                  </select>
+                </div>
+
+                <div class="one-half first">
+                  <label for="selectMultiple">Select Multiple</label>
+                  <select name="selectMultiple" multiple>
+                    <option>Curabitur Vulputate, Ligula</option>
+                    <option>Lorem Ipsum Dolor</option>
+                  </select>
+                </div>
+
+                <div class="one-half last">
+                  <label for="dataList">Data List</label>
+                  <input list="dataList" />
+                  <datalist id="dataList">
+                    <option>Sed Auctor</option>
+                    <option>Sed Molestie Augue Sit</option>
+                  </datalist>
+                </div>
               </div>
-
-              <div class="one-half last">
-                <label for="selectSingle">Select Single</label>
-                <select name="selectSingle">
-                  <option>Quisque Eget</option>
-                  <option>Sed Auctor Neque</option>
-                </select>
-              </div>
-
-              <div class="one-half first">
-                <label for="selectMultiple">Select Multiple</label>
-                <select name="selectMultiple" multiple>
-                  <option>Curabitur Vulputate, Ligula</option>
-                  <option>Lorem Ipsum Dolor</option>
-                </select>
-              </div>
-
-              <div class="one-half last">
-                <label for="dataList">Data List</label>
-                <input list="dataList" />
-                <datalist id="dataList">
-                  <option>Sed Auctor</option>
-                  <option>Sed Molestie Augue Sit</option>
-                </datalist>
-              </div>
-
-
-
             </fieldset>
 
             <fieldset>
               <legend>Text Inputs</legend>
 
-              <div class="one-half first">
-                <label for="inputTypeText">Type text</label>
-                <input type="text" name="inputTypeText" />
+              <div class="grid-container">
+                <div class="one-half first">
+                  <label for="inputTypeText">Type text</label>
+                  <input type="text" name="inputTypeText" />
 
-                <label>Search</label>
-                <input type="search" />
+                  <label>Search</label>
+                  <input type="search" />
+                </div>
+
+
+                <div class="one-half last">
+                  <label for="textArea">Text Area</label>
+                  <textarea name="textArea"></textarea>
+                </div>
               </div>
-
-
-              <div class="one-half last">
-                <label for="textArea">Text Area</label>
-                <textarea name="textArea"></textarea>
-              </div>
-
               <hr>
+              <div class="grid-container">
+                <div class="one-half first">
+                  <label>Telephone</label>
+                  <input type="tel" />
+                </div>
 
-              <div class="one-half first">
-                <label>Telephone</label>
-                <input type="tel" />
-              </div>
+                <div class="one-half last">
+                  <label>Email</label>
+                  <input type="email" />
+                </div>
 
-              <div class="one-half last">
-                <label>Email</label>
-                <input type="email" />
-              </div>
+                <div class="one-half first">
+                  <label>Password</label>
+                  <input type="password" />
+                </div>
 
-              <div class="one-half first">
-                <label>Password</label>
-                <input type="password" />
-              </div>
+                <div class="one-half last">
+                  <label>URL</label>
+                  <input type="url" />
+                </div>
 
-              <div class="one-half last">
-                <label>URL</label>
-                <input type="url" />
-              </div>
+                <div class="one-half first">
+                  <label>Date</label>
+                  <input type="date" />
+                </div>
 
-              <div class="one-half first">
-                <label>Date</label>
-                <input type="date" />
-              </div>
+                <div class="one-half last">
+                  <label>Datetime</label>
+                  <input type="datetime" />
+                </div>
 
-              <div class="one-half last">
-                <label>Datetime</label>
-                <input type="datetime" />
-              </div>
+                <div class="one-half first">
+                  <label>Time</label>
+                  <input type="time" />
+                </div>
 
-              <div class="one-half first">
-                <label>Time</label>
-                <input type="time" />
-              </div>
+                <div class="one-half last">
+                  <label>Number</label>
+                  <input type="number" />
+                </div>
 
-              <div class="one-half last">
-                <label>Number</label>
-                <input type="number" />
-              </div>
-
-              <div class="one-half first">
-                <label>File</label>
-                <input type="file" />
+                <div class="one-half first">
+                  <label>File</label>
+                  <input type="file" />
+                </div>
               </div>
             </fieldset>
             <fieldset>
               <legend>Progress and Meter</legend>
-              <div class="one-half first">
-                <progress value="0.4"></progress>
-              </div>
-              <div class="one-half last">
-                <meter value="0.6"></meter>
+              <div class="grid-container">
+                <div class="one-half first">
+                  <progress value="0.4"></progress>
+                </div>
+                <div class="one-half last">
+                  <meter value="0.6"></meter>
+                </div>
               </div>
             </fieldset>
           </form>
