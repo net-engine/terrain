@@ -15,7 +15,6 @@
 5.  Tables: active & asc/desc header styles?
 8.  Rethink definition lists & add more config / style varations
 9.  More config / options for blockquotes
-10. Responsive Media
 11. Extend configurable variables in settings (buttons)
 12. Solid examples of use (combining elements)
 13. Improve / add positiioning classes (placeholders) and use throughout

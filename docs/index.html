@@ -5,7 +5,6 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width = device-width, initial-scale = 1">
-  <link rel="stylesheet" href="terrain.css" />
   <link rel="stylesheet" href="docs.css">
 </head>
 
@@ -18,7 +17,7 @@
         by <a href="https://triggerapp.com">Trigger</a>
       </h1>
 
-      <p>A collection of structural sass &amp; coffeescript.</p>
+      <p>A collection of structural sass.</p>
 
       <a target="_blank" href="https://github.com/net-engine/Terrain" class="pill white-foreground primary-background">Source</a>
 
@@ -31,7 +30,6 @@
     <div class="container">
       <ul>
         <li><a href="#typography">Typography</a></li>
-        <li><a href="#color">Color</a></li>
         <li><a href="#blocks">Blocks</a></li>
         <li><a href="#media">Media</a></li>
         <li><a href="#tables">Tables</a></li>
@@ -64,9 +62,9 @@
 
     <article id="typography">
       <header>
-        <hgroup class="container">
+        <div class="container">
           <h1>Typography</h1>
-        </hgroup>
+        </div>
       </header>
       <section>
         <div class="container">
@@ -166,34 +164,11 @@
       </section>
     </article>
 
-    <article id="color">
-      <header>
-        <hgroup class="container">
-          <h1>Color</h1>
-        </hgroup>
-      </header>
-      <section class="gray-darker-background white-foreground">
-        <div class="container">
-          <p>Darker Grey</p>
-        </div>
-      </section>
-      <section class="gray-dark-background white-foreground">
-        <div class="container">
-          <p>Dark Grey</p>
-        </div>
-      </section>
-      <section class="gray-background white-foreground">
-        <div class="container">
-          <p>Grey</p>
-        </div>
-      </section>
-    </article>
-
     <article id="blocks">
       <header>
-        <hgroup class="container">
+        <div class="container">
           <h1>Specially Formatted Blocks</h1>
-        </hgroup>
+        </div>
       </header>
 
       <section>
@@ -216,14 +191,14 @@
     </article>
 
     <article id="media">
-      <div class="container">
-        <header>
+      <header>
+        <div class="container">
           <h1>Responsive Media</h1>
+        </div>
+      </header>
+      <section>
+        <div class="container">
           <p>All images automatically fill their container and resize as needed.</p>
-        </header>
-
-        <section>
-
           <h2>Image</h2>
           <img src="http://placehold.it/1200x600/5694bd/fff&text=Terrain+Rules!">
 
@@ -231,15 +206,8 @@
           <video src="http://upload.wikimedia.org/wikipedia/commons/c/c5/Artist%E2%80%99s_impression_of_the_black_hole_inside_NGC_300_X-1_%28ESO_1004a%29.webm" controls muted poster="http://upload.wikimedia.org/wikipedia/commons/thumb/5/5e/Artist%E2%80%99s_impression_of_the_black_hole_inside_NGC_300_X-1_%28ESO_1004a%29.jpg/1280px-Artist%E2%80%99s_impression_of_the_black_hole_inside_NGC_300_X-1_%28ESO_1004a%29.jpg">
             Sorry, your browser doesn't support embedded videos.
           </video>
-
-          <h2>Audio</h2>
-          <audio controls="controls">
-            Your browser does not support the <code>audio</code> element.
-            <source src="http://upload.wikimedia.org/wikipedia/commons/d/d0/Cello_strings.ogg" type="application/ogg">
-          </audio>
-
-        </section>
-      </div>
+        </div>
+      </section>
     </article>
 
 
@@ -555,33 +523,10 @@
         </div>
       </section>
     </article>
-
-
-    <section id="components">
-
-      <header>
-        <div class="container">
-          <h1>Components</h1>
-        </div>
-      </header>
-
-      <section>
-        <div class="container">
-
-          <p>
-            Extend Terrain with components.
-          </p>
-
-        </div>
-      </section>
-
-
-    </section>
-
   </main>
 
 
-  <footer>
+  <footer class="gray-darker-background white-foreground">
     <div class="container">
       Made by <a href="https://triggerapp.com">Trigger</a>.
     </div>
