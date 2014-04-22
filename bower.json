@@ -12,6 +12,9 @@
   "ignore": [
     "favicon.ico",
     "index.html",
+    "package.json",
+    "Gruntfile.js",
+    "README.md",
     "**/.*",
     "node_modules",
     "bower_components"
