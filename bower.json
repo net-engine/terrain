@@ -1,6 +1,6 @@
 {
   "name": "Trove",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "homepage": "https://github.com/net-engine/trove",
   "authors": [
     "Rowan Hogan",
@@ -8,12 +8,12 @@
   ],
   "description": "\"A collection of structural sass\"",
   "license": "MIT",
-  "main": "source/sass/style.scss",
+  "main": "trove.scss",
   "ignore": [
+    "favicon.ico",
+    "index.html",
     "**/.*",
     "node_modules",
     "bower_components",
-    "test",
-    "tests"
   ]
 }

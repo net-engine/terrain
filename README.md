@@ -18,11 +18,8 @@ By <a href="https://triggerapp.com" target="_blank">Trigger</a>.
 
 ### Dev Ops tasks
 
-1. Move mains scss to project root and update as required.
 2. Replace bourbon with autoprefixr
-3. Remove BS comments from styledocco nonsense
 4. Research and implement bower best practises (e.g. what do the good guys do)
-5. Github release/s with all the bells and whistles
 
 
 ## Style tasks

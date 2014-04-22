@@ -1,0 +1,35 @@
+form footer {
+  position: relative;
+
+  button, input[type="submit"] {
+    float: right;
+    margin-left: $line-height / 3;
+  }
+}
+
+form header {
+  position: relative;
+  padding-top: $line-height;
+  padding-bottom: $line-height;
+}
+
+form footer {
+  @extend .clearfix;
+}
+
+fieldset {
+  margin-bottom: $line-height * 2;
+
+  @extend .border-bottom-heavy-solid;
+  border-color: $light-border-color;
+}
+
+legend {
+  font-size: $font-size-level-three;
+  margin-bottom: $line-height-level-three;
+}
+
+label {
+  margin-bottom: $line-height / 2;
+  display: block;
+}

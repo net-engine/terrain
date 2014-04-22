@@ -4,17 +4,4 @@
 .sass-cache
 node_modules
 bower_components
-
-# Include only docs.jade from styledocco
-
-node_modules/*
-!node_modules/grunt-styleguide
-
-node_modules/grunt-styleguide/*
-!node_modules/grunt-styleguide/node_modules
-
-node_modules/grunt-styleguide/node_modules/*
-!node_modules/grunt-styleguide/node_modules/styledocco
-
-node_modules/grunt-styleguide/node_modules/styledocco/*
-!node_modules/grunt-styleguide/node_modules/styledocco/share
+node_modules

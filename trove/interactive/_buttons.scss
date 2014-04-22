@@ -1,7 +1,3 @@
-// A button
-//
-// <button>Submit</button>
-
 @mixin button() {
   @include rounded-box(inline-block, false);
   padding: $line-height / 4 $line-height / 2;

@@ -1,0 +1,72 @@
+table {
+  border-collapse: collapse;
+  text-align: left;
+  width: 100%;
+  margin: 0 0 $line-height;
+  border: $light-stroke solid $default-border-color;
+
+  caption, th, td {
+    vertical-align: top;
+    padding: $line-height / 2;
+  }
+
+  caption {
+    font-weight: $font-weight-medium;
+    font-size: 0.8em;
+    text-transform: uppercase;
+  }
+
+  th {
+    font-weight: $font-weight-medium;
+  }
+
+  thead tr {
+    background-color: $gray-lighter;
+
+    &.no-wrap {
+      th {
+        vertical-align: center;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        -o-text-overflow: ellipsis;
+        line-height: $line-height + $line-height / 2;
+      }
+    }
+  }
+
+  tbody tr {
+    border-top: $light-stroke solid $default-border-color;
+
+    th {
+      background-color: $gray-lighter;
+      font-weight: $font-weight-medium;
+    }
+
+    &.no-wrap {
+      td, th {
+        vertical-align: center;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        -o-text-overflow: ellipsis;
+        line-height: $line-height + $line-height / 2;
+      }
+    }
+  }
+
+  tfoot {
+    color: $gray;
+    tr {
+      border-top: $light-stroke solid $default-border-color;
+    }
+  }
+
+  &.fixed {
+    table-layout: fixed;
+    box-sizing: border-box;
+    * {
+      box-sizing: border-box;
+    }
+  }
+}
