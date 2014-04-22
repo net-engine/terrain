@@ -37,6 +37,7 @@ $features-bg-color: hsl(210, 50%, 30%);
   text-align: center;
   overflow: hidden;
   position: relative;
+  background-color: $features-bg-color;
 
   // &:before {
   //   content: '';

@@ -1363,7 +1363,8 @@ table {
   color: white;
   text-align: center;
   overflow: hidden;
-  position: relative; }
+  position: relative;
+  background-color: #264c73; }
   .hero a {
     color: white; }
 
