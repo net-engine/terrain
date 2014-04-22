@@ -25,7 +25,8 @@ select {
   background-size: ($line-height / 2);
   background-image: url("data:image/svg+xml;utf8, <svg version=\"1.1\" xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" width=\"32\" height=\"32\" viewBox=\"0 0 32 32\"><path fill=\"#{ $select-foreground-color }\" d=\"M8 12l8 8 8-8z\" /></svg>");
 
-  @include transition(all 0.5s ease);
+  transition: all 0.5s ease;
+  -webkit-appearance: none;
 
   &:hover {
     color: $select-hover-foreground-color;
@@ -45,7 +46,9 @@ select {
 }
 
 
-// Firefox fixes/hacks
+// Specific hacks
+
+// Firefox
 
 @-moz-document url-prefix() {
   select {

@@ -19,9 +19,9 @@
 
       <p>A collection of structural sass &amp; coffeescript.</p>
 
-      <a target="_blank" href="https://github.com/net-engine/trove" class="pill white-foreground primary-background icon-github">Source</a>
+      <a target="_blank" href="https://github.com/net-engine/trove" class="pill white-foreground primary-background">Source</a>
 
-      <a rel="external" href="https://github.com/net-engine/trove/archive/master.zip" class="pill white-foreground primary-background icon-download2">Download</a>
+      <a rel="external" href="https://github.com/net-engine/trove/archive/master.zip" class="pill white-foreground primary-background">Download</a>
 
     </div>
   </header>
@@ -153,7 +153,7 @@
           </ul>
 
           <ul class="circle-list one-half last">
-            <li class="icon-user">Donec congue lacinia dui, a porttitor lectus condimentum laoreet. Nunc eu ullamcorper orci. Quisque eget odio ac lectus vestibulum faucibus eget in metus. In pellentesque faucibus vestibulum. Nulla at nulla justo, eget.</li>
+            <li>Donec congue lacinia dui, a porttitor lectus condimentum laoreet. Nunc eu ullamcorper orci. Quisque eget odio ac lectus vestibulum faucibus eget in metus. In pellentesque faucibus vestibulum. Nulla at nulla justo, eget.</li>
             <li>Nulla facilisi. Duis aliquet egestas purus in blandit. Curabitur vulputate, ligula lacinia scelerisque tempor, lacus.</li>
           </ul>
         </div>
@@ -210,17 +210,30 @@
     </article>
 
     <article id="media">
-      <header>
-        <hgroup class="container">
-          <h1>Media</h1>
-        </hgroup>
-      </header>
+      <div class="container">
+        <header>
+          <h1>Responsive Media</h1>
+          <p>All images automatically fill their container and resize as needed.</p>
+        </header>
 
-      <section>
-        <div class="container">
-          <img title="A bear" src="http://inserbia.info/news/wp-content/uploads/2013/05/grizzly.jpg">
-        </div>
-      </section>
+        <section>
+
+          <h2>Image</h2>
+          <img src="http://placehold.it/1200x600/5694bd/fff&text=Trove+Rules!">
+
+          <h2>Video</h2>
+          <video src="http://upload.wikimedia.org/wikipedia/commons/c/c5/Artist%E2%80%99s_impression_of_the_black_hole_inside_NGC_300_X-1_%28ESO_1004a%29.webm" controls muted poster="http://upload.wikimedia.org/wikipedia/commons/thumb/5/5e/Artist%E2%80%99s_impression_of_the_black_hole_inside_NGC_300_X-1_%28ESO_1004a%29.jpg/1280px-Artist%E2%80%99s_impression_of_the_black_hole_inside_NGC_300_X-1_%28ESO_1004a%29.jpg">
+            Sorry, your browser doesn't support embedded videos.
+          </video>
+
+          <h2>Audio</h2>
+          <audio controls="controls">
+            Your browser does not support the <code>audio</code> element.
+            <source src="http://upload.wikimedia.org/wikipedia/commons/d/d0/Cello_strings.ogg" type="application/ogg">
+          </audio>
+
+        </section>
+      </div>
     </article>
 
 
@@ -596,9 +609,14 @@
       width: 7.5em;
       display: block;
       margin: auto;
-      background-image: url(https://d13yacurqjgara.cloudfront.net/users/7179/screenshots/1518180/idea-7.jpg);
-      -webkit-text-fill-color: transparent;
-      -webkit-background-clip: text;
+    }
+
+    @media screen and (-webkit-min-device-pixel-ratio: 1) {
+      .logo {
+        background-image: url(https://d13yacurqjgara.cloudfront.net/users/7179/screenshots/1518180/idea-7.jpg);
+        -webkit-text-fill-color: transparent;
+        -webkit-background-clip: text;
+      }
     }
   </style>
 

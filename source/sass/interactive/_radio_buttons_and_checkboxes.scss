@@ -45,12 +45,11 @@ input[type='radio'] {
 
 input[type="checkbox"] + label,
 input[type="radio"] + label {
-  @include transition(all 0.5s ease);
-
   display: inline-block;
   vertical-align: top;
   margin-bottom: $line-height;
   margin-right: $line-height * 2;
+  transition: all 0.5s ease;
 }
 
 .checkbox-list li, .radio-list li {

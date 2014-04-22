@@ -47,6 +47,8 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 .pill {
   -webkit-appearance: none;
   -moz-appearance: none;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
   box-sizing: border-box;
   border-radius: 0.15em;
   position: relative;
@@ -584,6 +586,8 @@ math {
   margin-bottom: 1.7em; }
 
 .one-half {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
   box-sizing: border-box;
   display: inline-block;
   vertical-align: top;
@@ -609,6 +613,8 @@ math {
     padding-left: 1.275em; }
 
 .one-third {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
   box-sizing: border-box;
   display: inline-block;
   vertical-align: top;
@@ -633,6 +639,8 @@ math {
     padding-right: 0; }
 
 .two-thirds {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
   box-sizing: border-box;
   display: inline-block;
   vertical-align: top;
@@ -646,6 +654,8 @@ math {
     padding-left: 1.70085em; }
 
 .one-quarter {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
   box-sizing: border-box;
   display: inline-block;
   vertical-align: top;
@@ -677,6 +687,8 @@ math {
     padding-right: 0; }
 
 .three-quarters {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
   box-sizing: border-box;
   display: inline-block;
   vertical-align: top;
@@ -781,6 +793,8 @@ body > nav {
   bottom: 0;
   padding: 1.7em;
   overflow: auto;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
   box-sizing: border-box; }
   body > nav a {
     display: block; }
@@ -800,6 +814,7 @@ body > nav {
 a {
   color: #5694bd;
   text-decoration: none;
+  -webkit-transition: background-color 0.5s ease, color 0.5s ease;
   transition: background-color 0.5s ease, color 0.5s ease; }
   a:hover {
     color: #5694bd; }
@@ -826,6 +841,8 @@ a.button:hover, a.button:active, a.button:visited {
 .button, button, input[type="submit"], input[type="button"] {
   -webkit-appearance: none;
   -moz-appearance: none;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
   box-sizing: border-box;
   border-radius: 0.15em;
   position: relative;
@@ -905,6 +922,7 @@ input[type='checkbox'], input[type='radio'] {
   text-align: center;
   font-size: inherit;
   background: transparent;
+  -webkit-background-size: contain;
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center center; }
@@ -930,6 +948,7 @@ input[type="checkbox"] + label, input[type="radio"] + label {
   vertical-align: top;
   margin-bottom: 1.7em;
   margin-right: 3.4em;
+  -webkit-transition: all 0.5s ease;
   transition: all 0.5s ease; }
 
 .checkbox-list li, .radio-list li {
@@ -948,6 +967,8 @@ main ul.radio-list li, main ul.checkbox-list li {
 select {
   -webkit-appearance: none;
   -moz-appearance: none;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
   box-sizing: border-box;
   border-radius: 0.15em;
   position: relative;
@@ -977,8 +998,10 @@ select {
   border-color: #d6d6d6;
   background-repeat: no-repeat;
   background-position: right 0.425em center;
+  -webkit-background-size: 0.85em;
   background-size: 0.85em;
   background-image: url("data:image/svg+xml;utf8, <svg version=\"1.1\" xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" width=\"32\" height=\"32\" viewBox=\"0 0 32 32\"><path fill=\"#171717\" d=\"M8 12l8 8 8-8z\" /></svg>");
+  -webkit-transition: all 0.5s ease;
   transition: all 0.5s ease;
   -webkit-appearance: none; }
   select:visited {
@@ -1023,6 +1046,8 @@ select {
 input[type='text'], input[type='search'], input[type='tel'], input[type='email'], input[type='password'], input[type='url'], input[type='date'], input[type='datetime'], input[type='time'], input[type='number'], input[list], textarea {
   -webkit-appearance: none;
   -moz-appearance: none;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
   box-sizing: border-box;
   border-radius: 0.15em;
   position: relative;
@@ -1105,13 +1130,6 @@ textarea {
   100% {
     background-position-x: 1.7em; } }
 
-@-moz-keyframes progress {
-  0% {
-    background-position-x: 0; }
-
-  100% {
-    background-position-x: 1.7em; } }
-
 progress, meter {
   display: block;
   margin-bottom: 1.7em;
@@ -1123,7 +1141,9 @@ progress, meter {
 
 progress {
   background: #d6d6d6;
+  background-image: -webkit-linear-gradient(135deg, rgba(255, 255, 255, 0.2) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.2) 50%, rgba(255, 255, 255, 0.2) 75%, transparent 75%, transparent);
   background-image: linear-gradient(-45deg, rgba(255, 255, 255, 0.2) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.2) 50%, rgba(255, 255, 255, 0.2) 75%, transparent 75%, transparent);
+  -webkit-background-size: 1.7em 1.7em;
   background-size: 1.7em 1.7em;
   -webkit-animation: progress 1.5s infinite;
   -webkit-animation-timing-function: linear; }
@@ -1160,6 +1180,7 @@ input[type="file"]::-webkit-file-upload-button {
   -webkit-appearance: none;
   -webkit-appearance: none;
   -moz-appearance: none;
+  -webkit-box-sizing: border-box;
   box-sizing: border-box;
   border-radius: 0.15em;
   position: relative;
@@ -1245,8 +1266,12 @@ table {
       border-top: 0.1em solid #d6d6d6; }
   table.fixed {
     table-layout: fixed;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
     box-sizing: border-box; }
     table.fixed * {
+      -webkit-box-sizing: border-box;
+      -moz-box-sizing: border-box;
       box-sizing: border-box; }
 
 .tabs {

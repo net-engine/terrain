@@ -43,7 +43,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
     display: block;
 }
 
-.clearfix, form footer, .buttons {
+.clearfix, form footer, .buttons, .tabs-nav {
     zoom: 1;
     display: block;
     clear: both;
@@ -61,9 +61,6 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 .pill {
     -webkit-appearance: none;
     -moz-appearance: none;
-    -ms-appearance: none;
-    -o-appearance: none;
-    appearance: none;
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
@@ -578,10 +575,11 @@ h1:last-child, h2:last-child, h3:last-child, h4:last-child, h5:last-child, h6:la
     margin-bottom: 0;
 }
 
-[data-icon], [class*="icon-"] {
+.icon, [data-icon], [class*="icon-"] {
     font-family: inherit;
 }
-  %icon:before {
+
+.icon:before, [data-icon]:before, [class*="icon-"]:before {
     font-family: 'trove-icons';
     speak: none;
     font-style: normal;
@@ -603,7 +601,8 @@ h1:last-child, h2:last-child, h3:last-child, h4:last-child, h5:last-child, h6:la
     white-space: nowrap;
     overflow: hidden;
 }
-  %icon-only:before {
+
+.icon-only:before {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -735,10 +734,14 @@ iframe {
     border: 0;
 }
 
-main img {
+img, video, audio {
     display: block;
     width: auto;
     max-width: 100%;
+}
+
+video, audio {
+    background-color: #171717;
 }
 
 blockquote {
@@ -1106,7 +1109,6 @@ a {
     color: #5694bd;
     text-decoration: none;
     -webkit-transition: background-color 0.5s ease, color 0.5s ease;
-    -moz-transition: background-color 0.5s ease, color 0.5s ease;
     transition: background-color 0.5s ease, color 0.5s ease;
 }
 
@@ -1149,9 +1151,6 @@ a.button:hover, a.button:active, a.button:visited {
 .button, button, input[type="submit"], input[type="button"] {
     -webkit-appearance: none;
     -moz-appearance: none;
-    -ms-appearance: none;
-    -o-appearance: none;
-    appearance: none;
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
@@ -1177,9 +1176,6 @@ a.button:hover, a.button:active, a.button:visited {
     border-color: #393939;
     -webkit-appearance: none;
     -moz-appearance: none;
-    -ms-appearance: none;
-    -o-appearance: none;
-    appearance: none;
 }
 
 .button:visited, button:visited, input[type="submit"]:visited, input[type="button"]:visited {
@@ -1236,8 +1232,7 @@ input[type="submit"]:hover, button[type='submit']:hover, .button.submit:hover {
 
 .buttons .button:first-child, .buttons button:first-child, .buttons input[type="submit"]:first-child, .buttons input[type="button"]:first-child {
     border-left-width: 0;
-    border-top-left-radius: 0.15em;
-    border-bottom-left-radius: 0.15em;
+    border-radius: 0.15em 0 0 0.15em;
 }
 
 .buttons .button.active, .buttons button.active, .buttons input[type="submit"].active, .buttons input[type="button"].active {
@@ -1245,8 +1240,7 @@ input[type="submit"]:hover, button[type='submit']:hover, .button.submit:hover {
 }
 
 .buttons .button:last-child, .buttons .button.last-child, .buttons button:last-child, .buttons button.last-child, .buttons input[type="submit"]:last-child, .buttons input[type="submit"].last-child, .buttons input[type="button"]:last-child, .buttons input[type="button"].last-child {
-    border-top-right-radius: 0.15em;
-    border-bottom-right-radius: 0.15em;
+    border-radius: 0 0.15em 0.15em 0;
 }
 
 input[type='checkbox'], input[type='radio'] {
@@ -1263,6 +1257,7 @@ input[type='checkbox'], input[type='radio'] {
     text-align: center;
     font-size: inherit;
     background: transparent;
+    -webkit-background-size: contain;
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center center;
@@ -1295,13 +1290,12 @@ input[type='radio']:checked + label {
 }
 
 input[type="checkbox"] + label, input[type="radio"] + label {
-    -webkit-transition: all 0.5s ease;
-    -moz-transition: all 0.5s ease;
-    transition: all 0.5s ease;
     display: inline-block;
     vertical-align: top;
     margin-bottom: 1.7em;
     margin-right: 3.4em;
+    -webkit-transition: all 0.5s ease;
+    transition: all 0.5s ease;
 }
 
 .checkbox-list li, .radio-list li {
@@ -1326,9 +1320,6 @@ main ul.radio-list li:before, main ul.checkbox-list li:before {
 select {
     -webkit-appearance: none;
     -moz-appearance: none;
-    -ms-appearance: none;
-    -o-appearance: none;
-    appearance: none;
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
@@ -1352,16 +1343,20 @@ select {
     font-size: 100%;
     font-family: 'Open Sans', 'Helvetica Neue', sans-serif;
     font-weight: 400;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
     color: #171717;
     background-color: #f6f6f6;
     border-color: #d6d6d6;
     background-repeat: no-repeat;
     background-position: right 0.425em center;
+    -webkit-background-size: 0.85em;
     background-size: 0.85em;
     background-image: url("data:image/svg+xml;utf8, <svg version=\"1.1\" xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" width=\"32\" height=\"32\" viewBox=\"0 0 32 32\"><path fill=\"#171717\" d=\"M8 12l8 8 8-8z\" /></svg>");
     -webkit-transition: all 0.5s ease;
-    -moz-transition: all 0.5s ease;
     transition: all 0.5s ease;
+    -webkit-appearance: none;
 }
 
 select:visited {
@@ -1411,12 +1406,18 @@ select[multiple] {
     background-image: none;
 }
 
+@-moz-document url-prefix() {
+    select {
+        -moz-appearance: none;
+        text-indent: 0.01px;
+        text-overflow: '';
+        background-image: url("data:image/svg+xml;utf8, <svg version=\"1.1\" xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" width=\"32\" height=\"32\" viewBox=\"0 0 32 32\"><path d=\"M8 12l8 8 8-8z\" /></svg>");
+    }
+}
+
 input[type='text'], input[type='search'], input[type='tel'], input[type='email'], input[type='password'], input[type='url'], input[type='date'], input[type='datetime'], input[type='time'], input[type='number'], input[list], textarea {
     -webkit-appearance: none;
     -moz-appearance: none;
-    -ms-appearance: none;
-    -o-appearance: none;
-    appearance: none;
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
@@ -1526,16 +1527,6 @@ textarea {
     }
 }
 
-@-moz-keyframes progress {
-    0% {
-        background-position-x: 0;
-    }
-
-    100% {
-        background-position-x: 1.7em;
-    }
-}
-
 progress, meter {
     display: block;
     margin-bottom: 1.7em;
@@ -1543,15 +1534,14 @@ progress, meter {
     border: none;
     -webkit-appearance: none;
     -moz-appearance: none;
-    -ms-appearance: none;
-    -o-appearance: none;
-    appearance: none;
     border-radius: 0.15em;
 }
 
 progress {
     background: #d6d6d6;
-    background-image: linear, -45deg, rgba(255, 255, 255, 0.2) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.2) 50%, rgba(255, 255, 255, 0.2) 75%, transparent 75%, transparent;
+    background-image: -webkit-linear-gradient(135deg, rgba(255, 255, 255, 0.2) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.2) 50%, rgba(255, 255, 255, 0.2) 75%, transparent 75%, transparent);
+    background-image: linear-gradient(-45deg, rgba(255, 255, 255, 0.2) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.2) 50%, rgba(255, 255, 255, 0.2) 75%, transparent 75%, transparent);
+    -webkit-background-size: 1.7em 1.7em;
     background-size: 1.7em 1.7em;
     -webkit-animation: progress 1.5s infinite;
     -webkit-animation-timing-function: linear;
@@ -1600,17 +1590,9 @@ input[type="file"] {
 
 input[type="file"]::-webkit-file-upload-button {
     -webkit-appearance: none;
-    -moz-appearance: none;
-    -ms-appearance: none;
-    -o-appearance: none;
-    appearance: none;
     -webkit-appearance: none;
     -moz-appearance: none;
-    -ms-appearance: none;
-    -o-appearance: none;
-    appearance: none;
     -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
     box-sizing: border-box;
     border-radius: 0.15em;
     position: relative;
@@ -1634,9 +1616,6 @@ input[type="file"]::-webkit-file-upload-button {
     border-color: #393939;
     -webkit-appearance: none;
     -moz-appearance: none;
-    -ms-appearance: none;
-    -o-appearance: none;
-    appearance: none;
 }
 
 input[type="file"]::-webkit-file-upload-button:visited {
@@ -1666,17 +1645,6 @@ input[type="file"]::-webkit-file-upload-button.icon-only {
     width: 1.7em;
     height: 1.7em;
     padding: 0;
-}
-
-.hero {
-    color: white;
-    background-color: #224358;
-    background-size: cover;
-    background-image: -owg(radial, , rgba(13, 25, 33, 0.25), rgba(13, 25, 33, 0.5));
-    background-image: -webkit(radial, , rgba(13, 25, 33, 0.25), rgba(13, 25, 33, 0.5));
-    background-image: -moz(radial, , rgba(13, 25, 33, 0.25), rgba(13, 25, 33, 0.5));
-    background-image: -o(radial, , rgba(13, 25, 33, 0.25), rgba(13, 25, 33, 0.5));
-    background-image: radial, , rgba(13, 25, 33, 0.25), rgba(13, 25, 33, 0.5);
 }
 
 table {

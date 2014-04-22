@@ -1,5 +1,4 @@
 @import 'reset/reset';
-@import 'mixins/mixins';
 
 @import 'settings';
 
@@ -30,6 +29,5 @@
         'interactive/progress_and_meter',
         'interactive/file_inputs';
 
-@import 'components/hero',
-        'components/table',
+@import 'components/table',
         'components/tabs';

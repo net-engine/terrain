@@ -21,10 +21,14 @@ iframe {
   border: 0;
 }
 
-main img {
+img, video, audio {
   display: block;
   width: auto;
   max-width: 100%;
+}
+
+video, audio {
+  background-color: $black;
 }
 
 blockquote {

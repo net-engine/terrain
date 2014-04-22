@@ -1,5 +1,5 @@
 @mixin fraction-width( $span, $total ) {
-  @include box-sizing( border-box );
+  box-sizing: border-box;
   display: inline-block;
   vertical-align: top;
   width: 100% / $total * $span;

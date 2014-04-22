@@ -1,6 +1,7 @@
 @mixin rounded-box($display: block, $border: true) {
-  @include appearance(none);
-  @include box-sizing(border-box);
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  box-sizing: border-box;
   border-radius: $radius;
 
   position: relative;

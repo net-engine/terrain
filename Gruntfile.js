@@ -18,11 +18,17 @@ module.exports = function(grunt) {
     watch: {
       css: {
         files: ['source/sass/**/*'],
-        tasks: ['sass:docs', 'cssbeautifier'],
+        tasks: ['sass:docs', 'autoprefixer','cssbeautifier'],
         options: {
           livereload: true
         }
       }
+    },
+    autoprefixer: {
+      dist: {
+        src: 'docs/style.css',
+        dest: 'docs/style.css'
+      },
     },
     sass: {
       dist: {
@@ -42,32 +48,16 @@ module.exports = function(grunt) {
         base: 'docs'
       },
       src: ['**']
-    },
-    styleguide: {
-      dist: {
-        options: {
-          framework: {
-            name: 'styledocco',
-          },
-          template: {
-            include: ['dist/stylesheets/style.css']
-          }
-        },
-        files: {
-          'docs': 'source/sass/'
-        }
-      }
     }
   });
 
+  grunt.loadNpmTasks('grunt-autoprefixer');
   grunt.loadNpmTasks('grunt-contrib-connect');
   grunt.loadNpmTasks('grunt-contrib-watch');
   grunt.loadNpmTasks('grunt-cssbeautifier');
   grunt.loadNpmTasks('grunt-gh-pages');
   grunt.loadNpmTasks('grunt-sass');
-  grunt.loadNpmTasks('grunt-styleguide');
-  grunt.loadNpmTasks('grunt-webfont');
 
-  grunt.registerTask('default', ['connect', 'sass:docs', 'watch']);
+  grunt.registerTask('default', ['connect', 'autoprefixer', 'sass', 'watch']);
   grunt.registerTask('build', ['sass', 'gh-pages']);
 }
