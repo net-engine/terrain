@@ -8,12 +8,12 @@
   ],
   "description": "\"A collection of structural sass\"",
   "license": "MIT",
-  "main": "source/sass/style.scss",
+  "main": "trove.scss",
   "ignore": [
+    "favicon.ico",
+    "index.html",
     "**/.*",
     "node_modules",
     "bower_components",
-    "test",
-    "tests"
   ]
 }

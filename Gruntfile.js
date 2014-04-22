@@ -13,12 +13,12 @@ module.exports = function(grunt) {
       }
     },
     cssbeautifier : {
-      files : ['docs/style.css']
+      files : ['style.css']
     },
     watch: {
       css: {
-        files: ['source/sass/**/*'],
-        tasks: ['sass:docs', 'cssbeautifier'],
+        files: ['trove/**/*.scss', '*.scss'],
+        tasks: ['sass', 'cssbeautifier'],
         options: {
           livereload: true
         }
@@ -27,36 +27,17 @@ module.exports = function(grunt) {
     sass: {
       dist: {
         files: {
-          'dist/stylesheets/style.css': 'source/sass/style.scss'
+          'trove.css': 'trove.scss',
+          'docs/trove.css': 'trove.scss'
         },
         outputStyle: 'compressed'
-      },
-      docs: {
-        files: {
-          'docs/style.css': 'source/sass/style.scss'
-        }
       }
     },
     'gh-pages': {
       options: {
-        base: 'docs'
+        base: 'docs',
       },
       src: ['**']
-    },
-    styleguide: {
-      dist: {
-        options: {
-          framework: {
-            name: 'styledocco',
-          },
-          template: {
-            include: ['dist/stylesheets/style.css']
-          }
-        },
-        files: {
-          'docs': 'source/sass/'
-        }
-      }
     }
   });
 
@@ -65,9 +46,7 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-cssbeautifier');
   grunt.loadNpmTasks('grunt-gh-pages');
   grunt.loadNpmTasks('grunt-sass');
-  grunt.loadNpmTasks('grunt-styleguide');
-  grunt.loadNpmTasks('grunt-webfont');
 
-  grunt.registerTask('default', ['connect', 'sass:docs', 'watch']);
+  grunt.registerTask('default', ['connect', 'sass', 'watch']);
   grunt.registerTask('build', ['sass', 'gh-pages']);
 }
