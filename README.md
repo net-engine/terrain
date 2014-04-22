@@ -15,13 +15,6 @@ A collection of structural sass & coffeescript. [https://github.com/net-engine/t
 By <a href="https://triggerapp.com" target="_blank">Trigger</a>.
 
 
-
-### Dev Ops tasks
-
-2. Replace bourbon with autoprefixr
-4. Research and implement bower best practises (e.g. what do the good guys do)
-
-
 ## Style tasks
 
 1.  Known height for inputs / selects ( radios + labels, etc )
