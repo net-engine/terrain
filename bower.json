@@ -10,12 +10,10 @@
   "license": "MIT",
   "main": "trove.scss",
   "ignore": [
-    "favicon.ico",
-    "index.html",
+    "docs",
     "package.json",
     "Gruntfile.js",
     "README.md",
-    "**/.*",
     "node_modules",
     "bower_components"
   ]
