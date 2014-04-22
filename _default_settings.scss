@@ -6,7 +6,7 @@ $font-family:             'Source Sans Pro', 'Helvetica Neue', sans-serif !defau
 $font-family-body:        $font-family !default;
 $font-family-headings:    $font-family !default;
 $font-family-input:       $font-family !default;
-$font-family-icons:       'trove-icons' !default;
+$font-family-icons:       'icons' !default;
 $font-family-mono:        'Menlo', 'Monaco', 'Courier New', monospace !default;
 
 $line-height:             1.7em !default;
@@ -231,27 +231,6 @@ $baseline-grid: false !default;
 
 $radius: .15em !default;
 $border-width: .125em !default;
-
-
-// Components
-
-
-// Hero
-
-$hero-padding: $line-height !default;
-$hero-color: $white !default;
-$hero-background-color: $color-primary-dark !default;
-
-$hero-background-image: nil !default;
-$hero-background-gradient: true !default;
-$hero-background-gradient-color: darken($hero-background-color, 15%) !default;
-$hero-background-gradient-image: radial-gradient(rgba($hero-background-gradient-color, .25), rgba($hero-background-gradient-color, .5)) !default;
-
-
-// It's easy to add a custom hero background image, for example:
-//
-// $hero-background-image: url('path/to/image');
-
 
 // Tabs
 
