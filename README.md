@@ -1,6 +1,5 @@
 # Terrain <small>by <a href="https://triggerapp.com">Trigger</a>.</small>
 
-
 ## Development
 
     npm install
@@ -8,13 +7,12 @@
 
 ## Style tasks
 
+7.  Configurable list styling (suffix & prefix)
 1.  Known height for inputs / selects ( radios + labels, etc )
 2.  Form elements transition optional
 3.  Tidy up svg stuff in form elements
 4.  :active states for form elements and buttons
 5.  Tables: active & asc/desc header styles?
-6.  More configurable typography variables (e.g. headings)
-7.  Configurable list styling (suffix & prefix)
 8.  Rethink definition lists & add more config / style varations
 9.  More config / options for blockquotes
 10. Responsive Media

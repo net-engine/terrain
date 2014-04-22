@@ -1,17 +1,3 @@
-$margin-level-one:   $line-height / $font-size-level-one;
-$margin-level-two:   $line-height / $font-size-level-two;
-$margin-level-three: $line-height / $font-size-level-three;
-$margin-level-four:  $line-height / $font-size-level-four;
-$margin-level-five:  $line-height / $font-size-level-five;
-$margin-level-six:   $line-height / $font-size-level-six;
-
-$line-height-level-one:   #{$margin-level-one * 2}em;
-$line-height-level-two:   #{$margin-level-two * 2}em;
-$line-height-level-three: #{$margin-level-three * 2}em;
-$line-height-level-four:  #{$margin-level-four * 2}em;
-$line-height-level-five:  #{$margin-level-five * 2}em;
-$line-height-level-six:   #{$margin-level-six * 2}em;
-
 %heading {
   font-family: $font-family-headings;
 }
@@ -20,43 +6,49 @@ h1, h2, h3, h4, h5, h6 { @extend %heading; }
 
 h1 {
   font-size: $font-size-level-one;
-  margin-top: #{ $margin-level-one * 3 }em;
-  margin-bottom: #{ $margin-level-one * 2 }em;
+  font-weight: $font-weight-level-one;
+  margin-top: $margin-level-one * 2;
+  margin-bottom: $margin-level-one;
   line-height: $line-height-level-one;
 }
 
 h2 {
   font-size: $font-size-level-two;
-  margin-top: #{ $margin-level-two * 2 }em;
-  margin-bottom: #{ $margin-level-two }em;
+  font-weight: $font-weight-level-two;
+  margin-top: $margin-level-two * 2;
+  margin-bottom: $margin-level-two;
   line-height: $line-height-level-two;
 }
 
 h3 {
   font-size: $font-size-level-three;
-  margin-top: #{ $margin-level-three * 2 }em;
-  margin-bottom: #{ $margin-level-three }em;
+  font-weight: $font-weight-level-three;
+  margin-top: $margin-level-three * 2;
+  margin-bottom: $margin-level-three;
   line-height: $line-height-level-three;
 }
 
 h4 {
   font-size: $font-size-level-four;
-  margin-top: #{ $margin-level-four * 2 }em;
-  margin-bottom: #{ $margin-level-four }em;
+  font-weight: $font-weight-level-four;
+  margin-top: $margin-level-four * 2;
+  margin-bottom: $margin-level-four;
   line-height: $line-height-level-four;
 }
 
 h5 {
   font-size: $font-size-level-five;
-  margin-top: #{ $margin-level-five * 2 }em;
-  margin-bottom: #{ $margin-level-five }em;
+  font-weight: $font-weight-level-five;
+  margin-top: $margin-level-five * 2;
+  margin-bottom: $margin-level-five;
   line-height: $line-height-level-five;
 }
 
 h6 {
   font-size: $font-size-level-six;
-  margin-top: #{ $margin-level-six * 2 }em;
-  margin-bottom: #{ $margin-level-six }em;
+  font-weight: $font-weight-level-six;
+  margin-top: $margin-level-six * 2;
+  margin-bottom: $margin-level-six;
   line-height: $line-height-level-six;
 }
 
