@@ -1,0 +1,217 @@
+
+// Settings
+
+$fixed-left-nav: true;
+
+@import 'terrain';
+
+@import url(http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700|Montserrat);
+
+.hero-background,
+.hero-background img,
+.hero-background svg  {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  bottom: auto;
+}
+
+.hero-background,
+.hero-background svg {
+  height: 100%;
+}
+
+.hero-background svg {
+  opacity: 0.6;
+}
+
+.hero {
+  color: white;
+  text-align: center;
+  overflow: hidden;
+  position: relative;
+
+  a {
+    color: white;
+  }
+}
+
+.title-container {
+  position: relative;
+}
+
+.title {
+  overflow: hidden;
+  height: 0;
+  animation: excavate 1.5s 1 forwards;
+  animation-delay: .5s;
+}
+
+.logo {
+  display: block;
+  margin: 1em auto;
+}
+
+@-webkit-keyframes excavate {
+  0%    { height: 0; }
+  100%  { height: 5em; }
+}
+
+@-moz-keyframes excavate {
+  0%    { height: 0; }
+  100%  { height: 5em; }
+}
+
+@-keyframes excavate {
+  0%    { height: 0; }
+  100%  { height: 5em; }
+}
+
+.menu,
+.nav-toggle {
+  transition: all 0.3s ease;
+}
+
+.menu {
+  position: fixed;
+  width: $fixed-left-nav-width;
+  height: 100%;
+  top: 0;
+  z-index: 1000;
+  overflow-x: hidden;
+  overflow-y: scroll;
+}
+
+.menu-left {
+  width: $fixed-left-nav-width;
+  left: -#{$fixed-left-nav-width};
+
+  &.menu-open {
+    left: 0px;
+  }
+
+  @media screen and (max-width: $breakpoint-small) {
+    width: 100%;
+    left: -100%;
+  }
+}
+
+// .menu-push {
+//   position: relative;
+//   transition: left 0.3s ease, right 0.3s ease;
+// }
+
+.menu-push-toright {
+  overflow: hidden;
+
+  .menu-push {
+    // left: $fixed-left-nav-width;
+    // right: -#{$fixed-left-nav-width};
+
+    @media screen and (max-width: $breakpoint-small) {
+      left: 0;
+      right: 0;
+    }
+  }
+
+  .nav-toggle-overlay {
+    left: 0;
+    opacity: 1;
+  }
+}
+
+.nav-toggle-overlay {
+  position: fixed;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  bottom: 0;
+  background: rgba(black, .5);
+  z-index: 100;
+  opacity: 0;
+  transition: opacity .5s ease;
+}
+
+$menu-icon-stroke: 4px;
+$menu-icon-size: $menu-icon-stroke * 7;
+
+button.nav-toggle {
+  position: fixed;
+  left: 0;
+  top: 0;
+  background-color: transparent;
+  padding: 0;
+  border: 0;
+  width: $menu-icon-size * 2;
+  line-height: $menu-icon-size * 2;
+  height: $menu-icon-size * 2;
+  text-align: center;
+  z-index: 99999;
+
+  &:focus { outline: none }
+
+  &.active {
+    color: white;
+  }
+
+  > span {
+    display: block;
+    height: $menu-icon-stroke;
+    width: $menu-icon-size;
+    background-color: $color-primary;
+    text-indent: -9999px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-left: -$menu-icon-size / 2;
+    margin-top: -$menu-icon-stroke / 2;
+    border-radius: .25em;
+    -webkit-transition: -webkit-transform 0.2s ease;
+    -moz-transition: -moz-transform 0.2s ease;
+    transition: transform 0.2s ease;
+
+    &:before, &:after {
+      content: '';
+      display: block;
+      position: absolute;
+      width: 100%;
+      height: $menu-icon-stroke;
+      background-color: $color-primary;
+      -webkit-transition: -webkit-transform 0.2s ease;
+      -moz-transition: -moz-transform 0.2s ease;
+      transition: transform 0.2s ease;
+      border-radius: .25em;
+    }
+
+    &:before { top: -($menu-icon-stroke * 2) }
+    &:after { bottom: -($menu-icon-stroke * 2) }
+  }
+
+  &.active {
+    > span {
+      background: fade($color-primary);
+      box-shadow: none;
+      transform: rotate(45deg);
+
+      &:before {
+        background: fade($color-primary);
+        top: 0;
+        box-shadow: none;
+        transform: rotate(90deg);
+      }
+
+      &:after { opacity: 0; }
+    }
+
+  }
+}
+
+.menu-push-toright .nav-toggle {
+  left: $fixed-left-nav-width + 1;
+
+  @media screen and (max-width: $breakpoint-small) {
+    left: 100%;
+    margin-left: -3em;
+  }
+}

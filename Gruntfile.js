@@ -17,7 +17,7 @@ module.exports = function(grunt) {
     },
     watch: {
       css: {
-        files: ['terrain/**/*.scss', 'docs/*.scss'],
+        files: ['terrain/**/*.scss', 'docs/css/*.scss'],
         tasks: ['sass', 'autoprefixer', 'cssbeautifier'],
         options: {
           livereload: true
@@ -26,14 +26,14 @@ module.exports = function(grunt) {
     },
     autoprefixer: {
       dist: {
-        src: 'docs/docs.css',
-        dest: 'docs/docs.css'
+        src: 'docs/css/docs.css',
+        dest: 'docs/css/docs.css'
       },
     },
     sass: {
       dist: {
         files: {
-          'docs/docs.css': 'docs/docs.scss'
+          'docs/css/docs.css': 'docs/css/docs.scss'
         },
         outputStyle: 'compressed'
       }

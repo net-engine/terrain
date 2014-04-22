@@ -35,7 +35,6 @@ body > nav {
 
 @if $fixed-left-nav {
   @include fixed-nav();
-  body .container { margin-left: $fixed-left-nav-width; }
 
   body > nav {
     left: 0;
@@ -45,12 +44,6 @@ body > nav {
 
 @if $fixed-right-nav {
   @include fixed-nav();
-
-  @if $fixed-right-nav-hideable {
-    // Do nothing
-  } @else {
-    body .container { margin-right: $fixed-right-nav-width; }
-  }
 
   body > nav {
     right: 0;
