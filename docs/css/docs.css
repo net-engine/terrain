@@ -34,10 +34,8 @@ a img {
 article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary {
   display: block; }
 
-.clearfix, .grid-container, form footer, .buttons, .tabs-nav {
-  zoom: 1;
-  display: block;
-  clear: both; }
+.clearfix, form footer, .buttons, .tabs-nav {
+  zoom: 1; }
   .clearfix:before, .clearfix:after {
     content: "";
     display: table; }
@@ -269,10 +267,6 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 
 .info-light-border {
   border-color: #d6e6ef; }
-
-html {
-  background-color: white;
-  color: #171717; }
 
 .border-heavy-solid {
   border-width: 0.425em;
@@ -609,6 +603,11 @@ math {
 .grid-container {
   margin-left: -1.275em;
   margin-right: -1.275em; }
+  .grid-container:before, .grid-container:after {
+    content: "";
+    display: table; }
+  .grid-container:after {
+    clear: both; }
 
 .one-half {
   -webkit-box-sizing: border-box;
@@ -712,6 +711,10 @@ legend {
 label {
   margin-bottom: 0.85em;
   display: block; }
+
+html {
+  background-color: white;
+  color: #171717; }
 
 body > nav {
   background-color: #171717; }
@@ -1310,18 +1313,6 @@ input[type="file"]::-webkit-file-upload-button {
   .modal .modal-footer {
     padding-top: 1.7em; }
 
-.modal .modal-content {
-  -webkit-transition: all 0.5s ease;
-  transition: all 0.5s ease;
-  -webkit-transform: scale(1.2);
-  -ms-transform: scale(1.2);
-  transform: scale(1.2); }
-
-.modal.open .modal-content {
-  -webkit-transform: scale(1);
-  -ms-transform: scale(1);
-  transform: scale(1); }
-
 .modal-overlay {
   visibility: hidden;
   position: fixed;
@@ -1335,11 +1326,21 @@ input[type="file"]::-webkit-file-upload-button {
     bottom: 0;
     visibility: visible; }
 
-.modal-overlay {
-  -webkit-transition: opacity 0.2s ease;
-  transition: opacity 0.2s ease; }
+.modal .modal-content {
+  -webkit-transition: -webkit-transform 0.5s ease;
+  transition: transform 0.5s ease;
+  -webkit-transform: scale(1.2);
+  -ms-transform: scale(1.2);
+  transform: scale(1.2); }
+
+.modal.open .modal-content {
+  -webkit-transform: scale(1);
+  -ms-transform: scale(1);
+  transform: scale(1); }
 
 .modal-overlay {
+  -webkit-transition: opacity 0.2s ease;
+  transition: opacity 0.2s ease;
   opacity: 0; }
 
 .modal-overlay.open {
@@ -1353,10 +1354,10 @@ input[type="file"]::-webkit-file-upload-button {
     position: fixed;
     left: -100%;
     top: -100%;
-    -webkit-box-shadow: 0 0.2em 0.2em 0 rgba(23, 23, 23, 0.25);
-    box-shadow: 0 0.2em 0.2em 0 rgba(23, 23, 23, 0.25);
     border-radius: 0.15em;
-    overflow: hidden; }
+    overflow: hidden;
+    -webkit-box-shadow: 0 0.2em 0.2em 0 rgba(23, 23, 23, 0.25);
+    box-shadow: 0 0.2em 0.2em 0 rgba(23, 23, 23, 0.25); }
     .flyout-menu-wrap .flyout-menu li a, .flyout-menu-wrap .flyout-menu li button {
       border-color: #f6f6f6;
       border-radius: 0;

@@ -6,9 +6,9 @@ $flyout-menu-width: 18em;
 
   .flyout-menu {
     @include animatableHide;
-    box-shadow: 0 0.2em 0.2em 0 rgba($black, 0.25);
     border-radius: $radius;
     overflow: hidden;
+    box-shadow: 0 0.2em 0.2em 0 rgba($black, 0.25);
 
     li a, li button {
       @extend .border-top-light-solid;

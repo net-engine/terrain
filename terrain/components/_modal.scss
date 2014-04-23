@@ -13,12 +13,6 @@
   .modal-footer { padding-top: $line-height; }
 }
 
-.modal .modal-content {
-  transition: all 0.5s ease;
-  transform: scale(1.2);
-}
-.modal.open .modal-content { transform: scale(1); }
-
 .modal-overlay {
   @include animatableHide;
 
@@ -33,6 +27,16 @@
   }
 }
 
-.modal-overlay { transition: opacity 0.2s ease; }
-.modal-overlay { opacity: 0; }
+// Transitions
+
+.modal .modal-content {
+  transition: transform 0.5s ease;
+  transform: scale(1.2);
+}
+.modal.open .modal-content { transform: scale(1); }
+
+.modal-overlay {
+  transition: opacity 0.2s ease;
+  opacity: 0;
+}
 .modal-overlay.open { opacity: 1; }
