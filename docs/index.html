@@ -1484,68 +1484,85 @@
       <section>
         <div class="container">
 
-          <h4>Wizard</h4>
+          <header>
+            <h3>Wizard</h3>
+            <button class="show-html">Toggle HTML</button>
+          </header>
 
-          <fieldset class="wizard-progress">
-            <button>First</button>
-            <button>Middle</button>
-            <button class="active">Active</button>
-            <button disabled="disabled">Disabled</button>
-            <button>Last</button>
-          </fieldset>
+          <div class="content">
+            <fieldset class="wizard-progress">
+              <button>First</button>
+              <button>Middle</button>
+              <button class="active">Active</button>
+              <button disabled="disabled">Disabled</button>
+              <button>Last</button>
+            </fieldset>
+          </div>
+
         </div>
       </section>
       <section>
         <div class="container">
-          <h4>Modals</h4>
+          <header>
+            <h3>Modals</h3>
+            <button class="show-html">Toggle HTML</button>
+          </header>
 
-          <button id="modal-open">Open modal</button>
+          <div class="content">
+            <button id="modal-open">Open modal</button>
 
-          <div class="modal-overlay" id="modal-overlay"></div>
-          <div class="modal" id="modal">
-            <div class="modal-content white-background gray-lighter-border border-heavy-solid">
-              <header class="modal-header gray-lighter-border border-bottom-heavy-solid">
-                <h4>Modal</h4>
-                <button class="absolute-top-right inset-one" id="modal-close">Close</button>
-              </header>
+            <div class="modal-overlay" id="modal-overlay"></div>
 
-              <p>Proin quis tortor orci. Etiam at risus et justo dignissim congue. Donec congue lacinia dui, a porttitor.</p>
+            <div class="modal" id="modal">
+              <div class="modal-content white-background gray-lighter-border border-heavy-solid">
+                <header class="modal-header gray-lighter-border border-bottom-heavy-solid">
+                  <h4>Modal</h4>
+                  <button class="absolute-top-right inset-one" id="modal-close">Close</button>
+                </header>
 
-              <footer class="modal-footer gray-lighter-border border-top-light-solid">
-                <button type="button" id="modal-cancel">Cancel</button>
-                <button type="submit" id="modal-submit">Confirm</button>
-              </footer>
+                <p>Proin quis tortor orci. Etiam at risus et justo dignissim congue. Donec congue lacinia dui, a porttitor.</p>
+
+                <footer class="modal-footer gray-lighter-border border-top-light-solid">
+                  <button type="button" id="modal-cancel">Cancel</button>
+                  <button type="submit" id="modal-submit">Confirm</button>
+                </footer>
+              </div>
             </div>
           </div>
         </div>
       </section>
       <section>
         <div class="container">
-          <h4>Menus</h4>
+          <header>
+            <h3>Menus</h3>
+            <button class="show-html">Toggle HTML</button>
+          </header>
 
-          <div class="flyout-menu-wrap" id="left-flyout-menu-wrap">
-            <button id="open-left-flyout-menu">Left aligned menu</button>
+          <div class="content">
+            <div class="flyout-menu-wrap" id="left-flyout-menu-wrap">
+              <button id="open-left-flyout-menu">Left aligned menu</button>
 
-            <div class="flyout-menu-overlay" id="left-flyout-overlay"></div>
-            <div class="flyout-menu flyout-menu-bottom-left">
-              <menu class="flyout-menu-content white-background">
-                <li><button>A Menu Item</button></li>
-                <li><button>And another</button></li>
-                <li><button>With an item containing a lot of text</button></li>
-              </menu>
+              <div class="flyout-menu-overlay" id="left-flyout-overlay"></div>
+              <div class="flyout-menu flyout-menu-bottom-left">
+                <menu class="flyout-menu-content white-background">
+                  <li><button>A Menu Item</button></li>
+                  <li><button>And another</button></li>
+                  <li><button>With an item containing a lot of text</button></li>
+                </menu>
+              </div>
             </div>
-          </div>
 
-          <div class="flyout-menu-wrap" id="right-flyout-menu-wrap">
-            <button id="open-right-flyout-menu">Right aligned menu</button>
+            <div class="flyout-menu-wrap" id="right-flyout-menu-wrap">
+              <button id="open-right-flyout-menu">Right aligned menu</button>
 
-            <div class="flyout-menu-overlay" id="right-flyout-overlay"></div>
-            <div class="flyout-menu flyout-menu-bottom-right">
-              <menu class="flyout-menu-content white-background">
-                <li><button>With an item containing a lot of text</button></li>
-                <li><button>A Menu Item</button></li>
-                <li><button>And another</button></li>
-              </menu>
+              <div class="flyout-menu-overlay" id="right-flyout-overlay"></div>
+              <div class="flyout-menu flyout-menu-bottom-right">
+                <menu class="flyout-menu-content white-background">
+                  <li><button>With an item containing a lot of text</button></li>
+                  <li><button>A Menu Item</button></li>
+                  <li><button>And another</button></li>
+                </menu>
+              </div>
             </div>
           </div>
         </div>
