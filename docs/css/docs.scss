@@ -11,14 +11,12 @@ $features-bg-color: #001053;
 
 @import 'terrain';
 
-<<<<<<< HEAD
-// Include compents
+// Include components
 
 @import 'terrain/components/tabs',
-        'terrain/components/wizard';
-=======
-@import 'terrain/components/modal';
->>>>>>> Adds modal component
+        'terrain/components/wizard',
+        'terrain/components/modal',
+        'terrain/components/flyout_menu';
 
 @import 'icons';
 
@@ -150,23 +148,9 @@ $features-bg-color: #001053;
   }
 }
 
-// .menu-push {
-//   position: relative;
-//   transition: left 0.3s ease, right 0.3s ease;
-// }
 
 .menu-push-toright {
   overflow: hidden;
-
-  .menu-push {
-    // left: $fixed-left-nav-width;
-    // right: -#{$fixed-left-nav-width};
-
-    @media screen and (max-width: $breakpoint-small) {
-      left: 0;
-      right: 0;
-    }
-  }
 
   .nav-toggle-overlay {
     left: 0;

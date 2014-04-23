@@ -33,6 +33,7 @@
     var modalButton = document.getElementById('modal-open');
     var modalClose  = document.getElementById('modal-close');
     var modalSubmit = document.getElementById('modal-submit');
+    var modalCancel = document.getElementById('modal-cancel');
     var modal       = document.getElementById('modal');
     var overLay     = document.getElementById('modal-overlay');
 
@@ -46,6 +47,10 @@
       overLay.classList.toggle('open');
     });
 
+    modalCancel.addEventListener('click', function () {
+      closeModal();
+    });
+
     modalSubmit.addEventListener('click', function () {
       closeModal();
     });
@@ -56,6 +61,20 @@
 
     overLay.addEventListener('click', function () {
       closeModal();
+    });
+  })();
+
+  (function flyoutMenuToggle() {
+    var flyoutButton  = document.getElementById('open-flyout-menu');
+    var flyoutWrap    = document.getElementById('flyout-menu-wrap');
+    var flyoutOverlay = document.getElementById('flyout-overlay');
+
+    flyoutButton.addEventListener('click', function () {
+      flyoutWrap.classList.toggle('active');
+    });
+
+    flyoutOverlay.addEventListener('click', function () {
+      flyoutWrap.classList.remove('active');
     });
   })();
 })(window || this);

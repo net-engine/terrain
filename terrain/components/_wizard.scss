@@ -25,12 +25,11 @@ $wizard-arrow-width: $line-height * 1.5;
       border-width: $wizard-arrow-width / 2;
       border-style: solid;
       border-color: transparent;
-      z-index: 10;
+      // z-index: 10;
     }
 
     &:before {
       left: -#{$wizard-arrow-width / 2};
-      // margin-left: 1px;
       border-top-color: inherit;
       border-bottom-color: inherit;
     }

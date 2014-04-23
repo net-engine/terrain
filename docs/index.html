@@ -1418,38 +1418,13 @@
         </div>
       </section>
     </article>
-    <article>
-      <section>
-        <div class="container">
-          <h2>Modals</h2>
-
-          <button id="modal-open">Open modal</button>
-
-          <div class="modal-overlay" id="modal-overlay"></div>
-          <div class="modal" id="modal">
-            <div class="modal-content white-background gray-lighter-border border-heavy-solid">
-              <header class="modal-header gray-lighter-border border-bottom-heavy-solid">
-                <h4>Modal</h4>
-                <button class="absolute-top-right inset-one" id="modal-close">Close</button>
-              </header>
-
-              <p>Proin quis tortor orci. Etiam at risus et justo dignissim congue. Donec congue lacinia dui, a porttitor.</p>
-
-              <footer class="modal-footer gray-lighter-border border-top-light-solid">
-                <button type="submit" id="modal-submit">Confirm</button>
-              </footer>
-            </div>
-          </div>
-        </div>
-      </section>
-    </article>
 
     <article id="components">
       <header>
         <div class="container">
           <h1>Components</h1>
 
-          <p><strong>Extend Terrain with components.</strong> Components are standalone modules which we find ourselves using again ang again. The go beyond providing a default style for basic elements, and must be included manually.</p>
+          <p><strong>Extend Terrain with components.</strong> Components are standalone modules which we find ourselves using again and again. The go beyond providing a default style for basic elements, and must be included manually.</p>
 
           <p>This is where Terrain goes into the realm of other front-end frameworks, but we only include here what we use unaltered in at least two projects. Keeping these in the project helps to maintain naming consistency.</p>
         </div>
@@ -1466,7 +1441,47 @@
             <button disabled="disabled">Disabled</button>
             <button>Last</button>
           </fieldset>
+        </div>
+      </section>
+      <section>
+        <div class="container">
+          <h4>Modals</h4>
 
+          <button id="modal-open">Open modal</button>
+
+          <div class="modal-overlay" id="modal-overlay"></div>
+          <div class="modal" id="modal">
+            <div class="modal-content white-background gray-lighter-border border-heavy-solid">
+              <header class="modal-header gray-lighter-border border-bottom-heavy-solid">
+                <h4>Modal</h4>
+                <button class="absolute-top-right inset-one" id="modal-close">Close</button>
+              </header>
+
+              <p>Proin quis tortor orci. Etiam at risus et justo dignissim congue. Donec congue lacinia dui, a porttitor.</p>
+
+              <footer class="modal-footer gray-lighter-border border-top-light-solid">
+                <button type="button" id="modal-cancel">Cancel</button>
+                <button type="submit" id="modal-submit">Confirm</button>
+              </footer>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section>
+        <div class="container">
+          <h4>Menus</h4>
+
+          <div class="flyout-menu-wrap" id="flyout-menu-wrap">
+            <button id="open-flyout-menu">Bottom right menu</button>
+
+            <div class="flyout-menu-overlay" id="flyout-overlay"></div>
+            <div class="flyout-menu flyout-menu-bottom-right">
+              <menu class="flyout-menu-content white-background">
+                <li>A Menu Item</li>
+                <li>And another</li>
+              </menu>
+            </div>
+          </div>
         </div>
       </section>
     </article>

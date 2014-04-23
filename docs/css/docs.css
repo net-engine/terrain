@@ -1268,8 +1268,7 @@ input[type="file"]::-webkit-file-upload-button {
       bottom: 0;
       border-width: 1.275em;
       border-style: solid;
-      border-color: transparent;
-      z-index: 10; }
+      border-color: transparent; }
     .wizard-progress .button:before, .wizard-progress button:before {
       left: -1.275em;
       border-top-color: inherit;
@@ -1346,6 +1345,73 @@ input[type="file"]::-webkit-file-upload-button {
   opacity: 0; }
 
 .modal-overlay.open {
+  opacity: 1; }
+
+.flyout-menu-wrap {
+  display: inline-block;
+  position: relative; }
+  .flyout-menu-wrap .flyout-menu {
+    min-width: 100%;
+    visibility: hidden;
+    position: fixed;
+    left: -100%;
+    top: -100%; }
+  .flyout-menu-wrap.active .flyout-menu {
+    visibility: visible;
+    position: absolute;
+    top: auto;
+    left: auto;
+    right: auto;
+    bottom: auto; }
+    .flyout-menu-wrap.active .flyout-menu.flyout-menu-bottom-right {
+      right: 0;
+      top: 100%; }
+    .flyout-menu-wrap.active .flyout-menu.flyout-menu-top-right {
+      left: 100%;
+      bottom: 100%; }
+    .flyout-menu-wrap.active .flyout-menu.flyout-menu-top {
+      bottom: 100%; }
+
+.flyout-menu-overlay {
+  visibility: hidden;
+  position: fixed;
+  left: -100%;
+  top: -100%; }
+
+.flyout-menu-wrap.active .flyout-menu-overlay {
+  z-index: 2999;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  visibility: visible; }
+
+.flyout-menu-wrap .flyout-menu {
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease; }
+
+.flyout-menu-wrap .flyout-menu.flyout-menu-bottom-right {
+  -webkit-transform: translate(0 -100%);
+  -ms-transform: translate(0 -100%);
+  transform: translate(0 -100%);
+  opacity: 0; }
+
+.flyout-menu-wrap.active .flyout-menu.flyout-menu-bottom-right {
+  -webkit-transform: translate(0);
+  -ms-transform: translate(0);
+  transform: translate(0);
+  opacity: 1; }
+
+.flyout-menu-wrap .flyout-menu.flyout-menu-top-right {
+  -webkit-transform: translate(-100% 0);
+  -ms-transform: translate(-100% 0);
+  transform: translate(-100% 0);
+  opacity: 0; }
+
+.flyout-menu-wrap.active .flyout-menu.flyout-menu-top-right {
+  -webkit-transform: translate(0);
+  -ms-transform: translate(0);
+  transform: translate(0);
   opacity: 1; }
 
 @font-face {
@@ -1449,10 +1515,6 @@ input[type="file"]::-webkit-file-upload-button {
 
 .menu-push-toright {
   overflow: hidden; }
-  @media screen and (max-width: 32em) {
-    .menu-push-toright .menu-push {
-      left: 0;
-      right: 0; } }
   .menu-push-toright .nav-toggle-overlay {
     left: 0;
     opacity: 1; }
