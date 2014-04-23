@@ -1,4 +1,34 @@
 (function (global) {
+
+  $('.show-html').on('click', function(e) {
+    e.preventDefault();
+
+    var $this = $(this),
+        $container = $this.closest('.container'),
+        $pre = $container.find('pre.html-preview');
+
+    $this.toggleClass('active');
+
+    if ($pre.length) {
+      $pre.remove();
+    } else {
+      var $content = $this.closest('header').next('.content'),
+          html = $content.html();
+      $pre = $('<pre class="html-preview"></pre>');
+      $pre.text( html );
+      $content.prepend( $pre );
+    }
+  });
+
+  $("#nav-menu").stick_in_parent();
+
+  $('[href=' + window.location.hash + ']').addClass('active')
+
+  $("#nav-menu a").on('click', function(e) {
+    $("#nav-menu a").removeClass('active');
+    $(this).addClass('active');
+  });
+
   (function heroTrace () {
     var image = new Image();
     var triangleGrid = document.getElementById('triangleGrid');

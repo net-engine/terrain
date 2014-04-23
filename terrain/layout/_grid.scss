@@ -1,10 +1,3 @@
-@mixin fraction-width( $span, $total ) {
-  box-sizing: border-box;
-  width: 100% / $total * $span;
-  float: left;
-  padding-left: $gutter / 2;
-  padding-right: $gutter / 2;
-}
 
 .grid-container {
   margin-left: -$gutter / 2;
@@ -19,17 +12,45 @@
   &:after { clear: both; }
 }
 
-.one-half { @include fraction-width(1, 2); }
+@mixin fraction-width( $span, $total ) {
+  width: 100% / $total * $span;
+}
 
-// Thirds
+.grid-column {
+  float: left;
+  vertical-align: top;
+  box-sizing: border-box;
+  padding-left: $gutter / 2;
+  padding-right: $gutter / 2;
+}
 
-.one-third { @include fraction-width(1, 3); }
-.two-thirds { @include fraction-width(2, 3); }
 
-// Quarters
+// Percentage-based grid
 
-.one-quarter { @include fraction-width(1, 4); }
-.three-quarters { @include fraction-width(3, 4); }
+.one-half {
+  @include fraction-width(1, 2);
+  @extend .grid-column;
+}
+
+.one-third {
+  @include fraction-width(1, 3);
+  @extend .grid-column;
+}
+
+.two-thirds {
+  @include fraction-width(2, 3);
+  @extend .grid-column;
+}
+
+.one-quarter {
+  @include fraction-width(1, 4);
+  @extend .grid-column;
+}
+
+.three-quarters {
+  @include fraction-width(3, 4);
+  @extend .grid-column;
+}
 
 @media screen and (max-width: $breakpoint-small) {
   .grid-container {
@@ -47,6 +68,41 @@
       float: none;
       padding-left: 0;
       padding-right: 0;
+    }
+  }
+}
+
+
+
+// Module-based grid
+
+
+$grid-module-width: $max-width / 2 !default;
+
+.grid-module {
+  width: $grid-module-width;
+  @extend .grid-column;
+}
+
+.grid-module-container {
+  @extend .grid-container;
+  max-width: $grid-module-width * 3 + $line-height * 2;
+
+  .grid-module {
+    width: $grid-module-width;
+  }
+
+  @media screen and (max-width: ($grid-module-width * 3 + $line-height * 2)) {
+    max-width: $grid-module-width * 2 + $line-height * 2;
+  }
+
+  @media screen and (max-width: ($grid-module-width * 2 + $line-height * 2)) {
+    max-width: $grid-module-width + $line-height * 2;
+  }
+
+  @media screen and (max-width: ($grid-module-width + $line-height * 2)) {
+    .module {
+      width: auto;
     }
   }
 }

@@ -43,6 +43,9 @@ pre {
   color: $gray-lighter;
   border-radius: $radius;
   padding: $line-height / 2;
+  white-space: pre-wrap;
+  max-height: 80vh;
+  overflow: scroll;
 }
 
 details {

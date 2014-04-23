@@ -13,6 +13,10 @@
   border-color: $button-default-border-color;
   -webkit-appearance: none;
   -moz-appearance: none;
+
+  &.active {
+    background: darken($button-default-background-color, 20%);
+  }
 }
 
 a.button {
@@ -32,6 +36,17 @@ button[type='submit'],
 
   &:hover {
     background-color: $button-submit-hover-background-color;
+  }
+}
+
+.outline-button, a.outline-button {
+  background-color: transparent;
+  color: $color-primary;
+  border: thin solid $color-primary;
+
+  &:hover, &:active, &:visited {
+    background-color: transparent;
+    color: $color-primary;
   }
 }
 
@@ -55,7 +70,7 @@ button[type='submit'],
     }
 
     &.active {
-      background: darken($button-default-background-color, 15%);
+      background: darken($button-default-background-color, 20%);
     }
 
     &:last-child, &.last-child {
