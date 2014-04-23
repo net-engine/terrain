@@ -1,5 +1,14 @@
 (function (global) {
 
+  $("#nav-menu").stick_in_parent();
+
+  $('[href=' + window.location.hash + ']').addClass('active')
+
+  $("#nav-menu a").on('click', function(e) {
+    $("#nav-menu a").removeClass('active');
+    $(this).addClass('active');
+  });
+
   $('.show-html').on('click', function(e) {
     e.preventDefault();
 
@@ -18,15 +27,6 @@
       $pre.text( html );
       $content.prepend( $pre );
     }
-  });
-
-  $("#nav-menu").stick_in_parent();
-
-  $('[href=' + window.location.hash + ']').addClass('active')
-
-  $("#nav-menu a").on('click', function(e) {
-    $("#nav-menu a").removeClass('active');
-    $(this).addClass('active');
   });
 
   (function heroTrace () {
