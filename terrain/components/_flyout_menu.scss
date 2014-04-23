@@ -1,10 +1,26 @@
+$flyout-menu-width: 18em;
+
 .flyout-menu-wrap {
   display: inline-block;
   position: relative;
 
   .flyout-menu {
-    min-width: 100%;
     @include animatableHide;
+    box-shadow: 0 0.2em 0.2em 0 rgba($black, 0.25);
+    border-radius: $radius;
+    overflow: hidden;
+
+    li a, li button {
+      @extend .border-top-light-solid;
+      border-color: $gray-lighter;
+      border-radius: 0;
+      display: block;
+      width: $flyout-menu-width;
+      text-align: left;
+      padding: $line-height / 5 $line-height / 2;
+      background-color: transparent;
+      color: inherit;
+    }
   }
 
   &.active .flyout-menu {
@@ -14,6 +30,16 @@
     left: auto;
     right: auto;
     bottom: auto;
+
+    &.flyout-menu-bottom-left,
+    &.flyout-menu-bottom-right {
+      margin-top: $line-height / 4;
+    }
+
+    &.flyout-menu-bottom-left {
+      left: 0;
+      top: 100%;
+    }
 
     &.flyout-menu-bottom-right {
       right: 0;
@@ -34,26 +60,28 @@
 .flyout-menu-overlay { @include animatableHide; }
 
 .flyout-menu-wrap.active .flyout-menu-overlay {
-  z-index: 2999;
+  visibility: visible;
   top: 0;
   left: 0;
   right: 0;
   bottom: 0;
-  visibility: visible;
 }
 
-.flyout-menu-wrap .flyout-menu { transition: all 0.2s ease; }
-.flyout-menu-wrap .flyout-menu.flyout-menu-bottom-right {
-  transform: translate(0 -100%);
+.flyout-menu-wrap .flyout-menu { transition: transform 0.2s ease, opacity 0.2s ease; }
+
+.flyout-menu-wrap .flyout-menu.flyout-menu-bottom-right,
+.flyout-menu-wrap .flyout-menu.flyout-menu-bottom-left {
+  transform: translate(0, -100%);
   opacity: 0;
 }
-.flyout-menu-wrap.active .flyout-menu.flyout-menu-bottom-right {
+.flyout-menu-wrap.active .flyout-menu.flyout-menu-bottom-right,
+.flyout-menu-wrap.active .flyout-menu.flyout-menu-bottom-left {
   transform: translate(0);
   opacity: 1;
 }
 
 .flyout-menu-wrap .flyout-menu.flyout-menu-top-right {
-  transform: translate(-100% 0);
+  transform: translate(-100%, 0);
   opacity: 0;
 }
 .flyout-menu-wrap.active .flyout-menu.flyout-menu-top-right {

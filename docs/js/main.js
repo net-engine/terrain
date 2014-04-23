@@ -65,16 +65,28 @@
   })();
 
   (function flyoutMenuToggle() {
-    var flyoutButton  = document.getElementById('open-flyout-menu');
-    var flyoutWrap    = document.getElementById('flyout-menu-wrap');
-    var flyoutOverlay = document.getElementById('flyout-overlay');
+    var leftFlyoutButton  = document.getElementById('open-left-flyout-menu');
+    var leftFlyoutWrap    = document.getElementById('left-flyout-menu-wrap');
+    var leftFlyoutOverlay = document.getElementById('left-flyout-overlay');
 
-    flyoutButton.addEventListener('click', function () {
-      flyoutWrap.classList.toggle('active');
+    var rightFlyoutButton  = document.getElementById('open-right-flyout-menu');
+    var rightFlyoutWrap    = document.getElementById('right-flyout-menu-wrap');
+    var rightFlyoutOverlay = document.getElementById('right-flyout-overlay');
+
+    leftFlyoutButton.addEventListener('click', function () {
+      leftFlyoutWrap.classList.toggle('active');
     });
 
-    flyoutOverlay.addEventListener('click', function () {
-      flyoutWrap.classList.remove('active');
+    leftFlyoutOverlay.addEventListener('click', function () {
+      leftFlyoutWrap.classList.remove('active');
+    });
+
+    rightFlyoutButton.addEventListener('click', function () {
+      rightFlyoutWrap.classList.toggle('active');
+    });
+
+    rightFlyoutOverlay.addEventListener('click', function () {
+      rightFlyoutWrap.classList.remove('active');
     });
   })();
 })(window || this);

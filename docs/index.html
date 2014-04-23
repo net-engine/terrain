@@ -1471,14 +1471,28 @@
         <div class="container">
           <h4>Menus</h4>
 
-          <div class="flyout-menu-wrap" id="flyout-menu-wrap">
-            <button id="open-flyout-menu">Bottom right menu</button>
+          <div class="flyout-menu-wrap" id="left-flyout-menu-wrap">
+            <button id="open-left-flyout-menu">Left aligned menu</button>
 
-            <div class="flyout-menu-overlay" id="flyout-overlay"></div>
+            <div class="flyout-menu-overlay" id="left-flyout-overlay"></div>
+            <div class="flyout-menu flyout-menu-bottom-left">
+              <menu class="flyout-menu-content white-background">
+                <li><button>A Menu Item</button></li>
+                <li><button>And another</button></li>
+                <li><button>With an item containing a lot of text</button></li>
+              </menu>
+            </div>
+          </div>
+
+          <div class="flyout-menu-wrap" id="right-flyout-menu-wrap">
+            <button id="open-right-flyout-menu">Right aligned menu</button>
+
+            <div class="flyout-menu-overlay" id="right-flyout-overlay"></div>
             <div class="flyout-menu flyout-menu-bottom-right">
               <menu class="flyout-menu-content white-background">
-                <li>A Menu Item</li>
-                <li>And another</li>
+                <li><button>With an item containing a lot of text</button></li>
+                <li><button>A Menu Item</button></li>
+                <li><button>And another</button></li>
               </menu>
             </div>
           </div>
