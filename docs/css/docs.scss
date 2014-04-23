@@ -7,7 +7,14 @@ $font-family-icons: "icomoon";
 
 $features-bg-color: #001053;
 
+// Main include
+
 @import 'terrain';
+
+// Include compents
+
+@import 'terrain/components/tabs',
+        'terrain/components/wizard';
 
 @import 'icons';
 

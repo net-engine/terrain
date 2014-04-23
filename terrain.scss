@@ -19,7 +19,8 @@
         'terrain/layout/grid',
         'terrain/layout/positioning',
         'terrain/layout/form_structure',
-        'terrain/layout/structure';
+        'terrain/layout/structure',
+        'terrain/layout/table';
 
 @import 'terrain/interactive/anchors',
         'terrain/interactive/buttons',
@@ -28,6 +29,3 @@
         'terrain/interactive/text_inputs',
         'terrain/interactive/progress_and_meter',
         'terrain/interactive/file_inputs';
-
-@import 'terrain/components/table',
-        'terrain/components/tabs';

@@ -743,6 +743,56 @@ body > nav {
   left: 0;
   width: 18em; }
 
+table {
+  border-collapse: collapse;
+  text-align: left;
+  width: 100%;
+  margin: 0 0 1.7em;
+  border: 0.1em solid #d6d6d6; }
+  table caption, table th, table td {
+    vertical-align: top;
+    padding: 0.85em; }
+  table caption {
+    font-weight: 600;
+    font-size: 0.8em;
+    text-transform: uppercase; }
+  table th {
+    font-weight: 600; }
+  table thead tr {
+    background-color: #f6f6f6; }
+    table thead tr.no-wrap th {
+      vertical-align: center;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      -o-text-overflow: ellipsis;
+      line-height: 2.55em; }
+  table tbody tr {
+    border-top: 0.1em solid #d6d6d6; }
+    table tbody tr th {
+      background-color: #f6f6f6;
+      font-weight: 600; }
+    table tbody tr.no-wrap td, table tbody tr.no-wrap th {
+      vertical-align: center;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      -o-text-overflow: ellipsis;
+      line-height: 2.55em; }
+  table tfoot {
+    color: #6c6c6c; }
+    table tfoot tr {
+      border-top: 0.1em solid #d6d6d6; }
+  table.fixed {
+    table-layout: fixed;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box; }
+    table.fixed * {
+      -webkit-box-sizing: border-box;
+      -moz-box-sizing: border-box;
+      box-sizing: border-box; }
+
 a {
   color: #5694bd;
   text-decoration: none;
@@ -789,6 +839,7 @@ a.button:hover, a.button:active, a.button:visited {
   margin: 0;
   width: auto;
   height: auto;
+  line-height: 1.7em;
   font-family: 'Source Sans Pro', 'Helvetica Neue', sans-serif;
   font-weight: 600;
   -webkit-font-smoothing: antialiased;
@@ -1128,6 +1179,7 @@ input[type="file"]::-webkit-file-upload-button {
   margin: 0;
   width: auto;
   height: auto;
+  line-height: 1.7em;
   font-family: 'Source Sans Pro', 'Helvetica Neue', sans-serif;
   font-weight: 600;
   -webkit-font-smoothing: antialiased;
@@ -1156,56 +1208,6 @@ input[type="file"]::-webkit-file-upload-button {
     width: 1.7em;
     height: 1.7em;
     padding: 0; }
-
-table {
-  border-collapse: collapse;
-  text-align: left;
-  width: 100%;
-  margin: 0 0 1.7em;
-  border: 0.1em solid #d6d6d6; }
-  table caption, table th, table td {
-    vertical-align: top;
-    padding: 0.85em; }
-  table caption {
-    font-weight: 600;
-    font-size: 0.8em;
-    text-transform: uppercase; }
-  table th {
-    font-weight: 600; }
-  table thead tr {
-    background-color: #f6f6f6; }
-    table thead tr.no-wrap th {
-      vertical-align: center;
-      white-space: nowrap;
-      overflow: hidden;
-      text-overflow: ellipsis;
-      -o-text-overflow: ellipsis;
-      line-height: 2.55em; }
-  table tbody tr {
-    border-top: 0.1em solid #d6d6d6; }
-    table tbody tr th {
-      background-color: #f6f6f6;
-      font-weight: 600; }
-    table tbody tr.no-wrap td, table tbody tr.no-wrap th {
-      vertical-align: center;
-      white-space: nowrap;
-      overflow: hidden;
-      text-overflow: ellipsis;
-      -o-text-overflow: ellipsis;
-      line-height: 2.55em; }
-  table tfoot {
-    color: #6c6c6c; }
-    table tfoot tr {
-      border-top: 0.1em solid #d6d6d6; }
-  table.fixed {
-    table-layout: fixed;
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box; }
-    table.fixed * {
-      -webkit-box-sizing: border-box;
-      -moz-box-sizing: border-box;
-      box-sizing: border-box; }
 
 .tabs {
   position: relative;
@@ -1243,6 +1245,53 @@ table {
   display: block; }
 .ui-tabs .ui-tabs-hide {
   display: none !important; }
+
+.wizard-progress {
+  overflow: hidden;
+  border: 0; }
+  .wizard-progress .button, .wizard-progress button {
+    float: left;
+    position: relative;
+    margin-left: 1.70008em;
+    cursor: default;
+    background: #4a4a4a;
+    border-color: #4a4a4a;
+    border-width: 0;
+    border-radius: 0;
+    padding-right: 0.31875em;
+    white-space: nowrap; }
+    .wizard-progress .button:before, .wizard-progress .button:after, .wizard-progress button:before, .wizard-progress button:after {
+      content: '';
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      border-width: 1.275em;
+      border-style: solid;
+      border-color: transparent;
+      z-index: 10; }
+    .wizard-progress .button:before, .wizard-progress button:before {
+      left: -1.275em;
+      border-top-color: inherit;
+      border-bottom-color: inherit; }
+    .wizard-progress .button:after, .wizard-progress button:after {
+      right: -2.55em;
+      margin-right: 1px;
+      border-left-color: inherit; }
+    .wizard-progress .button:first-child, .wizard-progress button:first-child {
+      margin-left: 0;
+      border-radius: 0.15em 0 0 0.15em; }
+      .wizard-progress .button:first-child:before, .wizard-progress button:first-child:before {
+        content: none;
+        display: none; }
+    .wizard-progress .button:last-child, .wizard-progress button:last-child {
+      padding-right: 0.85em;
+      border-radius: 0 0.15em 0.15em 0; }
+      .wizard-progress .button:last-child:after, .wizard-progress button:last-child:after {
+        content: none;
+        display: none; }
+    .wizard-progress .button.active, .wizard-progress button.active {
+      background: #5694bd;
+      border-color: #5694bd; }
 
 @font-face {
   font-family: 'icomoon';
@@ -1282,7 +1331,7 @@ table {
   text-align: center;
   overflow: hidden;
   position: relative;
-  background-color: #264c73; }
+  background-color: #001053; }
   .hero a {
     color: white; }
 

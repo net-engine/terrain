@@ -1,0 +1,69 @@
+
+$wizard-arrow-width: $line-height * 1.5;
+
+.wizard-progress {
+  overflow: hidden;
+  border: 0;
+
+  .button, button {
+    float: left;
+    position: relative;
+    margin-left: $wizard-arrow-width * .6667;
+    cursor: default;
+    background: $button-default-background-color;
+    border-color: $button-default-background-color;
+    border-width: 0;
+    border-radius: 0;
+    padding-right: $wizard-arrow-width / 8;
+    white-space: nowrap;
+
+    &:before, &:after {
+      content: '';
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      border-width: $wizard-arrow-width / 2;
+      border-style: solid;
+      border-color: transparent;
+      z-index: 10;
+    }
+
+    &:before {
+      left: -#{$wizard-arrow-width / 2};
+      // margin-left: 1px;
+      border-top-color: inherit;
+      border-bottom-color: inherit;
+    }
+
+    &:after {
+      right: -#{$wizard-arrow-width};
+      margin-right: 1px;
+      border-left-color: inherit;
+    }
+
+    &:first-child {
+      margin-left: 0;
+      border-radius: $radius 0 0 $radius;
+
+      &:before {
+        content: none;
+        display: none;
+      }
+    }
+
+    &:last-child {
+      padding-right: $wizard-arrow-width / 3;
+      border-radius: 0 $radius $radius 0;
+
+      &:after {
+        content: none;
+        display: none;
+      }
+    }
+
+    &.active {
+      background: $button-submit-background-color;
+      border-color: $button-submit-background-color;
+    }
+  }
+}

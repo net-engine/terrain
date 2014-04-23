@@ -68,23 +68,24 @@ $color-danger-light:      lighten($color-danger, 35%) !default;
 $color-info:              $color-primary !default;
 $color-info-light:        lighten($color-info, 35%) !default;
 
-$palette: "white"         $white,
-    "black"         $black,
-    "primary"       $color-primary,
-    "primary-light" $color-primary-light,
-    "gray-darker"   $gray-darker,
-    "gray-dark"     $gray-dark,
-    "gray"          $gray,
-    "gray-light"    $gray-light,
-    "gray-lighter"  $gray-lighter,
-    "success"       $color-success,
-    "success-light" $color-success-light,
-    "warning"       $color-warning,
-    "warning-light" $color-warning-light,
-    "danger"        $color-danger,
-    "danger-light"  $color-danger-light,
-    "info"          $color-info,
-    "info-light"    $color-info-light !default;
+$palette:
+  "white"         $white,
+  "black"         $black,
+  "primary"       $color-primary,
+  "primary-light" $color-primary-light,
+  "gray-darker"   $gray-darker,
+  "gray-dark"     $gray-dark,
+  "gray"          $gray,
+  "gray-light"    $gray-light,
+  "gray-lighter"  $gray-lighter,
+  "success"       $color-success,
+  "success-light" $color-success-light,
+  "warning"       $color-warning,
+  "warning-light" $color-warning-light,
+  "danger"        $color-danger,
+  "danger-light"  $color-danger-light,
+  "info"          $color-info,
+  "info-light"    $color-info-light !default;
 
 
 // Links
