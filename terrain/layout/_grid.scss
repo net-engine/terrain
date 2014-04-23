@@ -77,32 +77,43 @@
 // Module-based grid
 
 
-$grid-module-width: $max-width / 2 !default;
-
-.grid-module {
-  width: $grid-module-width;
-  @extend .grid-column;
-}
+$grid-module-width: $max-width / 2 + $gutter / 2 !default;
 
 .grid-module-container {
-  @extend .grid-container;
-  max-width: $grid-module-width * 3 + $line-height * 2;
+  padding: $page-margin $gutter / 2;
+  margin: 0 auto;
+  max-width: $grid-module-width * 2;
 
-  .grid-module {
-    width: $grid-module-width;
+  &:before,
+  &:after {
+    content: "";
+    display: table;
   }
 
-  @media screen and (max-width: ($grid-module-width * 3 + $line-height * 2)) {
-    max-width: $grid-module-width * 2 + $line-height * 2;
-  }
+  &:after { clear: both; }
 
-  @media screen and (max-width: ($grid-module-width * 2 + $line-height * 2)) {
-    max-width: $grid-module-width + $line-height * 2;
-  }
+  @media screen and (min-width: ($grid-module-width + $gutter)) {
+    max-width: $grid-module-width;
 
-  @media screen and (max-width: ($grid-module-width + $line-height * 2)) {
-    .module {
-      width: auto;
+    .grid-module {
+      @extend .grid-column;
+      width: $grid-module-width;
     }
+  }
+
+  @media screen and (min-width: ($grid-module-width * 2 + $gutter)) {
+    max-width: $grid-module-width * 2;
+  }
+
+  @media screen and (min-width: ($grid-module-width * 3 + $gutter)) {
+    max-width: $grid-module-width * 3;
+  }
+
+  @media screen and (min-width: ($grid-module-width * 4 + $gutter)) {
+    max-width: $grid-module-width * 4;
+  }
+
+  @media screen and (min-width: ($grid-module-width * 5 + $gutter)) {
+    max-width: $grid-module-width * 5;
   }
 }

@@ -2,21 +2,33 @@
   @include animatableHide;
 
   &.open {
-    left: 50%;
-    top: 50%;
     visibility: visible;
-    transform: translate(-50%, -50%);
+    @extend .fixed-center;
+
+    @media screen and (max-width: $breakpoint-small) {
+      transform: none;
+      left: $page-margin / 2;
+      right: $page-margin / 2;
+      top: $page-margin;
+      bottom: $page-margin / 2;
+    }
+  }
+
+  .modal-header {
+    h1, h2, h3, h4, h5, h6 { margin: 0; }
+
+    margin-bottom: $line-height;
+    padding-bottom: $line-height / 2;
   }
 
   .modal-content { padding: $line-height; }
-  .modal-header { margin-bottom: $line-height; }
   .modal-footer { padding-top: $line-height; }
 }
 
 .modal-overlay {
   @include animatableHide;
 
-  background-color: rgba($black, 0.7);
+  background-color: $color-background-overlay;
 
   &.open {
     left: 0;
@@ -26,14 +38,6 @@
     visibility: visible;
   }
 }
-
-// Transitions
-
-.modal .modal-content {
-  transition: transform 0.5s ease;
-  transform: scale(1.2);
-}
-.modal.open .modal-content { transform: scale(1); }
 
 .modal-overlay {
   transition: opacity 0.2s ease;

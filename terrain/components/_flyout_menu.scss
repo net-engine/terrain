@@ -11,8 +11,6 @@ $flyout-menu-width: 18em;
     box-shadow: 0 0.2em 0.2em 0 rgba($black, 0.25);
 
     li a, li button {
-      @extend .border-top-light-solid;
-      border-color: $gray-lighter;
       border-radius: 0;
       display: block;
       width: $flyout-menu-width;
@@ -20,6 +18,12 @@ $flyout-menu-width: 18em;
       padding: $line-height / 5 $line-height / 2;
       background-color: transparent;
       color: inherit;
+      border-color: $gray-lighter;
+      @extend .border-top-light-solid;
+
+      &:hover {
+        background-color: $gray-lighter;
+      }
     }
   }
 
@@ -67,24 +71,8 @@ $flyout-menu-width: 18em;
   bottom: 0;
 }
 
-.flyout-menu-wrap .flyout-menu { transition: transform 0.2s ease, opacity 0.2s ease; }
-
-.flyout-menu-wrap .flyout-menu.flyout-menu-bottom-right,
-.flyout-menu-wrap .flyout-menu.flyout-menu-bottom-left {
-  transform: translate(0, -100%);
+.flyout-menu-wrap .flyout-menu {
   opacity: 0;
+  transition: opacity 0.2s ease;
 }
-.flyout-menu-wrap.active .flyout-menu.flyout-menu-bottom-right,
-.flyout-menu-wrap.active .flyout-menu.flyout-menu-bottom-left {
-  transform: translate(0);
-  opacity: 1;
-}
-
-.flyout-menu-wrap .flyout-menu.flyout-menu-top-right {
-  transform: translate(-100%, 0);
-  opacity: 0;
-}
-.flyout-menu-wrap.active .flyout-menu.flyout-menu-top-right {
-  transform: translate(0);
-  opacity: 1;
-}
+.flyout-menu-wrap.active .flyout-menu { opacity: 1; }

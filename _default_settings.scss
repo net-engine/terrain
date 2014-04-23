@@ -47,26 +47,28 @@ $margin-level-six:        $line-height * 1.25 !default;
 
 // ## Colours
 
-$color-primary:           hsl(204,44%,54%) !default;
-$color-primary-light:     lighten($color-primary, 30%) !default;
-$color-primary-dark:      darken($color-primary, 30%) !default;
+$color-primary:             hsl(204,44%,54%) !default;
+$color-primary-light:       lighten($color-primary, 30%) !default;
+$color-primary-dark:        darken($color-primary, 30%) !default;
 
-$black:                   hsl(0,0%,9%) !default;
-$white:                   lighten($black, 93.5%) !default;
-$gray-darker:             lighten($black, 13.5%) !default;
-$gray-dark:               lighten($black, 20%) !default;
-$gray:                    lighten($black, 33.5%) !default;
-$gray-light:              lighten($black, 75%) !default;
-$gray-lighter:            lighten($black, 87.5%) !default;
+$black:                     hsl(0,0%,9%) !default;
+$white:                     lighten($black, 93.5%) !default;
+$gray-darker:               lighten($black, 13.5%) !default;
+$gray-dark:                 lighten($black, 20%) !default;
+$gray:                      lighten($black, 33.5%) !default;
+$gray-light:                lighten($black, 75%) !default;
+$gray-lighter:              lighten($black, 87.5%) !default;
 
-$color-success:           hsl(85, 60%, 52%) !default;
-$color-success-light:     lighten($color-success, 35%) !default;
-$color-warning:           hsl(45, 83%, 73%) !default;
-$color-warning-light:     lighten($color-warning, 35%) !default;
-$color-danger:            hsl(357, 88%, 63%) !default;
-$color-danger-light:      lighten($color-danger, 35%) !default;
-$color-info:              $color-primary !default;
-$color-info-light:        lighten($color-info, 35%) !default;
+$color-success:             hsl(85, 60%, 52%) !default;
+$color-success-light:       lighten($color-success, 35%) !default;
+$color-warning:             hsl(45, 83%, 73%) !default;
+$color-warning-light:       lighten($color-warning, 35%) !default;
+$color-danger:              hsl(357, 88%, 63%) !default;
+$color-danger-light:        lighten($color-danger, 35%) !default;
+$color-info:                $color-primary !default;
+$color-info-light:          lighten($color-info, 35%) !default;
+
+$color-background-overlay:  rgba($black, 0.7) !default;
 
 $palette:
   "white"         $white,

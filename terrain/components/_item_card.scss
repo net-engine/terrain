@@ -1,0 +1,23 @@
+.item-card {
+  margin: $gutter / 2 0;
+  padding: $line-height;
+  box-shadow: 0 0.2em 0 0 rgba($black, 0.05);
+
+  .item-identifier {
+    margin: (-$line-height) (-$line-height) $line-height * 0.75;
+    padding: $line-height * 0.75 $line-height;
+    position: relative;
+
+    h1, h2, h3, h4, h5, h6 { margin: 0; }
+  }
+
+  .item-thumbnail {
+    margin: (-$line-height * 0.75) (-$line-height) $line-height * 0.75;
+    height: $line-height * 5;
+    background-size: cover;
+  }
+
+  .item-footer {
+    margin: $line-height (-$line-height) (-$line-height);
+  }
+}
