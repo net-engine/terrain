@@ -1,3 +1,4 @@
+@import url(http://fonts.googleapis.com/css?family=Source+Sans+Pro);
 html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
   margin: 0;
   padding: 0;
@@ -201,6 +202,9 @@ h1 {
   line-height: 1.1339em; }
   h1 + h1, h1 + h2, h1 + h3, h1 + h4, h1 + h5, h1 + h6 {
     margin-top: 0; }
+  @media screen and (max-width: 32em) {
+    h1 {
+      font-size: 2.25em; } }
 
 h2 {
   font-size: 1.75em;
@@ -210,6 +214,9 @@ h2 {
   line-height: 1.275em; }
   h2 + h1, h2 + h2, h2 + h3, h2 + h4, h2 + h5, h2 + h6 {
     margin-top: 0; }
+  @media screen and (max-width: 32em) {
+    h2 {
+      font-size: 1.4em; } }
 
 h3 {
   font-size: 1.5em;
@@ -219,6 +226,9 @@ h3 {
   line-height: 1.36em; }
   h3 + h1, h3 + h2, h3 + h3, h3 + h4, h3 + h5, h3 + h6 {
     margin-top: 0; }
+  @media screen and (max-width: 32em) {
+    h3 {
+      font-size: 1.2em; } }
 
 h4 {
   font-size: 1.25em;
@@ -228,6 +238,9 @@ h4 {
   line-height: 1.36em; }
   h4 + h1, h4 + h2, h4 + h3, h4 + h4, h4 + h5, h4 + h6 {
     margin-top: 0; }
+  @media screen and (max-width: 32em) {
+    h4 {
+      font-size: 1.125em; } }
 
 h5 {
   font-size: 1em;
@@ -367,6 +380,9 @@ main address, main audio, main embed, main object, main map, main svg, main vide
   padding: 3.4em;
   margin-left: auto;
   margin-right: auto; }
+  @media screen and (max-width: 32em) {
+    .container {
+      padding: 1.7em; } }
 
 
 
@@ -458,7 +474,7 @@ math {
     padding-right: 0; } }
 
 .grid-module-container {
-  padding: 3.4em 1.275em;
+  padding: 1.7em 1.275em;
   margin: 0 auto;
   max-width: 52.55em; }
   .grid-module-container:before, .grid-module-container:after {
@@ -468,7 +484,8 @@ math {
     clear: both; }
   @media screen and (min-width: 28.825em) {
     .grid-module-container {
-      max-width: 26.275em; }
+      max-width: 26.275em;
+      padding: 3.4em 1.275em; }
       .grid-module-container .grid-module {
         width: 26.275em; } }
   @media screen and (min-width: 55.1em) {
@@ -1449,7 +1466,6 @@ input[type="file"]::-webkit-file-upload-button {
 .icon-clock:before {
   content: "\e603"; }
 
-@import url(http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700|Montserrat);
 .hero-background, .hero-background img, .hero-background svg {
   position: absolute;
   top: 0;
@@ -1488,6 +1504,9 @@ input[type="file"]::-webkit-file-upload-button {
     text-transform: uppercase; }
     .hero .outline-button:hover, .hero .outline-button:active, .hero .outline-button:visited {
       color: #5694bd; }
+    @media screen and (max-width: 32em) {
+      .hero .outline-button {
+        display: block; } }
 
 .title-container {
   position: relative;
@@ -1616,10 +1635,6 @@ article header {
         left: -100%; } }
   .menu-push-toright {
     overflow: hidden; }
-    @media screen and (max-width: 32em) {
-      .menu-push-toright .menu-push {
-        left: 0;
-        right: 0; } }
     .menu-push-toright .nav-toggle-overlay {
       left: 0;
       opacity: 1; }

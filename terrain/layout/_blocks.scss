@@ -6,6 +6,10 @@
     margin-left: auto;
     margin-right: auto;
   }
+
+  @media screen and (max-width: $breakpoint-small) {
+    padding: $page-margin / 2;
+  }
 }
 
 nav {}

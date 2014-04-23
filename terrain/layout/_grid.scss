@@ -80,7 +80,7 @@
 $grid-module-width: $max-width / 2 + $gutter / 2 !default;
 
 .grid-module-container {
-  padding: $page-margin $gutter / 2;
+  padding: $page-margin / 2 $gutter / 2;
   margin: 0 auto;
   max-width: $grid-module-width * 2;
 
@@ -92,8 +92,11 @@ $grid-module-width: $max-width / 2 + $gutter / 2 !default;
 
   &:after { clear: both; }
 
+
+
   @media screen and (min-width: ($grid-module-width + $gutter)) {
     max-width: $grid-module-width;
+    padding: $page-margin $gutter / 2;
 
     .grid-module {
       @extend .grid-column;
