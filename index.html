@@ -4,13 +4,13 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
-  <title>Terrain - A collection of structural sass for your project.</title>
+  <title>Terrain - A collection of structural stylesheets for your projects.</title>
 
   <!-- Twitter -->
   <meta content="@triggerapp" name="twitter:site">
   <meta content="summary" name="twitter:card">
   <meta content="net-engine/terrain" name="Terrain (by Trigger)">
-  <meta content="A collection of structural sass for your project." name="twitter:description">
+  <meta content="A collection of structural stylesheets for your projects." name="twitter:description">
   <meta content="http://triggerapp.s3.amazonaws.com/images/terrain/avatar.jpg" name="twitter:image:src">
 
   <!-- Facebook -->
@@ -19,9 +19,9 @@
   <meta content="http://triggerapp.s3.amazonaws.com/images/terrain/avatar.jpg" property="og:image">
   <meta content="Terrain (by Trigger)" property="og:title">
   <meta content="http://www.terrain.io" property="og:url">
-  <meta content="A collection of structural sass for your project." property="og:description">
+  <meta content="A collection of structural stylesheets for your projects." property="og:description">
 
-  <meta name="description" content="A collection of structural sass for your project.">
+  <meta name="description" content="A collection of structural stylesheets for your projects.">
   <meta name="viewport" content="width = device-width, initial-scale = 1">
 
   <link rel="icon" href="favicon.ico">
@@ -903,7 +903,7 @@
         <small class="subtitle">by <a href="https://triggerapp.com">Trigger</a></small>
       </h1>
 
-      <h2>A collection of structural sass for your project.</h2>
+      <h2>A collection of structural stylesheets for your projects.</h2>
 
       <a target="_blank" href="https://github.com/net-engine/Terrain" class="button outline-button">Source</a>
 
@@ -917,11 +917,25 @@
   <div class="features">
     <div class="container">
 
+      <dl class="explanation">
+        <dt>What is it?</dt>
+        <dd>
+          Terrain is a collection of useful, structural stylesheets for your web projects. It leans heavily on the best parts of <a href="http://sass-lang.com/" target="_blank">Sass/SCSS</a> to reduce repetition between projects.
+        </dd>
+
+        <dt>What it's not</dt>
+        <dd>
+          Terrain is not a front-end framework built for prototyping, though it can used that way. It differs from popular frameworks such as <a href="http://getbootstrap.com/" target="_blank">Bootstrap</a> or <a href="http://foundation.zurb.com/">Foundation</a> by being much lighter, and aims to stay that way. It's much closer to the wonderful <a href="http://www.getskeleton.com/">Skeleton</a>, though tailored more towards modern web app UI.
+        </dd>
+      </dl>
+
+      <h4>Terrain is&hellip;</h4>
+
       <ul class="feature-list no-dot grid-container">
-        <li class='one-half icon-settings'>Easy to install.</li>
-        <li class="one-half icon-diamond">Shiny.</li>
+        <li class='one-half icon-settings'>Easily configurable.</li>
+        <li class="one-half icon-diamond">Expertly crafted.</li>
         <li class="one-half icon-phone">Responsive.</li>
-        <li class="one-half icon-clock">Save time on your projects.</li>
+        <li class="one-half icon-clock">Fast to set up.</li>
       </ul>
 
     </div>
@@ -935,13 +949,13 @@
   <nav id="nav-menu" class="nav menu menu-vertical menu-left">
     <div class="container">
       <ul>
+        <li><a href="#layout">Layout</a></li>
         <li><a href="#typography">Typography</a></li>
         <li><a href="#blocks">Blocks</a></li>
         <li><a href="#media">Media</a></li>
         <li><a href="#tables">Tables</a></li>
         <li><a href="#interactive">Interactive Elements</a></li>
         <li><a href="#components">Components</a></li>
-        <li><a href="#">Layout</a></li>
     </div>
   </nav>
   <button id="show-menu" class="nav-toggle">
@@ -949,6 +963,114 @@
   </button>
 
   <main>
+    <article id="layout">
+      <header>
+        <div class="container">
+          <h1>Layout</h1>
+        </div>
+      </header>
+      <section class="gray-lighter-background">
+        <div class="container">
+          <h2>Simple Grid</h2>
+          <p>The simple grid is what is predominantly used on this page. It is intended for simple content organisation. Useful for website content or form layouts.</p>
+          <hr />
+          <div class="grid-container">
+            <div class="one-half">
+              <p>Nunc eu ullamcorper orci. Quisque eget odio ac lectus vestibulum faucibus eget in metus. In pellentesque faucibus vestibulum. Nulla at nulla justo, eget luctus tortor. Nulla facilisi. Duis aliquet egestas purus in blandit. Curabitur vulputate, ligula lacinia scelerisque tempor.</p>
+            </div>
+            <div class="one-half">
+              <p>Curabitur vulputate, ligula lacinia scelerisque tempor, lacus lacus ornare ante, ac egestas est urna sit amet arcu. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Sed molestie augue sit amet.</p>
+            </div>
+          </div>
+          <hr />
+          <div class="grid-container">
+            <div class="one-third">
+              <p>Suspendisse dictum feugiat nisl ut dapibus. Mauris iaculis porttitor posuere. Praesent id metus massa, ut blandit odio. Proin quis tortor orci. Etiam.</p>
+            </div>
+            <div class="one-third">
+              <p>Sed molestie augue sit amet leo consequat posuere. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae;.</p>
+            </div>
+            <div class="one-third">
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus luctus urna sed urna ultricies ac tempor dui sagittis. In.</p>
+            </div>
+          </div>
+          <hr />
+          <div class="grid-container">
+            <div class="one-quarter">
+              <p>Sed molestie augue sit amet leo consequat posuere. Vestibulum ante ipsum primis in faucibus orci.</p>
+            </div>
+            <div class="one-quarter">
+              <p>Praesent id metus massa, ut blandit odio. Proin quis tortor orci. Etiam at risus.</p>
+            </div>
+            <div class="one-quarter">
+              <p>Nulla at nulla justo, eget luctus tortor. Nulla facilisi. Duis aliquet egestas purus.</p>
+            </div>
+            <div class="one-quarter">
+              <p>Quisque eget odio ac lectus vestibulum faucibus eget in metus. In pellentesque faucibus vestibulum.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section>
+        <div class="container">
+          <h2>Modular Grid</h2>
+          <p>The modular grid is intended for fixed-ish layouts. Sites and Apps that are heavy on lists of index cards or gallery thumbnail views would benefit from the modular grid.</p>
+        </div>
+      </section>
+      <section class="gray-light-background">
+        <div class="grid-module-container">
+          <div class="grid-module">
+            <div class="item-card white-background">
+              <header class="item-identifier gray-dark-background white-foreground">
+                <h5>This is an item card</h5>
+              </header>
+              <p>Mauris iaculis porttitor posuere. Praesent id metus massa, ut blandit odio. Proin quis tortor orci. Etiam.</p>
+            </div>
+          </div>
+          <div class="grid-module">
+            <div class="item-card white-background">
+              <header class="item-identifier gray-background white-foreground">
+              <h5>One simple module</h5>
+            </header>
+              <p>Praesent id metus massa, ut blandit odio. Proin quis tortor orci. Etiam at risus et justo dignissim congue. Donec congue lacinia.</p>
+            </div>
+          </div>
+          <div class="grid-module">
+            <div class="item-card white-background">
+              <header class="item-identifier primary-background white-foreground">
+                <h5>Useful for grid lists</h5>
+              </header>
+              <p>Suspendisse dictum feugiat nisl ut dapibus. Mauris iaculis porttitor posuere. Praesent id metus massa, ut blandit.</p>
+            </div>
+          </div>
+          <div class="grid-module">
+            <div class="item-card white-background">
+              <header class="item-identifier success-background white-foreground">
+                <h5>You know...</h5>
+              </header>
+              <p>Donec congue lacinia dui, a porttitor lectus condimentum laoreet. Nunc eu ullamcorper orci. Quisque eget odio ac.</p>
+            </div>
+          </div>
+          <div class="grid-module">
+            <div class="item-card white-background">
+              <header class="item-identifier warning-background white-foreground">
+                <h5>Like a gallery</h5>
+              </header>
+              <p>Etiam at risus et justo dignissim congue. Donec congue lacinia dui, a porttitor lectus condimentum laoreet. Nunc.</p>
+            </div>
+          </div>
+          <div class="grid-module">
+            <div class="item-card white-background">
+              <header class="item-identifier danger-background white-foreground">
+                <h5>Or an index of contacts</h5>
+              </header>
+              <p>Phasellus molestie magna non est bibendum non venenatis nisl tempor. Suspendisse dictum feugiat nisl ut dapibus.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </article>
+
     <article id="typography">
 
       <header>
@@ -958,10 +1080,7 @@
       </header>
       <section>
         <div class="container">
-          <header>
-            <h2>Vertical Rhythm</h2>
-            <button class="show-html">Toggle HTML</button>
-          </header>
+          <h2>Vertical Rhythm</h2>
 
           <div class="content">
             <p>Curabitur vulputate, ligula lacinia scelerisque tempor, lacus lacus ornare ante, ac egestas est urna sit amet arcu. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Sed molestie augue sit amet leo consequat posuere. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Proin vel ante a orci tempus eleifend ut et magna. Lorem.</p>
@@ -975,12 +1094,9 @@
         </div>
       </section>
 
-      <section>
+      <section class="gray-lighter-background">
         <div class="container">
-          <header>
-            <h2>Scale</h2>
-            <button class="show-html">Toggle HTML</button>
-          </header>
+          <h2>Scale</h2>
 
           <div class="content">
             <h1>In computer programming, boilerplate code or boilerplate is</h1>
@@ -1003,37 +1119,36 @@
       <section>
         <div class="container">
           <header>
-            <h2>Span elements</h2>
+            <h2>Span elements (leave no man behind!)</h2>
             <button class="show-html">Toggle HTML</button>
           </header>
 
           <div class="content">
-            <a>Anchor</a>
-            <em>Emphasis</em>
-            <strong>Strong</strong>
-            <small>Small</small>
-            <s>Strike through</s>
-            <cite>Citation</cite>
-            <q>Inline quote</q>
-            <dfn>Definition</dfn>
-            <abbr>Abbreviation</abbr>
-            <time>Time</time>
-            <code>Inline code</code>
-            <var>Variable</var>
-            <samp>Sample output</samp>
-            <kbd>User input representation (Keyboard Input Element)</kbd>
-            <sub>Subscript</sub>
-            <sup>Superscript</sup>
-            <i>Italic</i>
-            <b>Bold</b>
-            <u>Underscore</u>
-            <mark>Highlight</mark>
-            <ins>Defines an addition to the document.</ins>
-            <del>Defines a removal from the document.</del>
+            <ul>
+              <li><a>Anchor</a></li>
+              <li><em>Emphasis</em></li>
+              <li><strong>Strong</strong></li>
+              <li><small>Small</small></li>
+              <li><s>Strike through</s></li>
+              <li><cite>Citation</cite></li>
+              <li><q>Inline quote</q></li>
+              <li><abbr title="Abbreviation">ABBR</abbr></li>
+              <li><code>Inline code</code></li>
+              <li><var>Variable</var></li>
+              <li><samp>Sample output</samp></li>
+              <li><kbd>User input representation (Keyboard Input Element)</kbd></li>
+              <li><sub>Subscript</sub>&nbsp;<sup>Superscript</sup></li>
+              <li><i>Italic</i></li>
+              <li><b>Bold</b></li>
+              <li><u>Underscore</u></li>
+              <li><mark>Highlight</mark></li>
+              <li><ins>Insert: Defines an aliition to the document.</ins></li>
+              <li><del>Delete: Defines a removal from the document.</del></li>
+            </ul>
           </div>
         </div>
       </section>
-      <section>
+      <section class="primary-light-background">
         <div class="container">
           <header>
             <h2>Standard Lists</h2>
@@ -1041,24 +1156,24 @@
           </header>
 
           <div class="content">
-            <ol>
-              <li>Vestibulum ante ipsum primis in faucibus.</li>
-              <li>In condimentum facilisis porta. Sed nec diam eu diam mattis viverra. Nulla fringilla, orci ac euismod semper, magna diam porttitor mauris, quis sollicitudin sapien justo in.</li>
-            </ol>
+<ol>
+  <li>Vestibulum ante ipsum primis in faucibus.</li>
+  <li>In condimentum facilisis porta. Sed nec diam eu diam mattis viverra. Nulla fringilla, orci ac euismod semper, magna diam porttitor mauris, quis sollicitudin sapien justo in.</li>
+</ol>
 
-            <ul>
-              <li>Donec congue lacinia dui, a porttitor lectus condimentum laoreet. Nunc eu ullamcorper orci. Quisque eget odio ac lectus vestibulum faucibus eget in metus. In pellentesque faucibus vestibulum. Nulla at nulla justo, eget.</li>
-              <li>Nulla facilisi. Duis aliquet egestas purus in blandit. Curabitur vulputate, ligula lacinia scelerisque tempor, lacus.</li>
-            </ul>
+<ul>
+  <li>Donec congue lacinia dui, a porttitor lectus condimentum laoreet. Nunc eu ullamcorper orci. Quisque eget odio ac lectus vestibulum faucibus eget in metus. In pellentesque faucibus vestibulum. Nulla at nulla justo, eget.</li>
+  <li>Nulla facilisi. Duis aliquet egestas purus in blandit. Curabitur vulputate, ligula lacinia scelerisque tempor, lacus.</li>
+</ul>
 
-            <dl>
-              <dt>Duis Aliquet Egestas</dt>
-              <dd>Duis aliquet egestas purus in blandit. Curabitur vulputate, ligula lacinia scelerisque tempor.</dd>
-            </dl>
+<dl>
+  <dt>Duis Aliquet Egestas</dt>
+  <dd>Duis aliquet egestas purus in blandit. Curabitur vulputate, ligula lacinia scelerisque tempor.</dd>
+</dl>
           </div>
         </div>
       </section>
-      <section>
+      <section class="gray-lighter-background">
         <div class="container">
           <header>
             <h2>Extended Lists</h2>
@@ -1066,15 +1181,15 @@
           </header>
 
           <div class="content grid-container">
-            <ul class="ruled-list one-half first no-dot">
-              <li class="success-border">Vestibulum ante ipsum primis in faucibus.</li>
-              <li class="info-border">In condimentum facilisis porta. Sed nec diam eu diam mattis viverra. Nulla fringilla, orci ac euismod semper, magna diam porttitor mauris, quis sollicitudin sapien justo in.</li>
-            </ul>
+<ul class="ruled-list one-half first no-dot">
+  <li class="success-border">Vestibulum ante ipsum primis in faucibus.</li>
+  <li class="info-border">In condimentum facilisis porta. Sed nec diam eu diam mattis viverra. Nulla fringilla, orci ac euismod semper, magna diam porttitor mauris, quis sollicitudin sapien justo in.</li>
+</ul>
 
-            <ul class="circle-list one-half last">
-              <li>Donec congue lacinia dui, a porttitor lectus condimentum laoreet. Nunc eu ullamcorper orci. Quisque eget odio ac lectus vestibulum faucibus eget in metus. In pellentesque faucibus vestibulum. Nulla at nulla justo, eget.</li>
-              <li>Nulla facilisi. Duis aliquet egestas purus in blandit. Curabitur vulputate, ligula lacinia scelerisque tempor, lacus.</li>
-            </ul>
+<ul class="circle-list one-half last">
+  <li>Donec congue lacinia dui, a porttitor lectus condimentum laoreet. Nunc eu ullamcorper orci. Quisque eget odio ac lectus vestibulum faucibus eget in metus. In pellentesque faucibus vestibulum. Nulla at nulla justo, eget.</li>
+  <li>Nulla facilisi. Duis aliquet egestas purus in blandit. Curabitur vulputate, ligula lacinia scelerisque tempor, lacus.</li>
+</ul>
           </div>
         </div>
       </section>
@@ -1095,17 +1210,17 @@
           </header>
 
           <div class="content">
-            <blockquote>
-              In condimentum facilisis porta. Sed nec diam eu diam mattis viverra. Nulla fringilla, orci ac euismod semper, magna diam porttitor mauris, quis sollicitudin sapien justo in libero. Vestibulum mollis mauris enim. Morbi euismod magna.
-            </blockquote>
+<blockquote>
+  In condimentum facilisis porta. Sed nec diam eu diam mattis viverra. Nulla fringilla, orci ac euismod semper, magna diam porttitor mauris, quis sollicitudin sapien justo in libero. Vestibulum mollis mauris enim. Morbi euismod magna.
+</blockquote>
 
-            <pre><span class="primary-light-foreground">document</span>.write(<span class="success-light-foreground">'Hello world'</span>);</pre>
+<pre><span class="primary-light-foreground">document</span>.write(<span class="success-light-foreground">'Hello world'</span>);</pre>
 
-            <details>
-              <summary>Summary</summary>
+<details>
+  <summary>Summary</summary>
 
-              <p>Details content. Sed molestie augue sit amet leo consequat posuere. Vestibulum ante ipsum primis in faucibus orci luctus.</p>
-            </details>
+  <p>Details content. Sed molestie augue sit amet leo consequat posuere. Vestibulum ante ipsum primis in faucibus orci luctus.</p>
+</details>
           </div>
         </div>
       </section>
@@ -1146,133 +1261,58 @@
           </header>
 
           <div class="content">
-            <table>
-              <tr>
-                <td>John</td>
-                <td>Doe</td>
-              </tr>
-              <tr>
-                <td>Jane</td>
-                <td>Doe</td>
-              </tr>
-            </table>
+<table>
+  <tr>
+    <td>John</td>
+    <td>Doe</td>
+  </tr>
+  <tr>
+    <td>Jane</td>
+    <td>Doe</td>
+  </tr>
+</table>
           </div>
 
           <header>
-            <h3>Simple table with header</h3>
+            <h2>Table with thead, tfoot, and tbody</h2>
             <button class="show-html">Toggle HTML</button>
           </header>
 
           <div class="content">
-            <table>
-              <tr>
-                <th>First name</th>
-                <th>Last name</th>
-              </tr>
-              <tr>
-                <td>John</td>
-                <td>Doe</td>
-              </tr>
-              <tr>
-                <td>Jane</td>
-                <td>Doe</td>
-              </tr>
-            </table>
+<table>
+  <thead>
+    <tr>
+      <th>Header content 1</th>
+      <th>Header content 2</th>
+    </tr>
+  </thead>
+  <tfoot>
+    <tr>
+      <td>Footer content 1</td>
+      <td>Footer content 2</td>
+    </tr>
+  </tfoot>
+  <tbody>
+    <tr>
+      <td>Body content 1</td>
+      <td>Body content 2</td>
+    </tr>
+  </tbody>
+</table>
           </div>
 
           <header>
-            <h3>Table with thead, tfoot, and tbody</h3>
+            <h2>Simple table with caption</h2>
             <button class="show-html">Toggle HTML</button>
           </header>
 
           <div class="content">
-            <table>
-              <thead>
-                <tr>
-                  <th>Header content 1</th>
-                  <th>Header content 2</th>
-                </tr>
-              </thead>
-              <tfoot>
-                <tr>
-                  <td>Footer content 1</td>
-                  <td>Footer content 2</td>
-                </tr>
-              </tfoot>
-              <tbody>
-                <tr>
-                  <td>Body content 1</td>
-                  <td>Body content 2</td>
-                </tr>
-              </tbody>
-            </table>
-          </div>
-
-          <header>
-            <h3>Table with colgroup</h3>
-            <button class="show-html">Toggle HTML</button>
-          </header>
-
-          <div class="content">
-            <table>
-              <colgroup span="4" class="columns"></colgroup>
-              <tr>
-                <th>Countries</th>
-                <th>Capitals</th>
-                <th>Population</th>
-                <th>Language</th>
-              </tr>
-              <tr>
-                <td>USA</td>
-                <td>Washington D.C.</td>
-                <td>309 million</td>
-                <td>English</td>
-              </tr>
-              <tr>
-                <td>Sweden</td>
-                <td>Stockholm</td>
-                <td>9 million</td>
-                <td>Swedish</td>
-              </tr>
-            </table>
-          </div>
-
-          <header>
-            <h3>Table with colgroup and col</h3>
-            <button class="show-html">Toggle HTML</button>
-          </header>
-
-          <div class="content">
-            <table>
-              <colgroup>
-                <col class="column1">
-                <col class="columns2plus3" span="2">
-              </colgroup>
-              <tr>
-                <th>Lime</th>
-                <th>Lemon</th>
-                <th>Orange</th>
-              </tr>
-              <tr>
-                <td>Green</td>
-                <td>Yellow</td>
-                <td>Orange</td>
-              </tr>
-            </table>
-          </div>
-
-          <header>
-            <h3>Simple table with caption</h3>
-            <button class="show-html">Toggle HTML</button>
-          </header>
-
-          <div class="content">
-            <table>
-              <caption>Awesome caption</caption>
-              <tr>
-                <td>Awesome data</td>
-              </tr>
-            </table>
+<table>
+  <caption>Awesome caption</caption>
+  <tr>
+    <td>Awesome data</td>
+  </tr>
+</table>
           </div>
         </div>
       </section>
@@ -1463,7 +1503,7 @@
       </section>
       <section>
         <div class="container">
-          <h3>Buttons</h3>
+          <h2>Buttons</h2>
 
           <button type="submit">Submit</button>
           <button type="submit" disabled="disabled">Submit</button>
@@ -1499,18 +1539,18 @@
         <div class="container">
 
           <header>
-            <h3>Wizard</h3>
+            <h2>Wizard</h2>
             <button class="show-html">Toggle HTML</button>
           </header>
 
           <div class="content">
-            <fieldset class="wizard-progress">
-              <button>First</button>
-              <button>Middle</button>
-              <button class="active">Active</button>
-              <button disabled="disabled">Disabled</button>
-              <button>Last</button>
-            </fieldset>
+<fieldset class="wizard-progress">
+  <button>First</button>
+  <button>Middle</button>
+  <button class="active">Active</button>
+  <button disabled="disabled">Disabled</button>
+  <button>Last</button>
+</fieldset>
           </div>
 
         </div>
@@ -1518,66 +1558,71 @@
       <section>
         <div class="container">
           <header>
-            <h3>Modals</h3>
+            <h2>Modals</h2>
             <button class="show-html">Toggle HTML</button>
           </header>
 
+
           <div class="content">
-            <button id="modal-open">Open modal</button>
+<p>
+  <button id="modal-open">Open modal</button>
+</p>
 
-            <div class="modal-overlay" id="modal-overlay"></div>
+<div class="modal-overlay" id="modal-overlay"></div>
 
-            <div class="modal" id="modal">
-              <div class="modal-content white-background gray-lighter-border border-heavy-solid">
-                <header class="modal-header gray-lighter-border border-bottom-heavy-solid">
-                  <h4>Modal</h4>
-                  <button class="absolute-top-right inset-one" id="modal-close">Close</button>
-                </header>
+<div class="modal drop" id="modal">
+  <div class="modal-content white-background gray-lighter-border border-heavy-solid">
+    <header class="modal-header gray-lighter-border border-bottom-heavy-solid">
+      <h4>Modal</h4>
+    </header>
 
-                <p>Proin quis tortor orci. Etiam at risus et justo dignissim congue. Donec congue lacinia dui, a porttitor.</p>
+    <p>Proin quis tortor orci. Etiam at risus et justo dignissim congue. Donec congue lacinia dui, a porttitor.</p>
 
-                <footer class="modal-footer gray-lighter-border border-top-light-solid">
-                  <button type="button" id="modal-cancel">Cancel</button>
-                  <button type="submit" id="modal-submit">Confirm</button>
-                </footer>
-              </div>
-            </div>
+    <footer class="modal-footer gray-lighter-border border-top-light-solid">
+      <button type="button" id="modal-cancel">Cancel</button>
+      <button type="submit" id="modal-submit">Confirm</button>
+    </footer>
+    <button class="absolute-top-right inset-one" id="modal-close">Close</button>
+  </div>
+</div>
           </div>
+          <p>Terrain modals and flyout menus are intended to provided the structure you need to plug in cool animation libraries such as Effekt and Animate.</p>
+
         </div>
       </section>
       <section>
         <div class="container">
           <header>
-            <h3>Menus</h3>
+            <h2>Menus</h2>
             <button class="show-html">Toggle HTML</button>
           </header>
 
           <div class="content">
-            <div class="flyout-menu-wrap" id="left-flyout-menu-wrap">
-              <button id="open-left-flyout-menu">Left aligned menu</button>
+<div class="flyout-menu-wrap" id="left-flyout-menu-wrap">
+  <button id="open-left-flyout-menu">Left aligned menu</button>
 
-              <div class="flyout-menu-overlay" id="left-flyout-overlay"></div>
-              <div class="flyout-menu flyout-menu-bottom-left">
-                <menu class="flyout-menu-content white-background">
-                  <li><button>A Menu Item</button></li>
-                  <li><button>And another</button></li>
-                  <li><button>With an item containing a lot of text</button></li>
-                </menu>
-              </div>
-            </div>
+  <div class="flyout-menu-overlay" id="left-flyout-overlay"></div>
+  <div class="flyout-menu flyout-menu-bottom-left">
+    <menu class="flyout-menu-content white-background">
+      <li><button>A Menu Item</button></li>
+      <li><button>And another</button></li>
+      <li><button>With an item containing a lot of text</button></li>
+    </menu>
+  </div>
+</div>
 
-            <div class="flyout-menu-wrap" id="right-flyout-menu-wrap">
-              <button id="open-right-flyout-menu">Right aligned menu</button>
+<div class="flyout-menu-wrap" id="right-flyout-menu-wrap">
+  <button id="open-right-flyout-menu">Right aligned menu</button>
 
-              <div class="flyout-menu-overlay" id="right-flyout-overlay"></div>
-              <div class="flyout-menu flyout-menu-bottom-right">
-                <menu class="flyout-menu-content white-background">
-                  <li><button>With an item containing a lot of text</button></li>
-                  <li><button>A Menu Item</button></li>
-                  <li><button>And another</button></li>
-                </menu>
-              </div>
-            </div>
+  <div class="flyout-menu-overlay" id="right-flyout-overlay"></div>
+  <div class="flyout-menu flyout-menu-bottom-right">
+    <menu class="flyout-menu-content white-background">
+      <li><button>With an item containing a lot of text</button></li>
+      <li><button>A Menu Item</button></li>
+      <li><button>And another</button></li>
+    </menu>
+  </div>
+</div>
           </div>
         </div>
       </section>
@@ -1588,6 +1633,10 @@
   <footer>
     <div class="container">
       Made by <a href="https://triggerapp.com">Trigger</a>.
+
+      &nbsp;&nbsp;&nbsp;
+
+      <span>Contact us: <a href="https://twitter.com/terraincss">@terraincss</a></span>
     </div>
   </footer>
 
