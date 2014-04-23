@@ -11,10 +11,14 @@ $features-bg-color: #001053;
 
 @import 'terrain';
 
+<<<<<<< HEAD
 // Include compents
 
 @import 'terrain/components/tabs',
         'terrain/components/wizard';
+=======
+@import 'terrain/components/modal';
+>>>>>>> Adds modal component
 
 @import 'icons';
 

@@ -1,6 +1,6 @@
 @mixin button() {
   @include rounded-box(inline-block, false);
-  padding: $line-height / 4 $line-height / 2;
+  padding: $line-height / 5 $line-height / 2;
   margin: 0;
   width: auto;
   height: auto;

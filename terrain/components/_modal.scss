@@ -1,0 +1,38 @@
+.modal {
+  @include animatableHide;
+
+  &.open {
+    left: 50%;
+    top: 50%;
+    visibility: visible;
+    transform: translate(-50%, -50%);
+  }
+
+  .modal-content { padding: $line-height; }
+  .modal-header { margin-bottom: $line-height; }
+  .modal-footer { padding-top: $line-height; }
+}
+
+.modal .modal-content {
+  transition: all 0.5s ease;
+  transform: scale(1.2);
+}
+.modal.open .modal-content { transform: scale(1); }
+
+.modal-overlay {
+  @include animatableHide;
+
+  background-color: rgba($black, 0.7);
+
+  &.open {
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    visibility: visible;
+  }
+}
+
+.modal-overlay { transition: opacity 0.2s ease; }
+.modal-overlay { opacity: 0; }
+.modal-overlay.open { opacity: 1; }

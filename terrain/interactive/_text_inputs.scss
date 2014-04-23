@@ -39,6 +39,10 @@ textarea {
     background-color: $input-hover-background-color;
     border-color: $input-hover-border-color;
   }
+
+  &:required, &:invalid {
+    box-shadow: none !important;
+  }
 }
 
 textarea {

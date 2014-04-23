@@ -19,3 +19,10 @@
   height: $size;
   text-align: center;
 }
+
+@mixin animatableHide ($position: fixed) {
+  visibility: hidden;
+  position: $position;
+  left: -100%;
+  top: -100%;
+}

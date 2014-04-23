@@ -3,6 +3,10 @@ ul, ol {
   margin-top: 0;
 }
 
+menu {
+  list-style: none;
+}
+
 main {
   ol, ul:not(.no-dot) {
     margin-bottom: $line-height;
@@ -76,76 +80,3 @@ main {
 
   li:before { font-size: 1.333em; }
 }
-
-
-// <ul>
-//   <li>first item</li>
-//   <li>second item</li>
-//   <li>third item</li>
-// </ul>
-
-// <ul>
-//   <li>first item</li>
-//   <li>second item
-//     <ul>
-//       <li>second item first subitem</li>
-//       <li>second item second subitem
-//         <ul>
-//           <li>second item second subitem first sub-subitem</li>
-//           <li>second item second subitem second sub-subitem</li>
-//           <li>second item second subitem third sub-subitem</li>
-//         </ul>
-//       </li>
-//       <li>second item third subitem</li>
-//     </ul>
-//   </li>
-//   <li>third item</li>
-// </ul>
-
-// <ul>
-//   <li>first item</li>
-//   <li>second item
-//     <ol>
-//       <li>second item first subitem</li>
-//       <li>second item second subitem</li>
-//       <li>second item third subitem</li>
-//     </ol>
-//   </li>
-//   <li>third item</li>
-// </ul>
-
-// <ol>
-//   <li>first item</li>
-//   <li>second item</li>
-//   <li>third item</li>
-// </ol>
-
-// <ol start="7">
-//   <li>first item</li>
-//   <li>second item</li>
-//   <li>third item</li>
-// </ol>
-
-// <ol>
-//   <li>first item</li>
-//   <li>second item
-//     <ol>
-//       <li>second item first subitem</li>
-//       <li>second item second subitem</li>
-//       <li>second item third subitem</li>
-//     </ol>
-//   </li>
-//   <li>third item</li>
-// </ol>
-
-// <ol>
-//   <li>first item</li>
-//   <li>second item
-//     <ul>
-//       <li>second item first subitem</li>
-//       <li>second item second subitem</li>
-//       <li>second item third subitem</li>
-//     </ul>
-//   </li>
-//   <li>third item</li>
-// </ol>

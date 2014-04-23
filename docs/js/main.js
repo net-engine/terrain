@@ -17,7 +17,6 @@
     var overLay     = document.getElementById('nav-toggle-overlay');
 
     menuToggle.addEventListener('click', function () {
-      console
       menuToggle.classList.toggle('active');
       body.classList.toggle('menu-push-toright');
       menu.classList.toggle('menu-open');
@@ -27,6 +26,36 @@
       menuToggle.classList.remove('active');
       body.classList.remove('menu-push-toright');
       menu.classList.remove('menu-open');
+    });
+  })();
+
+  (function modalToggle() {
+    var modalButton = document.getElementById('modal-open');
+    var modalClose  = document.getElementById('modal-close');
+    var modalSubmit = document.getElementById('modal-submit');
+    var modal       = document.getElementById('modal');
+    var overLay     = document.getElementById('modal-overlay');
+
+    function closeModal () {
+      modal.classList.remove('open');
+      overLay.classList.remove('open');
+    }
+
+    modalButton.addEventListener('click', function () {
+      modal.classList.toggle('open');
+      overLay.classList.toggle('open');
+    });
+
+    modalSubmit.addEventListener('click', function () {
+      closeModal();
+    });
+
+    modalClose.addEventListener('click', function () {
+      closeModal();
+    });
+
+    overLay.addEventListener('click', function () {
+      closeModal();
     });
   })();
 })(window || this);

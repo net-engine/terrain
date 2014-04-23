@@ -1,0 +1,13 @@
+.label-as-button-radio,
+.label-as-button-checkbox {
+  display: inline-block;
+  position: relative;
+  overflow: hidden;
+
+  input[type="radio"],
+  input[type="checkbox"] {
+    position: absolute;
+    top: -100%;
+    left: -100%;
+  }
+}
