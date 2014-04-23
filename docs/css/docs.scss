@@ -190,6 +190,9 @@ article header {
 
 
 @media screen and (max-width: $breakpoint-medium) {
+  #nav-menu + div {
+    display: none !important;
+  }
 
   .menu,
   .nav-toggle {

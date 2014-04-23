@@ -1569,6 +1569,8 @@ article header {
           text-transform: none; }
 
 @media screen and (max-width: 50em) {
+  #nav-menu + div {
+    display: none !important; }
   .menu, .nav-toggle {
     -webkit-transition: all 0.3s ease;
     transition: all 0.3s ease; }
