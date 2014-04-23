@@ -102,8 +102,21 @@ $features-bg-color: #001053;
   background-image: linear-gradient($features-bg-color, darken(adjust-hue($features-bg-color, 90deg), 7.5%));
 }
 
+dl.explanation {
+  font-size: 1.125em;
+  line-height: $line-height;
+
+  dt {
+    font-weight: 700;
+  }
+
+  dd {
+    margin-bottom: $line-height;
+  }
+}
+
 .feature-list {
-  font-size: 1.25em;
+  font-size: 1.125em;
 
   li {
     vertical-align: top;
@@ -132,6 +145,22 @@ article header {
   &:before {
     content: '</>';
     margin-right: .5em;
+  }
+
+  @media screen and (max-width: $breakpoint-medium) {
+    text-indent: -9999px;
+    width: 3em;
+
+    &:before {
+      text-indent: 0;
+      position: absolute;
+      top: 50%;
+      left: 0;
+      right: 0;
+      text-align: center;
+      line-height: 1em;
+      margin: -.5em 0;
+    }
   }
 }
 

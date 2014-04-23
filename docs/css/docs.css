@@ -1510,8 +1510,16 @@ input[type="file"]::-webkit-file-upload-button {
   background-image: -webkit-linear-gradient(#001053, #2d001f);
   background-image: linear-gradient(#001053, #2d001f); }
 
+dl.explanation {
+  font-size: 1.125em;
+  line-height: 1.7em; }
+  dl.explanation dt {
+    font-weight: 700; }
+  dl.explanation dd {
+    margin-bottom: 1.7em; }
+
 .feature-list {
-  font-size: 1.25em; }
+  font-size: 1.125em; }
   .feature-list li {
     vertical-align: top;
     margin-bottom: 1.7em; }
@@ -1532,6 +1540,19 @@ article header {
   .show-html:before {
     content: '</>';
     margin-right: 0.5em; }
+  @media screen and (max-width: 50em) {
+    .show-html {
+      text-indent: -9999px;
+      width: 3em; }
+      .show-html:before {
+        text-indent: 0;
+        position: absolute;
+        top: 50%;
+        left: 0;
+        right: 0;
+        text-align: center;
+        line-height: 1em;
+        margin: -0.5em 0; } }
 
 .nav-toggle {
   display: none; }
