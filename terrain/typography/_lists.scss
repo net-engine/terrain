@@ -7,73 +7,44 @@ menu {
   list-style: none;
 }
 
-main {
-  ol, ul:not(.no-dot) {
-    margin-bottom: $line-height;
+ol, ul {
+  margin-bottom: $line-height;
 
-    li {
-      list-style: none;
-      display: block;
-      position: relative;
-      padding-left: 1.5em;
-
-      &:before {
-        position: absolute;
-        left:0;
-        line-height: $line-height;
-        top: 0;
-        width: 1em;
-        font-weight: bold;
-      }
-
-      ul li:before { content: '-' }
-    }
-  }
-
-  ul:not(.no-dot) li:before { content: "•"; }
-
-  ol {
-    list-style: decimal;
-    counter-reset: item;
-
-    li:before {
-      content: counter(item) ". ";
-      counter-increment: item;
-    }
-  }
-
-  dl {
-    margin-bottom: $line-height;
-
-    dt {
-      font-weight: 600;
-    }
-  }
-}
-
-.circle-list li {
-  @extend .icon-position-left;
-
-  &:before {
-    @include circle;
-  }
-}
-
-.ruled-list, .meta-list {
   li {
-    @extend .border-top-light-solid;
-    margin-bottom: $line-height / 4;
-    padding-top: $line-height / 4;
+    list-style: none;
+    display: block;
+    position: relative;
+    padding-left: 1.5em;
 
-    ul {
-      margin-top: $line-height / 4;
-      margin-left: $page-margin / 2;
+    &:before {
+      position: absolute;
+      left:0;
+      line-height: $line-height;
+      top: 0;
+      width: 1em;
+      font-weight: bold;
     }
+
+    ul li:before { content: '-' }
   }
 }
 
-.meta-list {
-  @extend .circle-list;
+ul li:before { content: "•"; }
 
-  li:before { font-size: 1.333em; }
+ol {
+  list-style: decimal;
+  counter-reset: item;
+
+  li:before {
+    content: counter(item) ". ";
+    counter-increment: item;
+  }
+}
+
+dl {
+  margin-bottom: $line-height;
+
+  dt {
+    font-weight: 600;
+  }
 }

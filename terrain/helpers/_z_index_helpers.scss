@@ -1,0 +1,12 @@
+$layers:  'one',
+          'two',
+          'three',
+          'four' !default;
+
+@for $i from 1 through length($layers) {
+  $layer: nth($layers, $i);
+
+  .layer-#{$layer} {
+    z-index: $i;
+  }
+}
