@@ -32,14 +32,12 @@ select {
     color: $select-hover-foreground-color;
     background-color: $select-hover-background-color;
     border-color: $select-hover-border-color;
-    background-image: url("data:image/svg+xml;utf8, <svg version=\"1.1\" xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" width=\"32\" height=\"32\" viewBox=\"0 0 32 32\"><path fill=\"#{ $select-hover-foreground-color }\" d=\"M8 12l8 8 8-8z\" /></svg>");
   }
 
   &:focus {
     color: $select-focus-foreground-color;
     background-color: $select-focus-background-color;
     border-color: $select-focus-border-color;
-    background-image: url("data:image/svg+xml;utf8, <svg version=\"1.1\" xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" width=\"32\" height=\"32\" viewBox=\"0 0 32 32\"><path fill=\"#{ $select-focus-foreground-color }\" d=\"M8 12l8 8 8-8z\" /></svg>");
   }
 
   &[multiple] { background-image: none; }
@@ -56,5 +54,9 @@ select {
     text-indent: 0.01px;
     text-overflow: '';
     background-image: url("data:image/svg+xml;utf8, <svg version=\"1.1\" xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" width=\"32\" height=\"32\" viewBox=\"0 0 32 32\"><path d=\"M8 12l8 8 8-8z\" /></svg>");
+
+    &:hover, &:focus {
+      background-image: url("data:image/svg+xml;utf8, <svg version=\"1.1\" xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" width=\"32\" height=\"32\" viewBox=\"0 0 32 32\"><path d=\"M8 12l8 8 8-8z\" /></svg>");
+    }
   }
 }
