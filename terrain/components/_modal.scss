@@ -4,6 +4,7 @@
   &.open {
     visibility: visible;
     @extend .fixed-center;
+    z-index: 9999;
 
     @media screen and (max-width: $breakpoint-small) {
       transform: none;
@@ -27,6 +28,7 @@
 
 .modal-overlay {
   @include animatableHide;
+  z-index: 9998;
 
   background-color: $color-background-overlay;
 

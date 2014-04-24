@@ -34,6 +34,7 @@ $flyout-menu-width: 18em;
     left: auto;
     right: auto;
     bottom: auto;
+    z-index: 9998;
 
     &.flyout-menu-bottom-left,
     &.flyout-menu-bottom-right {
@@ -69,6 +70,7 @@ $flyout-menu-width: 18em;
   left: 0;
   right: 0;
   bottom: 0;
+  z-index: 9997;
 }
 
 .flyout-menu-wrap .flyout-menu {
