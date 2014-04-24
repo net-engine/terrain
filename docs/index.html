@@ -21,10 +21,14 @@
   <meta content="http://www.terrain.io" property="og:url">
   <meta content="A collection of structural stylesheets for your projects." property="og:description">
 
-  <meta name="description" content="A collection of structural stylesheets for your projects.">
+  <meta name="description" content="A collection of structural stylesheets for your web projects.">
+  <meta name="keywords" content="css, stylesheets, sass, scss, front-end, design, responsive">
+
   <meta name="viewport" content="width = device-width, initial-scale = 1">
 
   <link rel="icon" href="favicon.ico">
+  <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,400italic' rel='stylesheet' type='text/css'>
+
   <link rel="stylesheet" href="css/docs.css">
 </head>
 
@@ -32,6 +36,7 @@
   <header class="hero">
     <div class="hero-background">
       <img id="heroImage" class="hero-image" src="images/mountain.jpg" />
+      <!-- Photo by Uwe Gille - http://commons.wikimedia.org/wiki/File:Nuptse-fromLobuche.jpg -->
       <svg id='triangleGrid' preserveaspectratio='xMidYMin slice' version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 1000 1000">
         <rect x="-17.678" y="-17.678" transform="matrix(0.7071 -0.7071 0.7071 0.7071 0 0)" fill="none" width="35.355" height="35.355"/>
         <rect x="32.322" y="-17.678" transform="matrix(0.7071 -0.7071 0.7071 0.7071 14.6447 35.3553)" fill="none" width="35.355" height="35.355"/>
@@ -1594,13 +1599,37 @@
   </main>
 
 
+  <div id="comments">
+    <div class="container">
+      <div id="disqus_thread"></div>
+      <script type="text/javascript">
+          /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+          var disqus_shortname = 'terraincss'; // required: replace example with your forum shortname
+
+          /* * * DON'T EDIT BELOW THIS LINE * * */
+          (function() {
+              var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+              dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+              (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+          })();
+      </script>
+      <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+      <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+    </div>
+  </div>
+
+
   <footer>
     <div class="container">
-      Made by <a href="https://triggerapp.com">Trigger</a>.
-
-      &nbsp;&nbsp;&nbsp;
-
-      <span>Contact us: <a href="https://twitter.com/terraincss">@terraincss</a></span>
+      <div class="grid-container">
+        <div class='one-half'>
+          Made by <a href="https://triggerapp.com">Trigger</a>.
+          <span>Contact us: <a href="https://twitter.com/terraincss">@terraincss</a></span>
+        </div>
+        <div class='one-half social-share'>
+          <a class="button submit share-button" href="#">Share</a>
+        </div>
+      </div>
     </div>
   </footer>
 
@@ -1608,8 +1637,9 @@
 
   <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
   <script type="text/javascript" src="js/jquery.sticky-kit.js"></script>
-
+  <script type="text/javascript" src="js/share.min.js"></script>
   <script type="text/javascript" src="js/color-sampler.js"></script>
+  <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/fastclick/1.0.0/fastclick.min.js"></script>
   <script type="text/javascript" src="js/main.js"></script>
 
   <script>

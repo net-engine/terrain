@@ -1,4 +1,3 @@
-@import url(http://fonts.googleapis.com/css?family=Source+Sans+Pro);
 html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
   margin: 0;
   padding: 0;
@@ -364,7 +363,7 @@ main address, main audio, main embed, main object, main map, main svg, main vide
   margin-bottom: 1.7em; }
 
 .container {
-  max-width: 50em;
+  max-width: 48em;
   padding: 3.4em;
   margin-left: auto;
   margin-right: auto; }
@@ -404,7 +403,8 @@ pre {
   padding: 0.85em;
   white-space: pre-wrap;
   max-height: 80vh;
-  overflow: scroll; }
+  overflow-x: hidden;
+  overflow-y: scroll; }
 
 details {
   margin-bottom: 1.7em; }
@@ -464,30 +464,30 @@ math {
 .grid-module-container {
   padding: 1.7em 1.275em;
   margin: 0 auto;
-  max-width: 52.55em; }
+  max-width: 50.55em; }
   .grid-module-container:before, .grid-module-container:after {
     content: "";
     display: table; }
   .grid-module-container:after {
     clear: both; }
-  @media screen and (min-width: 28.825em) {
+  @media screen and (min-width: 27.825em) {
     .grid-module-container {
-      max-width: 26.275em;
+      max-width: 25.275em;
       padding: 3.4em 1.275em; }
       .grid-module-container .grid-module {
-        width: 26.275em; } }
-  @media screen and (min-width: 55.1em) {
+        width: 25.275em; } }
+  @media screen and (min-width: 53.1em) {
     .grid-module-container {
-      max-width: 52.55em; } }
-  @media screen and (min-width: 81.375em) {
+      max-width: 50.55em; } }
+  @media screen and (min-width: 78.375em) {
     .grid-module-container {
-      max-width: 78.825em; } }
-  @media screen and (min-width: 107.65em) {
+      max-width: 75.825em; } }
+  @media screen and (min-width: 103.65em) {
     .grid-module-container {
-      max-width: 105.1em; } }
-  @media screen and (min-width: 133.925em) {
+      max-width: 101.1em; } }
+  @media screen and (min-width: 128.925em) {
     .grid-module-container {
-      max-width: 131.375em; } }
+      max-width: 126.375em; } }
 
 .absolute-full-height, .absolute-top-left, .absolute-top-right, .fixed-full-height, .fixed-top-left, .fixed-top-right {
   top: 0; }
@@ -819,13 +819,11 @@ select {
   select:hover {
     color: #5694bd;
     background-color: #d6e6ef;
-    border-color: #5694bd;
-    background-image: url("data:image/svg+xml;utf8, <svg version=\"1.1\" xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" width=\"32\" height=\"32\" viewBox=\"0 0 32 32\"><path fill=\"#5694bd\" d=\"M8 12l8 8 8-8z\" /></svg>"); }
+    border-color: #5694bd; }
   select:focus {
     color: #91ce3b;
     background-color: #e2f2ca;
-    border-color: #91ce3b;
-    background-image: url("data:image/svg+xml;utf8, <svg version=\"1.1\" xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" width=\"32\" height=\"32\" viewBox=\"0 0 32 32\"><path fill=\"#91ce3b\" d=\"M8 12l8 8 8-8z\" /></svg>"); }
+    border-color: #91ce3b; }
   select[multiple] {
     background-image: none; }
 
@@ -834,7 +832,9 @@ select {
     -moz-appearance: none;
     text-indent: 0.01px;
     text-overflow: '';
-    background-image: url("data:image/svg+xml;utf8, <svg version=\"1.1\" xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" width=\"32\" height=\"32\" viewBox=\"0 0 32 32\"><path d=\"M8 12l8 8 8-8z\" /></svg>"); } }
+    background-image: url("data:image/svg+xml;utf8, <svg version=\"1.1\" xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" width=\"32\" height=\"32\" viewBox=\"0 0 32 32\"><path d=\"M8 12l8 8 8-8z\" /></svg>"); }
+    select:hover, select:focus {
+      background-image: url("data:image/svg+xml;utf8, <svg version=\"1.1\" xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" width=\"32\" height=\"32\" viewBox=\"0 0 32 32\"><path d=\"M8 12l8 8 8-8z\" /></svg>"); } }
 
 input[type='text'], input[type='search'], input[type='tel'], input[type='email'], input[type='password'], input[type='url'], input[type='date'], input[type='datetime'], input[type='time'], input[type='number'], input[list], textarea {
   -webkit-appearance: none;
@@ -1259,7 +1259,7 @@ input[type="file"]::-webkit-file-upload-button {
       .fixed-left-nav-all-breaks.nav-hide {
         left: -100%; } }
 
-@media screen and (max-width: 50em) {
+@media screen and (max-width: 48em) {
   .fixed-left-nav-only-medium-break {
     position: fixed;
     top: 0;
@@ -1713,7 +1713,7 @@ article header {
   .show-html:before {
     content: '</>';
     margin-right: 0.5em; }
-  @media screen and (max-width: 50em) {
+  @media screen and (max-width: 48em) {
     .show-html {
       text-indent: -9999px;
       width: 3em; }
@@ -1765,7 +1765,7 @@ article header {
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease; }
 
-@media screen and (max-width: 50em) {
+@media screen and (max-width: 48em) {
   .nav-menu {
     position: fixed; }
   .nav-toggle {
@@ -1799,3 +1799,46 @@ article header {
       .menu-push-toright .nav-toggle {
         left: 100%;
         margin-left: -3.5em; } } }
+
+footer {
+  background: whitesmoke; }
+  footer .social-share {
+    text-align: right; }
+
+.hideshare-wrap {
+  position: relative;
+  display: inline-block;
+  width: auto !important;
+  height: auto !important; }
+
+.hideshare-list {
+  position: absolute;
+  right: 0;
+  left: auto !important;
+  bottom: 100% !important;
+  top: auto !important;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-align: center;
+  background: white;
+  width: auto !important;
+  margin-bottom: 0.75em;
+  white-space: nowrap; }
+  .hideshare-list:after {
+    content: '';
+    position: absolute;
+    border: 0.5em solid transparent;
+    border-top-color: white;
+    bottom: -1em;
+    right: 1.5em; }
+  .hideshare-list li {
+    display: inline-block;
+    zoom: 1;
+    *display: inline; }
+    .hideshare-list li a {
+      display: block;
+      padding: 0.25em 0.5em;
+      border-left: thin solid #eeeeee; }
+    .hideshare-list li:first-child a {
+      border-left-width: 0; }

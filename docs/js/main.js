@@ -1,6 +1,21 @@
 (function (global) {
 
+  $(".share-button").hideshare({
+    media: "http://triggerapp.s3.amazonaws.com/images/terrain/avatar.jpg",
+    description: "A collection of structural stylesheets for your projects.",
+    position: "top",
+    facebook: true,
+    twitter: true,
+    googleplus: true,
+    pinterest: false,
+    linkedin: false
+  });
+
   $("#nav-menu").stick_in_parent();
+
+  setTimeout(function() {
+    $(document.body).trigger("sticky_kit:recalc");
+  }, 7500);
 
   $('[href=' + window.location.hash + ']').addClass('active')
 
@@ -120,3 +135,8 @@
     });
   })();
 })(window || this);
+
+
+$(function() {
+  FastClick.attach(document.body);
+});
