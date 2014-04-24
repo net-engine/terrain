@@ -195,35 +195,6 @@ $default-border-color:    $gray-light !default;
 $light-border-color:      $gray-lighter !default;
 
 
-// Structure options
-
-$fixed-nav-width:         18em !default;
-
-$fixed-left-nav:          true !default;
-$fixed-left-nav-width:    $fixed-nav-width !default;
-
-$fixed-right-nav:         false !default;
-$fixed-right-nav-width:   $fixed-nav-width !default;
-
-$fixed-top-nav:           false !default;
-$fixed-top-nav-height:    8em !default;
-
-$fixed-top-header:        false !default;
-$fixed-top-header-height: $line-height * 2 !default;
-$fixed-top-header-color:  $white !default;
-$fixed-top-header-background: transparent !default;
-
-
-$nav-background-color:    $black !default;
-$nav-item-color:          $color-primary !default;
-
-
-// Layers (z-indexes)
-
-$top-layer: 200 !default;
-$second-top-layer: 100 !default;
-
-
 // Debugging
 
 $baseline-grid: false !default;
