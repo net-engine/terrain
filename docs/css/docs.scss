@@ -175,10 +175,9 @@ article header {
 
 .nav-toggle { display: none; }
 
-body > nav {
-  position: relative;
+.nav-menu {
   background: white;
-  z-index: 10;
+  position: relative;
 
   .container {
     padding-top: 1em;
@@ -224,17 +223,29 @@ body > nav {
   }
 }
 
+.nav-menu,
+.nav-toggle {
+  transition: all 0.3s ease;
+}
+
 
 @media screen and (max-width: $breakpoint-medium) {
-  #nav-menu + div {
-    display: none !important;
-  }
-
-  .nav-toggle { display: block; }
-
-  .nav-menu,
+  .nav-menu { position: fixed; }
   .nav-toggle {
-    transition: all 0.3s ease;
+    display: block;
+    background-color: transparent;
+    &.active { background-color: rgba($white, 0.5); }
+    &:hover {
+      background-color: rgba($white, 0.75);
+    }
+  }
+  .nav-toggle-overlay {
+    @include animatableHide;
+    width: 100%;
+    height: 100%;
+    background: rgba(black, .5);
+    opacity: 0;
+    transition: opacity .5s ease;
   }
 
   .menu-push-toright {
@@ -243,18 +254,9 @@ body > nav {
     .nav-toggle-overlay {
       top: 0;
       left: 0;
+      visibility: visible;
       opacity: 1;
     }
-  }
-
-  .nav-toggle-overlay {
-    @include animatableHide;
-    width: 100%;
-    height: 100%;
-    background: rgba(black, .5);
-    z-index: 100;
-    opacity: 0;
-    transition: opacity .5s ease;
   }
 
   .menu-push-toright .nav-toggle {
@@ -262,7 +264,7 @@ body > nav {
 
     @media screen and (max-width: $breakpoint-small) {
       left: 100%;
-      margin-left: -3em;
+      margin-left: -3.5em;
     }
   }
 }

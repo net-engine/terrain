@@ -45,7 +45,7 @@ $nav-background-color: $white;
     left: -#{$vertical-nav-width};
 
     @media screen and (max-width: $breakpoint-small) {
-      left: -#{$vertical-nav-width};
+      left: -100%;
     }
   }
 }

@@ -1257,7 +1257,7 @@ input[type="file"]::-webkit-file-upload-button {
     left: -18em; }
     @media screen and (max-width: 32em) {
       .fixed-left-nav-all-breaks.nav-hide {
-        left: -18em; } }
+        left: -100%; } }
 
 @media screen and (max-width: 50em) {
   .fixed-left-nav-only-medium-break {
@@ -1283,7 +1283,7 @@ input[type="file"]::-webkit-file-upload-button {
       left: -18em; }
       @media screen and (max-width: 32em) {
         .fixed-left-nav-only-medium-break.nav-hide {
-          left: -18em; } } }
+          left: -100%; } } }
 
 @media screen and (max-width: 32em) {
   .fixed-left-nav-only-small-break {
@@ -1309,7 +1309,7 @@ input[type="file"]::-webkit-file-upload-button {
       left: -18em; }
       @media screen and (max-width: 32em) {
         .fixed-left-nav-only-small-break.nav-hide {
-          left: -18em; } } }
+          left: -100%; } } }
 
 .nav-toggle {
   display: block;
@@ -1726,26 +1726,25 @@ article header {
 .nav-toggle {
   display: none; }
 
-body > nav {
-  position: relative;
+.nav-menu {
   background: white;
-  z-index: 10; }
-  body > nav .container {
+  position: relative; }
+  .nav-menu .container {
     padding-top: 1em;
     padding-bottom: 1em; }
-  body > nav li {
+  .nav-menu li {
     display: inline-block;
     vertical-align: top;
     position: relative; }
-    body > nav li:hover ul {
+    .nav-menu li:hover ul {
       display: block; }
-    body > nav li a {
+    .nav-menu li a {
       padding: 0 0.25em;
       text-transform: uppercase;
       display: block; }
-      body > nav li a.active {
+      .nav-menu li a.active {
         color: #171717; }
-    body > nav li ul {
+    .nav-menu li ul {
       display: none;
       position: absolute;
       top: 100%;
@@ -1753,25 +1752,25 @@ body > nav {
       right: 0;
       background: white;
       z-index: 10; }
-      body > nav li ul li {
+      .nav-menu li ul li {
         display: block; }
-        body > nav li ul li a {
+        .nav-menu li ul li a {
           text-transform: none; }
 
+.nav-menu, .nav-toggle {
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease; }
+
 @media screen and (max-width: 50em) {
-  #nav-menu + div {
-    display: none !important; }
+  .nav-menu {
+    position: fixed; }
   .nav-toggle {
-    display: block; }
-  .nav-menu, .nav-toggle {
-    -webkit-transition: all 0.3s ease;
-    transition: all 0.3s ease; }
-  .menu-push-toright {
-    overflow: hidden; }
-    .menu-push-toright .nav-toggle-overlay {
-      top: 0;
-      left: 0;
-      opacity: 1; }
+    display: block;
+    background-color: transparent; }
+    .nav-toggle.active {
+      background-color: rgba(255, 255, 255, 0.5); }
+    .nav-toggle:hover {
+      background-color: rgba(255, 255, 255, 0.75); }
   .nav-toggle-overlay {
     visibility: hidden;
     position: fixed;
@@ -1780,13 +1779,19 @@ body > nav {
     width: 100%;
     height: 100%;
     background: rgba(0, 0, 0, 0.5);
-    z-index: 100;
     opacity: 0;
     -webkit-transition: opacity 0.5s ease;
     transition: opacity 0.5s ease; }
+  .menu-push-toright {
+    overflow: hidden; }
+    .menu-push-toright .nav-toggle-overlay {
+      top: 0;
+      left: 0;
+      visibility: visible;
+      opacity: 1; }
   .menu-push-toright .nav-toggle {
     left: 18em; }
     @media screen and (max-width: 32em) {
       .menu-push-toright .nav-toggle {
         left: 100%;
-        margin-left: -3em; } } }
+        margin-left: -3.5em; } } }
