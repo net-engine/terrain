@@ -64,13 +64,13 @@
     menuToggle.addEventListener('click', function () {
       menuToggle.classList.toggle('active');
       body.classList.toggle('menu-push-toright');
-      menu.classList.toggle('menu-open');
+      menu.classList.toggle('nav-hide');
     });
 
     overLay.addEventListener('click', function () {
       menuToggle.classList.remove('active');
       body.classList.remove('menu-push-toright');
-      menu.classList.remove('menu-open');
+      menu.classList.add('nav-hide');
     });
   })();
 
