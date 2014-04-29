@@ -81,6 +81,15 @@ $features-bg-color: #001053;
   }
 }
 
+.header-social {
+  margin: 0 auto -2.5em;
+
+  a {
+    display: inline-block;
+    padding: 0 .5em;
+  }
+}
+
 .title-container {
   position: relative;
   z-index: 2;
@@ -275,6 +284,18 @@ footer {
   .social-share { text-align: right; }
 }
 
+.footer-social {
+  margin-right: 1em;
+
+  a {
+    padding: 0 .25em;
+    text-transform: uppercase;
+
+    &:before {
+      margin-right: .25em;
+    }
+  }
+}
 
 .hideshare-wrap {
   position: relative;
@@ -311,6 +332,9 @@ footer {
     display: inline-block;
     zoom: 1;
     *display: inline;
+    padding: 0;
+
+    &:before { display: none; }
 
     a {
       display: block;
