@@ -427,7 +427,7 @@ math {
   .grid-container:after {
     clear: both; }
 
-.grid-column, .one-half, .one-third, .two-thirds, .one-quarter, .three-quarters, .grid-module-container .grid-module {
+.grid-column, .one-half, .one-third, .two-thirds, .one-quarter, .three-quarters {
   float: left;
   vertical-align: top;
   -webkit-box-sizing: border-box;
@@ -475,6 +475,13 @@ math {
       max-width: 25.275em;
       padding: 3.4em 1.275em; }
       .grid-module-container .grid-module {
+        float: left;
+        vertical-align: top;
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+        padding-left: 1.275em;
+        padding-right: 1.275em;
         width: 25.275em; } }
   @media screen and (min-width: 53.1em) {
     .grid-module-container {
