@@ -16,12 +16,16 @@
   width: 100% / $total * $span;
 }
 
-.grid-column {
+@mixin grid-column {
   float: left;
   vertical-align: top;
   box-sizing: border-box;
   padding-left: $gutter / 2;
   padding-right: $gutter / 2;
+}
+
+.grid-column {
+  @include grid-column();
 }
 
 
@@ -99,7 +103,7 @@ $grid-module-width: $max-width / 2 + $gutter / 2 !default;
     padding: $page-margin $gutter / 2;
 
     .grid-module {
-      @extend .grid-column;
+      @include grid-column();
       width: $grid-module-width;
     }
   }
