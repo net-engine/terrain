@@ -1,8 +1,10 @@
 # Terrain <small>by <a href="https://triggerapp.com">Trigger</a>.</small>
 
-## Development
+## To setup a development environment:
 
-    npm install
+1. Install Node.js (this will install npm).
+2. Run `npm install`.
+3. Run `guard` this will launch the guard server which watches your scss doucments for changes. When it sees changes it updates the .css files.
 
 
 ## Style tasks
