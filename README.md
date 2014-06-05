@@ -4,7 +4,7 @@
 
 1. Install Node.js (this will install npm).
 2. Run `npm install`.
-3. Run `guard` this will launch the guard server which watches your scss doucments for changes. When it sees changes it updates the .css files.
+3. Run `grunt` this will launch the grunt server which watches your scss doucments for changes. When it sees changes it updates the .css files.
 
 
 ## Style tasks
