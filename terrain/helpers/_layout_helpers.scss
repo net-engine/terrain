@@ -11,6 +11,11 @@
   &:after { clear: both; }
 }
 
+.align-left   { text-align: left; }
+.align-center { text-align: center; }
+.align-right  { text-align: right; }
+
+
 @mixin circle($size:$line-height) {
   border-radius: 50%;
   width: $size;

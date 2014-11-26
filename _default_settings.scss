@@ -9,13 +9,15 @@ $font-family-input:       $font-family !default;
 $font-family-icons:       'icons' !default;
 $font-family-mono:        'Menlo', 'Monaco', 'Courier New', monospace !default;
 
+$line-height-val:         1.7 !default;
 $line-height:             1.7em !default;
+$line-height-relative:    1.7rem !default;
 
 $font-size:               100% !default;
 
 $font-size-level-one:     3em !default;
 $font-weight-level-one:   300 !default;
-$line-height-level-one:   $line-height * 0.667;
+$line-height-level-one:   $line-height * 0.667 !default;
 $margin-level-one:        $line-height * 0.667 !default;
 
 $font-size-level-two:     1.75em !default;
@@ -40,7 +42,7 @@ $margin-level-five:       $line-height !default;
 
 $font-size-level-six:     0.8em !default;
 $font-weight-level-six:   700 !default;
-$line-height-level-six:   $line-height * 1.25;
+$line-height-level-six:   $line-height * 1.25 !default;
 $margin-level-six:        $line-height * 1.25 !default;
 
 
@@ -175,15 +177,15 @@ $select-focus-border-color:     $color-success !default;
 
 // Breakpoints
 
-$breakpoint-small:        32em !default;
-$breakpoint-medium:       48em !default;
-$breakpoint-large:        75em !default;
+$breakpoint-small:        32rem !default;
+$breakpoint-medium:       48rem !default;
+$breakpoint-large:        75rem !default;
 
 
 // Layout
 
-$gutter:                  $line-height * 1.5 !default;
-$page-margin:             $line-height * 2 !default;
+$gutter:                  $line-height-relative !default;
+$page-margin:             $line-height-relative * 2 !default;
 $max-width:               $breakpoint-medium !default;
 $center-layout:           true !default;
 
@@ -205,8 +207,8 @@ $baseline-grid: false !default;
 
 // Misc
 
-$radius: .15em !default;
-$border-width: .125em !default;
+$radius: .15rem !default;
+$border-width: .125rem !default;
 
 // Tabs
 

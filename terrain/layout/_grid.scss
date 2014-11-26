@@ -1,7 +1,8 @@
 
 .grid-container {
-  margin-left: -$gutter / 2;
-  margin-right: -$gutter / 2;
+  font-size: 0;
+  margin-left: -#{$gutter / 2};
+  margin-right: -#{$gutter / 2};
 
   &:before,
   &:after {
@@ -17,11 +18,12 @@
 }
 
 @mixin grid-column {
-  float: left;
+  display: inline-block;
   vertical-align: top;
-  box-sizing: border-box;
+  font-size: 1rem;
   padding-left: $gutter / 2;
   padding-right: $gutter / 2;
+  box-sizing: border-box;
 }
 
 .grid-column {
@@ -87,6 +89,7 @@ $grid-module-width: $max-width / 2 + $gutter / 2 !default;
   padding: $page-margin / 2 $gutter / 2;
   margin: 0 auto;
   max-width: $grid-module-width * 2;
+  text-align: center;
 
   &:before,
   &:after {
@@ -98,7 +101,7 @@ $grid-module-width: $max-width / 2 + $gutter / 2 !default;
 
 
 
-  @media screen and (min-width: ($grid-module-width + $gutter)) {
+  @media screen and (min-width: ($grid-module-width)) {
     max-width: $grid-module-width;
     padding: $page-margin $gutter / 2;
 
@@ -108,19 +111,19 @@ $grid-module-width: $max-width / 2 + $gutter / 2 !default;
     }
   }
 
-  @media screen and (min-width: ($grid-module-width * 2 + $gutter)) {
+  @media screen and (min-width: ($grid-module-width * 2)) {
     max-width: $grid-module-width * 2;
   }
 
-  @media screen and (min-width: ($grid-module-width * 3 + $gutter)) {
+  @media screen and (min-width: ($grid-module-width * 3)) {
     max-width: $grid-module-width * 3;
   }
 
-  @media screen and (min-width: ($grid-module-width * 4 + $gutter)) {
+  @media screen and (min-width: ($grid-module-width * 4)) {
     max-width: $grid-module-width * 4;
   }
 
-  @media screen and (min-width: ($grid-module-width * 5 + $gutter)) {
+  @media screen and (min-width: ($grid-module-width * 5)) {
     max-width: $grid-module-width * 5;
   }
 }
