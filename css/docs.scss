@@ -128,12 +128,12 @@ dl.explanation {
 }
 
 .feature-list {
-  font-size: 1.125em;
 
   li {
     vertical-align: middle;
     margin-bottom: $line-height;
-    padding-left: 5em;
+    padding-left: 5em !important;
+    font-size: 1.125rem;
     line-height: 2.75em;
 
     &:before {
