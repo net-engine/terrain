@@ -70,6 +70,7 @@
   .one-quarter,
   .three-quarters {
     &:not(.no-break) {
+      display: block;
       width: auto;
       float: none;
       padding-left: 0;
